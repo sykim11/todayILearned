@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 04 Jan 2022 06:46:08 GMT</lastBuildDate><item><title><![CDATA[2021 회고]]></title><description><![CDATA[개인사로 너무 바빠서 건강만 챙겨도 성공할 것만 같았던 한 해가 지나갔다. 그럼에도 그 사이사이에 많은 일들을 해낸 것 같아 결론적으론 뿌듯한 마음을 안고 2022년을 맞이했다. ✨ 2021 초창기 목표 엘리의 React 강의 듣기 (10…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/2021/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/2021/</guid><pubDate>Tue, 04 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;개인사로 너무 바빠서 건강만 챙겨도 성공할 것만 같았던 한 해가 지나갔다.&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 04 Jan 2022 06:50:55 GMT</lastBuildDate><item><title><![CDATA[2021 회고]]></title><description><![CDATA[개인사로 너무 바빠서 건강만 챙겨도 성공할 것만 같았던 한 해가 지나갔다. 그럼에도 그 사이사이에 많은 일들을 해낸 것 같아 결론적으론 뿌듯한 마음을 안고 2022년을 맞이했다. ✨ 2021 초창기 목표 엘리의 React 강의 듣기 (10…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/2021/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/2021/</guid><pubDate>Tue, 04 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;개인사로 너무 바빠서 건강만 챙겨도 성공할 것만 같았던 한 해가 지나갔다.&lt;br&gt;
 그럼에도 그 사이사이에 많은 일들을 해낸 것 같아 결론적으론 뿌듯한 마음을 안고 2022년을 맞이했다.&lt;/p&gt;
 &lt;h3&gt;✨ 2021 초창기 목표&lt;/h3&gt;
 &lt;ul class=&quot;contains-task-list&quot;&gt;
@@ -25,7 +25,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a018ff7623a6c02e70f741b16ceda6c6/c80f2/courses_220104.jpg&quot;
+    href=&quot;/todayILearned/static/a018ff7623a6c02e70f741b16ceda6c6/c80f2/courses_220104.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -38,11 +38,11 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;..&quot;
         title=&quot;..&quot;
-        src=&quot;/static/a018ff7623a6c02e70f741b16ceda6c6/828fb/courses_220104.jpg&quot;
-        srcset=&quot;/static/a018ff7623a6c02e70f741b16ceda6c6/ff44c/courses_220104.jpg 158w,
-/static/a018ff7623a6c02e70f741b16ceda6c6/a6688/courses_220104.jpg 315w,
-/static/a018ff7623a6c02e70f741b16ceda6c6/828fb/courses_220104.jpg 630w,
-/static/a018ff7623a6c02e70f741b16ceda6c6/c80f2/courses_220104.jpg 796w&quot;
+        src=&quot;/todayILearned/static/a018ff7623a6c02e70f741b16ceda6c6/828fb/courses_220104.jpg&quot;
+        srcset=&quot;/todayILearned/static/a018ff7623a6c02e70f741b16ceda6c6/ff44c/courses_220104.jpg 158w,
+/todayILearned/static/a018ff7623a6c02e70f741b16ceda6c6/a6688/courses_220104.jpg 315w,
+/todayILearned/static/a018ff7623a6c02e70f741b16ceda6c6/828fb/courses_220104.jpg 630w,
+/todayILearned/static/a018ff7623a6c02e70f741b16ceda6c6/c80f2/courses_220104.jpg 796w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -61,7 +61,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/691e311dab3efe0fb903505d340431fa/9f7af/sides1_220104.jpg&quot;
+    href=&quot;/todayILearned/static/691e311dab3efe0fb903505d340431fa/9f7af/sides1_220104.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -74,13 +74,13 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;..&quot;
         title=&quot;..&quot;
-        src=&quot;/static/691e311dab3efe0fb903505d340431fa/828fb/sides1_220104.jpg&quot;
-        srcset=&quot;/static/691e311dab3efe0fb903505d340431fa/ff44c/sides1_220104.jpg 158w,
-/static/691e311dab3efe0fb903505d340431fa/a6688/sides1_220104.jpg 315w,
-/static/691e311dab3efe0fb903505d340431fa/828fb/sides1_220104.jpg 630w,
-/static/691e311dab3efe0fb903505d340431fa/0ede0/sides1_220104.jpg 945w,
-/static/691e311dab3efe0fb903505d340431fa/3ac88/sides1_220104.jpg 1260w,
-/static/691e311dab3efe0fb903505d340431fa/9f7af/sides1_220104.jpg 1475w&quot;
+        src=&quot;/todayILearned/static/691e311dab3efe0fb903505d340431fa/828fb/sides1_220104.jpg&quot;
+        srcset=&quot;/todayILearned/static/691e311dab3efe0fb903505d340431fa/ff44c/sides1_220104.jpg 158w,
+/todayILearned/static/691e311dab3efe0fb903505d340431fa/a6688/sides1_220104.jpg 315w,
+/todayILearned/static/691e311dab3efe0fb903505d340431fa/828fb/sides1_220104.jpg 630w,
+/todayILearned/static/691e311dab3efe0fb903505d340431fa/0ede0/sides1_220104.jpg 945w,
+/todayILearned/static/691e311dab3efe0fb903505d340431fa/3ac88/sides1_220104.jpg 1260w,
+/todayILearned/static/691e311dab3efe0fb903505d340431fa/9f7af/sides1_220104.jpg 1475w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
