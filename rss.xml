@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 04 Jan 2022 06:04:39 GMT</lastBuildDate><item><title><![CDATA[2021 회고]]></title><description><![CDATA[개인사로 너무 바빠서 건강만 챙겨도 성공할 것만 같았던 한 해가 지나갔다. 그럼에도 그 사이사이에 많은 일들을 해낸 것 같아 결론적으론 뿌듯한 마음을 안고 2022년을 맞이했다. ✨ 2021 초창기 목표 엘리의 React 강의 듣기 (10…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/2021/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/2021/</guid><pubDate>Tue, 04 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;개인사로 너무 바빠서 건강만 챙겨도 성공할 것만 같았던 한 해가 지나갔다.&lt;br&gt;
+그럼에도 그 사이사이에 많은 일들을 해낸 것 같아 결론적으론 뿌듯한 마음을 안고 2022년을 맞이했다.&lt;/p&gt;
+&lt;h3&gt;✨ 2021 초창기 목표&lt;/h3&gt;
+&lt;ul class=&quot;contains-task-list&quot;&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; 엘리의 React 강의 듣기 (100%)&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; 사이드 프로젝트 (50%)&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; 방통대 1,2학기 완료 (100%)&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; 정보처리기사 자격증 따기 (100%)&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; 운동 시작하기 (50%)&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; 책 읽는 습관 기르기 (10%)&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; 영어 공부 꾸준히 하기 (10%)&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; 팀 내부 프론트 디자인 컨벤션 만들기 (50%)&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; 토끼 친구 1.6키로 만들기 (30%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;🔹 공부 방향성 회고&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;기본 다지기&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;새로운 것 배우기&lt;/code&gt; 작년엔 두 키워드를 중심으로 공부 방향을 잡았다.
+우선 업무적으로 내가 사용하고 있는 React.js에 집중했고 유명한 현업 개발자는 어떤
+식으로 코드를 짜는지에 포커스를 맞춰서 강의를 들었다. 그리고 작년초부터 챙겨보고
+싶었던 Typescript를 입혀서 내 나름의 추가 버전으로 코드를 따라쳤다. 나는 강의 중심형
+학습을 선호하는 타입이라 이런 방식의 학습이 편하고 재밌다고 느꼈는데 성장에 있어선
+한계가 있음을 깨달았다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a018ff7623a6c02e70f741b16ceda6c6/c80f2/courses_220104.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 94.9367088607595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAATABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMBBf/EABcBAQADAAAAAAAAAAAAAAAAAAABAgP/2gAMAwEAAhADEAAAAeg2RdEV55eMGj//xAAbEAACAwADAAAAAAAAAAAAAAABAwACBBETFP/aAAgBAQABBQL0ph1JEroUZ0LlsteRlEvcgueyrVPaa//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABcRAQEBAQAAAAAAAAAAAAAAAAEAAhD/2gAIAQIBAT8B5iQv/8QAHRAAAgICAwEAAAAAAAAAAAAAAAECIREyEiKBof/aAAgBAQAGPwLcuZUjX4ZUmvEPu3koaUq4ouR//8QAHRABAAICAgMAAAAAAAAAAAAAAQARITFBUWGhsf/aAAgBAQABPyF3fDGjDZemDvC1plXBrwitTGCB7Kla0RsL1KIYTR1HTbnon//aAAwDAQACAAMAAAAQo8hC/8QAFhEBAQEAAAAAAAAAAAAAAAAAEAEx/9oACAEDAQE/EC6f/8QAGREBAAIDAAAAAAAAAAAAAAAAAQAQESEx/9oACAECAQE/EKIu5lcn/8QAHRABAAMAAgMBAAAAAAAAAAAAAQARIUFhMVGBkf/aAAgBAQABPxDRbVplefIYghNbj44iEKWLyfyFYWCrdO33BAQAYMMxJrNQBtBwdSqyHjDHWEIZLZ4iqkMPVR1P/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;..&quot;
+        title=&quot;..&quot;
+        src=&quot;/static/a018ff7623a6c02e70f741b16ceda6c6/828fb/courses_220104.jpg&quot;
+        srcset=&quot;/static/a018ff7623a6c02e70f741b16ceda6c6/ff44c/courses_220104.jpg 158w,
+/static/a018ff7623a6c02e70f741b16ceda6c6/a6688/courses_220104.jpg 315w,
+/static/a018ff7623a6c02e70f741b16ceda6c6/828fb/courses_220104.jpg 630w,
+/static/a018ff7623a6c02e70f741b16ceda6c6/c80f2/courses_220104.jpg 796w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;강의형 학습은 새로운 스킬, 혹은 이론 중심이 아니면 선택하지 않을 것 같다&lt;/li&gt;
+&lt;li&gt;라이브러리를 걷어내고 순수 바닐라 js에서 상태관리가 어떻게 이루어지는지를 이해하는 것이 중요할 것 같다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;새로운 것 배우기&lt;/code&gt; 키워드에서는 Python을 골랐다. 이유는 쓸 줄 아는 언어의 폭을 조금 더 넓히고 싶기도 했고 팀 내부에서 채택된 언어이기도 했고 쉽다는 말에 혹한 것도 있었다. 간단하게 이것만 만들어봐야지 했던 작은 토이 프로젝트에 다른 기능의 페이지들을 추가하고 디자인하고 기획하면서 규모가 살짝 커져버려서 그냥 2022년 상반기 사이드 프로젝트로 결정했다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/691e311dab3efe0fb903505d340431fa/9f7af/sides1_220104.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 37.34177215189873%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAcuQqD//xAAWEAEBAQAAAAAAAAAAAAAAAAARABD/2gAIAQEAAQUClz//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAY/An//xAAZEAABBQAAAAAAAAAAAAAAAAAAARARQVH/2gAIAQEAAT8hnRbG/9oADAMBAAIAAwAAABDzz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABsQAQEAAQUAAAAAAAAAAAAAAAERACExUYGx/9oACAEBAAE/EIWhe8mI2IQDzNOM/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;..&quot;
+        title=&quot;..&quot;
+        src=&quot;/static/691e311dab3efe0fb903505d340431fa/828fb/sides1_220104.jpg&quot;
+        srcset=&quot;/static/691e311dab3efe0fb903505d340431fa/ff44c/sides1_220104.jpg 158w,
+/static/691e311dab3efe0fb903505d340431fa/a6688/sides1_220104.jpg 315w,
+/static/691e311dab3efe0fb903505d340431fa/828fb/sides1_220104.jpg 630w,
+/static/691e311dab3efe0fb903505d340431fa/0ede0/sides1_220104.jpg 945w,
+/static/691e311dab3efe0fb903505d340431fa/3ac88/sides1_220104.jpg 1260w,
+/static/691e311dab3efe0fb903505d340431fa/9f7af/sides1_220104.jpg 1475w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;지마켓, 쿠팡, 이마트에서 상품판매량 순으로 검색어에 따른 결과값을 크롤링하는 사이드 프로젝트를 만들었다.&lt;/li&gt;
+&lt;li&gt;RestAPI를 만들어 데이터베이스를 이용해 토끼친구 체중관리하는 페이지를 만들었다.&lt;/li&gt;
+&lt;li&gt;파이썬 파일들은 어떤 구조로 관리되는지 궁금증이 생겼다.&lt;/li&gt;
+&lt;li&gt;작년 초에 백엔드 개발자와 협업하면서 생겨난 이슈들을 똑같이 겪으면서 신기함+기록 욕구가 증가했다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;🔹 업무 방향성 회고&lt;/h4&gt;
+&lt;h4&gt;🔹 삶의 패턴 방향성 회고&lt;/h4&gt;</content:encoded></item></channel></rss>
