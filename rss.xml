@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 04 Jan 2022 06:55:12 GMT</lastBuildDate><item><title><![CDATA[2021 회고]]></title><description><![CDATA[개인사로 너무 바빠서 건강만 챙겨도 성공할 것만 같았던 한 해가 지나갔다. 그럼에도 그 사이사이에 많은 일들을 해낸 것 같아 결론적으론 뿌듯한 마음을 안고 2022년을 맞이했다. ✨ 2021 초창기 목표 엘리의 React 강의 듣기 (10…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/2021/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/2021/</guid><pubDate>Tue, 04 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;개인사로 너무 바빠서 건강만 챙겨도 성공할 것만 같았던 한 해가 지나갔다.&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 04 Jan 2022 07:38:44 GMT</lastBuildDate><item><title><![CDATA[gatsby 배포시 prefix 설정]]></title><description><![CDATA[배포 환경에서 레파지토리명이 url 시작부에 붙어서 나오지 않는 문제로 페이지간의 에러가 발생했다. package.json deploy 명령어 수정 개츠비로 빌드를 할 때 prefix-paths를 지정하여 빌드하겠다고 지정해 준다. gatsby…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/bugLists/gatsby/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/bugLists/gatsby/</guid><pubDate>Tue, 04 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;배포 환경에서 레파지토리명이 url 시작부에 붙어서 나오지 않는 문제로 페이지간의 에러가 발생했다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;package.json deploy 명령어 수정&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token string&quot;&gt;&quot;deploy&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;gatsby build --prefix-paths &amp;amp;&amp;amp; gh-pages -d public&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;개츠비로 빌드를 할 때 prefix-paths를 지정하여 빌드하겠다고 지정해 준다.&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;gatsby-config.js 파일에서 pathPrefix 명을 지정&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  pathPrefix&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/todayILearned&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;해당하는 prefix-paths의 값을 개츠비 설정 파일에서 지정해 준다.&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;cache 파일 삭제 후 다시 배포 해보면 의도했던 대로 prefix가 붙어서 배포된다&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npm run clean&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[2021 회고]]></title><description><![CDATA[개인사로 너무 바빠서 건강만 챙겨도 성공할 것만 같았던 한 해가 지나갔다. 그럼에도 그 사이사이에 많은 일들을 해낸 것 같아 결론적으론 뿌듯한 마음을 안고 2022년을 맞이했다. ✨ 2021 초창기 목표 엘리의 React 강의 듣기 (10…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/review/2021/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/review/2021/</guid><pubDate>Tue, 04 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;개인사로 너무 바빠서 건강만 챙겨도 성공할 것만 같았던 한 해가 지나갔다.&lt;br&gt;
 그럼에도 그 사이사이에 많은 일들을 해낸 것 같아 결론적으론 뿌듯한 마음을 안고 2022년을 맞이했다.&lt;/p&gt;
 &lt;h3&gt;✨ 2021 초창기 목표&lt;/h3&gt;
 &lt;ul class=&quot;contains-task-list&quot;&gt;
@@ -95,4 +110,16 @@
 &lt;li&gt;작년 초에 백엔드 개발자와 협업하면서 생겨난 이슈들을 똑같이 겪으면서 신기함+기록 욕구가 증가했다.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;🔹 업무 방향성 회고&lt;/h4&gt;
-&lt;h4&gt;🔹 삶의 패턴 방향성 회고&lt;/h4&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;팀원과 함께 맞춰갈 &lt;code class=&quot;language-text&quot;&gt;프론트 UI 컨벤션&lt;/code&gt;을 만들고 있다.&lt;br&gt;
+작년 후반부 쯤… 급하게 몰려온 일들이 많아 잠시 손을 놨던 프로젝트인데 어찌저찌하여 12월 경에 사내 배포까지 성공했다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;공통 모듈 패키지를 다운 받을 사설 npm을 개설했다.&lt;/li&gt;
+&lt;li&gt;공통 모듈 패키지는 스토리북을 담고 있어서 컴포넌트 명세서 역할도 겸한다.&lt;/li&gt;
+&lt;li&gt;공통 모듈 패키지는 rollup 라이브러리를 이용해 필요한 컴포넌트만 빼내어 배포한다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;테스트 영역&lt;/code&gt;을 개발 ~&gt; 배포 어느 부분에 배치해야할지 고민이었는데 단위 모듈을 개발할 때 테스트 파일을 함께 작성한다면 일단은 테스트된 단위 모듈을 사용할 수는 있을 것 같다. (계속되는 타협과 타협…)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;현재까진 1차 배포만 완료했을 뿐 사실 피그마 파일 정리라든지 컴포넌트들 추가 개발 등… 아직 붙여야할 살들이 많다.&lt;/p&gt;
+&lt;h4&gt;🔹 삶의 패턴 방향성 회고&lt;/h4&gt;
+&lt;p&gt;운동과 책 읽는 습관은 아주 오래된 나의 투두리스트였다.&lt;br&gt;
+다행히 운동은 극하반기에 부랴부랴 시작을 해서 다행이라 생각하는데 책 읽는 습관은 5,6월 이후부터 다시 또 뚝 끊겼다. 읽은 책들도 독후감을 쓰지 않으니 머리에 남지도 않은 기분…&lt;br&gt;
+2022년에는 욕심내지않고 뭐든 &lt;code class=&quot;language-text&quot;&gt;꾸준히&lt;/code&gt; 이행하도록 하자.&lt;/p&gt;</content:encoded></item></channel></rss>
