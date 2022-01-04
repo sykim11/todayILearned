@@ -1,4 +1,313 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 04 Jan 2022 07:41:42 GMT</lastBuildDate><item><title><![CDATA[gatsby 배포시 prefix 설정]]></title><description><![CDATA[배포 환경에서 레파지토리명이 url 시작부에 붙어서 나오지 않는 문제로 페이지간의 에러가 발생했다. package.json deploy 명령어 수정 개츠비로 빌드를 할 때 prefix-paths를 지정하여 빌드하겠다고 지정해 준다. gatsby…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/bugLists/gatsby/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/bugLists/gatsby/</guid><pubDate>Tue, 04 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;배포 환경에서 레파지토리명이 url 시작부에 붙어서 나오지 않는 문제로 페이지간의 에러가 발생했다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 04 Jan 2022 22:29:24 GMT</lastBuildDate><item><title><![CDATA[Javascript 작동 원리]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works/</guid><pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;자바스크립트의 작동 원리에 대해 조금 더 깊은 학습이 필요하다 생각되어 글로 정리해 보았다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;자바스크립트는 싱글스레드로 동작하는 언어&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;❓ &lt;strong&gt;싱글 스레드&lt;/strong&gt;&lt;br&gt;
+단어 그대로 한 번에 하나의 작업만 수행할 수 있다는 의미이다. 카페를 예로 들자면 카페에 바리스타가 단 한 명이라 그 한 명으로 주문을 받을 수 있고 그 한 명으로 커피를 만들 수 있다. 주문을 받는 동안 커피를 만들 수 없고, 커피를 만드는 동안 주문을 받을 수 없다.&lt;/p&gt;
+&lt;p&gt;그렇다면 자바스크립트 코드로 비동기 코드를 짜는 건 어떻게 가능한 일이었을까?&lt;/p&gt;
+&lt;h3&gt;자바스크립트 동작 방식&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 430px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/8cbf152455b14242d26b3813e6692229/05ed2/js1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 104.43037974683544%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAACvklEQVQ4y52Uz08TQRTH+1d5UTHqiYNn/w1/JBg1cPLsiZACF2232922wWAqtKVAoZQEMVYOYKIhopZ2oS3ddrc/9ufXvFl228UV1Ele3szOm89+Z96bCeEPzbZtr2/ZjtkBcxdbKBhmMa8ru1B+TECTpqCfTEL5+RTm4Lsv5i+BJvOavIzm/hi23t7G4usbqH66A2tw8P9Ao5PH0e44Xr64i8mJW9jJjAPmF7b1fwayU+pmkBOuYTEyBj58He+XbwLG58uB7gGTtyyLeds633JnB73KY2jSc2jSMwyqT2D0jxygZTqxI+vJQldljaYsyzHTsgNjSYjL8RT2+33UajW0Wi2oqoqzszM0m02YpulbRI1iaL5er8MwDN98yO0QLJvNobCxiVKphOJWEZlMBnKr5YEIsr1dQjabRT6fRzqdRqFQgCRJQ4Usm4aB+fl55Fey2NpYQS6Xw2p+FUvvlsBxnAekGIKsra0x4Pr6OoNPT097SkPOFmSkEnGoFlCu+M8nGo1C13Vm1A9qqVQK7XZ7CJTbHbxJxbFfsfFqA1CMLu5v3sPH+gcsCAvQdI0piEQiw0oYybAgCFAUZQgkOs/H3ZzB6HZQqK2gOWhA4AXohs6ApJDO8fT0lCWEPI1jsdjvwHgs5uAOD4GHj4Ce83eOizKYCyRQtVplSSRP42AgzztAtQv74ACmrrECjnHcpUBSGQyMx/0FfV4GFDwKbDQaHpCMgFQJF4Ad8OcKH0w1sLqpOo+DabFgF0hJIYXHx8cM6ioMALaRSCTYh2R6gK/fhteLlBOMyobUUixBSSmZLMu/Z5muWjgcZhWvKidoNiTUahIqlQrm5uZYqdAVnJ2dxd7eHsrlsmc0npmZQa/X8782xWKRKRDFJEQxgWQyybZCi9xGffpGuxFFkXka01rf1bvstRl9mq6KIYW/AJ2oD1nDa4idAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;메모리힙과 콜스택&quot;
+        title=&quot;메모리힙과 콜스택&quot;
+        src=&quot;/todayILearned/static/8cbf152455b14242d26b3813e6692229/05ed2/js1.png&quot;
+        srcset=&quot;/todayILearned/static/8cbf152455b14242d26b3813e6692229/c26ae/js1.png 158w,
+/todayILearned/static/8cbf152455b14242d26b3813e6692229/6bdcf/js1.png 315w,
+/todayILearned/static/8cbf152455b14242d26b3813e6692229/05ed2/js1.png 430w&quot;
+        sizes=&quot;(max-width: 430px) 100vw, 430px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;❓ &lt;strong&gt;메모리힙이란&lt;/strong&gt;&lt;br&gt;
+메모리를 할당하는 영역을 의미&lt;/p&gt;
+&lt;p&gt;❓ &lt;strong&gt;콜스택이란&lt;/strong&gt;&lt;br&gt;
+코드가 호출되면서 스택으로 쌓이는 영역을 의미&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const 첫번째함수 = (x, y) =&gt; {
+    return console.log(x + y);
+}
+const 두번째함수 = (a, b) =&gt; {
+  첫번째함수(a, b)
+}
+
+두번째함수(1,2); // 실행 시작&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위와 같은 코드가 있다고 가정했을 때 콜스택에서 이루어지는 호출 방식은 아래와 같다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/0bfb85b44f1dc9356b5c7276b349f898/23296/js2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 41.77215189873418%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAABMklEQVQoz42RS2vCUBCF/d1VCFayENzYjQj+El0VN1KIXRorNA8fBPM2JiZiOeWMzSWFtnRxuZdzz3wznGn5vo/9fg/P8+TO8xxJkmC32yktyzI52+1WafScz2elHQ4HBEGAFoEUCXBdV0w0881C3mmaCrCphWEoXr5ZS8bxeLwDKdBI8T9A+qIoUhNSI4OsFqm1WE9IQDOG0+kkp9nkV2CdITPgJzNkFqZpYrPZwFytEEYRsq9i+lj854SO40hXy7JwvV6xWCzQ7XbxNBziod3Gy3yOKk3xbtvic2xbmvwInM1mGAwGGI/H0DRNoIZhQNd1jEYjdDodvC6XeFuv0e/3MZlM8Njr4Xk6lSa246iFylLiOFab4qSXy0Vtr86LMRRF8c3HxX3cbuIvy1LuqqrwCTr2RDSfmxJ8AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;선입선출&quot;
+        title=&quot;선입선출&quot;
+        src=&quot;/todayILearned/static/0bfb85b44f1dc9356b5c7276b349f898/f058b/js2.png&quot;
+        srcset=&quot;/todayILearned/static/0bfb85b44f1dc9356b5c7276b349f898/c26ae/js2.png 158w,
+/todayILearned/static/0bfb85b44f1dc9356b5c7276b349f898/6bdcf/js2.png 315w,
+/todayILearned/static/0bfb85b44f1dc9356b5c7276b349f898/f058b/js2.png 630w,
+/todayILearned/static/0bfb85b44f1dc9356b5c7276b349f898/23296/js2.png 675w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;먼저 들어간 것이 나중에 빠져나오는 방식으로, 순서의 끝부분부터 실행이 된다.&lt;/p&gt;
+&lt;p&gt;그럼 &lt;code class=&quot;language-text&quot;&gt;setTimeout&lt;/code&gt; 과 같이 몇 초 뒤에 실행이 되는 비동기 코드는 콜스택에서 어떤 식으로 호출이 되는 걸까? 🤔&lt;/p&gt;
+&lt;h3&gt;비동기는 웹 API 환경에서 이루어진다&lt;/h3&gt;
+&lt;p&gt;❓ &lt;strong&gt;웹 API란&lt;/strong&gt;&lt;br&gt;
+브라우저에서 자체 지원하는 API이다. 웹 API는 Dom 이벤트, Ajax (XmlHttpRequest), setTimeout 등의 비동기 작업들을 수행할 수 있도록 API로 기능을 지원한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;console.log(&apos;첫번째 실행&apos;);
+setTimeout(
+	() =&gt; console.log(&apos;세번째 실행&apos;)
+    , 1000);
+console.log(&apos;두번째 실행&apos;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 코드의 실행 방식은 아래와 같은 그림처럼 진행이 됩니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/7cf0f19afa56484addf8cf151124229b/c0255/js3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 62.0253164556962%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAACbElEQVQoz22TW28SQRiG9+f4T7z0V6h/oNUYtUmr0aAxxhtjoolXJraJ3pCUY2jLqQuFwnKmhQJpiz1Qll3YXSiHx8zUYpt0kndmdub73v0O7yihUIjRaIRhmBhGF/2PG/PkJ71ODrPvYNsWh4eHJJNJbo6vP/o8f3vKkuuYVx87vHTpaMUhyvb2tjSYydmhHH3A6pd7WOdrc2fTNEmn09i2TavVwjAM3n82efykw+KKzuJKl4cL56hpByUWi0mn6VTMNhX1EaHf9zFP3XPCbrdLKpXCdhyazSa6rvN91eLZmwuWP+gSL1w6udIQJR6PS6fhaMR4cgnTC+BcnDAaXcq7fr8vCW+OT98Mnr7u8tLVZemdzsLyBSltiBKNxjg4qKFlUmjpHEfHJ9IhXyiSSKiSaG9vj0wmI88nkwmz2YzhcIZlT7GdK4j9eDxDCfi9eAIxtssnhPMh1ISKaRiIZola1et1fD4f+Xz+X2mmkvDuMUPxeT3kK016HZt4y0O+XKKn9ygWi9JEKCASiaBp2q0IBabT/7g+Uzzr61QbdWgfcNk8olit0tP1OcFgMGBra2se4TyWO6IU0Ss+n5dCoUK5CQNnSKlUlF3M7u5KI8M0CYfD7OzsMB6PZYNElNdyEt9inV7JBMXv95He1ShUhpyddcjlNCzL5tfaGurmJn63G6/HQy6Xo91uS9kIQiF2URaBQqFAtVqV8lJEwcXfk4kIGxsbMjVxEQwGZWOCgQCRcJhsNkuj0WB/f1+WQVVVhOTEmkgkZBa1Wk3oMIZ4LUI+wkAgGo3echDGgkykJdIWsCxLEov1eu84Dn8BjxRfot6NjEYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;호출진행1&quot;
+        title=&quot;호출진행1&quot;
+        src=&quot;/todayILearned/static/7cf0f19afa56484addf8cf151124229b/f058b/js3.png&quot;
+        srcset=&quot;/todayILearned/static/7cf0f19afa56484addf8cf151124229b/c26ae/js3.png 158w,
+/todayILearned/static/7cf0f19afa56484addf8cf151124229b/6bdcf/js3.png 315w,
+/todayILearned/static/7cf0f19afa56484addf8cf151124229b/f058b/js3.png 630w,
+/todayILearned/static/7cf0f19afa56484addf8cf151124229b/c0255/js3.png 920w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;첫번째 실행이라는 콘솔이 콜스택에 쌓이고 바로 실행되어 콜스택에서 제거된다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/9b16183359068dfa03532ce9d2891d8a/0eb6d/js4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 61.39240506329114%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAACaklEQVQoz3WSyW4TQRCG54F4Cx6AN+CGxAMAkUAcEiKWQ0AoF5C4ReLCJRLEShzjRbZj4o14wR6PHeLEe/C+jcee6Q91OzFBgpJ+Tam79M1f1aUlEglkTE2L6fiSUesT49ZHpsMS5myBbS84Pz8nlUpxHQJ4+2HA2uYlT181Wd9q8+hZl6xuoWWz2VURokzad5ud7VvMB94VoNVqkU6n6ff7nJ6W6HT6vNgecn+tzcONnoLde/CLZGaGJgtl2A6IeYVs6C7Bz3eY9sIrYL1eV0DLsqjXa3R7Q97vjHn8vMP6Vo+N1z2evOySM244dByBEDYwupJgsbDVXbvd5vrHqtYWvHknIT0FlFrb7JLOW2jxRIJEPErQ78PvCVBvXGLNBbFYHI/HQygUUrBcLrfsZLFATE3MmcN44jCZ/pFtC7SvngPCUR29NSJb+046lcYwCuh6XrXYbDbZ29vDMIylu8kEIQT/C+3wcB+91KRRaxCte8nnCgooQTIk1O12oxcKYNs40qEciBA4NySUQNvfP6DWqMJPHdpDMrkcRcOgVqst12k65cDtxria9XIlxD9dyjPN43GT1y8oXMhnsMlkMqq9FdA08bhcZJJJZpbFcDhcwWQuNRqNcBxn2bIExhM/SGVH9LodTk5OODs7w+VyEQgEOHS7+bK7i67r1KpVqtUq8/mcSqVCPp9XjyW/xWKRbreL5vP5iMdjJBMRgsGgctdoNPB6vcg7v9+vwNlMhlKpRLlcZjAYEIlECIfDHB0dqVzWyHtNHkSjMSKRbxwfHyvJgmg0qvJYLKZWRy739ZykZrMZpmn+Jen8NzjyYdEeznycAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;호출진행2&quot;
+        title=&quot;호출진행2&quot;
+        src=&quot;/todayILearned/static/9b16183359068dfa03532ce9d2891d8a/f058b/js4.png&quot;
+        srcset=&quot;/todayILearned/static/9b16183359068dfa03532ce9d2891d8a/c26ae/js4.png 158w,
+/todayILearned/static/9b16183359068dfa03532ce9d2891d8a/6bdcf/js4.png 315w,
+/todayILearned/static/9b16183359068dfa03532ce9d2891d8a/f058b/js4.png 630w,
+/todayILearned/static/9b16183359068dfa03532ce9d2891d8a/0eb6d/js4.png 913w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;그런 다음 setTimeout 코드가 콜스택에 쌓인다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;자바스크립트의 엔진이 비동기 작업을 웹 API에게 위임한다.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/5b658df7e8c36b6d5578dae6c64444a6/076ca/js5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 62.0253164556962%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAACYElEQVQoz32TS2/TQBSF/Yv4GSz4CezYsEYVLECoBYqKqqqAxIKyhQWsYNNXkubdJFLTtE3S2ondpCLknTaJnffD/tBMmoCExJWOxr6ee3zuPTPK0dERk8kEq9PDMiu0yt8xK9+wWjqd7oDhcEgulyOZTDIPB9j6bLG8XmP1bYU3H25Y3mihGWOU8/Nz/kQBNXSXrx/vMOn4F9l6vU4qlcI0La6u8jSbFq/fmzx8fM3SSoulF00ePGpwkhqizP88tcEZF0gG7+P/cY9eM7wgLJfLklCoLRZ/cdNs8+lLl2drN7zcbLH6rsXz9SaqPkZJp9OLNsAGzFs42PYs22g0JOE8RHpzq83TtaZsdWWjxZNXTdLaCOU4kSBxfETQ58Xn8VOpNBhPIB4/xu12Ew6HEWNRVXXWyXSK4zj0+jamZWN1bMxbTCYOyoHHRSSeIVvrolXSpJJJDEMnk8kwGo2oVqvs7Oyg6/pMnW3zv1A87n00o0qpUidWPkC9yKDrWUkkQpAKpdlsdkEoFAqIkcwxzyn7e/sUK0XIqTjXJmlVxdB1SqWSJOj3+7hcroXCxdFxnH/USULRspb5SbYgLJkiTBLFpUJBbur1+1KhMEWotSxr0Xan05Hv3W53kZOEJ6caqYsBltXm7OxMHmTP3h4Rrxfv7i7b29tomiZVF4tFeRHEKnJzXF5e0m63UQKBAIlEnNOTmHTUMAxqtRo+vx+/30/A5yMcCkmnRVE+n5eF0WiUSCQi11gshuAR35VgMEgkEiUYCnN4eCghiMVm8SwKBLFQNDNiZspgMJDz/Rvj8ZjfdTthGs+cYQsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;호출진행3&quot;
+        title=&quot;호출진행3&quot;
+        src=&quot;/todayILearned/static/5b658df7e8c36b6d5578dae6c64444a6/f058b/js5.png&quot;
+        srcset=&quot;/todayILearned/static/5b658df7e8c36b6d5578dae6c64444a6/c26ae/js5.png 158w,
+/todayILearned/static/5b658df7e8c36b6d5578dae6c64444a6/6bdcf/js5.png 315w,
+/todayILearned/static/5b658df7e8c36b6d5578dae6c64444a6/f058b/js5.png 630w,
+/todayILearned/static/5b658df7e8c36b6d5578dae6c64444a6/076ca/js5.png 914w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;두번째 실행이라는 콘솔이 콜스택에 쌓이고 바로 실행되어 콜스택에서 제거된다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/8f8729ca11330c561aff33dbfab58aed/076ca/js6.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 61.39240506329114%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAACZElEQVQoz12T204TURSG5318DN/AR/DGeGsinkIiYFBJQGO8Id5pvPISSAqlYomF0POJMh1tUujBAjOdHmAObWc+szahiCtZ2Ye19r//f629tWw2i5jnj/Eck8uzbzjnX/EuavijgDAMaDQaFAoFri0MYWW1z+O5M168PmV2yeTRS4uS7qOVSiWVFISSWaf4/S6fP9zB78emAKenpxSLRXq9PrXabyyrx9uPAx4+NZlZsHnyqsuDGZNc2UeTRLFJAOGoyeHefRIb93DsvSlgu91WgL7vq7ltD1j9csHzRYu5ZZv5FZsXb7ocGaMbhuNJQBCMgQvgUugyGo1VzDRNri++VvP+U5/ZJZv55S4L72yeLXYpi+RUKk02kyIR/0E8tkur3cHzJ8h+LBYjkUio+lUqlSslkwlhGOKPQhw3xO05uDJ6IUEQom1HI/xM6lQ6Q4qtDMV8AcOooutHSmKn02FjYwPDMK7YBQG3zHNvLbXoVgS91qHTbJNq71Cp6ApQgMQEdGtrC13Xp4DCUDwQd1w1Xu2BFolEaP5pQL0K1pBS5ZBfhkGr1VIAjuOwubk5ZXjzdMKrietO1+JaNLrJkX6CfiJtCJEmGf8BCkOpo+u69Pv9KdhgMGDQ7TIcDlVtleTt7SipdIl8sYd5fkY+X6Ber7O+vq6aIgrW1taoVqs0m031yKUMx8fH6vJ8oUC5XFYkLMtCk0PpdJJMeo/d3V1VK2G3s7OjPB6PK5fDtVpNAQnLg4MDFZdySFzOSlyTgHw/eSaZTIZ0Ok0ymVR7ss7lcuzv70+bdC1XWP7rnucxHo/5C6PMYegTcZ4OAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;호출진행4&quot;
+        title=&quot;호출진행4&quot;
+        src=&quot;/todayILearned/static/8f8729ca11330c561aff33dbfab58aed/f058b/js6.png&quot;
+        srcset=&quot;/todayILearned/static/8f8729ca11330c561aff33dbfab58aed/c26ae/js6.png 158w,
+/todayILearned/static/8f8729ca11330c561aff33dbfab58aed/6bdcf/js6.png 315w,
+/todayILearned/static/8f8729ca11330c561aff33dbfab58aed/f058b/js6.png 630w,
+/todayILearned/static/8f8729ca11330c561aff33dbfab58aed/076ca/js6.png 914w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;웹 API에서 생성된 타이머가 생성된 시점을 기준으로 1초 뒤에 콜백큐로 콜백함수를 전달한다.&lt;/li&gt;
+&lt;li&gt;이벤트루프는 콜스택이 비어 있는 걸 확인 후, 콜백큐에 대기 중인 콜백함수(setTimeout)를 콜스택에 넘겨준다.&lt;br&gt;
+❓ &lt;strong&gt;콜백큐란&lt;/strong&gt;&lt;br&gt;
+웹 API에서 비동기 작업들이 실행된 후 호출되는 콜백 함수들을 기다리는 공간이다. 이벤트 루프가 정해준 순서대로 줄 서있고 선입선출 방식을 따른다.
+또한 콜백큐는 하나의 큐로 이루어져있지 않고 여러개의 큐로 이루어져있다. (쉬운 도식화 그림을 만들기 위해 하나로 퉁친 것)&lt;br&gt;
+❓ &lt;strong&gt;이벤트 루프란&lt;/strong&gt;&lt;br&gt;
+이벤트가 발생 시 호출되는 콜백 함수들을 관리해서 콜백큐에 전달하고, 콜백큐에 담겨있는 콜백 함수들을 콜스택에 넘겨준다.&lt;/li&gt;
+&lt;li&gt;setTimeout이 콜스택에서 실행 후 제거됩니다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;자바스크립트는 비동기 작업들을 웹 API에게 넘겨줌으로써, 해당 작업이 완료될 때까지 다른 코드를 실행할 수 있도록 한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;만약 http 요청과 같은 작업을 동기로 수행하여 콜스택에서만 모든 작업이 이루어진다면 사용자는 http 요청이 끝날 때까지 화면에서 어떤 작업도 수행할 수 없다. 🙄&lt;br&gt;
+하지만 자바스크립트가 비동기 작업이 필요한 (시간이 오래 걸리는) 작업들을 웹 API에게 위임한 덕분에 다른 코드들이 실행이 되고, 이 과정에서 동시성을 갖게 되는 것이다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;즉, 동시성을 가능하게 해 주는 비동기 작업들은 자바스크립트 엔진을 구동하는 런타임 환경(웹 API)에서 담당을 한다. 그리고 여기서 말하는 런타임 환경은 브라우저 혹은 Node.js를 말한다.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;2가지 콜백&lt;/h3&gt;
+&lt;p&gt;자바스크립트의 싱글스레드 방식을 보완하는 방법으로 웹 API를 이용한 비동기 방식을 채택한 것은 이해했다. 그런데 단순히 비동기를 시켜주는 것만으로 웹에서 일어날 수 있는 블로킹(화면 멈춤 현상)을 완화시킨다는 개념이 잘 닿지 않아 검색을 더 해 보았고, &lt;strong&gt;렌더큐&lt;/strong&gt; 라는 것이 있다는 걸 알게 되었다.&lt;/p&gt;
+&lt;p&gt;콜백 함수는 2가지로 나누어볼 수 있습니다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;함수가 호출하는 다른 콜백 함수&lt;/li&gt;
+&lt;li&gt;비동기적으로 호출되는 콜백 함수&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// 1. Synchronous (동기)
+[1,2,3,4].forEach(function(i) {
+   console.log(i);
+});
+
+// 2. Asynchronous (비동기)
+function asyncForEach(array, cb) {
+    array.forEach(function(){
+       setTimeout(cb, 0);
+    });
+}
+asyncForEach([1,2,3,4], function(i){
+    console.log(i);
+});&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;1번과 2번 코드는 둘다 forEach라는 함수를 사용하지만 1번의 경우는 콜스택에 쌓이는 방식이고 2번의 경우는 웹 API를 활용해 콜백큐로 이동했다가 이벤트 루프를 통해 콜스택으로 호출되는 방식이다.&lt;/p&gt;
+&lt;h4&gt;비동기 콜백을 이용해 블로킹 완화시키기&lt;/h4&gt;
+&lt;p&gt;1번 코드와 같은 기본적인 콜백 방식의 문제점은 웹 브라우저의 렌더링을 못하게 하여 UI를 블로킹시키는데 있다고 합니다. 웹 브라우저는 1초에 60 프레임을 그리는 게 가장 이상적인데, 렌더링 또한 콜백처럼 작용을 해서 콜스택에 들어가게 된다.&lt;br&gt;
+즉, 콜스택에서 불필요하게 많은 작업이 쌓인다면 렌더링 또한 지연될 수 있다는 것을 의미한다.&lt;/p&gt;
+&lt;p&gt;이런 문제를 해결해 볼 수 있는 것이 렌더큐이다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/eede11f125591e52f4efc65febe17a90/c6bbc/js7.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 62.0253164556962%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAACV0lEQVQoz3WSW28SURSF57f4b/wNPusfqE01MdHWaky8vfrggw9Go0lBaGpiCSBtEVpuhcKYKZRbhQwUGApzQS7zmXMQUpu4kzVnZ7LPmrXWHmVnZwdRtu0wciyG7W1M/R12P8Xo95TxeIxhGMTjca7WZ7/JyqMLHjzTefi8w8p6F89XCyUQCMiB2Uw8RzRyt3j74gad6pvlZdu2SaVS9Pt9iqUzDKPN+y2b23cvWN0wuPekx53VDh+8Jsru7q68NJm6gEPleIWw9ybd849/6VyGwyGJRILRaISutxhcdvF9c1jb7LL+0uDxa4P7T3tsB64onE5nuAhSCxgKzfKdKGH76OjoH8uffCZrmz02XhkSopeWhcJC4YTvoQCRYARNK8kLudwJwWCQUChEPp+XlufRzHBdl/HYxbJn2M4coh9PXBS/z8tBLEP+3ELrqCRTCeq1Gul0SlocDAYIF8KyDMB1cV2WcVyH8sXrIauWaDVNUnqI40KOaqVKsVhc2tvf319anhO6/K8Uz5YHrXwGv4qg98hrGtVKBU3TlkORSGSpcFHT6ZRer0e5XKZer9PtdmXWitfr5aeqkS/NRatqgco1QqEwGo1iWZaMQCjsdDrEYjGpXODw8JDT01MUn89HMpkmke5zeWmSyaRpNBqIZQkiAb/fL5ei67pUNJlM5HIEebPZpNVqyX6pMJPJkEr+IBo9IJvNSvmCSGw4HA6zt7cnLddqNVRVlctqt9skk0k5I/4G8cFSqYSyGI7F4lK2wMKK6MUp7C4iENkt/k3TNGUM4hRwHIc/0jZc3DvwDGgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;렌더큐&quot;
+        title=&quot;렌더큐&quot;
+        src=&quot;/todayILearned/static/eede11f125591e52f4efc65febe17a90/f058b/js7.png&quot;
+        srcset=&quot;/todayILearned/static/eede11f125591e52f4efc65febe17a90/c26ae/js7.png 158w,
+/todayILearned/static/eede11f125591e52f4efc65febe17a90/6bdcf/js7.png 315w,
+/todayILearned/static/eede11f125591e52f4efc65febe17a90/f058b/js7.png 630w,
+/todayILearned/static/eede11f125591e52f4efc65febe17a90/c6bbc/js7.png 910w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;이벤트 루프가 콜백큐를 감시하는 것과 비슷한 방식으로 콜스택이 비었을 때 렌더큐가 렌더링을 시도한다. 위와 같은 forEach 함수를 비동기 콜백으로 작업을 실행하면 콜스택이 비는 때가 존재하기 때문에 브라우저가 렌더링이 될 수 있는 틈을 주게 되는 효과를 가져갈 수 있습니다.&lt;/p&gt;
+&lt;h3&gt;마무리&lt;/h3&gt;
+&lt;p&gt;콜스택, 콜백큐, 웹API, 자바스크립트의 비동기에 대한 모호한 개념이 어느 정도 풀린 것 같다. 자바스크립트 자체에서 비동기를 지원하는 것이 아니라 자바스크립트를 실행시키는 런타임 환경인 브라우저가 존재하기에 비동기라는 동시성을 가질 수 있었던 거고, 브라우저에서 제공하는 웹 API를 이용한 콜백이 함수가 호출하는 콜백과 어떻게 다른지 콜스택과 렌더큐를 이용해 이해하게 되었다.&lt;br&gt;
+웹 API를 이해하고 활용해 브라우저가 효율적으로 렌더링할 수 있는 코드를 짜도록 노력해야될 것 같다.&lt;/p&gt;
+&lt;p&gt;도움 받은 자료들&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=8aGhZQkoFbQ&amp;#x26;feature=youtu.be&quot;&gt;https://www.youtube.com/watch?v=8aGhZQkoFbQ&amp;#x26;feature=youtu.be&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://baeharam.github.io/posts/javascript/jshow-javascript-works/&quot;&gt;https://baeharam.github.io/posts/javascript/jshow-javascript-works/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.com/@vdongbin/javascript-%EC%9E%91%EB%8F%99%EC%9B%90%EB%A6%AC-single-thread-event-loop-asynchronous-e47e07b24d1c&quot;&gt;https://medium.com/@vdongbin/javascript-%EC%9E%91%EB%8F%99%EC%9B%90%EB%A6%AC-single-thread-event-loop-asynchronous-e47e07b24d1c&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[gatsby 배포시 prefix 설정]]></title><description><![CDATA[배포 환경에서 레파지토리명이 url 시작부에 붙어서 나오지 않는 문제로 페이지간의 에러가 발생했다. package.json deploy 명령어 수정 개츠비로 빌드를 할 때 prefix-paths를 지정하여 빌드하겠다고 지정해 준다. gatsby…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/bugLists/gatsby/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/bugLists/gatsby/</guid><pubDate>Tue, 04 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;배포 환경에서 레파지토리명이 url 시작부에 붙어서 나오지 않는 문제로 페이지간의 에러가 발생했다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;package.json deploy 명령어 수정&lt;/li&gt;
 &lt;/ol&gt;
@@ -106,6 +415,7 @@
 &lt;ul&gt;
 &lt;li&gt;지마켓, 쿠팡, 이마트에서 상품판매량 순으로 검색어에 따른 결과값을 크롤링하는 사이드 프로젝트를 만들었다.&lt;/li&gt;
 &lt;li&gt;RestAPI를 만들어 데이터베이스를 이용해 토끼친구 체중관리하는 페이지를 만들었다.&lt;/li&gt;
+&lt;li&gt;React 상태관리 라이브러리는 Recoil을 적용해 보았다.&lt;/li&gt;
 &lt;li&gt;파이썬 파일들은 어떤 구조로 관리되는지 궁금증이 생겼다.&lt;/li&gt;
 &lt;li&gt;작년 초에 백엔드 개발자와 협업하면서 생겨난 이슈들을 똑같이 겪으면서 신기함+기록 욕구가 증가했다.&lt;/li&gt;
 &lt;/ul&gt;
