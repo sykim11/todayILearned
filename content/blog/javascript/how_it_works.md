@@ -134,7 +134,7 @@ asyncForEach([1,2,3,4], function(i){
 콜스택, 콜백큐, 웹API, 자바스크립트의 비동기에 대한 모호한 개념이 어느 정도 풀린 것 같다. 자바스크립트 자체에서 비동기를 지원하는 것이 아니라 자바스크립트를 실행시키는 런타임 환경인 브라우저가 존재하기에 비동기라는 동시성을 가질 수 있었던 거고, 브라우저에서 제공하는 웹 API를 이용한 콜백이 함수가 호출하는 콜백과 어떻게 다른지 콜스택과 렌더큐를 이용해 이해하게 되었다.  
 웹 API를 이해하고 활용해 브라우저가 효율적으로 렌더링할 수 있는 코드를 짜도록 노력해야될 것 같다.
 
-도움 받은 자료들
+### 도움 받은 자료들
 
 - https://www.youtube.com/watch?v=8aGhZQkoFbQ&feature=youtu.be
 - https://baeharam.github.io/posts/javascript/jshow-javascript-works/
