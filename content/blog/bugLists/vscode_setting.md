@@ -3,7 +3,7 @@ title: vscode에서 crlf 파일들을 일괄로 lf파일로 변환하는 법
 date: 2022-01-06
 output:
   html_document:
-    css: "./assets/css/style.css"
+    
 ---
 
 파일 형상 관리를 git을 이용해 하고 있다.   
