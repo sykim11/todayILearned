@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 06 Jan 2022 06:02:08 GMT</lastBuildDate><item><title><![CDATA[vscode에서 crlf 파일들을 일괄로 lf파일로 변환하는 법]]></title><description><![CDATA[파일 형상 관리를 git을 이용해 하고 있다. 그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/bugLists/vscode_setting/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/bugLists/vscode_setting/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;파일 형상 관리를 git을 이용해 하고 있다.&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 07 Jan 2022 00:01:01 GMT</lastBuildDate><item><title><![CDATA[vscode에서 crlf 파일들을 일괄로 lf파일로 변환하는 법]]></title><description><![CDATA[파일 형상 관리를 git을 이용해 하고 있다. 그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/bugLists/vscode_setting/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/bugLists/vscode_setting/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;파일 형상 관리를 git을 이용해 하고 있다.&lt;br&gt;
 그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf로 변환된 채로 코드상 빨간 줄을 뿜고 있는데… 이걸 파일 하나하나 바꿔주다보니 갑갑해서 일괄 수정할 수 있는 방법을 찾아냈다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -36,7 +36,238 @@
 &lt;/ol&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;git config core&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;autocrlf &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
 git rm &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;cached &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;r &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
-git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Javascript 작동 원리]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works/</guid><pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;자바스크립트의 작동 원리에 대해 조금 더 깊은 학습이 필요하다 생각되어 글로 정리해 보았다.&lt;/p&gt;
+git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 입문 수업 2]]></title><description><![CDATA[도움 받은 자료들 https://www.youtube.com/watch?v=Ps8HDIAyPD0&list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker2/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker2/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;도움 받은 자료들&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&quot;&gt;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 입문 수업 1 ~ 3]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker1/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker1/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작년부터 궁금했던 도커라는 녀석을 공부해 보기로 했다.&lt;br&gt;
+무작정 유튜브에 도커를 쳐보니 생활코딩 유튜브 채널에 도커 입문용 강의가 있더라… 감사합니다!&lt;/p&gt;
+&lt;h3&gt;도커를 사용하게 된 배경&lt;/h3&gt;
+&lt;p&gt;어떠한 어플리케이션을 개발할 때 웹서버와 데이터베이스가 필요하다. 그런데 만일 웹서버에 맞는 운영체제와 데이터베이스에 맞는 운영체제가 다른 경우 가장 이상적인 그림은 아래와 같을 것이다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/cb9b300e35b7029562a9053d119b36e5/dde82/docker1.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 41.139240506329116%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAdqAsD//xAAXEAEBAQEAAAAAAAAAAAAAAAABAhIi/9oACAEBAAEFAhdTTmHn/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGhAAAgIDAAAAAAAAAAAAAAAAAAERMRIhQf/aAAgBAQAGPwJzXBytiys//8QAGRABAAMBAQAAAAAAAAAAAAAAAQARITFB/9oACAEBAAE/IXmKPUStQWjNirY9z//aAAwDAQACAAMAAAAQA8//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAdEAABBAIDAAAAAAAAAAAAAAABACExQVGhEYGx/9oACAEBAAE/EGTQgfNk6CJBwCKsjYQMRxNaeifV/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/cb9b300e35b7029562a9053d119b36e5/828fb/docker1.jpg&quot;
+        srcset=&quot;/todayILearned/static/cb9b300e35b7029562a9053d119b36e5/ff44c/docker1.jpg 158w,
+/todayILearned/static/cb9b300e35b7029562a9053d119b36e5/a6688/docker1.jpg 315w,
+/todayILearned/static/cb9b300e35b7029562a9053d119b36e5/828fb/docker1.jpg 630w,
+/todayILearned/static/cb9b300e35b7029562a9053d119b36e5/dde82/docker1.jpg 910w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;각각의 역할을 하는 컴퓨터를 세 대를 두고 어플리케이션에서 다른 두 대의 컴퓨터로 네트워크 통신을 한다면 하나의 컴퓨터에서 여러 운영체제를 커버해야할 때 큰 고민 없이 개발할 수 있을 것이다.&lt;br&gt;
+하지만 비용적으로 문제가 생긴다.&lt;/p&gt;
+&lt;p&gt;VirtualBox라는 가상 머신을 이용해 특정 운영체제 위에 다른 운영체제를 깔고 사용하는 방법도 있다. 그런데 이 방법은 용량적인 문제와 실행 속도에 문제가 생길 수 있다.&lt;/p&gt;
+&lt;h3&gt;도커에서의 호스트와 컨테이너&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/f05a030578480a2398713fb6e36e98e1/909c7/docker3.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 41.139240506329116%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAMEBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAdiELQP/xAAZEAACAwEAAAAAAAAAAAAAAAABAgMSEyL/2gAIAQEAAQUCMoDbcq1l/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGRAAAwADAAAAAAAAAAAAAAAAAAERIkHB/9oACAEBAAY/ApweLulCn//EABoQAQACAwEAAAAAAAAAAAAAAAEAESExQcH/2gAIAQEAAT8hQK6OifJu4d5GYYaXxn//2gAMAwEAAgADAAAAEHAP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGxABAQACAwEAAAAAAAAAAAAAAREAITFBUXH/2gAIAQEAAT8QCib03mok7uDZ1OFHqs1izrGwRH45/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/f05a030578480a2398713fb6e36e98e1/828fb/docker3.jpg&quot;
+        srcset=&quot;/todayILearned/static/f05a030578480a2398713fb6e36e98e1/ff44c/docker3.jpg 158w,
+/todayILearned/static/f05a030578480a2398713fb6e36e98e1/a6688/docker3.jpg 315w,
+/todayILearned/static/f05a030578480a2398713fb6e36e98e1/828fb/docker3.jpg 630w,
+/todayILearned/static/f05a030578480a2398713fb6e36e98e1/0ede0/docker3.jpg 945w,
+/todayILearned/static/f05a030578480a2398713fb6e36e98e1/909c7/docker3.jpg 1041w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;하나의 운영체제 위에 내 어플리케이션이 있고 웹서버와 데이터베이스가 있지만 웹서버와 데이터베이스는 컨테이너라는 격리된 공간에서 해당 앱을 실행하는 lib와 실행파일 bin과 같은 것들만 포함되어 있다.&lt;br&gt;
+이런 구조라면 동일한 운영체제를 공유하기 때문에 다른 운영체제를 설치할 필요도 없고 속도가 느려지는 부분도, 용량 절약도 보완이 된다.&lt;br&gt;
+호스트라는 주인 공간에 컨테이너들이 규격에 맞게 박싱되어 존재하고, 호스트는 그 박스 안에서 어떤 복잡한 일들이 일어나는지 신경 쓰지 않아도 되는 공간을 컨테이너라 부르는 것 같다.&lt;/p&gt;
+&lt;p&gt;도커와 같은 컨테이너 기술은 리눅스 운영체제의 기술이다.&lt;br&gt;
+하지만 리눅스를 설치하지 않아도 도커가 알아서 가상머신을 만든 뒤 그 위에 리눅스 운영체제를 설치해 준다. 리눅스 기반에서 개발을 한다면 도커가 가상머신을 설치하지 않고 바로 컨테이너 기술을 사용하기 때문에 윈도우에서 도커를 사용하는 것과는 성능 차이가 있다.&lt;/p&gt;
+&lt;h3&gt;윈도우에서 도커 설치 방법&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;도커 사이트로 가서 데스크탑용 도커 파일을 다운&lt;br&gt;
+&lt;a href=&quot;https://www.docker.com/products/docker-desktop&quot;&gt;데스크탑 도커 파일 다운로드&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;설치가 끝나고 윈도우를 재시작&lt;/li&gt;
+&lt;li&gt;도커 아이콘을 클릭했을 때 WSL2 경고창이 뜨면 아래 사이트로 가서 스텝 4단계까지 진행&lt;br&gt;
+&lt;a href=&quot;https://docs.microsoft.com/ko-kr/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package&quot;&gt;리눅스 커널 업데이트 패키지 다운로드&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;WSL이란?
+&lt;blockquote&gt;
+&lt;p&gt;윈도우 서브 시스템 포 리눅스로 윈도우10 운영체제에서 리눅스 운영체제의 쉘과 시스템을 사용할 수 있도록 지원해 주는 기능이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;명령프롬프트에서 &lt;code class=&quot;language-text&quot;&gt;docker images&lt;/code&gt;를 실행했을 때 에러가 안 뜨면 도커가 무사히 설치된 것&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;도커와 관련된 개념들&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/86a8787dfa9fa009b5e1cafae80946c1/0a151/docker4.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 67.08860759493672%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFAf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAaLc1gwXD//EABkQAAMBAQEAAAAAAAAAAAAAAAECAxMSEf/aAAgBAQABBQKOWj+cSz5najO9CFnahH//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAdEAACAQQDAAAAAAAAAAAAAAAAARECEiFhIjGB/9oACAEBAAY/AnYq53I7utHFV+yNOIG0Zg//xAAaEAACAwEBAAAAAAAAAAAAAAABEQAhMUFh/9oACAEBAAE/IQppSzVvsyxKX1AckHA5KHgiLGBThW2uCf/aAAwDAQACAAMAAAAQgM//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAcEAEBAAMAAwEAAAAAAAAAAAABEQAhMVFhcUH/2gAIAQEAAT8QAmlgKOpx3Cxpc1RNybvzC2w6Ath59THXwQOOmdri8h6hS/MYnowqfg+fef/Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/86a8787dfa9fa009b5e1cafae80946c1/828fb/docker4.jpg&quot;
+        srcset=&quot;/todayILearned/static/86a8787dfa9fa009b5e1cafae80946c1/ff44c/docker4.jpg 158w,
+/todayILearned/static/86a8787dfa9fa009b5e1cafae80946c1/a6688/docker4.jpg 315w,
+/todayILearned/static/86a8787dfa9fa009b5e1cafae80946c1/828fb/docker4.jpg 630w,
+/todayILearned/static/86a8787dfa9fa009b5e1cafae80946c1/0a151/docker4.jpg 866w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;도커라는 세계에는 도커 허브라는 저장소가 존재한다.&lt;br&gt;
+유저가 앱스토어에서 특정 프로그램을 다운 받고 실행을 시키는 순서를 도커와 비교해 보면 용어를 기억하기 쉽겠다.&lt;br&gt;
+도커 허브에서 특정 이미지를 풀 받고 풀 받은 이미지를 런하게 되면 그 이미지가 컨테이너가 된다. 그리고 컨테이너가 실행되면서 컨테이너 안에서 실행되도록 설정해둔 프로그램이 실행된다.&lt;/p&gt;
+&lt;h3&gt;이미지 풀 받아보기&lt;/h3&gt;
+&lt;p&gt;명령 프롬프트 창에 docker images 를 쳐보면 풀 받은 이미지가 없기 때문에 빈 리스트가 나온다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker images&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 403px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/33728d129afce2dc3401755b4c322cd0/c80d3/docker5.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 12.658227848101264%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAADABQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAGKAD//xAAVEAEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAQABBQJb/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFhAAAwAAAAAAAAAAAAAAAAAAAAEQ/9oACAEBAAY/AhT/xAAYEAEAAwEAAAAAAAAAAAAAAAAAAREhMf/aAAgBAQABPyGR0rX/2gAMAwEAAgADAAAAEAAP/8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQMBAT8Qp//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABoQAQACAwEAAAAAAAAAAAAAAAEAESExUZH/2gAIAQEAAT8QoJig4QqxDyItg3yf/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/33728d129afce2dc3401755b4c322cd0/c80d3/docker5.jpg&quot;
+        srcset=&quot;/todayILearned/static/33728d129afce2dc3401755b4c322cd0/ff44c/docker5.jpg 158w,
+/todayILearned/static/33728d129afce2dc3401755b4c322cd0/a6688/docker5.jpg 315w,
+/todayILearned/static/33728d129afce2dc3401755b4c322cd0/c80d3/docker5.jpg 403w&quot;
+        sizes=&quot;(max-width: 403px) 100vw, 403px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;다운 받고자하는 이미지를 docker pull {이미지명} 를 입력하면 아래와 같은 로그가 뜨고&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker pull {image name}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/0a9633474ca9a38e0aebbd0b233b2a25/63577/docker6.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 28.48101265822785%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAGABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAEDBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAcesIB//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAEFAn//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAY/An//xAAYEAACAwAAAAAAAAAAAAAAAAAAARARIf/aAAgBAQABPyF6io//2gAMAwEAAgADAAAAEIPP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAHBABAAEEAwAAAAAAAAAAAAAAAQARITGRQVFh/9oACAEBAAE/EDUcWt5EHLqUO3U//9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/0a9633474ca9a38e0aebbd0b233b2a25/828fb/docker6.jpg&quot;
+        srcset=&quot;/todayILearned/static/0a9633474ca9a38e0aebbd0b233b2a25/ff44c/docker6.jpg 158w,
+/todayILearned/static/0a9633474ca9a38e0aebbd0b233b2a25/a6688/docker6.jpg 315w,
+/todayILearned/static/0a9633474ca9a38e0aebbd0b233b2a25/828fb/docker6.jpg 630w,
+/todayILearned/static/0a9633474ca9a38e0aebbd0b233b2a25/63577/docker6.jpg 647w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;다시 docker images 를 해보면 풀 받은 이미지 목록이 떠있다&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 474px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/f8ec75ae71249c57a12540b904bc3fe9/08ff2/docker7.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 13.924050632911392%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAADABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAABxKFB/8QAFhABAQEAAAAAAAAAAAAAAAAAAAFB/9oACAEBAAEFAmx//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFxAAAwEAAAAAAAAAAAAAAAAAAAEREP/aAAgBAQABPyGt0eH/2gAMAwEAAgADAAAAEPAP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGRABAAMBAQAAAAAAAAAAAAAAAQARMSFB/9oACAEBAAE/EHsOTBotvyAp4b6T/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/f8ec75ae71249c57a12540b904bc3fe9/08ff2/docker7.jpg&quot;
+        srcset=&quot;/todayILearned/static/f8ec75ae71249c57a12540b904bc3fe9/ff44c/docker7.jpg 158w,
+/todayILearned/static/f8ec75ae71249c57a12540b904bc3fe9/a6688/docker7.jpg 315w,
+/todayILearned/static/f8ec75ae71249c57a12540b904bc3fe9/08ff2/docker7.jpg 474w&quot;
+        sizes=&quot;(max-width: 474px) 100vw, 474px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;도움 받은 자료들&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&quot;&gt;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Javascript 작동 원리]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works/</guid><pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;자바스크립트의 작동 원리에 대해 조금 더 깊은 학습이 필요하다 생각되어 글로 정리해 보았다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;자바스크립트는 싱글스레드로 동작하는 언어&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -340,19 +571,27 @@ asyncForEach([1,2,3,4], function(i){
 &lt;h3&gt;마무리&lt;/h3&gt;
 &lt;p&gt;콜스택, 콜백큐, 웹API, 자바스크립트의 비동기에 대한 모호한 개념이 어느 정도 풀린 것 같다. 자바스크립트 자체에서 비동기를 지원하는 것이 아니라 자바스크립트를 실행시키는 런타임 환경인 브라우저가 존재하기에 비동기라는 동시성을 가질 수 있었던 거고, 브라우저에서 제공하는 웹 API를 이용한 콜백이 함수가 호출하는 콜백과 어떻게 다른지 콜스택과 렌더큐를 이용해 이해하게 되었다.&lt;br&gt;
 웹 API를 이해하고 활용해 브라우저가 효율적으로 렌더링할 수 있는 코드를 짜도록 노력해야될 것 같다.&lt;/p&gt;
-&lt;p&gt;도움 받은 자료들&lt;/p&gt;
+&lt;h3&gt;도움 받은 자료들&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=8aGhZQkoFbQ&amp;#x26;feature=youtu.be&quot;&gt;https://www.youtube.com/watch?v=8aGhZQkoFbQ&amp;#x26;feature=youtu.be&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://baeharam.github.io/posts/javascript/jshow-javascript-works/&quot;&gt;https://baeharam.github.io/posts/javascript/jshow-javascript-works/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://medium.com/@vdongbin/javascript-%EC%9E%91%EB%8F%99%EC%9B%90%EB%A6%AC-single-thread-event-loop-asynchronous-e47e07b24d1c&quot;&gt;https://medium.com/@vdongbin/javascript-%EC%9E%91%EB%8F%99%EC%9B%90%EB%A6%AC-single-thread-event-loop-asynchronous-e47e07b24d1c&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[프론트 디자인 컨벤션]]></title><description><![CDATA[리액트 기반의 프로젝트에 사용할 수 있는 UI 모음 모듈을 만들며 자잘한 내용들을 적어보려고 한다. 투두 리스트는 일정과 역량(?)에 따라 유동적으로 가져갈 생각이다. 현재까지 진행된 사항 간단한 컴포넌트 몇 개를 개발해 사설 npm…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/project/work/fdc1/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/project/work/fdc1/</guid><pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;리액트 기반의 프로젝트에 사용할 수 있는 UI 모음 모듈을 만들며 자잘한 내용들을 적어보려고 한다.&lt;br&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[프론트 디자인 컨벤션]]></title><description><![CDATA[리액트 기반의 프로젝트에 사용할 수 있는 UI 모음 모듈을 만들며 자잘한 내용들을 적어보려고 한다. 투두 리스트는 일정과 역량(?)에 따라 유동적으로 가져갈 생각이다. 22-01-0…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/project/work/fdc1/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/project/work/fdc1/</guid><pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;리액트 기반의 프로젝트에 사용할 수 있는 UI 모음 모듈을 만들며 자잘한 내용들을 적어보려고 한다.&lt;br&gt;
 투두 리스트는 일정과 역량(?)에 따라 유동적으로 가져갈 생각이다.&lt;/p&gt;
-&lt;h3&gt;현재까지 진행된 사항&lt;/h3&gt;
+&lt;h3&gt;22-01-04 - 현재까지 진행된 사항&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;간단한 컴포넌트 몇 개를 개발해 사설 npm에 배포&lt;/li&gt;
-&lt;li&gt;사설 npm에서 내려 받은 &lt;strong&gt;front design system&lt;/strong&gt; 모듈(줄여서 fds라 지칭)을 리액트 기반의 데모 프로젝트에 설치하여 사용 가능 확인&lt;/li&gt;
+&lt;li&gt;사설 npm에서 내려 받은 &lt;strong&gt;front design system&lt;/strong&gt; 모듈(줄여서 &lt;strong&gt;fds&lt;/strong&gt;라 지칭)을 리액트 기반의 데모 프로젝트에 설치하여 사용 가능 확인&lt;/li&gt;
 &lt;li&gt;fds모듈에 사용 중인 색상코드파일, 폰트, 아이콘 중 색상코드 파일만 fds모듈 내부에 포함&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3&gt;22-01-06 - 현재까지 진행된 사항&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;폰트 경량화하여 독립 모듈로 배포&lt;/li&gt;
+&lt;li&gt;팀 프로젝트의 폰트 파일들 전부 제거 후 폰트 모듈 사용&lt;/li&gt;
+&lt;li&gt;사용 중인 폰트가 16픽셀 이하에서 깨지는 현상이 발생했는데 본문용 폰트를 고르고 추가할 시간이 부족해 일단은 16픽셀 이하의 텍스트는 시스템 기본 폰트 사용&lt;/li&gt;
+&lt;li&gt;팀 프로젝트에 사용 중인 오픈소스 디자인 라이브러리를 걷어내기 시작. 해당 라이브러리에서 사용하는 컴포넌트를 검색해보니 버튼과 인풋 정도만 사용 중이었다… 제대로 활용도 못한 무거운 라이브러리는 빨리 걷어내자!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
 &lt;h3&gt;해야할 사항&lt;/h3&gt;
 &lt;ul class=&quot;contains-task-list&quot;&gt;
 &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; 폰트 경량화 작업&lt;/li&gt;
@@ -362,7 +601,7 @@ asyncForEach([1,2,3,4], function(i){
 &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; fds를 앞으로 어떻게 가져갈지 도식화하기&lt;/li&gt;
 &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; 프로젝트에 사용 중인 컴포넌트들을 fds 모듈의 컴포넌트들로 바꾸기&lt;/li&gt;
 &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; 컴포넌트 보완 작업&lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; 다크모드/라이트모드 세팅&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; 다크모드/라이트모드 세팅&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;폰트 경량화 작업&lt;/h3&gt;
 &lt;p&gt;fds 모듈은 private npm 서버에 올려서 사용하고 있다.&lt;br&gt;
@@ -377,8 +616,11 @@ asyncForEach([1,2,3,4], function(i){
 &lt;li&gt;data- urI 관련하여 정리 포스팅 필요&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;front design system 모듈 보완&lt;/h3&gt;
-&lt;h2&gt;fds 모듈은 material-ui를 기반으로 제작되었다.&lt;br&gt;
-하지만 팀 내부 디자인 시스템이 특정 라이브러리에 종속되는 게 맞을까. 하여, 사용 중이던 디자인 라이브러리를 삭제 결정. 컴포넌트들은 그 자체의 기능에 집중하도록 하고 스타일 작업은 최소한으로 줄이는 방향으로 바꿨다.&lt;/h2&gt;</content:encoded></item><item><title><![CDATA[2021 회고]]></title><description><![CDATA[개인사로 너무 바빠서 건강만 챙겨도 성공할 것만 같았던 한 해가 지나갔다. 그럼에도 그 사이사이에 많은 일들을 해낸 것 같아 결론적으론 뿌듯한 마음을 안고 2022년을 맞이했다. ✨ 2021 초창기 목표 엘리의 React 강의 듣기 (10…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/review/2021/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/review/2021/</guid><pubDate>Tue, 04 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;개인사로 너무 바빠서 건강만 챙겨도 성공할 것만 같았던 한 해가 지나갔다.&lt;br&gt;
+&lt;p&gt;fds 모듈은 material-ui를 기반으로 제작되었다.&lt;br&gt;
+하지만 “팀 내부 디자인 시스템이 특정 라이브러리에 종속되는 게 맞을까?” 하여, 사용 중이던 디자인 라이브러리를 삭제 결정. 컴포넌트들은 그 자체의 기능에 집중하도록 하고 스타일 작업은 최소한으로 줄이는 방향으로 바꿨다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[2021 회고]]></title><description><![CDATA[개인사로 너무 바빠서 건강만 챙겨도 성공할 것만 같았던 한 해가 지나갔다. 그럼에도 그 사이사이에 많은 일들을 해낸 것 같아 결론적으론 뿌듯한 마음을 안고 2022년을 맞이했다. ✨ 2021 초창기 목표 엘리의 React 강의 듣기 (10…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/review/2021/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/review/2021/</guid><pubDate>Tue, 04 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;개인사로 너무 바빠서 건강만 챙겨도 성공할 것만 같았던 한 해가 지나갔다.&lt;br&gt;
 그럼에도 그 사이사이에 많은 일들을 해낸 것 같아 결론적으론 뿌듯한 마음을 안고 2022년을 맞이했다.&lt;/p&gt;
 &lt;h3&gt;✨ 2021 초창기 목표&lt;/h3&gt;
 &lt;ul class=&quot;contains-task-list&quot;&gt;
@@ -412,7 +654,7 @@ asyncForEach([1,2,3,4], function(i){
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 94.9367088607595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAATABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAMFAQL/xAAXAQEAAwAAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAAHQdkXRFc8vHkav/8QAGxAAAgMAAwAAAAAAAAAAAAAAAQMAAgQRExT/2gAIAQEAAQUC9KYdSRK6FGdC5bKORlEvcgueyrVPaa//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAXEQEBAQEAAAAAAAAAAAAAAAABAAIQ/9oACAECAQE/AeYkL//EAB0QAAICAgMBAAAAAAAAAAAAAAABAiERMhIigaH/2gAIAQEABj8C3LmVI1+GVJrxD7t5KGlKuKLkf//EAB0QAQACAgIDAAAAAAAAAAAAAAEAESExQVFhobH/2gAIAQEAAT8hd3wxow2Xpg7wtaZVwa8IvUxggeypWtEbC9SiGE0dR0256J//2gAMAwEAAgADAAAAEKPIfP/EABYRAQEBAAAAAAAAAAAAAAAAABABMf/aAAgBAwEBPxAun//EABoRAQABBQAAAAAAAAAAAAAAAAEAEBEhMVH/2gAIAQIBAT8QoRc8l1qf/8QAHRABAAMAAwADAAAAAAAAAAAAAQARIUFRYTGBkf/aAAgBAQABPxDRbVplefUMbAmtx+OIhWli8n8hWFgq3T17gwIAMGGYk1moA2g4PJVZDwx3hCGS2eIqpDDqo8n/2Q==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 94.9367088607595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAATABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMBBf/EABcBAQADAAAAAAAAAAAAAAAAAAABAgP/2gAMAwEAAhADEAAAAeg2RdEV55eMGj//xAAbEAACAwADAAAAAAAAAAAAAAABAwACBBETFP/aAAgBAQABBQL0ph1JEroUZ0LlsteRlEvcgueyrVPaa//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABcRAQEBAQAAAAAAAAAAAAAAAAEAAhD/2gAIAQIBAT8B5iQv/8QAHRAAAgICAwEAAAAAAAAAAAAAAAECIREyEiKBof/aAAgBAQAGPwLcuZUjX4ZUmvEPu3koaUq4ouR//8QAHRABAAICAgMAAAAAAAAAAAAAAQARITFBUWGhsf/aAAgBAQABPyF3fDGjDZemDvC1plXBrwitTGCB7Kla0RsL1KIYTR1HTbnon//aAAwDAQACAAMAAAAQo8hC/8QAFhEBAQEAAAAAAAAAAAAAAAAAEAEx/9oACAEDAQE/EC6f/8QAGREBAAIDAAAAAAAAAAAAAAAAAQAQESEx/9oACAECAQE/EKIu5lcn/8QAHRABAAMAAgMBAAAAAAAAAAAAAQARIUFhMVGBkf/aAAgBAQABPxDRbVplefIYghNbj44iEKWLyfyFYWCrdO33BAQAYMMxJrNQBtBwdSqyHjDHWEIZLZ4iqkMPVR1P/9k=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -448,7 +690,7 @@ asyncForEach([1,2,3,4], function(i){
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 37.34177215189873%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAcuQqD//xAAWEAEBAQAAAAAAAAAAAAAAAAARABD/2gAIAQEAAQUClz//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAY/An//xAAZEAABBQAAAAAAAAAAAAAAAAAAARARQVH/2gAIAQEAAT8hnRbG/9oADAMBAAIAAwAAABDzz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABwQAQACAQUAAAAAAAAAAAAAAAEAESExUYGhsf/aAAgBAQABPxCi2F5lYDoUUB5Mbdz/2Q==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 37.34177215189873%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAcuQqD//xAAWEAEBAQAAAAAAAAAAAAAAAAARABD/2gAIAQEAAQUClz//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAY/An//xAAZEAABBQAAAAAAAAAAAAAAAAAAARARQVH/2gAIAQEAAT8hnRbG/9oADAMBAAIAAwAAABDzz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABsQAQEAAQUAAAAAAAAAAAAAAAERACExUYGx/9oACAEBAAE/EIWhe8mI2IQDzNOM/9k=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
