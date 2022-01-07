@@ -1,4 +1,229 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 07 Jan 2022 00:01:01 GMT</lastBuildDate><item><title><![CDATA[vscode에서 crlf 파일들을 일괄로 lf파일로 변환하는 법]]></title><description><![CDATA[파일 형상 관리를 git을 이용해 하고 있다. 그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/bugLists/vscode_setting/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/bugLists/vscode_setting/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;파일 형상 관리를 git을 이용해 하고 있다.&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 07 Jan 2022 02:16:56 GMT</lastBuildDate><item><title><![CDATA[생활코딩 Docker 입문 수업 6 ~ 8]]></title><description><![CDATA[도커 컨테이너 안에 있는 파일 조작하기  도커를 이용해 웹서버를 띄웠다. 그리고 이제 이 내용물을 다르게 바꿔보자. 도커에 올라가있는 컨테이너 ws…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker2/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker2/</guid><pubDate>Fri, 07 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;도커 컨테이너 안에 있는 파일 조작하기&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/fee13/docker10.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 37.34177215189873%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3aAH/8QAFRABAQAAAAAAAAAAAAAAAAAAABH/2gAIAQEAAQUCiI//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAY/An//xAAYEAADAQEAAAAAAAAAAAAAAAAAEVEBIf/aAAgBAQABPyHK6JBIf//aAAwDAQACAAMAAAAQ88//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAYEAADAQEAAAAAAAAAAAAAAAAAEWEBIf/aAAgBAQABPxDHG3URERH/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/828fb/docker10.jpg&quot;
+        srcset=&quot;/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/ff44c/docker10.jpg 158w,
+/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/a6688/docker10.jpg 315w,
+/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/828fb/docker10.jpg 630w,
+/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/fee13/docker10.jpg 726w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;도커를 이용해 웹서버를 띄웠다.&lt;br&gt;
+그리고 이제 이 내용물을 다르게 바꿔보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker exec ws3 pwd&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;도커에 올라가있는 컨테이너 ws3(사용자가 명명한 컨테이너 이름) 실행하면 컨테이너 내부를 파일 조회를 할 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 287px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/7fe3f2aceeb6192ed312e0f3daad0253/b3e6c/docker11.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 83.54430379746836%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAARABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECAwX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHj0mhKBpmAH//EABcQAAMBAAAAAAAAAAAAAAAAAAIQEQD/2gAIAQEAAQUCs1RM3//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EABQQAQAAAAAAAAAAAAAAAAAAADD/2gAIAQEABj8CH//EABoQAAEFAQAAAAAAAAAAAAAAAAEAECExoWH/2gAIAQEAAT8hkk4j1iJVns//2gAMAwEAAgADAAAAEAQAAP/EABYRAQEBAAAAAAAAAAAAAAAAABEgIf/aAAgBAwEBPxBwj//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EAB0QAQABBAMBAAAAAAAAAAAAAAEAEBExQSFxkbH/2gAIAQEAAT8Q2Q40IC3uOoRcrCY+Nfo1/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/7fe3f2aceeb6192ed312e0f3daad0253/b3e6c/docker11.jpg&quot;
+        srcset=&quot;/todayILearned/static/7fe3f2aceeb6192ed312e0f3daad0253/ff44c/docker11.jpg 158w,
+/todayILearned/static/7fe3f2aceeb6192ed312e0f3daad0253/b3e6c/docker11.jpg 287w&quot;
+        sizes=&quot;(max-width: 287px) 100vw, 287px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker exec ws3 pwd&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;그런데 매번 컨테이너 안으로 들어가는 명령어를 치기 힘드니 아래와 같이 컨테이너 내부의 쉘을 유지시켜주는 명령어를 치면 # 모양이 뜨면서 이 뒤부터 내리는 명령은 ws3 컨테이너 내부 대상으로 내리는 실행 명령어가 된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker exec -it ws3 /bin/sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;쉘 : 사용자가 입력한 명령를 쉘 프로그램이 받아서 그것을 운영체제에게 전달해주는 창구 역할을 한다&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/9f8e3c7381fb576833021514f1160d18/49e4f/docker12.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 17.088607594936708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAADABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAABw4AH/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFRABAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQEAAT8hr//aAAwDAQACAAMAAAAQcA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAWEAEBAQAAAAAAAAAAAAAAAAABECH/2gAIAQEAAT8QUut//9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/9f8e3c7381fb576833021514f1160d18/828fb/docker12.jpg&quot;
+        srcset=&quot;/todayILearned/static/9f8e3c7381fb576833021514f1160d18/ff44c/docker12.jpg 158w,
+/todayILearned/static/9f8e3c7381fb576833021514f1160d18/a6688/docker12.jpg 315w,
+/todayILearned/static/9f8e3c7381fb576833021514f1160d18/828fb/docker12.jpg 630w,
+/todayILearned/static/9f8e3c7381fb576833021514f1160d18/49e4f/docker12.jpg 836w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;index.html 파일이 있는 경로로 이동을 한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# cd /usr/local/apache2/htdocs&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;apt 업데이트를 하고 html을 편집할 수 있는 nano라는 프로그램을 설치한 후 index.html을 열면 내용 수정이 가능하다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# apt update
+# apt install nano
+# nano index.html&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 421px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/a3a1adb0acd20361260ce5ddfaeec674/5c51b/docker14.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 49.36708860759494%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe1WghY//8QAFhABAQEAAAAAAAAAAAAAAAAAEQAg/9oACAEBAAEFAoYx/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFhAAAwAAAAAAAAAAAAAAAAAAASAy/9oACAEBAAY/ApLf/8QAGhAAAgIDAAAAAAAAAAAAAAAAAREAICFh8f/aAAgBAQABPyFnhAgE41Fp/9oADAMBAAIAAwAAABDDD//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABoQAQEAAgMAAAAAAAAAAAAAAAERAJEgUaH/2gAIAQEAAT8QYsObe4glXYKa4/8A/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/a3a1adb0acd20361260ce5ddfaeec674/5c51b/docker14.jpg&quot;
+        srcset=&quot;/todayILearned/static/a3a1adb0acd20361260ce5ddfaeec674/ff44c/docker14.jpg 158w,
+/todayILearned/static/a3a1adb0acd20361260ce5ddfaeec674/a6688/docker14.jpg 315w,
+/todayILearned/static/a3a1adb0acd20361260ce5ddfaeec674/5c51b/docker14.jpg 421w&quot;
+        sizes=&quot;(max-width: 421px) 100vw, 421px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;호스트 파일 시스템과 컨테이너 파일 시스템 연결&lt;/h3&gt;
+&lt;p&gt;열심히 내용물을 수정한 파일이 도커 컨테이너에 반영이 되었다.&lt;br&gt;
+하지만 개발자의 실수로 컨테이너를 날려버리면 열심히 수정한 노력이 물거품이 될 것이다… 그런 일을 미연에 방지하기 위해 파일 작업은 호스트 파일 시스템에서 하고 호스트에서 수정이 되면 컨테이너 파일 시스템에서 자동으로 반영이 되는 구조를 가져가는 편이 더 안전할 것이다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/431b6ec589dbcdf801dcf29f7d7ee3c9/5510b/docker13.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 48.734177215189874%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQCBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe0lwXoh/8QAGhAAAgIDAAAAAAAAAAAAAAAAAREAAhAhMf/aAAgBAQABBQKre48Ewc//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAZEAACAwEAAAAAAAAAAAAAAAABEQAgMUH/2gAIAQEABj8CLzk0Kv8A/8QAGxAAAgIDAQAAAAAAAAAAAAAAAAERMSFBcVH/2gAIAQEAAT8hbOroNympUbOyX6Om3Q7hk//aAAwDAQACAAMAAAAQIA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAeEAEAAgEEAwAAAAAAAAAAAAABABEhMUFRYXGBkf/aAAgBAQABPxC2ltgWa7h8UOQ5a3elbQHB9zsfYXAujFMpfM//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/431b6ec589dbcdf801dcf29f7d7ee3c9/828fb/docker13.jpg&quot;
+        srcset=&quot;/todayILearned/static/431b6ec589dbcdf801dcf29f7d7ee3c9/ff44c/docker13.jpg 158w,
+/todayILearned/static/431b6ec589dbcdf801dcf29f7d7ee3c9/a6688/docker13.jpg 315w,
+/todayILearned/static/431b6ec589dbcdf801dcf29f7d7ee3c9/828fb/docker13.jpg 630w,
+/todayILearned/static/431b6ec589dbcdf801dcf29f7d7ee3c9/0ede0/docker13.jpg 945w,
+/todayILearned/static/431b6ec589dbcdf801dcf29f7d7ee3c9/5510b/docker13.jpg 1179w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;바탕화면에 htdocs 폴더 생성 후 index.html 파일을 생성한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    hello again!
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;터미널에서 호스트의 파일 경로:컨테이너 파일 경로 연결 후 컨테이너 실행&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker run -p 8888:80 -v C:\Users\{사용자폴더명}\Desktop\htdocs\:/usr/local/apache2/htdocs/ httpd&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 417px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/d9d6d09449da800c4e6e271b2a535728/6eca5/docker15.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 42.405063291139236%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAG6AD//xAAVEAEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAQABBQKIj//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAABD/2gAIAQEABj8Cf//EABcQAQADAAAAAAAAAAAAAAAAAAARITH/2gAIAQEAAT8hL6i//9oADAMBAAIAAwAAABBzz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABkQAAIDAQAAAAAAAAAAAAAAAAERACFhQf/aAAgBAQABPxAMBQFchBGayZz/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/d9d6d09449da800c4e6e271b2a535728/6eca5/docker15.jpg&quot;
+        srcset=&quot;/todayILearned/static/d9d6d09449da800c4e6e271b2a535728/ff44c/docker15.jpg 158w,
+/todayILearned/static/d9d6d09449da800c4e6e271b2a535728/a6688/docker15.jpg 315w,
+/todayILearned/static/d9d6d09449da800c4e6e271b2a535728/6eca5/docker15.jpg 417w&quot;
+        sizes=&quot;(max-width: 417px) 100vw, 417px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;이 구조의 장점&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;나에게 익숙한 에디터로 파일 편집이 가능하다&lt;/li&gt;
+&lt;li&gt;버전 관리가 가능해진다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;멀게만 느껴졌던 도커가 조금은 뚜렷하게 잡혀가는 느낌이다… 도커를 사용해 내가 만든 프로젝트를 커밋을 이용해 도커 허브에 올린다면 다른 사람이 그 이미지를 내려 받아 내가 설정한 환경 그대로 작업을 쉽게 이어갈 수 있을 것 같다.&lt;/p&gt;
+&lt;h3&gt;도움 받은 자료들&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&quot;&gt;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=0kQC19w0gTI&quot;&gt;https://www.youtube.com/watch?v=0kQC19w0gTI&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[vscode에서 crlf 파일들을 일괄로 lf파일로 변환하는 법]]></title><description><![CDATA[파일 형상 관리를 git을 이용해 하고 있다. 그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/bugLists/vscode_setting/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/bugLists/vscode_setting/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;파일 형상 관리를 git을 이용해 하고 있다.&lt;br&gt;
 그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf로 변환된 채로 코드상 빨간 줄을 뿜고 있는데… 이걸 파일 하나하나 바꿔주다보니 갑갑해서 일괄 수정할 수 있는 방법을 찾아냈다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -36,10 +261,7 @@
 &lt;/ol&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;git config core&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;autocrlf &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
 git rm &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;cached &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;r &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
-git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 입문 수업 2]]></title><description><![CDATA[도움 받은 자료들 https://www.youtube.com/watch?v=Ps8HDIAyPD0&list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker2/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker2/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;도움 받은 자료들&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&quot;&gt;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 입문 수업 1 ~ 3]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker1/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker1/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작년부터 궁금했던 도커라는 녀석을 공부해 보기로 했다.&lt;br&gt;
+git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 입문 수업 1 ~ 5]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker1/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker1/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작년부터 궁금했던 도커라는 녀석을 공부해 보기로 했다.&lt;br&gt;
 무작정 유튜브에 도커를 쳐보니 생활코딩 유튜브 채널에 도커 입문용 강의가 있더라… 감사합니다!&lt;/p&gt;
 &lt;h3&gt;도커를 사용하게 된 배경&lt;/h3&gt;
 &lt;p&gt;어떠한 어플리케이션을 개발할 때 웹서버와 데이터베이스가 필요하다. 그런데 만일 웹서버에 맞는 운영체제와 데이터베이스에 맞는 운영체제가 다른 경우 가장 이상적인 그림은 아래와 같을 것이다.&lt;/p&gt;
@@ -167,7 +389,7 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
 &lt;p&gt;도커라는 세계에는 도커 허브라는 저장소가 존재한다.&lt;br&gt;
 유저가 앱스토어에서 특정 프로그램을 다운 받고 실행을 시키는 순서를 도커와 비교해 보면 용어를 기억하기 쉽겠다.&lt;br&gt;
 도커 허브에서 특정 이미지를 풀 받고 풀 받은 이미지를 런하게 되면 그 이미지가 컨테이너가 된다. 그리고 컨테이너가 실행되면서 컨테이너 안에서 실행되도록 설정해둔 프로그램이 실행된다.&lt;/p&gt;
-&lt;h3&gt;이미지 풀 받아보기&lt;/h3&gt;
+&lt;h3&gt;도커 기본 명령어 살펴보기&lt;/h3&gt;
 &lt;p&gt;명령 프롬프트 창에 docker images 를 쳐보면 풀 받은 이미지가 없기 때문에 빈 리스트가 나온다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker images&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;span
@@ -233,7 +455,7 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;다시 docker images 를 해보면 풀 받은 이미지 목록이 떠있다&lt;/p&gt;
+&lt;p&gt;다시 docker images 를 해보면 풀 받은 이미지 목록이 떠있다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 474px; &quot;
@@ -258,6 +480,123 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
 /todayILearned/static/f8ec75ae71249c57a12540b904bc3fe9/a6688/docker7.jpg 315w,
 /todayILearned/static/f8ec75ae71249c57a12540b904bc3fe9/08ff2/docker7.jpg 474w&quot;
         sizes=&quot;(max-width: 474px) 100vw, 474px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;실행 중 도커를 확인하려면 아래 명령어로 리스트 조회가 가능하다.&lt;br&gt;
+(이제부터 여기서 말하는 이미지는 곧 컨테이너가 된다)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker ps&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;다운 받은 이미지를 실행시키려면 아래 명령어로 특정 이미지 실행이 가능하다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker run {image}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;다운 받은 이미지에 name을 붙여서 실행시키려면 아래 명령어로 특정 이미지 실행이 가능하다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker run --name {imagename} {image}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;도커를 이용해 웹 서버 사용법&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;로컬 컴퓨터에 직접 웹 서버 설치한 경우&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/0539ef0b4ec108b5548c4808effd6bf3/e8a7f/docker9.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 29.11392405063291%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAGABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAdqQsD//xAAXEAEBAQEAAAAAAAAAAAAAAAABAAIh/9oACAEBAAEFAsCSdv/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABgQAQEAAwAAAAAAAAAAAAAAABEBABBx/9oACAEBAAY/Aq1xbzX/xAAcEAAABgMAAAAAAAAAAAAAAAAAARARIUFRYXH/2gAIAQEAAT8htUONDhjYJ//aAAwDAQACAAMAAAAQA8//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAbEAEBAAIDAQAAAAAAAAAAAAABEQAhMVFhof/aAAgBAQABPxBdGqQSOucaAQKEqzb6T7gaNuf/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/0539ef0b4ec108b5548c4808effd6bf3/828fb/docker9.jpg&quot;
+        srcset=&quot;/todayILearned/static/0539ef0b4ec108b5548c4808effd6bf3/ff44c/docker9.jpg 158w,
+/todayILearned/static/0539ef0b4ec108b5548c4808effd6bf3/a6688/docker9.jpg 315w,
+/todayILearned/static/0539ef0b4ec108b5548c4808effd6bf3/828fb/docker9.jpg 630w,
+/todayILearned/static/0539ef0b4ec108b5548c4808effd6bf3/0ede0/docker9.jpg 945w,
+/todayILearned/static/0539ef0b4ec108b5548c4808effd6bf3/e8a7f/docker9.jpg 1138w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;웹브라우저에서 서버에 요청을 할 때 서버는 0부터 65535포트 중 80번 포트를 요청 게이트로 설정해 놨다고 가정하자.&lt;br&gt;
+&lt;a href=&quot;http://example.com:80/index.html&quot;&gt;http://example.com:80/index.html&lt;/a&gt; uri로 웹서버에게 요청을 하면 대기 중이던 웹서버는 80번 포트를 통해 index.html을 찾는다. index.html 코드를 웹브라우저에게 전달하면 /index.html 요청에 대한 과정이 끝난다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;도커를 이용해 웹 서버를 설치한 경우
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/6647b0ebdb461e4945f580c7fa9bf056/51334/docker8.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 47.46835443037975%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQBAwX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHZhesfEg//xAAaEAACAgMAAAAAAAAAAAAAAAABAhExABAh/9oACAEBAAEFAlueyNNgr//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABkQAAEFAAAAAAAAAAAAAAAAAAEAESAycf/aAAgBAQAGPwIucVo//8QAGxAAAgMAAwAAAAAAAAAAAAAAAAERMUEQYcH/2gAIAQEAAT8hZpy2sLDSkVB3ceCs/9oADAMBAAIAAwAAABBDz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABwQAQABBAMAAAAAAAAAAAAAAAEAEBEhMVFxof/aAAgBAQABPxBZIdjCJzICMVlvu8OK02e08k//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/6647b0ebdb461e4945f580c7fa9bf056/828fb/docker8.jpg&quot;
+        srcset=&quot;/todayILearned/static/6647b0ebdb461e4945f580c7fa9bf056/ff44c/docker8.jpg 158w,
+/todayILearned/static/6647b0ebdb461e4945f580c7fa9bf056/a6688/docker8.jpg 315w,
+/todayILearned/static/6647b0ebdb461e4945f580c7fa9bf056/828fb/docker8.jpg 630w,
+/todayILearned/static/6647b0ebdb461e4945f580c7fa9bf056/0ede0/docker8.jpg 945w,
+/todayILearned/static/6647b0ebdb461e4945f580c7fa9bf056/51334/docker8.jpg 1168w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;도커를 이용해 웹서버를 설치하면 이 웹서버는 컨테이너 안에 설치가 된다. 그리고 이 컨테이너가 설치된 운영체제를 도커 호스트라고 부른다.&lt;br&gt;
+컨테이너와 호스트는 독립적인 실행 환경이기 때문에 각각 따로 포트들을 가지고 있다. 그렇기 때문에… 따로 포트 연결을 해주지 않으면 끊어져있기 때문에 &lt;code class=&quot;language-text&quot;&gt;포트포워딩&lt;/code&gt;을 해줘야 한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker run -p 8081:80 httpd&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이미지를 실행할 때 호스트의 포트와 컨테이너의 포트를 기재해준다. 앞에 8081이 호스트의 포트이고 뒤에 80이 컨테이너의 포트이다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/fee13/docker10.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 37.34177215189873%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3aAH/8QAFRABAQAAAAAAAAAAAAAAAAAAABH/2gAIAQEAAQUCiI//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAY/An//xAAYEAADAQEAAAAAAAAAAAAAAAAAEVEBIf/aAAgBAQABPyHK6JBIf//aAAwDAQACAAMAAAAQ88//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAYEAADAQEAAAAAAAAAAAAAAAAAEWEBIf/aAAgBAQABPxDHG3URERH/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/828fb/docker10.jpg&quot;
+        srcset=&quot;/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/ff44c/docker10.jpg 158w,
+/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/a6688/docker10.jpg 315w,
+/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/828fb/docker10.jpg 630w,
+/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/fee13/docker10.jpg 726w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
         decoding=&quot;async&quot;
