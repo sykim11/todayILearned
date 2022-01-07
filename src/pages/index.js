@@ -14,6 +14,7 @@ const BlogIndex = ({ data, location }) => {
   )
   const reviewPosts = posts.filter(post => post.fields.slug.includes("/review"))
   const jsPosts = posts.filter(post => post.fields.slug.includes("/javascript"))
+  const dockerPosts = posts.filter(post => post.fields.slug.includes("/docker"))
 
   if (posts.length === 0) {
     return (
@@ -96,6 +97,32 @@ const BlogIndex = ({ data, location }) => {
       <h2>Javascript</h2>
       <ol style={{ listStyle: `none` }}>
         {jsPosts.map(post => {
+          const title = post.frontmatter.title || post.fields.slug
+          console.log(post)
+
+          return (
+            <li key={post.fields.slug}>
+              <article
+                className="post-list-item"
+                itemScope
+                itemType="http://schema.org/Article"
+              >
+                <header>
+                  <p>
+                    <Link to={`${post.fields.slug}`} itemProp="url">
+                      <span itemProp="headline">{title}</span>
+                    </Link>
+                  </p>
+                  <small>{post.frontmatter.date}</small>
+                </header>
+              </article>
+            </li>
+          )
+        })}
+      </ol>
+      <h2>Docker</h2>
+      <ol style={{ listStyle: `none` }}>
+        {dockerPosts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
           console.log(post)
 
