@@ -2,6 +2,16 @@ module.exports = {
   pathPrefix: "/todayILearned",
   siteMetadata: {
     title: `Today I Learned`,
+    menuLinks:[
+      {
+         name:'home',
+         link:'/'
+      },
+      {
+         name:'page2',
+         link:'/page-2'
+      }
+    ],
     author: {
       name: `Kyle Mathews`,
       summary: `who lives and works in San Francisco building useful things.`,
