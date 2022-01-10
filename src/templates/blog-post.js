@@ -4,14 +4,21 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-
+import LeftNavigation from "../components/lefNavigation"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
 
+  const postsByTags = data.postsByTags
+
+  console.log(post)
+  console.log(postsByTags)
+
   return (
+    <>
+      <LeftNavigation data={postsByTags} />
       <Layout location={location} title={siteTitle}>
         <Seo
           title={post.frontmatter.title}
@@ -22,20 +29,16 @@ const BlogPostTemplate = ({ data, location }) => {
           itemScope
           itemType="http://schema.org/Article"
         >
-          
           <header>
             <h1 itemProp="headline">{post.frontmatter.title}</h1>
             <p>{post.frontmatter.date}</p>
           </header>
-          
+
           <section
             dangerouslySetInnerHTML={{ __html: post.html }}
             itemProp="articleBody"
           />
           <hr />
-          {/* <footer>
-            <Bio />
-          </footer> */}
         </article>
         <nav className="blog-post-nav">
           <ul
@@ -63,7 +66,8 @@ const BlogPostTemplate = ({ data, location }) => {
             </li>
           </ul>
         </nav>
-    </Layout>
+      </Layout>
+    </>
   )
 }
 
@@ -88,6 +92,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
@@ -104,6 +109,19 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
+      }
+    }
+    postsByTags: allMarkdownRemark {
+      group(field: frontmatter___tags) {
+        fieldValue
+        nodes {
+          frontmatter {
+            title
+          }
+          fields {
+            slug
+          }
+        }
       }
     }
   }

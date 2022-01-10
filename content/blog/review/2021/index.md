@@ -1,6 +1,7 @@
 ---
 title: 2021 회고
 date: 2022-01-04
+tags: ["review"]
 output:
   html_document:
     css: "./assets/css/style.css"

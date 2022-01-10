@@ -9,6 +9,8 @@ const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
+  console.log(posts)
+
   const bugListPosts = posts.filter(post =>
     post.fields.slug.includes("/bugLists")
   )
@@ -159,6 +161,7 @@ export const pageQuery = graphql`
         title
       }
     }
+
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       nodes {
         excerpt

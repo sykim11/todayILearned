@@ -6,10 +6,10 @@
  */
 
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-const LeftNavigation = () => {
+const LeftNavigation = ({ data }) => {
   // const data = useStaticQuery(graphql`
   //   query BioQuery {
   //     site {
@@ -25,14 +25,31 @@ const LeftNavigation = () => {
   //     }
   //   }
   // `)
-
-  // Set these values by editing "siteMetadata" in gatsby-config.js
-  // const author = data.site.siteMetadata?.author
-  // const social = data.site.siteMetadata?.social
+  React.useEffect(() => {
+    console.log(data)
+  }, [])
 
   return (
     <div className="left-navigation">
-      <p>left navigation</p>
+      <p>
+        <Link to="/">Home</Link>
+      </p>
+      <ul className="sidebar-links">
+        {data?.group?.map((group, index) => (
+          <li key={index}>
+            <section>
+              <p className="sidebar">{group.fieldValue}</p>
+              <ul>
+                {group.nodes?.map((list, index) => (
+                  <li key={index}>
+                    <Link to={list.fields.slug}>{list.frontmatter.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 ---
 title: 생활코딩 Docker 입문 수업 6 ~ 8
 date: 2022-01-07
+tags: ["docker"]
 output:
   html_document:
     css: "./assets/css/style.css"

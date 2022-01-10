@@ -1,6 +1,7 @@
 ---
 title: Javascript 작동 원리
 date: 2022-01-05
+tags: ["javascript"]
 output:
   html_document:
     css: "./assets/css/style.css"
