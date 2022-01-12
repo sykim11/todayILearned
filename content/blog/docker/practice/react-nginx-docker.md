@@ -69,3 +69,8 @@ package.json에 수정사항이 있다면 npm install로 노드모듈들을 재�
 **`.dockerignore` 파일에 반드시 `node_modules`를 기재해야 전체 파일 카피할 때 시간을 절약**할 수 있다.
 
 #### stage 2 설명
+
+### 출처
+
+- [리액트앱을 nginx에 도커로 배포](https://www.youtube.com/watch?v=gM2cWo1DWIk)
+- [nginx에서 리액트앱 라우터 문제 해결](https://medium.com/greedygame-engineering/so-you-want-to-dockerize-your-react-app-64fbbb74c217)

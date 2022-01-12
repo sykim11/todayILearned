@@ -9,25 +9,21 @@ import * as React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-const LeftNavigation = ({ data }) => {
-  // const data = useStaticQuery(graphql`
-  //   query BioQuery {
-  //     site {
-  //       siteMetadata {
-  //         author {
-  //           name
-  //           summary
-  //         }
-  //         social {
-  //           twitter
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
+const LeftNavigation = ({ data, location }) => {
+  const [currentPath, setCurrentPath] = React.useState("")
+  const [selected, setSelected] = React.useState()
+  const [toggleMenu, setToggleMenu] = React.useState(false)
   React.useEffect(() => {
     console.log(data)
+    const currentCategory = location.pathname.split("/")[1]
+    setCurrentPath(currentCategory)
   }, [])
+
+  const onClickCategory = index => {
+    setToggleMenu(!toggleMenu)
+    setSelected(index)
+    setCurrentPath("")
+  }
 
   return (
     <div className="left-navigation">
@@ -36,7 +32,15 @@ const LeftNavigation = ({ data }) => {
       </p>
       <ul className="sidebar-links">
         {data?.group?.map((group, index) => (
-          <li key={index}>
+          <li
+            key={index}
+            className={
+              currentPath === group.fieldValue || selected === index
+                ? "open"
+                : ""
+            }
+            onClick={() => onClickCategory(index)}
+          >
             <section>
               <p className="sidebar">{group.fieldValue}</p>
               <ul>

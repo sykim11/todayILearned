@@ -243,7 +243,7 @@ a:focus {
 .global-wrapper {
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
-  padding: var(--spacing-10) var(--spacing-10);
+  padding: var(--spacing-10) var(--spacing-0);
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {
@@ -254,18 +254,51 @@ a:focus {
   margin-bottom: var(--spacing-12);
 }
 
+[aria-current]:not([aria-current="false"]) {
+  font-weight: bold;
+  color: rgb(112, 120, 209) !important;
+}
+
 .left-navigation {
   position: fixed;
-    left: 0;
-    height: 100vh;
-    width: 15%;
-    top: 0;
-    border-right: 1px solid #ddd;
-    background-color: #fdfdfd;
+  left: 0;
+  height: 100vh;
+  width: 15%;
+  top: 0;
+  border-right: 1px solid #ddd;
+  background-color: #fdfdfd;
+}
+.left-navigation .sidebar-links {
+  padding: 0 var(--spacing-4);
+}
+.left-navigation .sidebar-links li {
+  list-style: none;
+}
+.left-navigation .sidebar-links > li {
+  margin-bottom: var(--spacing-5);
+  cursor: pointer;
+}
+.left-navigation .sidebar-links > li.open section ul {
+  max-height: 1000px;
+}
+.left-navigation .sidebar-links > li section ul {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.3s;
+}
+.left-navigation .sidebar-links li section p {
+  margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
+}
+.left-navigation .sidebar-links li section ul {
+  margin-left: var(--spacing-4);
+}
+.left-navigation .sidebar-links li section ul li a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #555;
 }
 
 .contents-wrap {
-
 }
 
 .main-heading {

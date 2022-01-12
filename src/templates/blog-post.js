@@ -18,7 +18,7 @@ const BlogPostTemplate = ({ data, location }) => {
 
   return (
     <>
-      <LeftNavigation data={postsByTags} />
+      <LeftNavigation data={postsByTags} location={location} />
       <Layout location={location} title={siteTitle}>
         <Seo
           title={post.frontmatter.title}
