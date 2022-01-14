@@ -7,22 +7,21 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 const LeftNavigation = ({ data, location }) => {
-  const [currentPath, setCurrentPath] = React.useState("")
+  const [currentPath, setCurrentPath] = React.useState(
+    location.pathname.split("/")[1]
+  )
   const [selected, setSelected] = React.useState()
-  const [toggleMenu, setToggleMenu] = React.useState(false)
+
   React.useEffect(() => {
-    console.log(data)
     const currentCategory = location.pathname.split("/")[1]
     setCurrentPath(currentCategory)
   }, [])
 
   const onClickCategory = index => {
-    setToggleMenu(!toggleMenu)
     setSelected(index)
-    setCurrentPath("")
+    setCurrentPath(location.pathname.split("/")[1])
   }
 
   return (

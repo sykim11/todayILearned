@@ -255,8 +255,8 @@ a:focus {
 }
 
 [aria-current]:not([aria-current="false"]) {
-  font-weight: bold;
   color: rgb(112, 120, 209) !important;
+  font-weight: bold;
 }
 
 .left-navigation {
@@ -279,12 +279,12 @@ a:focus {
   cursor: pointer;
 }
 .left-navigation .sidebar-links > li.open section ul {
-  max-height: 1000px;
+  max-height: 500px;
 }
 .left-navigation .sidebar-links > li section ul {
   max-height: 0px;
   overflow: hidden;
-  transition: max-height 0.3s;
+  transition: all 0.3s;
 }
 .left-navigation .sidebar-links li section p {
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);

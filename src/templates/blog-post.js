@@ -1,24 +1,18 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import LeftNavigation from "../components/lefNavigation"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
 
-  const postsByTags = data.postsByTags
-
   console.log(post)
-  console.log(postsByTags)
 
   return (
     <>
-      <LeftNavigation data={postsByTags} location={location} />
       <Layout location={location} title={siteTitle}>
         <Seo
           title={post.frontmatter.title}
@@ -109,19 +103,6 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
-      }
-    }
-    postsByTags: allMarkdownRemark {
-      group(field: frontmatter___tags) {
-        fieldValue
-        nodes {
-          frontmatter {
-            title
-          }
-          fields {
-            slug
-          }
-        }
       }
     }
   }
