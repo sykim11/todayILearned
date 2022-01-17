@@ -79,4 +79,5 @@ fds 모듈은 private npm 서버에 올려서 사용하고 있다.
 fds 모듈은 material-ui를 기반으로 제작되었다.  
 하지만 "팀 내부 디자인 시스템이 특정 라이브러리에 종속되는 게 맞을까?" 하여, 사용 중이던 디자인 라이브러리를 삭제 결정. 컴포넌트들은 그 자체의 기능에 집중하도록 하고 스타일 작업은 최소한으로 줄이는 방향으로 바꿨다.
 
-- 
+#### 모듈 번들링에 참고한 링크들
+  - [Rollup 옵션들](https://velog.io/@velopert/bundle-with-rollup-and-publish-to-npm)
