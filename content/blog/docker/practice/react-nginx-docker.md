@@ -70,6 +70,15 @@ package.json에 수정사항이 있다면 npm install로 노드모듈들을 재�
 
 #### stage 2 설명
 
+```dockerfile
+FROM nginx:alpine
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=builder /app/build /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
+```
+nginx 최신 버전을 설치하고 로컬에 있는 파일을 호스트로 복사한다.
+
 ### 출처
 
 - [리액트앱을 nginx에 도커로 배포](https://www.youtube.com/watch?v=gM2cWo1DWIk)
