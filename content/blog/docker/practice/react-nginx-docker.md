@@ -77,7 +77,14 @@ COPY --from=builder /app/build /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 ```
-nginx 최신 버전을 설치하고 로컬에 있는 파일을 호스트로 복사한다.
+도커 허브에서 nginx 이미지를 가져온다.
+**로컬에 있는 nginx 설정 파일을 호스트의 nginx 설치 디렉터리에 복사**한다.      
+stage1에서 빌드한 파일들을 호스트의 nginx 공용 디렉터리에 복사한다.   
+도커 컨테이너 내부에서 실행되는 포트는 80을 노출시킨다.   
+컨테이너가 시작될 때 서버를 실행한다.   
+
+```
+```
 
 ### 출처
 
