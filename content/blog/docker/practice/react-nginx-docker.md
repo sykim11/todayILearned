@@ -88,6 +88,13 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf 해당 부분을 넣어주지 않
 url이 마치 이동을 하는 것 같지만 실제로 한 화면 안에서 다른 태그들을 불러와주는 식으로 이루어져 있기 때문에 www.host.co.kr/index 에서 www.host.co.kr/2 로 넘어갈 때 해당 주소는 실제로 존재하지 않는다.   
 때문에 nginx에서 없는 주소인 경우 root로 돌아가게끔 설정시켜줘야 한다. 없는 주소를 입력 시 root로 돌아가고, root를 기준으로 어플리케이션이 라우팅을 하게 만들어줌으로써 페이지 이동 구현이 정상 작동한다.
 
+### 도커 파일 실행
+```
+> docker build -t awesome-app:nginx -f Dockerfile_Production .;
+> docker rm --force (빌드된 이미지 이름);
+> docker run -p 8081:80 awesome-app:nginx;
+```
+
 ### 출처
 
 - [리액트앱을 nginx에 도커로 배포](https://www.youtube.com/watch?v=gM2cWo1DWIk)
