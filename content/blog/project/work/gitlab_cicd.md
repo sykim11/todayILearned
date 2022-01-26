@@ -22,9 +22,19 @@ output:
 
 깃랩 cicd 파이프라인 기능을 사용하기 위해선 yml 파일을 작성해야 한다. 그리고 이 파일은 **프로젝트의 루트 폴더**에 위치해야 한다. (나의 경우 package.json과 동일한 위치에 해당 파일을 작성)
 
-build project:
+```
+stages:
+  - build
+  - test
+  
+build:
+  stage: build
   image: node:15
   script:
     - npm install
     - npm test
     - npm build
+```
+
+### 3. 깃랩 러너 등록
+
