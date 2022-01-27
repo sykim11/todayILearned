@@ -23,17 +23,42 @@ output:
 깃랩 cicd 파이프라인 기능을 사용하기 위해선 yml 파일을 작성해야 한다. 그리고 이 파일은 **프로젝트의 루트 폴더**에 위치해야 한다. (나의 경우 package.json과 동일한 위치에 해당 파일을 작성)
 
 ```
+cache:
+  paths:
+    - node_modules/
+
 stages:
   - build
-  - test
-  
+  - docker-build
+
 build:
   stage: build
-  image: node:15
+  tags:
+    - kisa-ci
+  image: node:16-alpine
+  before_script:
+    - GENERATE_SOURCEMAP=false
   script:
     - npm install
-    - npm test
-    - npm build
+    - CI=false npm run build
+  artifacts:
+    expire_in: 1 hour
+    paths:
+      - ./build
+
+docker-build:
+  stage: docker-build
+  tags:
+    - kisa-ci
+  image: docker:latest
+  services:
+    - name: docker:19.03.8-dind
+  before_script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+  script:
+    - docker build --pull -t "$CI_REGISTRY_IMAGE" .
+    - docker push "$CI_REGISTRY_IMAGE"
+    - echo "Registry image:" $CI_REGISTRY_IMAGE
 ```
 
 ### 3. 깃랩 러너 등록
