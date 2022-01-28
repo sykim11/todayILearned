@@ -86,3 +86,5 @@ deploy:
     - ssh -o StrictHostKeyChecking=no -i key.pem <username>@$PROD_SERVER_IP -p 6879 'docker stop <containername> || true && docker rm <containername> || true'
     - ssh -o StrictHostKeyChecking=no -i key.pem <username>@$PROD_SERVER_IP -p 6879 'docker run -p 3001:80 -d --name <containername> <imagename>'
 ```
+- ssh private key 복사할 때 인코딩이 LF인지 꼭 확인하자
+- 
