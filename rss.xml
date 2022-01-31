@@ -1,4 +1,208 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 31 Jan 2022 00:30:11 GMT</lastBuildDate><item><title><![CDATA[생활코딩 Docker compose를 이용해 복잡한 도커 컨테이너 제어하기]]></title><description><![CDATA[도커 허브에서 내려 받은 이미지를 다운 받아 컨테이너로 만들어 런을 시켜보고 나니 나도 도커 허브에 내 이미지를 올려보고 싶다는 생각이 들었다.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker-compose/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker-compose/</guid><pubDate>Mon, 31 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;도커 허브에서 내려 받은 이미지를 다운 받아 컨테이너로 만들어 런을 시켜보고 나니 나도 도커 허브에 내 이미지를 올려보고 싶다는 생각이 들었다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[nginx 500 permission error]]></title><description><![CDATA[현상 nginx로 웹서버를 열었더니 500 에러가 뜬다. 해결 index.html 권한 확인을 해보니 파일 권한이 ksy로 되어있었다. /etc/nginx/nginx.conf 파일을 열고 첫 줄의 루트 정보를 ksy로 변경 nginx…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/project/work/nignx_500_error/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/project/work/nignx_500_error/</guid><pubDate>Tue, 25 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;현상&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 31 Jan 2022 01:38:37 GMT</lastBuildDate><item><title><![CDATA[생활코딩 Docker compose를 이용해 복잡한 도커 컨테이너 제어하기]]></title><description><![CDATA[도커 컴포즈가 무엇인지 궁금해 다시 생활코딩을 찾아갔다. 도커 컴포즈는 쉽게 말하면 shell…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker-compose/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker-compose/</guid><pubDate>Mon, 31 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;도커 컴포즈가 무엇인지 궁금해 다시 생활코딩을 찾아갔다.&lt;br&gt;
+도커 컴포즈는 쉽게 말하면 shell에서 치는 복잡한 설치 명령어들을 파일 하나에 담아&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker-compose up&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이 한줄로 설치를 완료시키는 기능을 해주는 패키지 파일이다.&lt;br&gt;
+해당 강의는 설치형 블로그인 워드프레스를 이용해 예시를 들어 설명해 준다.&lt;/p&gt;
+&lt;h3&gt;예시 시나리오&lt;/h3&gt;
+&lt;p&gt;아래와 같은 환경을 도커를 이용해 워드프레스를 만든다고 가정하자.&lt;br&gt;
+워드프레스 컨테이너가 존재하고 mysql 컨테이너가 존재할 것이다. 그리고 웹브라우저를 통해 워드프레스에 접근하면 워드프레스에 연결된 mysql에서 특정 작업을 처리하고 그 결과를 워드프레스에게 가져온 뒤 다시 웹브라우저에게 응답할 것이다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/570dec95b68427bd6a6bb7634d9ce6bf/e8a7f/image1.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 28.48101265822785%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAGABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAMEBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAdCMLAP/xAAZEAACAwEAAAAAAAAAAAAAAAACAwEEEhP/2gAIAQEAAQUCri0Zy7pWgxX/AP/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EAB8QAAAFBAMAAAAAAAAAAAAAAAABAhEjAxITISJRYf/aAAgBAQAGPwJeRb9CrJoy4+CRVxuP/8QAGRAAAgMBAAAAAAAAAAAAAAAAABEBITFB/9oACAEBAAE/IaCMz00Q81EeuCLcrbP/2gAMAwEAAgADAAAAEAPP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGxAAAgMBAQEAAAAAAAAAAAAAAREAITFBUWH/2gAIAQEAAT8QJScRtD6AuSnyNss0lS+OamJdTgZAn//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/570dec95b68427bd6a6bb7634d9ce6bf/828fb/image1.jpg&quot;
+        srcset=&quot;/todayILearned/static/570dec95b68427bd6a6bb7634d9ce6bf/ff44c/image1.jpg 158w,
+/todayILearned/static/570dec95b68427bd6a6bb7634d9ce6bf/a6688/image1.jpg 315w,
+/todayILearned/static/570dec95b68427bd6a6bb7634d9ce6bf/828fb/image1.jpg 630w,
+/todayILearned/static/570dec95b68427bd6a6bb7634d9ce6bf/0ede0/image1.jpg 945w,
+/todayILearned/static/570dec95b68427bd6a6bb7634d9ce6bf/e8a7f/image1.jpg 1138w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;shell로 설치&lt;/h3&gt;
+&lt;p&gt;도커 컴포즈가 없다면 아래와 같은 설치 명령어를 사용해 위 시나리오 환경을 구성할 수 있을 것이다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;wordpress_net이라는 도커 네트워크 설치&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;docker network create wordpress_net&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;app 컨테이너와 db 컨테이너는 서로 정보를 주고 받을 네트워크가 필요하다&lt;/li&gt;
+&lt;li&gt;wordpress_net을 설치하면 app 컨테이너와 db 컨테이너의 호스트를 ip가 아닌 이름으로 사용 가능하게 해준다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;db 컨테이너 설치&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;docker &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+run &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+    --name &lt;span class=&quot;token string&quot;&gt;&quot;db&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+    -v &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;pwd&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;/db_data:/var/lib/mysql&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+    -e &lt;span class=&quot;token string&quot;&gt;&quot;MYSQL_ROOT_PASSWORD=123456&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+    -e &lt;span class=&quot;token string&quot;&gt;&quot;MYSQL_DATABASE=wordpress&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+    -e &lt;span class=&quot;token string&quot;&gt;&quot;MYSQL_USER=wordpress_user&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+    -e &lt;span class=&quot;token string&quot;&gt;&quot;MYSQL_PASSWORD=123456&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+    --network wordpress_net &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+mysql:5.7
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;db라는 이름의 컨테이너가 생성되고 호스트의 $(현재 위치)/db_data 폴더와 컨테이너의 /var/lib/mysql 폴더를 연결한 뒤 mysql 접속을 위한 정보들을 환경변수를 이용해 적어준다. 그리고 앞서 설치한 도커 네트워크로 만든 wordpress_net에 연결한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;app 컨테이너 설치&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;docker &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+    run &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+    --name app &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+    -v &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;pwd&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;/app_data:/var/www/html&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+    -e &lt;span class=&quot;token string&quot;&gt;&quot;WORDPRESS_DB_HOST=db&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+    -e &lt;span class=&quot;token string&quot;&gt;&quot;WORDPRESS_DB_USER=wordpress_user&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+    -e &lt;span class=&quot;token string&quot;&gt;&quot;WORDPRESS_DB_NAME=wordpress&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+    -e &lt;span class=&quot;token string&quot;&gt;&quot;WORDPRESS_DB_PASSWORD=123456&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+    -e &lt;span class=&quot;token string&quot;&gt;&quot;WORDPRESS_DEBUG=1&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+    -p &lt;span class=&quot;token number&quot;&gt;8080&lt;/span&gt;:80 &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+    --network wordpress_net &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;
+wordpress:latest&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;app 이라는 이름의 컨테이너가 생성되고 호스트의 $(현재 위치)/app_data 폴더와 컨테이너의 /var/www/html 폴더를 연결한 뒤 db 컨테이너에 접속할 정보들을 환경변수를 이용해 적어준다. 그리서 앞서 설치한 도커 네트워크로 만든 wordpress_net에 연결한다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;app 컨테이너에 80포트와 호스트의 8080포트를 연결하여 웹 브라우저에서 접근 가능하도록 한다.&lt;/strong&gt; 이말인 즉, db 컨테이너는 호스트의 어떤 포트와도 연결되어 있지 않고 app 컨테이너만 연결이 가능하여 보안상 안전해 진다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;설치가 완료된 환경 구성을 시각적 자료로 표현하자면 아래와 같을 것이다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/9366721452576d77bcbd07ca5e9cd8b1/b0abb/image2.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100.63291139240506%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAIDBQEE/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3afPE0kBn8C0H//EABsQAQACAgMAAAAAAAAAAAAAAAEAAhESAxMh/9oACAEBAAEFAswHecuzZrboGWqWmhg8P//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EABwQAAEEAwEAAAAAAAAAAAAAABEAAhAhARJRgf/aAAgBAQAGPwJHLq4IxqfE1t7GLQj/xAAaEAEBAQEBAQEAAAAAAAAAAAABEQAhMWGx/9oACAEBAAE/IU2YDMrwRhuKXEG1m2ex739wdytq/GanvD73KAeG/9oADAMBAAIAAwAAABAADwD/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/EB//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/EB//xAAeEAEBAAICAgMAAAAAAAAAAAABEQAhMUFRkXGhwf/aAAgBAQABPxARNqO5eMfrDZW/Ld+sEUyy4WAK0OzKBAtHSvL8jvOw7/DALEE316yI2+iP7c4iJhCuf//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/9366721452576d77bcbd07ca5e9cd8b1/828fb/image2.jpg&quot;
+        srcset=&quot;/todayILearned/static/9366721452576d77bcbd07ca5e9cd8b1/ff44c/image2.jpg 158w,
+/todayILearned/static/9366721452576d77bcbd07ca5e9cd8b1/a6688/image2.jpg 315w,
+/todayILearned/static/9366721452576d77bcbd07ca5e9cd8b1/828fb/image2.jpg 630w,
+/todayILearned/static/9366721452576d77bcbd07ca5e9cd8b1/b0abb/image2.jpg 717w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;docker-compose.yml 로 설치&lt;/h3&gt;
+&lt;p&gt;도커 컴포즈 파일을 이용해도 위와 똑같은 설치 환경이 구성된다.&lt;br&gt;
+파일 하나와 명령어 하나면 끝.&lt;/p&gt;
+&lt;p&gt;docker-compose.yml&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;docker&quot;&gt;&lt;pre class=&quot;language-docker&quot;&gt;&lt;code class=&quot;language-docker&quot;&gt;version: &quot;3.7&quot;
+
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - ./db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress_user
+      MYSQL_PASSWORD: 123456
+
+  app:
+    depends_on:
+      - db
+    image: wordpress:latest
+    volumes:
+      - ./app_data:/var/www/html
+    ports:
+      - &quot;8080:80&quot;
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wordpress_user
+      WORDPRESS_DB_PASSWORD: 123456
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;shell 명령어&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;docker-compose up&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;요청의 흐름&lt;/h3&gt;
+&lt;p&gt;예시 docker-compose 파일의 요청 흐름을 다시 정리해 보자면 아래와 같다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/7ac2dcf05274afca744cc6e8c5f63949/29d31/image3.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 103.16455696202532%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAVABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAMBAgUE/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB7kYaHSTHgyFAf//EABwQAQACAQUAAAAAAAAAAAAAAAEAEiECAxETFP/aAAgBAQABBQK0B7JvWs3881CvGDB//8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHBAAAgIDAQEAAAAAAAAAAAAAAREAEgIQcTKB/9oACAEBAAY/AlLHILmhV/IA8rPXojkVj3X/xAAbEAEAAwEBAQEAAAAAAAAAAAABABEhQVGBkf/aAAgBAQABPyFF+oBeFDX7LIraqDdIF8wbBzWWqBfsj1sSBa117P/aAAwDAQACAAMAAAAQ0wgA/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPxAf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPxAf/8QAHRABAQACAgMBAAAAAAAAAAAAAREAITFhQVFxkf/aAAgBAQABPxAhDFdzRjQqa6cIWt/mDcOR77FJWy41Fs2tRe76wgGyFvwyGasTQfuXL3DyOnL9gjydnP/Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/7ac2dcf05274afca744cc6e8c5f63949/828fb/image3.jpg&quot;
+        srcset=&quot;/todayILearned/static/7ac2dcf05274afca744cc6e8c5f63949/ff44c/image3.jpg 158w,
+/todayILearned/static/7ac2dcf05274afca744cc6e8c5f63949/a6688/image3.jpg 315w,
+/todayILearned/static/7ac2dcf05274afca744cc6e8c5f63949/828fb/image3.jpg 630w,
+/todayILearned/static/7ac2dcf05274afca744cc6e8c5f63949/29d31/image3.jpg 700w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;웹브라우저에서 8080 포트로 서버에 요청을 보낸다&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;app 컨테이너에서 열어둔 80 포트로 들어와 php를 타고 /var/www/html/ 파일을 읽어들인다&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;/var/www/html 폴더는 호스트의 /app_data 폴더와 연결되어 있으므로 개발자가 적어둔 db 정보를 가져온다&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;app 컨테이너는 wordpress_net 네트워크를 통해 3306 포트로 열려있는 db 컨테이너의 mysql 서버로 요청을 보낸다&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;db 컨테이너의 /var/lib/mysql 폴더는 호스트의 /db_data 폴더와 연결되어 있으므로 개발자가 적어둔 mysql 정보를 가져와 mysql에 연결 후 결과를 app 컨테이너에게 돌려준다&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[nginx 500 permission error]]></title><description><![CDATA[현상 nginx로 웹서버를 열었더니 500 에러가 뜬다. 해결 index.html 권한 확인을 해보니 파일 권한이 ksy로 되어있었다. /etc/nginx/nginx.conf 파일을 열고 첫 줄의 루트 정보를 ksy로 변경 nginx…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/project/work/nignx_500_error/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/project/work/nignx_500_error/</guid><pubDate>Tue, 25 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;현상&lt;/h3&gt;
 &lt;p&gt;nginx로 웹서버를 열었더니 500 에러가 뜬다.&lt;/p&gt;
 &lt;h3&gt;해결&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;ls -l&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
