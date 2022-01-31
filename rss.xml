@@ -1,4 +1,187 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 11 Jan 2022 02:13:03 GMT</lastBuildDate><item><title><![CDATA[생활코딩 Docker 이미지 만드는 법]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker3/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker3/</guid><pubDate>Tue, 11 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;도커 허브에서 내려 받은 이미지를 다운 받아 컨테이너로 만들어 런을 시켜보고 나니 나도 도커 허브에 내 이미지를 올려보고 싶다는 생각이 들었다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 31 Jan 2022 00:30:11 GMT</lastBuildDate><item><title><![CDATA[생활코딩 Docker compose를 이용해 복잡한 도커 컨테이너 제어하기]]></title><description><![CDATA[도커 허브에서 내려 받은 이미지를 다운 받아 컨테이너로 만들어 런을 시켜보고 나니 나도 도커 허브에 내 이미지를 올려보고 싶다는 생각이 들었다.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker-compose/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker-compose/</guid><pubDate>Mon, 31 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;도커 허브에서 내려 받은 이미지를 다운 받아 컨테이너로 만들어 런을 시켜보고 나니 나도 도커 허브에 내 이미지를 올려보고 싶다는 생각이 들었다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[nginx 500 permission error]]></title><description><![CDATA[현상 nginx로 웹서버를 열었더니 500 에러가 뜬다. 해결 index.html 권한 확인을 해보니 파일 권한이 ksy로 되어있었다. /etc/nginx/nginx.conf 파일을 열고 첫 줄의 루트 정보를 ksy로 변경 nginx…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/project/work/nignx_500_error/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/project/work/nignx_500_error/</guid><pubDate>Tue, 25 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;현상&lt;/h3&gt;
+&lt;p&gt;nginx로 웹서버를 열었더니 500 에러가 뜬다.&lt;/p&gt;
+&lt;h3&gt;해결&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;ls -l&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;index.html 권한 확인을 해보니 파일 권한이 ksy로 되어있었다.&lt;/p&gt;
+&lt;p&gt;/etc/nginx/nginx.conf 파일을 열고&lt;br&gt;
+첫 줄의 루트 정보를 ksy로 변경&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;user ksy&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;nginx 재시작하면 웹서버가 정상 동작한다!&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo systemctl restart nginx&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[깃랩 cicd]]></title><description><![CDATA[목표 웹서버에 올릴 프론트 파일을 깃랩을 이용해 자동 배포하도록 설정해 본다. 어떻게 돌아가는 걸까 & 시나리오 깃랩의 cicd…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/project/work/gitlab_cicd/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/project/work/gitlab_cicd/</guid><pubDate>Sat, 22 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;목표&lt;/h3&gt;
+&lt;p&gt;웹서버에 올릴 프론트 파일을 깃랩을 이용해 자동 배포하도록 설정해 본다.&lt;/p&gt;
+&lt;h3&gt;어떻게 돌아가는 걸까 &amp;#x26; 시나리오&lt;/h3&gt;
+&lt;p&gt;깃랩의 cicd는 도커에서 돌아간다. 그리고 연결된 쿠버네티스에 배포가 된다. (@.@? 쿠버네티스가 뭔지 모르겠지만 일단은 넘어가자) 깃랩의 cicd는 프로젝트의 루트 위치에 .gitlab-ci.yml이 있는 상태에서 새로운 푸시가 들어오면 yml에 작성된 명령어들이 일련의 묶음으로 연결되어 실행된다. 이것을 파이프라인이라고도 한다.&lt;br&gt;
+내가 하고픈 cicd의 전반적인 그림은 아래와 같다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;우선 로컬 피시에서 리액트 코드를 작성하고 master 브랜치에 커밋하면&lt;/li&gt;
+&lt;li&gt;깃랩의 러너가 변화를 감지해 작성해둔 .gitlab-ci.yml 파일의 스테이지 단계대로 실행한다&lt;/li&gt;
+&lt;li&gt;yml 파일은 크게 도커 빌드 단계, 배포 단계로 구성했다.&lt;/li&gt;
+&lt;li&gt;빌드 단계에서 docker in docker 이미지를 받아와 도커 안의 도커에서 이미지를 만들어 도커 레지스트리(a.k.a 팀 내부용 도커 허브)에 등록한다.&lt;/li&gt;
+&lt;li&gt;배포 단계에서 kroniak/ssh-client 이미지를 받아와 ssh 연결을 통해 배포 서버에서 도커 레지스트리에서 이미지를 당겨와 배포한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;**dind란?&lt;br&gt;
+도커 호스트 내부에 또 다른 도커 데몬을 생성해 실행시킨다. 또한 —privileged 명령어를 사용해 호스트의 모든 권한을 도커 내부의 도커에게 부여한다.&lt;/p&gt;
+&lt;h3&gt;1. 웹 어플리케이션으로 활용할 프로젝트 생성&lt;/h3&gt;
+&lt;p&gt;나의 경우 create-react-app 명령어를 이용해 보일러 프로젝트로 간단하게만 만들어보았다.&lt;/p&gt;
+&lt;h3&gt;2. 루트 위치에 yml 파일 생성&lt;/h3&gt;
+&lt;p&gt;깃랩 cicd 파이프라인 기능을 사용하기 위해선 yml 파일을 작성해야 한다. 그리고 이 파일은 &lt;strong&gt;프로젝트의 루트 폴더&lt;/strong&gt;에 위치해야 한다. (나의 경우 package.json과 동일한 위치에 해당 파일을 작성)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;cache:
+  paths:
+    - node_modules/
+
+stages:
+  - build
+  - docker-build
+
+build:
+  stage: build
+  tags:
+    - kisa-ci
+  image: node:16-alpine
+  before_script:
+    - GENERATE_SOURCEMAP=false
+  script:
+    - npm install
+    - CI=false npm run build
+  artifacts:
+    expire_in: 1 hour
+    paths:
+      - ./build
+
+docker-build:
+  stage: docker-build
+  tags:
+    - kisa-ci
+  image: docker:latest
+  services:
+    - name: docker:19.03.8-dind
+  before_script:
+    - docker login -u &quot;$CI_REGISTRY_USER&quot; -p &quot;$CI_REGISTRY_PASSWORD&quot; $CI_REGISTRY
+  script:
+    - docker build --pull -t &quot;$CI_REGISTRY_IMAGE&quot; .
+    - docker push &quot;$CI_REGISTRY_IMAGE&quot;
+    - echo &quot;Registry image:&quot; $CI_REGISTRY_IMAGE&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;3. 깃랩 러너 등록&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;공유 러너와 개별 러너, 차이점에 대해 공부하기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;4. 배포 스테이지&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;docker&quot;&gt;&lt;pre class=&quot;language-docker&quot;&gt;&lt;code class=&quot;language-docker&quot;&gt;deploy:
+  stage: deploy
+  tags:
+    - kisa-ci
+  image: kroniak/ssh-client
+  before_script:
+    - echo &quot;deploying app&quot;
+  script:
+    - echo &quot;$SSH_PRIVATE_KEY&quot; | tr -d &apos;\r&apos; &gt; key.pem
+    - chmod 400 key.pem
+    - ssh -o StrictHostKeyChecking=no -i key.pem &amp;lt;username&gt;@$PROD_SERVER_IP -p 6879 &apos;docker stop &amp;lt;containername&gt; || true &amp;amp;&amp;amp; docker rm &amp;lt;containername&gt; || true&apos;
+    - ssh -o StrictHostKeyChecking=no -i key.pem &amp;lt;username&gt;@$PROD_SERVER_IP -p 6879 &apos;docker run -p 3001:80 -d --name &amp;lt;containername&gt; &amp;lt;imagename&gt;&apos;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;ssh private key 복사할 때 인코딩이 LF인지 꼭 확인하자&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[리액트 어플리케이션을 nginx 정적 서버에 배포하는 도커 이미지 만들기]]></title><description><![CDATA[도커 이미지 만드는 법을 배웠으니 사이드 프로젝트로 만들고 있는 리액트 어플리케이션을 도커 이미지로 nginx에 배포해 보자! 1. 준비물 확인 리액트 어플리케이션 (create-react-app…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/practice/react-nginx-docker/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/practice/react-nginx-docker/</guid><pubDate>Wed, 12 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;도커 이미지 만드는 법을 배웠으니 사이드 프로젝트로 만들고 있는 리액트 어플리케이션을 도커 이미지로 nginx에 배포해 보자!&lt;/p&gt;
+&lt;h3&gt;1. 준비물 확인&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;리액트 어플리케이션 (create-react-app으로 만들어서 해당 템플릿에 &lt;code class=&quot;language-text&quot;&gt;npm run build&lt;/code&gt; 명령어를 통해 정적 서버에 올릴 build 명령어가 내장되어있다)&lt;/li&gt;
+&lt;li&gt;도커 설치 완료&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2. 도커 파일 작성&lt;/h3&gt;
+&lt;p&gt;배포용으로 도커 파일을 하나 더 두고자하여 아래와 같이 도커 파일을 작성했다.&lt;br&gt;
+파일명 : Dockerfile_Production&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;dockerfile&quot;&gt;&lt;pre class=&quot;language-dockerfile&quot;&gt;&lt;code class=&quot;language-dockerfile&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# stage1&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;FROM&lt;/span&gt; node:14.17.5&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;WORKDIR&lt;/span&gt; /app&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;COPY&lt;/span&gt; package.json .&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;RUN&lt;/span&gt; npm install&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;COPY&lt;/span&gt; . .&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;RUN&lt;/span&gt; npm run build&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# stage2&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;FROM&lt;/span&gt; nginx:alpine&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;COPY&lt;/span&gt; nginx.conf /etc/nginx/conf.d/default.conf&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;COPY&lt;/span&gt; &lt;span class=&quot;token options&quot;&gt;&lt;span class=&quot;token property&quot;&gt;--from&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;builder&lt;/span&gt;&lt;/span&gt; /app/build /usr/share/nginx/html&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;EXPOSE&lt;/span&gt; 80&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;CMD&lt;/span&gt; [&lt;span class=&quot;token string&quot;&gt;&quot;nginx&quot;&lt;/span&gt;, &lt;span class=&quot;token string&quot;&gt;&quot;-g&quot;&lt;/span&gt;, &lt;span class=&quot;token string&quot;&gt;&quot;daemon off;&quot;&lt;/span&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;배포 stage는 총 두 단계이다.&lt;br&gt;
+stage1에서는 리액트 어플리케이션을 빌드하고,&lt;br&gt;
+stage2에서 리액트 build 폴더를 nginx html 폴더에 복사하여 넣어준다. 그리고 nginx 서버 실행!&lt;/p&gt;
+&lt;p&gt;내가 만든 도커 환경을 그림으로 표현하면 아래와 같을 것이다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/aa3e3ad9278faaafdd77898c71baca7a/15ec7/dockerFileSystem.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 63.291139240506325%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAduaQhB//8QAGhAAAgIDAAAAAAAAAAAAAAAAABEBAhIhMf/aAAgBAQABBQJaRbuQyT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAZEAADAQEBAAAAAAAAAAAAAAAAAREhMUH/2gAIAQEAAT8hVIVeKGMChSDrw0z/2gAMAwEAAgADAAAAEMAP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGxABAAMAAwEAAAAAAAAAAAAAAQARITFBYXH/2gAIAQEAAT8QFL3yhKdfQbCEZK6lTpXsJ2iLTif/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/aa3e3ad9278faaafdd77898c71baca7a/828fb/dockerFileSystem.jpg&quot;
+        srcset=&quot;/todayILearned/static/aa3e3ad9278faaafdd77898c71baca7a/ff44c/dockerFileSystem.jpg 158w,
+/todayILearned/static/aa3e3ad9278faaafdd77898c71baca7a/a6688/dockerFileSystem.jpg 315w,
+/todayILearned/static/aa3e3ad9278faaafdd77898c71baca7a/828fb/dockerFileSystem.jpg 630w,
+/todayILearned/static/aa3e3ad9278faaafdd77898c71baca7a/15ec7/dockerFileSystem.jpg 690w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h4&gt;stage 1 설명&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;dockerfile&quot;&gt;&lt;pre class=&quot;language-dockerfile&quot;&gt;&lt;code class=&quot;language-dockerfile&quot;&gt;&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;FROM&lt;/span&gt; node:14.17.5 &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; builder&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;WORKDIR&lt;/span&gt; /app&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;COPY&lt;/span&gt; package.json .&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;리액트 어플리케이션이 실행되기 위해선 node 환경이 필요하므로 내 로컬 환경 버전과 동일한 노드 버전을 도커 호스트에 설치했다.&lt;br&gt;
+호스트에 /app 경로를 만들어 그곳에 package.json을 복사했다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;package.json을 먼저 복사한 이유
+&lt;ul&gt;
+&lt;li&gt;도커 이미지는 각 명령어마다 레이어층을 만든다. 그렇기 때문에 도커 이미지를 만들 때, 해당하는 명령어 레이어에 변화가 없다면 캐싱 기능을 사용할 수 있다!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;dockerfile&quot;&gt;&lt;pre class=&quot;language-dockerfile&quot;&gt;&lt;code class=&quot;language-dockerfile&quot;&gt;&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;RUN&lt;/span&gt; npm install&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;COPY&lt;/span&gt; . .&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;RUN&lt;/span&gt; npm run build&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;package.json에 수정사항이 있다면 npm install로 노드모듈들을 재설치 후 로컬에 있는 모든 파일을 호스트의 /app 폴더에 전부 카피한다. 그리고 여기서
+&lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;.dockerignore&lt;/code&gt; 파일에 반드시 &lt;code class=&quot;language-text&quot;&gt;node_modules&lt;/code&gt;를 기재해야 전체 파일 카피할 때 시간을 절약&lt;/strong&gt;할 수 있다.&lt;/p&gt;
+&lt;h4&gt;stage 2 설명&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;dockerfile&quot;&gt;&lt;pre class=&quot;language-dockerfile&quot;&gt;&lt;code class=&quot;language-dockerfile&quot;&gt;&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;FROM&lt;/span&gt; nginx:alpine&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;COPY&lt;/span&gt; nginx.conf /etc/nginx/conf.d/default.conf&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;COPY&lt;/span&gt; &lt;span class=&quot;token options&quot;&gt;&lt;span class=&quot;token property&quot;&gt;--from&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;builder&lt;/span&gt;&lt;/span&gt; /app/build /usr/share/nginx/html&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;EXPOSE&lt;/span&gt; 80&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;CMD&lt;/span&gt; [&lt;span class=&quot;token string&quot;&gt;&quot;nginx&quot;&lt;/span&gt;, &lt;span class=&quot;token string&quot;&gt;&quot;-g&quot;&lt;/span&gt;, &lt;span class=&quot;token string&quot;&gt;&quot;daemon off;&quot;&lt;/span&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;도커 허브에서 nginx 이미지를 가져온다.
+&lt;strong&gt;로컬에 있는 nginx 설정 파일을 호스트의 nginx 설치 디렉터리에 복사&lt;/strong&gt;한다.&lt;br&gt;
+stage1에서 빌드한 파일들을 호스트의 nginx 공용 디렉터리에 복사한다.&lt;br&gt;
+도커 컨테이너 내부에서 실행되는 포트는 80을 노출시킨다.&lt;br&gt;
+컨테이너가 시작될 때 서버를 실행한다.&lt;/p&gt;
+&lt;p&gt;COPY nginx.conf /etc/nginx/conf.d/default.conf 해당 부분을 넣어주지 않고 nginx 서버에 빌드 파일을 배포하면 리액트의 라우팅 관련한 문제가 생긴다…&lt;br&gt;
+이러한 이유는 리액트가 싱글페이지어플리케이션으로 동작하기 때문이다.&lt;br&gt;
+url이 마치 이동을 하는 것 같지만 실제로 한 화면 안에서 다른 태그들을 불러와주는 식으로 이루어져 있기 때문에 &lt;a href=&quot;http://www.host.co.kr/index&quot;&gt;www.host.co.kr/index&lt;/a&gt; 에서 &lt;a href=&quot;http://www.host.co.kr/2&quot;&gt;www.host.co.kr/2&lt;/a&gt; 로 넘어갈 때 해당 주소는 실제로 존재하지 않는다.&lt;br&gt;
+때문에 nginx에서 없는 주소인 경우 root로 돌아가게끔 설정시켜줘야 한다. 없는 주소를 입력 시 root로 돌아가고, root를 기준으로 어플리케이션이 라우팅을 하게 만들어줌으로써 페이지 이동 구현이 정상 작동한다.&lt;/p&gt;
+&lt;h3&gt;도커 파일 실행&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&gt; docker build -t awesome-app:nginx -f Dockerfile_Production .;
+&gt; docker rm --force (빌드된 이미지 이름);
+&gt; docker run -p 8081:80 awesome-app:nginx;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;출처&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=gM2cWo1DWIk&quot;&gt;리액트앱을 nginx에 도커로 배포&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.com/greedygame-engineering/so-you-want-to-dockerize-your-react-app-64fbbb74c217&quot;&gt;nginx에서 리액트앱 라우터 문제 해결&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 이미지 만드는 법]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker3/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker3/</guid><pubDate>Tue, 11 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;도커 허브에서 내려 받은 이미지를 다운 받아 컨테이너로 만들어 런을 시켜보고 나니 나도 도커 허브에 내 이미지를 올려보고 싶다는 생각이 들었다.&lt;/p&gt;
 &lt;h3&gt;도커 이미지 만드는 법 두 가지&lt;/h3&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -390,7 +573,60 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&quot;&gt;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=0kQC19w0gTI&quot;&gt;https://www.youtube.com/watch?v=0kQC19w0gTI&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 입문 수업 1 ~ 5]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker1/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker1/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작년부터 궁금했던 도커라는 녀석을 공부해 보기로 했다.&lt;br&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[react-chartjs 에서 라인에 glow 효과 주는 법]]></title><description><![CDATA[개발 환경 chart.js 3.7 버전 react-chartjs-2 4.0 버전 환경 리액트에서 그래프 작업을 할 때 주로 chart.js 라이브러리를 사용하고 있다. 선 그래프 작업을 할 때 라인에 glow…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/project/work/chartjs1/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/project/work/chartjs1/</guid><pubDate>Fri, 07 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;개발 환경&lt;/h3&gt;
+&lt;p&gt;chart.js 3.7 버전&lt;br&gt;
+react-chartjs-2 4.0 버전 환경&lt;/p&gt;
+&lt;p&gt;리액트에서 그래프 작업을 할 때 주로 chart.js 라이브러리를 사용하고 있다.&lt;br&gt;
+선 그래프 작업을 할 때 라인에 glow 효과를 주고 싶어 구글신에 검색을 해보았는데&lt;br&gt;
+예제 코드를 적용하기만 하면 line을 찾을 수 없다며 뜨는 undefined 에러… 😥&lt;br&gt;
+왜 그런지 콘솔을 찍어가며 확인해 보니 chart.js 3 버전에서 line 프로토타입을 찾아내는 경로가 조금 달라졌다.&lt;/p&gt;
+&lt;h3&gt;소스코드&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;chart.js 임포트&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  Chart &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; ChartJS&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  CategoryScale&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  LinearScale&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  PointElement&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  LineElement&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  Title&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  Tooltip&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  Legend&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;chart.js&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; Line &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;react-chartjs-2&quot;&lt;/span&gt;
+
+ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;register&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+  CategoryScale&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  LinearScale&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  PointElement&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  LineElement&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  Title&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  Tooltip&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  Legend
+&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://react-chartjs-2.netlify.app/examples/line-chart&quot;&gt;react-chartjs 공식문서&lt;/a&gt;에 나와있는대로 원하는 차트 컴포넌트를 사용할 때는 리액트에서 불러오는 방식대로 해당 라이브러리를 임포트한다.&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;ChartJS.registry 하위를 따라 line 프로토타입 찾기&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; draw &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;registry&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;controllers&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;items&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;line&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;draw
+
+ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;registry&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;controllers&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;items&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;line&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;draw&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; chart &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;chart
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; ctx &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; chart&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ctx
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; _stroke &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;stroke
+  ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;stroke&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;shadowColor &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;strokeStyle
+    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;shadowBlur &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;
+    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;shadowOffsetX &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;shadowOffsetY &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;_stroke&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; arguments&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;restore&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; arguments&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;stroke &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; _stroke
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 입문 수업 1 ~ 5]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker1/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker1/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작년부터 궁금했던 도커라는 녀석을 공부해 보기로 했다.&lt;br&gt;
 무작정 유튜브에 도커를 쳐보니 생활코딩 유튜브 채널에 도커 입문용 강의가 있더라… 감사합니다!&lt;/p&gt;
 &lt;h3&gt;도커를 사용하게 된 배경&lt;/h3&gt;
 &lt;p&gt;어떠한 어플리케이션을 개발할 때 웹서버와 데이터베이스가 필요하다. 그런데 만일 웹서버에 맞는 운영체제와 데이터베이스에 맞는 운영체제가 다른 경우 가장 이상적인 그림은 아래와 같을 것이다.&lt;/p&gt;
@@ -773,48 +1009,7 @@
 &lt;/ol&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;git config core&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;autocrlf &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
 git rm &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;cached &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;r &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
-git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[프론트 디자인 컨벤션]]></title><description><![CDATA[리액트 기반의 프로젝트에 사용할 수 있는 UI 모음 모듈을 만들며 자잘한 내용들을 적어보려고 한다. 투두 리스트는 일정과 역량(?)에 따라 유동적으로 가져갈 생각이다. 22-01-0…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/project/work/fdc1/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/project/work/fdc1/</guid><pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;리액트 기반의 프로젝트에 사용할 수 있는 UI 모음 모듈을 만들며 자잘한 내용들을 적어보려고 한다.&lt;br&gt;
-투두 리스트는 일정과 역량(?)에 따라 유동적으로 가져갈 생각이다.&lt;/p&gt;
-&lt;h3&gt;22-01-04 - 현재까지 진행된 사항&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;간단한 컴포넌트 몇 개를 개발해 사설 npm에 배포&lt;/li&gt;
-&lt;li&gt;사설 npm에서 내려 받은 &lt;strong&gt;front design system&lt;/strong&gt; 모듈(줄여서 &lt;strong&gt;fds&lt;/strong&gt;라 지칭)을 리액트 기반의 데모 프로젝트에 설치하여 사용 가능 확인&lt;/li&gt;
-&lt;li&gt;fds모듈에 사용 중인 색상코드파일, 폰트, 아이콘 중 색상코드 파일만 fds모듈 내부에 포함&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;22-01-06 - 현재까지 진행된 사항&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;폰트 경량화하여 독립 모듈로 배포&lt;/li&gt;
-&lt;li&gt;팀 프로젝트의 폰트 파일들 전부 제거 후 폰트 모듈 사용&lt;/li&gt;
-&lt;li&gt;사용 중인 폰트가 16픽셀 이하에서 깨지는 현상이 발생했는데 본문용 폰트를 고르고 추가할 시간이 부족해 일단은 16픽셀 이하의 텍스트는 시스템 기본 폰트 사용&lt;/li&gt;
-&lt;li&gt;팀 프로젝트에 사용 중인 오픈소스 디자인 라이브러리를 걷어내기 시작. 해당 라이브러리에서 사용하는 컴포넌트를 검색해보니 버튼과 인풋 정도만 사용 중이었다… 제대로 활용도 못한 무거운 라이브러리는 빨리 걷어내자!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3&gt;해야할 사항&lt;/h3&gt;
-&lt;ul class=&quot;contains-task-list&quot;&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; fds를 앞으로 어떻게 가져갈지 도식화하기&lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; 폰트 경량화 작업&lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; 폰트 모듈 생성 후 배포&lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; 아이콘 모듈 생성 후 배포&lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; 작업용 프로젝트에 fds 모듈 추가&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;폰트 경량화 작업&lt;/h3&gt;
-&lt;p&gt;fds 모듈은 private npm 서버에 올려서 사용하고 있다.&lt;br&gt;
-원래는 디자인 컴포넌트에 사용된 폰트들도 함께 묶어서 올리려고 했는데 413 Request Entity Too Large 에러가 떠서 용량에 대한 문제를 고려하게 되었다.&lt;br&gt;
-“무거운 폰트 모듈은 독립적으로 만들고 경량화 작업을 해보자”&lt;br&gt;
-(물론 서버측에서 요청 받는 바디의 용량 limit 설정은 진행해야했다. 설정하지 않으면 기본적으론 1mb만 주고 받도록 되어 있다.)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;ttf -&gt; woff&lt;/li&gt;
-&lt;li&gt;data-urI 변환하여 배포&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;data- urI 관련하여 정리 포스팅 필요&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;front design system 모듈 보완&lt;/h3&gt;
-&lt;p&gt;fds 모듈은 material-ui를 기반으로 제작되었다.&lt;br&gt;
-하지만 “팀 내부 디자인 시스템이 특정 라이브러리에 종속되는 게 맞을까?” 하여, 사용 중이던 디자인 라이브러리를 삭제 결정. 컴포넌트들은 그 자체의 기능에 집중하도록 하고 스타일 작업은 최소한으로 줄이는 방향으로 바꿨다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Javascript 작동 원리]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works/</guid><pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;자바스크립트의 작동 원리에 대해 조금 더 깊은 학습이 필요하다 생각되어 글로 정리해 보았다.&lt;/p&gt;
+git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Javascript 작동 원리]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works/</guid><pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;자바스크립트의 작동 원리에 대해 조금 더 깊은 학습이 필요하다 생각되어 글로 정리해 보았다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;자바스크립트는 싱글스레드로 동작하는 언어&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1123,6 +1318,64 @@ asyncForEach([1,2,3,4], function(i){
 &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=8aGhZQkoFbQ&amp;#x26;feature=youtu.be&quot;&gt;https://www.youtube.com/watch?v=8aGhZQkoFbQ&amp;#x26;feature=youtu.be&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://baeharam.github.io/posts/javascript/jshow-javascript-works/&quot;&gt;https://baeharam.github.io/posts/javascript/jshow-javascript-works/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://medium.com/@vdongbin/javascript-%EC%9E%91%EB%8F%99%EC%9B%90%EB%A6%AC-single-thread-event-loop-asynchronous-e47e07b24d1c&quot;&gt;https://medium.com/@vdongbin/javascript-%EC%9E%91%EB%8F%99%EC%9B%90%EB%A6%AC-single-thread-event-loop-asynchronous-e47e07b24d1c&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[프론트 디자인 컨벤션]]></title><description><![CDATA[리액트 기반의 프로젝트에 사용할 수 있는 UI 모음 모듈을 만들며 자잘한 내용들을 적어보려고 한다. 투두 리스트는 일정과 역량(?)에 따라 유동적으로 가져갈 생각이다. 22-01-0…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/project/work/fdc1/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/project/work/fdc1/</guid><pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;리액트 기반의 프로젝트에 사용할 수 있는 UI 모음 모듈을 만들며 자잘한 내용들을 적어보려고 한다.&lt;br&gt;
+투두 리스트는 일정과 역량(?)에 따라 유동적으로 가져갈 생각이다.&lt;/p&gt;
+&lt;h3&gt;22-01-04 - 현재까지 진행된 사항&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;간단한 컴포넌트 몇 개를 개발해 사설 npm에 배포&lt;/li&gt;
+&lt;li&gt;사설 npm에서 내려 받은 &lt;strong&gt;front design system&lt;/strong&gt; 모듈(줄여서 &lt;strong&gt;fds&lt;/strong&gt;라 지칭)을 리액트 기반의 데모 프로젝트에 설치하여 사용 가능 확인&lt;/li&gt;
+&lt;li&gt;fds모듈에 사용 중인 색상코드파일, 폰트, 아이콘 중 색상코드 파일만 fds모듈 내부에 포함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;22-01-06 - 현재까지 진행된 사항&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;폰트 경량화하여 독립 모듈로 배포&lt;/li&gt;
+&lt;li&gt;팀 프로젝트의 폰트 파일들 전부 제거 후 폰트 모듈 사용&lt;/li&gt;
+&lt;li&gt;사용 중인 폰트가 16픽셀 이하에서 깨지는 현상이 발생했는데 본문용 폰트를 고르고 추가할 시간이 부족해 일단은 16픽셀 이하의 텍스트는 시스템 기본 폰트 사용&lt;/li&gt;
+&lt;li&gt;팀 프로젝트에 사용 중인 오픈소스 디자인 라이브러리를 걷어내기 시작. 해당 라이브러리에서 사용하는 컴포넌트를 검색해보니 버튼과 인풋 정도만 사용 중이었다… 제대로 활용도 못한 무거운 라이브러리는 빨리 걷어내자!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;22-01-15 - 현재까지 진행된 사항&lt;/h3&gt;
+&lt;p&gt;fds 모듈을 기존 프로젝트에 이식시키는 과정에서 리액트 버전 에러가 났다.&lt;br&gt;
+fds 모듈은 CRA로 만들어졌기 때문에 react.js 라이브러리가 디펜던시에 존재한다. 그래서 나는 기존 프로젝트의 react.js를 삭제해버렸다. 이후 node_modules를 전부 날리고 새로 npm install 로 다시 package.json을 설치하니, 리액트 훅 에러와 린트 에러가 뜨면서 웹화면이 열리지 않았다. 😳 기존프로젝트가 리액트 파일을 찾지 못하게 되었다.&lt;/p&gt;
+&lt;p&gt;원인 규명&lt;/p&gt;
+&lt;p&gt;기존 프로젝트의 리액트 버전과 fds 모듈의 리액트 메이저 버전이 달라서 생긴 문제였다.&lt;/p&gt;
+&lt;p&gt;해결 방안&lt;/p&gt;
+&lt;p&gt;기존 프로젝트에 원래 사용 중이던 버전의 리액트를 설치 해 주니 정상 동작했다.&lt;br&gt;
+기존 프로젝트는 해당 버전의 리액트에 의존하여 개발된 많은 기타 라이브러리들이 존재하기 때문에 프로젝트를 다시 걷어내는 수준에서 새로 시작할 생각이 아니라면 기존에 설치되어있는 라이브러리들은 유지하는 게 좋겠다.&lt;/p&gt;
+&lt;p&gt;의문점&lt;/p&gt;
+&lt;p&gt;fds 모듈을 npm에 배포할 때 리액트가 없다면 설치해 주고 있다면 건너뛰는 방식으로 설치할 수는 없을까?&lt;br&gt;
+방법은 있었다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1. fds 모듈에서 리액트를 peerdependency에 넣어주고 배포해보기
+2. fds모듈의 index 파일 경로에 npm init 으로 package.json 만들어서 해당 모듈에 꼭 필요한 파일들만 다시 배포해 보기&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;package.json에서 디펜던시에 있는 녀석들은 해당 모듈을 사용하기 위해서는 꼭 필요한 아이들이라 명시해주는 곳이라 node_modules폴더에 설치가 된다. fds모듈의 리액트는 디펜던시에 있다. 그래서 CRA를 이용해 만든 프로젝트에서 리액트 모듈들을 제거해주고 fds만 설치해도 작동했던 것이 그 이유다.&lt;/p&gt;
+&lt;p&gt;devdependecy는 개발상에서 필요한 녀석들만 명시해주는 곳이다. 때문에 배포할 때 개발 도구로만 사용했던 라이브러리들은 이곳에 넣어줘야 모듈 배포 때 불필요한 파일을 설치하지 않을 수 있다.&lt;/p&gt;
+&lt;p&gt;peerdependecy는 반대로 생각해야 한다. fds모듈 package.json의 피어디펜던시에 리액트를 넣는다는 것은, 리액트의 입장에서 fds 모듈이 부속품이라는 의미가 된다. 즉, fds는 리액트 라이브러리 하에서 구동하는 라이브러리라고 명시해주는 것이다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;해야할 사항&lt;/h3&gt;
+&lt;ul class=&quot;contains-task-list&quot;&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; fds를 앞으로 어떻게 가져갈지 도식화하기&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; 폰트 경량화 작업&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; 폰트 모듈 생성 후 배포&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; 아이콘 모듈 생성 후 배포&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; 작업용 프로젝트에 fds 모듈 추가&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;폰트 경량화 작업&lt;/h3&gt;
+&lt;p&gt;fds 모듈은 private npm 서버에 올려서 사용하고 있다.&lt;br&gt;
+원래는 디자인 컴포넌트에 사용된 폰트들도 함께 묶어서 올리려고 했는데 413 Request Entity Too Large 에러가 떠서 용량에 대한 문제를 고려하게 되었다.&lt;br&gt;
+“무거운 폰트 모듈은 독립적으로 만들고 경량화 작업을 해보자”&lt;br&gt;
+(물론 서버측에서 요청 받는 바디의 용량 limit 설정은 진행해야했다. 설정하지 않으면 기본적으론 1mb만 주고 받도록 되어 있다.)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ttf -&gt; woff&lt;/li&gt;
+&lt;li&gt;data-urI 변환하여 배포&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;data- urI 관련하여 정리 포스팅 필요&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;front design system 모듈 보완&lt;/h3&gt;
+&lt;p&gt;fds 모듈은 material-ui를 기반으로 제작되었다.&lt;br&gt;
+하지만 “팀 내부 디자인 시스템이 특정 라이브러리에 종속되는 게 맞을까?” 하여, 사용 중이던 디자인 라이브러리를 삭제 결정. 컴포넌트들은 그 자체의 기능에 집중하도록 하고 스타일 작업은 최소한으로 줄이는 방향으로 바꿨다.&lt;/p&gt;
+&lt;h4&gt;모듈 번들링에 참고한 링크들&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://velog.io/@velopert/bundle-with-rollup-and-publish-to-npm&quot;&gt;Rollup 옵션들&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[gatsby 배포시 uri 오류]]></title><description><![CDATA[배포 환경에서 레파지토리명이 url 시작부에 붙어서 나오지 않는 문제로 페이지간의 이동에 에러가 발생했다. package.json deploy 명령어 수정 개츠비로 빌드를 할 때 prefix-paths를 지정하여 빌드하겠다고 지정해 준다. gatsby…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/bugLists/gatsby/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/bugLists/gatsby/</guid><pubDate>Tue, 04 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;배포 환경에서 레파지토리명이 url 시작부에 붙어서 나오지 않는 문제로 페이지간의 이동에 에러가 발생했다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;package.json deploy 명령어 수정&lt;/li&gt;

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-blog-post-js",
+    "path": "/docker/docker-compose/",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Today I Learned"}},"markdownRemark":{"id":"e31da324-bbc7-5ebe-8093-5e86bb1d7d4a","excerpt":"도커 허브에서 내려 받은 이미지를 다운 받아 컨테이너로 만들어 런을 시켜보고 나니 나도 도커 허브에 내 이미지를 올려보고 싶다는 생각이 들었다.","html":"<p>도커 허브에서 내려 받은 이미지를 다운 받아 컨테이너로 만들어 런을 시켜보고 나니 나도 도커 허브에 내 이미지를 올려보고 싶다는 생각이 들었다.</p>","frontmatter":{"title":"생활코딩 Docker compose를 이용해 복잡한 도커 컨테이너 제어하기","date":"January 31, 2022","description":null,"tags":["docker"]}},"previous":{"fields":{"slug":"/project/work/nignx_500_error/"},"frontmatter":{"title":"nginx 500 permission error"}},"next":null},"pageContext":{"id":"e31da324-bbc7-5ebe-8093-5e86bb1d7d4a","previousPostId":"c5c57cce-f131-5da8-b480-306d82fc3d45","nextPostId":null}},
+    "staticQueryHashes": ["2841359383","3382539634"]}
