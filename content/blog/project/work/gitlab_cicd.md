@@ -37,23 +37,8 @@ cache:
     - node_modules/
 
 stages:
-  - build
   - docker-build
-
-build:
-  stage: build
-  tags:
-    - kisa-ci
-  image: node:16-alpine
-  before_script:
-    - GENERATE_SOURCEMAP=false
-  script:
-    - npm install
-    - CI=false npm run build
-  artifacts:
-    expire_in: 1 hour
-    paths:
-      - ./build
+  - deploy
 
 docker-build:
   stage: docker-build
@@ -68,6 +53,19 @@ docker-build:
     - docker build --pull -t "$CI_REGISTRY_IMAGE" .
     - docker push "$CI_REGISTRY_IMAGE"
     - echo "Registry image:" $CI_REGISTRY_IMAGE
+
+deploy:
+  stage: deploy
+  tags:
+    - kisa-ci
+  image: kroniak/ssh-client
+  before_script:
+    - echo "deploying app"
+  script:
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > key.pem
+    - chmod 400 key.pem
+    - ssh -o StrictHostKeyChecking=no -i key.pem <username>@$PROD_SERVER_IP -p 6879 'docker stop <containername> || true && docker rm <containername> || true'
+    - ssh -o StrictHostKeyChecking=no -i key.pem <username>@$PROD_SERVER_IP -p 6879 'docker run -p 3001:80 -d --name <containername> <imagename>'
 ```
 
 ### 3. 깃랩 러너 등록
