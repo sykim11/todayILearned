@@ -1,4 +1,65 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 06 Feb 2022 01:14:13 GMT</lastBuildDate><item><title><![CDATA[생활코딩 Docker compose를 이용해 복잡한 도커 컨테이너 제어하기]]></title><link>https://gatsbystarterblogsource.gatsbyjs.io/setting/react/without-CRA/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/setting/react/without-CRA/</guid><pubDate>Sun, 06 Feb 2022 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[생활코딩 Docker compose를 이용해 복잡한 도커 컨테이너 제어하기]]></title><description><![CDATA[도커 컴포즈가 무엇인지 궁금해 다시 생활코딩을 찾아갔다. 도커 컴포즈는 쉽게 말하면 shell…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker-compose/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker-compose/</guid><pubDate>Mon, 31 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;도커 컴포즈가 무엇인지 궁금해 다시 생활코딩을 찾아갔다.&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 06 Feb 2022 02:00:54 GMT</lastBuildDate><item><title><![CDATA[React 프로젝트 CRA 없이 세팅하기]]></title><description><![CDATA[회사에서 프로젝트 용량 줄이기 작업을 하면서 내가 만든 프로젝트의 번들링에 대한 이해도가 부족하다는 생각이 문득 들었다. CRA (Create Reat App…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/setting/react/without-CRA/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/setting/react/without-CRA/</guid><pubDate>Sun, 06 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;회사에서 프로젝트 용량 줄이기 작업을 하면서 내가 만든 프로젝트의 번들링에 대한 이해도가 부족하다는 생각이 문득 들었다. CRA (Create Reat App) 라는 리액트 보일러 프로젝트 명령어로 주로 프로젝트를 만들어서 활용했는데 이 명령어 하나면 웹팩과 바벨이 자동으로 포함되어 프로젝트 환경을 구성해 주기 때문이다.&lt;/p&gt;
+&lt;p&gt;이번에는 웹팩과 바벨로 리액트 프로젝트를 어떻게 구성할 수 있는지 CRA 없이 환경 세팅을 해 보자.&lt;/p&gt;
+&lt;h3&gt;웹팩과 바벨&lt;/h3&gt;
+&lt;h4&gt;웹팩&lt;/h4&gt;
+&lt;p&gt;웹팩이란 웹페이지를 띄우기 위해 사용되는 모든 자원들을 하나의 자바스크립트 코드로 번들링해 주는 라이브러리이다. 그림과 같이 자원들에는 js, css, image와 같은 것들이 있다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/652edc1768a7c11ec41a81de7cf1d252/f8402/image1.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 43.0379746835443%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBf/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/aAAwDAQACEAMQAAABzriUWIy//8QAGBAAAgMAAAAAAAAAAAAAAAAAAAIREiD/2gAIAQEAAQUCHrOP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFhAAAwAAAAAAAAAAAAAAAAAAACAi/9oACAEBAAY/AiV//8QAGRAAAgMBAAAAAAAAAAAAAAAAABEBECFB/9oACAEBAAE/IZRi2l0wm//aAAwDAQACAAMAAAAQE+//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAcEAABAwUAAAAAAAAAAAAAAAAAARAxESFhcYH/2gAIAQEAAT8Qg3c7GZFBFH//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;웹팩&quot;
+        title=&quot;웹팩&quot;
+        src=&quot;/todayILearned/static/652edc1768a7c11ec41a81de7cf1d252/828fb/image1.jpg&quot;
+        srcset=&quot;/todayILearned/static/652edc1768a7c11ec41a81de7cf1d252/ff44c/image1.jpg 158w,
+/todayILearned/static/652edc1768a7c11ec41a81de7cf1d252/a6688/image1.jpg 315w,
+/todayILearned/static/652edc1768a7c11ec41a81de7cf1d252/828fb/image1.jpg 630w,
+/todayILearned/static/652edc1768a7c11ec41a81de7cf1d252/0ede0/image1.jpg 945w,
+/todayILearned/static/652edc1768a7c11ec41a81de7cf1d252/f8402/image1.jpg 1066w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;그림과 같이 entry js 파일부터 시작해 이 파일이 참조하는 모듈 A를 추적하고 모듈 A가 참조하는 다른 모듈 B를 추적하는 식으로 꼬리 물기와 같이 이어진 의존성을 조사해 깔끔하게 하나로 묶인 js 파일을 생성해 준다.&lt;/p&gt;
+&lt;p&gt;웹팩의 장점을 정리해 보자면 아래와 같다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;여러 파일의 자바스크립트 코드를 압축하여 로딩하기 때문에 화면 로드 시 자원을 여러번 요청하지 않고 한번에 받아올 수 있어 네트워크 요청을 최소화한다.&lt;/li&gt;
+&lt;li&gt;모듈 단위로 개발이 가능해 가독성과 유지보수가 쉽다.&lt;/li&gt;
+&lt;li&gt;최신 자바스크립트 문법을 지원하지 않는 브라우저에서 사용 가능한 문법으로 쉽게 변환시켜준다. 이부분은 바벨과도 연관이 깊다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;바벨&lt;/h4&gt;
+&lt;p&gt;다양한 브라우저들의 호환성을 지원하기 위해 사용되는 자바스크립트의 컴파일러이다.&lt;br&gt;
+바벨은 구형 문법 자바스크립 코드를 만들어내기 위해 파싱 -&gt; 변환 -&gt; 출력의 단계를 거친다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;파싱 : 코드를 읽고 추상 구문 트리로 변환&lt;/li&gt;
+&lt;li&gt;변환 : 추상 구문 트리를 해당 문법 코드로 변경&lt;/li&gt;
+&lt;li&gt;출력 : 변경된 결과물을 출력&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;2번 변환 단계를 담당하는 것이 바로 바벨 플러그인이다. 플러그인은 어떤 코드를 어떻게 변환할지에 대한 규칙을 정의한다. 그리고 플러그인들을 목적에 따라 묶어놓은 세트를 preset(프리셋)이라고 한다.&lt;/p&gt;
+&lt;p&gt;현 포스팅에서 코드를 변환하는 역할은 웹팩이 담당하기 때문에 여기서 사용되는 babelrc 파일의 역할은 babel에게 ‘설치한 라이브러리들을 사용할 것이다’ 알려주기 위한 용도로 쓰인다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;babelrc&quot;&gt;&lt;pre class=&quot;language-babelrc&quot;&gt;&lt;code class=&quot;language-babelrc&quot;&gt;// .babelrc
+{
+  &amp;quot;presets&amp;quot;: [&amp;quot;@babel/preset-env&amp;quot;, &amp;quot;@babel/preset-react&amp;quot;],
+  &amp;quot;plugins&amp;quot;: [],
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;세팅 시작&lt;/h3&gt;
+&lt;h3&gt;도움 받은 글&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@_diana_lee/cra%EC%97%86%EC%9D%B4-%EB%A6%AC%EC%95%A1%ED%8A%B8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-feat-%EC%9B%B9%ED%8C%A9-%EB%B0%94%EB%B2%A8-74f5bc3c5da1&quot;&gt;CRA 없이 리액트 설치&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker compose를 이용해 복잡한 도커 컨테이너 제어하기]]></title><description><![CDATA[도커 컴포즈가 무엇인지 궁금해 다시 생활코딩을 찾아갔다. 도커 컴포즈는 쉽게 말하면 shell…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker-compose/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker-compose/</guid><pubDate>Mon, 31 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;도커 컴포즈가 무엇인지 궁금해 다시 생활코딩을 찾아갔다.&lt;br&gt;
 도커 컴포즈는 쉽게 말하면 shell에서 치는 복잡한 설치 명령어들을 파일 하나에 담아&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker-compose up&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;이 한줄로 설치를 완료시키는 기능을 해주는 패키지 파일이다.&lt;br&gt;
