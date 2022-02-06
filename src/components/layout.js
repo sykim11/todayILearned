@@ -7,7 +7,7 @@ const Layout = ({ location, title, children }) => {
   const isRootPath = location.pathname === rootPath
   let header, sidebar
 
-  console.log(location, title, children)
+  // console.log(location, title, children)
 
   const data = useStaticQuery(graphql`
     query postsByTags {

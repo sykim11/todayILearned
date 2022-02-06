@@ -10,18 +10,23 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 
 const LeftNavigation = ({ data, location }) => {
   const [currentPath, setCurrentPath] = React.useState(
-    location.pathname.split("/")[1]
+    location.pathname.split("/")[2]
   )
   const [selected, setSelected] = React.useState()
 
   React.useEffect(() => {
-    const currentCategory = location.pathname.split("/")[1]
+    const currentCategory = location.pathname.split("/")[2]
     setCurrentPath(currentCategory)
+    console.log(currentCategory)
+    console.log(currentPath)
+    console.log(selected)
+    console.log(location.host)
+    console.log(location.pathname.split("/"))
   }, [])
 
   const onClickCategory = index => {
     setSelected(index)
-    setCurrentPath(location.pathname.split("/")[1])
+    setCurrentPath(location.pathname.split("/")[2])
   }
 
   return (
