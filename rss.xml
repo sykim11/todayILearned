@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 31 Jan 2022 01:38:37 GMT</lastBuildDate><item><title><![CDATA[생활코딩 Docker compose를 이용해 복잡한 도커 컨테이너 제어하기]]></title><description><![CDATA[도커 컴포즈가 무엇인지 궁금해 다시 생활코딩을 찾아갔다. 도커 컴포즈는 쉽게 말하면 shell…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker-compose/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker-compose/</guid><pubDate>Mon, 31 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;도커 컴포즈가 무엇인지 궁금해 다시 생활코딩을 찾아갔다.&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 06 Feb 2022 00:55:24 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><link>https://gatsbystarterblogsource.gatsbyjs.io/setting/react/without-CRA/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/setting/react/without-CRA/</guid><content:encoded></content:encoded></item><item><title><![CDATA[생활코딩 Docker compose를 이용해 복잡한 도커 컨테이너 제어하기]]></title><description><![CDATA[도커 컴포즈가 무엇인지 궁금해 다시 생활코딩을 찾아갔다. 도커 컴포즈는 쉽게 말하면 shell…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker-compose/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker-compose/</guid><pubDate>Mon, 31 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;도커 컴포즈가 무엇인지 궁금해 다시 생활코딩을 찾아갔다.&lt;br&gt;
 도커 컴포즈는 쉽게 말하면 shell에서 치는 복잡한 설치 명령어들을 파일 하나에 담아&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker-compose up&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;이 한줄로 설치를 완료시키는 기능을 해주는 패키지 파일이다.&lt;br&gt;
@@ -216,6 +216,38 @@ services:
 &lt;h3&gt;어떻게 돌아가는 걸까 &amp;#x26; 시나리오&lt;/h3&gt;
 &lt;p&gt;깃랩의 cicd는 도커에서 돌아간다. 그리고 연결된 쿠버네티스에 배포가 된다. (@.@? 쿠버네티스가 뭔지 모르겠지만 일단은 넘어가자) 깃랩의 cicd는 프로젝트의 루트 위치에 .gitlab-ci.yml이 있는 상태에서 새로운 푸시가 들어오면 yml에 작성된 명령어들이 일련의 묶음으로 연결되어 실행된다. 이것을 파이프라인이라고도 한다.&lt;br&gt;
 내가 하고픈 cicd의 전반적인 그림은 아래와 같다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/88c579e2db04f4e5f530f4f29707032e/2ee51/gitlab_cicd_image1.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 44.30379746835443%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAexqUIP/xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAEFAl//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAYEAEBAAMAAAAAAAAAAAAAAAABABARIf/aAAgBAQABPyHsE6y3/9oADAMBAAIAAwAAABDgz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EAB0QAQABAwUAAAAAAAAAAAAAAAEAESExEEFRYaH/2gAIAQEAAT8QW6gdXhUueRhCm3GhiZT/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;gitlab cicd image1&quot;
+        title=&quot;gitlab cicd image1&quot;
+        src=&quot;/todayILearned/static/88c579e2db04f4e5f530f4f29707032e/828fb/gitlab_cicd_image1.jpg&quot;
+        srcset=&quot;/todayILearned/static/88c579e2db04f4e5f530f4f29707032e/ff44c/gitlab_cicd_image1.jpg 158w,
+/todayILearned/static/88c579e2db04f4e5f530f4f29707032e/a6688/gitlab_cicd_image1.jpg 315w,
+/todayILearned/static/88c579e2db04f4e5f530f4f29707032e/828fb/gitlab_cicd_image1.jpg 630w,
+/todayILearned/static/88c579e2db04f4e5f530f4f29707032e/0ede0/gitlab_cicd_image1.jpg 945w,
+/todayILearned/static/88c579e2db04f4e5f530f4f29707032e/2ee51/gitlab_cicd_image1.jpg 1043w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;우선 로컬 피시에서 리액트 코드를 작성하고 master 브랜치에 커밋하면&lt;/li&gt;
 &lt;li&gt;깃랩의 러너가 변화를 감지해 작성해둔 .gitlab-ci.yml 파일의 스테이지 단계대로 실행한다&lt;/li&gt;
@@ -223,8 +255,10 @@ services:
 &lt;li&gt;빌드 단계에서 docker in docker 이미지를 받아와 도커 안의 도커에서 이미지를 만들어 도커 레지스트리(a.k.a 팀 내부용 도커 허브)에 등록한다.&lt;/li&gt;
 &lt;li&gt;배포 단계에서 kroniak/ssh-client 이미지를 받아와 ssh 연결을 통해 배포 서버에서 도커 레지스트리에서 이미지를 당겨와 배포한다.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;**dind란?&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;dind란?&lt;/strong&gt;&lt;br&gt;
 도커 호스트 내부에 또 다른 도커 데몬을 생성해 실행시킨다. 또한 —privileged 명령어를 사용해 호스트의 모든 권한을 도커 내부의 도커에게 부여한다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;gitlab-dind&lt;/strong&gt;&lt;br&gt;
+도커 속 도커에서 도커 레지스트리로 이미지를 push하려는데 443 connect 에러가 떴다. 원리 공부가 조금 더 필요해 보임.&lt;/p&gt;
 &lt;h3&gt;1. 웹 어플리케이션으로 활용할 프로젝트 생성&lt;/h3&gt;
 &lt;p&gt;나의 경우 create-react-app 명령어를 이용해 보일러 프로젝트로 간단하게만 만들어보았다.&lt;/p&gt;
 &lt;h3&gt;2. 루트 위치에 yml 파일 생성&lt;/h3&gt;
@@ -234,23 +268,8 @@ services:
     - node_modules/
 
 stages:
-  - build
   - docker-build
-
-build:
-  stage: build
-  tags:
-    - kisa-ci
-  image: node:16-alpine
-  before_script:
-    - GENERATE_SOURCEMAP=false
-  script:
-    - npm install
-    - CI=false npm run build
-  artifacts:
-    expire_in: 1 hour
-    paths:
-      - ./build
+  - deploy
 
 docker-build:
   stage: docker-build
@@ -264,7 +283,20 @@ docker-build:
   script:
     - docker build --pull -t &quot;$CI_REGISTRY_IMAGE&quot; .
     - docker push &quot;$CI_REGISTRY_IMAGE&quot;
-    - echo &quot;Registry image:&quot; $CI_REGISTRY_IMAGE&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    - echo &quot;Registry image:&quot; $CI_REGISTRY_IMAGE
+
+deploy:
+  stage: deploy
+  tags:
+    - kisa-ci
+  image: kroniak/ssh-client
+  before_script:
+    - echo &quot;deploying app&quot;
+  script:
+    - echo &quot;$SSH_PRIVATE_KEY&quot; | tr -d &apos;\r&apos; &gt; key.pem
+    - chmod 400 key.pem
+    - ssh -o StrictHostKeyChecking=no -i key.pem &amp;lt;username&gt;@$PROD_SERVER_IP -p 6879 &apos;docker stop &amp;lt;containername&gt; || true &amp;amp;&amp;amp; docker rm &amp;lt;containername&gt; || true&apos;
+    - ssh -o StrictHostKeyChecking=no -i key.pem &amp;lt;username&gt;@$PROD_SERVER_IP -p 6879 &apos;docker run -p 3001:80 -d --name &amp;lt;containername&gt; &amp;lt;imagename&gt;&apos;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;3. 깃랩 러너 등록&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;공유 러너와 개별 러너, 차이점에 대해 공부하기&lt;/li&gt;
