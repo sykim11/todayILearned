@@ -89,7 +89,7 @@ deploy_dev:
 2. project-name 도커 이미지에 tag 이름으로 $DOCKER_REGISTRY/project-name를 붙여준다
 3. 도커 레지스트리($DOCKER_REGISTRY)에 $DOCKER_REGISTRY/project-name tag 이름을 가진 도커 이미지를 푸시한다
 
-**dind secure error 443**   
+>**dind secure error 443**   
 도커 속 도커에서 도커 레지스트리로 이미지를 push하려는데 443 connect 에러가 떴다. 도커는 통신을 할 때 https 통신을 디폴트로 하는데 우리가 가진 도커 레지스트리가 https 통신 오픈이 되어있지 않았다. 그래서 **도커 서비스의 커맨드 명령어에 '--insecure-registry=$DOCKER_REGISTRY' 이 옵션을 주어 해결.
 
 #### 배포
@@ -100,6 +100,9 @@ deploy_dev:
 3. ssh 명령어를 이용해 배포하고자하는 서버에서 빌드 단계에서 push 했던 $DOCKER_REGISTRY/project-name 이미지를 가져온다
 4. ssh 명령어를 이용해 배포하고자하는 서버에서 '가져온 이미지를 도커 컨테이너로 실행한다. 이때 호스트의 포트는 3001 포트이고 컨테이너의 포트는 80 포트를 이용해 연결한다'
 
+>**ssh 명령어를 이용해 서버와 통신을 하기 위한 key 생성**
+ ```ssh-keygen -m PEM -t rsa -b 4096 -C "email@co.kr"```   
+ 위 명령어를 서버에서 실행하면 id_rsa, id_rsa.pub 키를 생성하고 전자의 키를 복사해 깃랩에서 $SSH_PRIVATE_KEY 환경변수로 지정 후 사용한다
 
 ### 3. 깃랩 러너 등록
 - 공유 러너와 개별 러너, 차이점에 대해 공부하기
