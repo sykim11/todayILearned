@@ -26,10 +26,9 @@ output:
 
 
 **dind란?**    
-도커 호스트 내부에 또 다른 도커 데몬을 생성해 실행시킨다. 또한 --privileged 명령어를 사용해 호스트의 모든 권한을 도커 내부의 도커에게 부여한다.
+도커 호스트 내부에 또 다른 도커를 서비스 형태로 실행시킨다. 
 
-**gitlab-dind**   
-도커 속 도커에서 도커 레지스트리로 이미지를 push하려는데 443 connect 에러가 떴다. 원리 공부가 조금 더 필요해 보임.
+
 
 ### 1. 웹 어플리케이션으로 활용할 프로젝트 생성
 
@@ -40,60 +39,74 @@ output:
 깃랩 cicd 파이프라인 기능을 사용하기 위해선 yml 파일을 작성해야 한다. 그리고 이 파일은 **프로젝트의 루트 폴더**에 위치해야 한다. (나의 경우 package.json과 동일한 위치에 해당 파일을 작성)
 
 ```
-cache:
-  paths:
-    - node_modules/
-
 stages:
-  - docker-build
+  - build
   - deploy
 
 docker-build:
-  stage: docker-build
+  stage: build
   tags:
-    - kisa-ci
-  image: docker:latest
+    - ci-tag
+  image: docker:stable
   services:
-    - name: docker:19.03.8-dind
+    - name: docker:dind
+      command: ['--tls=false', '--insecure-registry=$DOCKER_REGISTRY']
+  variables:
+    DOCKER_HOST: tcp://docker:2375/
+    DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR: ''
   before_script:
     - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
   script:
-    - docker build --pull -t "$CI_REGISTRY_IMAGE" .
-    - docker push "$CI_REGISTRY_IMAGE"
-    - echo "Registry image:" $CI_REGISTRY_IMAGE
+    - docker build -t project-name .
+    - docker tag project-name $DOCKER_REGISTRY/project-name
+    - docker push $DOCKER_REGISTRY/project-name
 
-deploy:
+deploy_dev:
   stage: deploy
   tags:
-    - kisa-ci
+    - ci-tag
+  needs: [docker-build]
   image: kroniak/ssh-client
   before_script:
     - echo "deploying app"
   script:
     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > key.pem
     - chmod 400 key.pem
-    - ssh -o StrictHostKeyChecking=no -i key.pem <username>@$PROD_SERVER_IP -p 6879 'docker stop <containername> || true && docker rm <containername> || true'
-    - ssh -o StrictHostKeyChecking=no -i key.pem <username>@$PROD_SERVER_IP -p 6879 'docker run -p 3001:80 -d --name <containername> <imagename>'
+    - ssh -o StrictHostKeyChecking=no -i key.pem root@$PROD_SERVER_IP -p 6879 'docker stop projectcontainer || true && docker rm projectcontainer || true'
+    - ssh -o StrictHostKeyChecking=no -i key.pem root@$PROD_SERVER_IP -p 6879 'docker pull $DOCKER_REGISTRY/project-name'
+    - ssh -o StrictHostKeyChecking=no -i key.pem root@$PROD_SERVER_IP -p 6879 'docker run -p 3001:80 -d --name projectcontainer $DOCKER_REGISTRY/project-name'
+  only:
+    - master
 ```
+
+배포 자동화의 단계는 크게 총 두단계이다. 빌드-배포.
+
+#### 빌드
+배포 스테이지에서 깃랩은 docker in docker를 실행시킨다. 그리고 깃랩에 등록한 러너가 sciprt: 부분을 실행시키기 전에 도커로 로그인한다.   
+이후 러너는 script:에 적힌 순서대로 도커 명령어를 실행한다.
+1. project-name이라는 이름의 도커 이미지를 생성한다
+2. project-name 도커 이미지에 tag 이름으로 $DOCKER_REGISTRY/project-name를 붙여준다
+3. 도커 레지스트리($DOCKER_REGISTRY)에 $DOCKER_REGISTRY/project-name tag 이름을 가진 도커 이미지를 푸시한다
+
+>**dind secure error 443**   
+도커 속 도커에서 도커 레지스트리로 이미지를 push하려는데 443 connect 에러가 떴다. 도커는 통신을 할 때 https 통신을 디폴트로 하는데 우리가 가진 도커 레지스트리가 https 통신 오픈이 되어있지 않았다. 그래서 **도커 서비스의 커맨드 명령어에 '--insecure-registry=$DOCKER_REGISTRY' 이 옵션을 주어 해결.
+
+#### 배포
+빌드 스테이지에서 깃랩은 kroniak/ssh-client을 실행시킨다.   
+이후 러너는 script:에 적힌 순서대로 도커 명령어를 실행한다.
+1. key.pem 파일의 권한 설정하여 접근 획득
+2. ssh 명령어를 이용해 배포하고자하는 서버에 '우리가 실행시키고자하는 컨테이너가 있다면 스탑 후 제거한다' <- 컨테이너 중복 에러 방지
+3. ssh 명령어를 이용해 배포하고자하는 서버에서 빌드 단계에서 push 했던 $DOCKER_REGISTRY/project-name 이미지를 가져온다
+4. ssh 명령어를 이용해 배포하고자하는 서버에서 '가져온 이미지를 도커 컨테이너로 실행한다. 이때 호스트의 포트는 3001 포트이고 컨테이너의 포트는 80 포트를 이용해 연결한다'
+
+>**ssh 명령어를 이용해 서버와 통신을 하기 위한 key 생성**
+ ```ssh-keygen -m PEM -t rsa -b 4096 -C "email@co.kr"```   
+ 위 명령어를 서버에서 실행하면 id_rsa, id_rsa.pub 키를 생성하고 전자의 키를 복사해 깃랩에서 $SSH_PRIVATE_KEY 환경변수로 지정 후 사용한다
 
 ### 3. 깃랩 러너 등록
 - 공유 러너와 개별 러너, 차이점에 대해 공부하기
 
-### 4. 배포 스테이지
-
-```docker
-deploy:
-  stage: deploy
-  tags:
-    - kisa-ci
-  image: kroniak/ssh-client
-  before_script:
-    - echo "deploying app"
-  script:
-    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > key.pem
-    - chmod 400 key.pem
-    - ssh -o StrictHostKeyChecking=no -i key.pem <username>@$PROD_SERVER_IP -p 6879 'docker stop <containername> || true && docker rm <containername> || true'
-    - ssh -o StrictHostKeyChecking=no -i key.pem <username>@$PROD_SERVER_IP -p 6879 'docker run -p 3001:80 -d --name <containername> <imagename>'
-```
-- ssh private key 복사할 때 인코딩이 LF인지 꼭 확인하자
+### 4. 그 외 기억할 것들
+- *ssh private key 복사할 때 인코딩이 LF인지 꼭 확인하자
 - 
