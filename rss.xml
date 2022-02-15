@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 06 Feb 2022 02:00:54 GMT</lastBuildDate><item><title><![CDATA[React 프로젝트 CRA 없이 세팅하기]]></title><description><![CDATA[회사에서 프로젝트 용량 줄이기 작업을 하면서 내가 만든 프로젝트의 번들링에 대한 이해도가 부족하다는 생각이 문득 들었다. CRA (Create Reat App…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/setting/react/without-CRA/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/setting/react/without-CRA/</guid><pubDate>Sun, 06 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;회사에서 프로젝트 용량 줄이기 작업을 하면서 내가 만든 프로젝트의 번들링에 대한 이해도가 부족하다는 생각이 문득 들었다. CRA (Create Reat App) 라는 리액트 보일러 프로젝트 명령어로 주로 프로젝트를 만들어서 활용했는데 이 명령어 하나면 웹팩과 바벨이 자동으로 포함되어 프로젝트 환경을 구성해 주기 때문이다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 15 Feb 2022 13:54:12 GMT</lastBuildDate><item><title><![CDATA[React 프로젝트 CRA 없이 세팅하기]]></title><description><![CDATA[회사에서 프로젝트 용량 줄이기 작업을 하면서 내가 만든 프로젝트의 번들링에 대한 이해도가 부족하다는 생각이 문득 들었다. CRA (Create Reat App…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/setting/react/without-CRA/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/setting/react/without-CRA/</guid><pubDate>Sun, 06 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;회사에서 프로젝트 용량 줄이기 작업을 하면서 내가 만든 프로젝트의 번들링에 대한 이해도가 부족하다는 생각이 문득 들었다. CRA (Create Reat App) 라는 리액트 보일러 프로젝트 명령어로 주로 프로젝트를 만들어서 활용했는데 이 명령어 하나면 웹팩과 바벨이 자동으로 포함되어 프로젝트 환경을 구성해 주기 때문이다.&lt;/p&gt;
 &lt;p&gt;이번에는 웹팩과 바벨로 리액트 프로젝트를 어떻게 구성할 수 있는지 CRA 없이 환경 세팅을 해 보자.&lt;/p&gt;
 &lt;h3&gt;웹팩과 바벨&lt;/h3&gt;
 &lt;h4&gt;웹팩&lt;/h4&gt;
@@ -317,66 +317,84 @@ services:
 &lt;li&gt;배포 단계에서 kroniak/ssh-client 이미지를 받아와 ssh 연결을 통해 배포 서버에서 도커 레지스트리에서 이미지를 당겨와 배포한다.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;dind란?&lt;/strong&gt;&lt;br&gt;
-도커 호스트 내부에 또 다른 도커 데몬을 생성해 실행시킨다. 또한 —privileged 명령어를 사용해 호스트의 모든 권한을 도커 내부의 도커에게 부여한다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;gitlab-dind&lt;/strong&gt;&lt;br&gt;
-도커 속 도커에서 도커 레지스트리로 이미지를 push하려는데 443 connect 에러가 떴다. 원리 공부가 조금 더 필요해 보임.&lt;/p&gt;
+도커 호스트 내부에 또 다른 도커를 서비스 형태로 실행시킨다.&lt;/p&gt;
 &lt;h3&gt;1. 웹 어플리케이션으로 활용할 프로젝트 생성&lt;/h3&gt;
 &lt;p&gt;나의 경우 create-react-app 명령어를 이용해 보일러 프로젝트로 간단하게만 만들어보았다.&lt;/p&gt;
 &lt;h3&gt;2. 루트 위치에 yml 파일 생성&lt;/h3&gt;
 &lt;p&gt;깃랩 cicd 파이프라인 기능을 사용하기 위해선 yml 파일을 작성해야 한다. 그리고 이 파일은 &lt;strong&gt;프로젝트의 루트 폴더&lt;/strong&gt;에 위치해야 한다. (나의 경우 package.json과 동일한 위치에 해당 파일을 작성)&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;cache:
-  paths:
-    - node_modules/
-
-stages:
-  - docker-build
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;stages:
+  - build
   - deploy
 
 docker-build:
-  stage: docker-build
+  stage: build
   tags:
-    - kisa-ci
-  image: docker:latest
+    - ci-tag
+  image: docker:stable
   services:
-    - name: docker:19.03.8-dind
+    - name: docker:dind
+      command: [&apos;--tls=false&apos;, &apos;--insecure-registry=$DOCKER_REGISTRY&apos;]
+  variables:
+    DOCKER_HOST: tcp://docker:2375/
+    DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR: &apos;&apos;
   before_script:
     - docker login -u &quot;$CI_REGISTRY_USER&quot; -p &quot;$CI_REGISTRY_PASSWORD&quot; $CI_REGISTRY
   script:
-    - docker build --pull -t &quot;$CI_REGISTRY_IMAGE&quot; .
-    - docker push &quot;$CI_REGISTRY_IMAGE&quot;
-    - echo &quot;Registry image:&quot; $CI_REGISTRY_IMAGE
+    - docker build -t project-name .
+    - docker tag project-name $DOCKER_REGISTRY/project-name
+    - docker push $DOCKER_REGISTRY/project-name
 
-deploy:
+deploy_dev:
   stage: deploy
   tags:
-    - kisa-ci
+    - ci-tag
+  needs: [docker-build]
   image: kroniak/ssh-client
   before_script:
     - echo &quot;deploying app&quot;
   script:
     - echo &quot;$SSH_PRIVATE_KEY&quot; | tr -d &apos;\r&apos; &gt; key.pem
     - chmod 400 key.pem
-    - ssh -o StrictHostKeyChecking=no -i key.pem &amp;lt;username&gt;@$PROD_SERVER_IP -p 6879 &apos;docker stop &amp;lt;containername&gt; || true &amp;amp;&amp;amp; docker rm &amp;lt;containername&gt; || true&apos;
-    - ssh -o StrictHostKeyChecking=no -i key.pem &amp;lt;username&gt;@$PROD_SERVER_IP -p 6879 &apos;docker run -p 3001:80 -d --name &amp;lt;containername&gt; &amp;lt;imagename&gt;&apos;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    - ssh -o StrictHostKeyChecking=no -i key.pem root@$PROD_SERVER_IP -p 6879 &apos;docker stop projectcontainer || true &amp;amp;&amp;amp; docker rm projectcontainer || true&apos;
+    - ssh -o StrictHostKeyChecking=no -i key.pem root@$PROD_SERVER_IP -p 6879 &apos;docker pull $DOCKER_REGISTRY/project-name&apos;
+    - ssh -o StrictHostKeyChecking=no -i key.pem root@$PROD_SERVER_IP -p 6879 &apos;docker run -p 3001:80 -d --name projectcontainer $DOCKER_REGISTRY/project-name&apos;
+  only:
+    - master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;배포 자동화의 단계는 크게 총 두단계이다. 빌드-배포.&lt;/p&gt;
+&lt;h4&gt;빌드&lt;/h4&gt;
+&lt;p&gt;배포 스테이지에서 깃랩은 docker in docker를 실행시킨다. 그리고 깃랩에 등록한 러너가 sciprt: 부분을 실행시키기 전에 도커로 로그인한다.&lt;br&gt;
+이후 러너는 script:에 적힌 순서대로 도커 명령어를 실행한다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;project-name이라는 이름의 도커 이미지를 생성한다&lt;/li&gt;
+&lt;li&gt;project-name 도커 이미지에 tag 이름으로 $DOCKER_REGISTRY/project-name를 붙여준다&lt;/li&gt;
+&lt;li&gt;도커 레지스트리($DOCKER_REGISTRY)에 $DOCKER_REGISTRY/project-name tag 이름을 가진 도커 이미지를 푸시한다&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;dind secure error 443&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;도커 속 도커에서 도커 레지스트리로 이미지를 push하려는데 443 connect 에러가 떴다. 도커는 통신을 할 때 https 통신을 디폴트로 하는데 우리가 가진 도커 레지스트리가 https 통신 오픈이 되어있지 않았다. 그래서 **도커 서비스의 커맨드 명령어에 ‘—insecure-registry=$DOCKER_REGISTRY’ 이 옵션을 주어 해결.&lt;/p&gt;
+&lt;h4&gt;배포&lt;/h4&gt;
+&lt;p&gt;빌드 스테이지에서 깃랩은 kroniak/ssh-client을 실행시킨다.&lt;br&gt;
+이후 러너는 script:에 적힌 순서대로 도커 명령어를 실행한다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;key.pem 파일의 권한 설정하여 접근 획득&lt;/li&gt;
+&lt;li&gt;ssh 명령어를 이용해 배포하고자하는 서버에 ‘우리가 실행시키고자하는 컨테이너가 있다면 스탑 후 제거한다’ &amp;#x3C;- 컨테이너 중복 에러 방지&lt;/li&gt;
+&lt;li&gt;ssh 명령어를 이용해 배포하고자하는 서버에서 빌드 단계에서 push 했던 $DOCKER_REGISTRY/project-name 이미지를 가져온다&lt;/li&gt;
+&lt;li&gt;ssh 명령어를 이용해 배포하고자하는 서버에서 ‘가져온 이미지를 도커 컨테이너로 실행한다. 이때 호스트의 포트는 3001 포트이고 컨테이너의 포트는 80 포트를 이용해 연결한다’&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;ssh 명령어를 이용해 서버와 통신을 하기 위한 key 생성&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;ssh-keygen -m PEM -t rsa -b 4096 -C &quot;email@co.kr&quot;&lt;/code&gt;&lt;br&gt;
+위 명령어를 서버에서 실행하면 id_rsa, id_rsa.pub 키를 생성하고 전자의 키를 복사해 깃랩에서 $SSH_PRIVATE_KEY 환경변수로 지정 후 사용한다&lt;/p&gt;
 &lt;h3&gt;3. 깃랩 러너 등록&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;공유 러너와 개별 러너, 차이점에 대해 공부하기&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;4. 배포 스테이지&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;docker&quot;&gt;&lt;pre class=&quot;language-docker&quot;&gt;&lt;code class=&quot;language-docker&quot;&gt;deploy:
-  stage: deploy
-  tags:
-    - kisa-ci
-  image: kroniak/ssh-client
-  before_script:
-    - echo &quot;deploying app&quot;
-  script:
-    - echo &quot;$SSH_PRIVATE_KEY&quot; | tr -d &apos;\r&apos; &gt; key.pem
-    - chmod 400 key.pem
-    - ssh -o StrictHostKeyChecking=no -i key.pem &amp;lt;username&gt;@$PROD_SERVER_IP -p 6879 &apos;docker stop &amp;lt;containername&gt; || true &amp;amp;&amp;amp; docker rm &amp;lt;containername&gt; || true&apos;
-    - ssh -o StrictHostKeyChecking=no -i key.pem &amp;lt;username&gt;@$PROD_SERVER_IP -p 6879 &apos;docker run -p 3001:80 -d --name &amp;lt;containername&gt; &amp;lt;imagename&gt;&apos;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;4. 그 외 기억할 것들&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;ssh private key 복사할 때 인코딩이 LF인지 꼭 확인하자&lt;/li&gt;
+&lt;li&gt;*ssh private key 복사할 때 인코딩이 LF인지 꼭 확인하자&lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[리액트 어플리케이션을 nginx 정적 서버에 배포하는 도커 이미지 만들기]]></title><description><![CDATA[도커 이미지 만드는 법을 배웠으니 사이드 프로젝트로 만들고 있는 리액트 어플리케이션을 도커 이미지로 nginx에 배포해 보자! 1. 준비물 확인 리액트 어플리케이션 (create-react-app…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/practice/react-nginx-docker/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/practice/react-nginx-docker/</guid><pubDate>Wed, 12 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;도커 이미지 만드는 법을 배웠으니 사이드 프로젝트로 만들고 있는 리액트 어플리케이션을 도커 이미지로 nginx에 배포해 보자!&lt;/p&gt;
 &lt;h3&gt;1. 준비물 확인&lt;/h3&gt;
@@ -1633,19 +1651,30 @@ asyncForEach([1,2,3,4], function(i){
 &lt;h3&gt;22-01-15 - 현재까지 진행된 사항&lt;/h3&gt;
 &lt;p&gt;fds 모듈을 기존 프로젝트에 이식시키는 과정에서 리액트 버전 에러가 났다.&lt;br&gt;
 fds 모듈은 CRA로 만들어졌기 때문에 react.js 라이브러리가 디펜던시에 존재한다. 그래서 나는 기존 프로젝트의 react.js를 삭제해버렸다. 이후 node_modules를 전부 날리고 새로 npm install 로 다시 package.json을 설치하니, 리액트 훅 에러와 린트 에러가 뜨면서 웹화면이 열리지 않았다. 😳 기존프로젝트가 리액트 파일을 찾지 못하게 되었다.&lt;/p&gt;
+&lt;blockquote&gt;
 &lt;p&gt;원인 규명&lt;/p&gt;
-&lt;p&gt;기존 프로젝트의 리액트 버전과 fds 모듈의 리액트 메이저 버전이 달라서 생긴 문제였다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;: 기존 프로젝트의 리액트 버전과 fds 모듈의 리액트 메이저 버전이 달라서 생긴 문제였다.&lt;/p&gt;
+&lt;blockquote&gt;
 &lt;p&gt;해결 방안&lt;/p&gt;
-&lt;p&gt;기존 프로젝트에 원래 사용 중이던 버전의 리액트를 설치 해 주니 정상 동작했다.&lt;br&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;: 기존 프로젝트에 원래 사용 중이던 버전의 리액트를 설치 해 주니 정상 동작했다.&lt;br&gt;
 기존 프로젝트는 해당 버전의 리액트에 의존하여 개발된 많은 기타 라이브러리들이 존재하기 때문에 프로젝트를 다시 걷어내는 수준에서 새로 시작할 생각이 아니라면 기존에 설치되어있는 라이브러리들은 유지하는 게 좋겠다.&lt;/p&gt;
+&lt;blockquote&gt;
 &lt;p&gt;의문점&lt;/p&gt;
-&lt;p&gt;fds 모듈을 npm에 배포할 때 리액트가 없다면 설치해 주고 있다면 건너뛰는 방식으로 설치할 수는 없을까?&lt;br&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;: fds 모듈을 npm에 배포할 때 리액트가 없다면 설치해 주고 있다면 건너뛰는 방식으로 설치할 수는 없을까?&lt;br&gt;
 방법은 있었다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1. fds 모듈에서 리액트를 peerdependency에 넣어주고 배포해보기
 2. fds모듈의 index 파일 경로에 npm init 으로 package.json 만들어서 해당 모듈에 꼭 필요한 파일들만 다시 배포해 보기&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;package.json에서 디펜던시에 있는 녀석들은 해당 모듈을 사용하기 위해서는 꼭 필요한 아이들이라 명시해주는 곳이라 node_modules폴더에 설치가 된다. fds모듈의 리액트는 디펜던시에 있다. 그래서 CRA를 이용해 만든 프로젝트에서 리액트 모듈들을 제거해주고 fds만 설치해도 작동했던 것이 그 이유다.&lt;/p&gt;
 &lt;p&gt;devdependecy는 개발상에서 필요한 녀석들만 명시해주는 곳이다. 때문에 배포할 때 개발 도구로만 사용했던 라이브러리들은 이곳에 넣어줘야 모듈 배포 때 불필요한 파일을 설치하지 않을 수 있다.&lt;/p&gt;
 &lt;p&gt;peerdependecy는 반대로 생각해야 한다. fds모듈 package.json의 피어디펜던시에 리액트를 넣는다는 것은, 리액트의 입장에서 fds 모듈이 부속품이라는 의미가 된다. 즉, fds는 리액트 라이브러리 하에서 구동하는 라이브러리라고 명시해주는 것이다.&lt;/p&gt;
+&lt;h3&gt;22-02-11 - 현재까지 진행된 사항&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;개발 버전, 배포 버전 작업 분기 (package.json, package_module.json으로 분기)&lt;/li&gt;
+&lt;li&gt;lab-font, lab-icon, fds 모듈들 verdaccio (사내 npm 저장소)에 업로드&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3&gt;해야할 사항&lt;/h3&gt;
 &lt;ul class=&quot;contains-task-list&quot;&gt;
