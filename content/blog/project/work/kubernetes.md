@@ -1,7 +1,7 @@
 ---
 title: 쿠버네티스란
 date: 2022-02-15
-tags: []
+tags: [kubenetes]
 ---
 
 ### 목표
