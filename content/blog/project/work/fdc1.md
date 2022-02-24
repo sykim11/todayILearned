@@ -52,6 +52,9 @@ peerdependecy는 반대로 생각해야 한다. fds모듈 package.json의 피어
 - 개발 버전, 배포 버전 작업 분기 (package.json, package_module.json으로 분기)
 - lab-font, lab-icon, fds 모듈들 verdaccio (사내 npm 저장소)에 업로드
 
+### 22-02-24 - 현재까지 진행된 사항
+- 모듈을 프로젝트에 적용
+- 1차 배포
 
 ---
 
