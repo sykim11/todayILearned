@@ -1,4 +1,158 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 15 Feb 2022 13:54:12 GMT</lastBuildDate><item><title><![CDATA[React 프로젝트 CRA 없이 세팅하기]]></title><description><![CDATA[회사에서 프로젝트 용량 줄이기 작업을 하면서 내가 만든 프로젝트의 번들링에 대한 이해도가 부족하다는 생각이 문득 들었다. CRA (Create Reat App…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/setting/react/without-CRA/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/setting/react/without-CRA/</guid><pubDate>Sun, 06 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;회사에서 프로젝트 용량 줄이기 작업을 하면서 내가 만든 프로젝트의 번들링에 대한 이해도가 부족하다는 생각이 문득 들었다. CRA (Create Reat App) 라는 리액트 보일러 프로젝트 명령어로 주로 프로젝트를 만들어서 활용했는데 이 명령어 하나면 웹팩과 바벨이 자동으로 포함되어 프로젝트 환경을 구성해 주기 때문이다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 26 Feb 2022 06:30:26 GMT</lastBuildDate><item><title><![CDATA[vscode에서 crlf 파일들을 일괄로 lf파일로 변환하는 법]]></title><description><![CDATA[에러 문구 image Cannot connect to the Docker daemon at tcp://localhost:2375. Is the docker daemon running? 자체 호스팅된 Gitlab 및 Runner를 사용하고 있고 dind…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/bugLists/gitlab_docker_connection_error/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/bugLists/gitlab_docker_connection_error/</guid><pubDate>Fri, 25 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;에러 문구&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/24996316/155658590-bf6a9f17-8dbd-4851-a889-63f9a2409ea9.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cannot connect to the Docker daemon at tcp://localhost:2375. Is the docker daemon running?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;자체 호스팅된 Gitlab 및 Runner를 사용하고 있고 dind를 사용하여 CI/CD 빌드를 실행하려고 했는데 위와 같은 에러가 떴다.&lt;/p&gt;
+&lt;h3&gt;찾아본 방법&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;dind 이미지 버전 문제 확인&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker-build:
+  stage: build
+  tags:
+    - front-ci
+  image: docker:stable
+  services:
+    - name: docker:dind
+      command: [&apos;--tls=false&apos;, &apos;--insecure-registry=${DOCKER_REGISTRY}&apos;]
+  variables:
+    DOCKER_HOST: tcp://docker:2375/
+    DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR: &apos;&apos;
+  before_script:
+    - docker login -u &quot;$CI_REGISTRY_USER&quot; -p &quot;$CI_REGISTRY_PASSWORD&quot; $CI_REGISTRY
+    
+    ...
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;docker-build 스테이지에서는 프론트 소스를 Dockerfile을 이용해 이미지로 만든 후 팀 내부 도커 레지스트리에 배포하는 job을 수행한다.&lt;br&gt;
+그런데 깃랩이 도커를 실행하지 못하는 상황…&lt;br&gt;
+깃랩이 올릴 도커를 제대로 인식시켜주기 위해 image 버전과 services의 이름명, DOCKER_HOST를 맞춰주면 될까? 하여 시도해봤으나 이 문제는 아니었다.&lt;br&gt;
+다만 이 방법의 구글링으로 알게된 사실은 —tls=false 명령어 실행을 통해 tls를 비활성화 시켜서 도커 빌드 전에 도커를 먼저 올리는 작업을 의도하는 것이었다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;SSL(TLS) : Secure Socket Layer의 약자로 웹서버와 웹 브라우저 간의 암호화 통신을 위하여 응용계층과 TCP/IP 계층에서 동작하는 프로토콜&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://gitlab.com/gitlab-org/gitlab-runner/-/issues/27300&quot;&gt;참고 링크&lt;/a&gt;&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;깃랩 러너 설정 확인&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[runners.docker]
+    tls_verify = false
+    image = &quot;alpine&quot;
+    privileged = true //&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;사용 중인 깃랩 러너의 privileged 옵션값을 true로 수정하니 문제가 해결됐다.&lt;br&gt;
+이해하기로는 깃랩이 도커 컨테이너 러너를 이용해 도커 이미지를 만들 도커를 조작하는 것인데 내부 도커까지 권한이 내려가지 못한 것이었다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://gitlab.com/gitlab-org/gitlab-runner/-/issues/1986&quot;&gt;참고 링크&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[빅오 표기법]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/algorithm/bigO/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/algorithm/bigO/</guid><pubDate>Sun, 20 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이번 방통대 학기부터 알고리즘을 듣게 되었는데 우연히 유데미에서 저렴한 가격으로 자바스크립트를 이용해 알고리즘 강의가 풀린 걸 발견했다. 🥰&lt;br&gt;
+학기 강의만 들으면 어려울 것 같았는데 나에게 익숙한 언어로 다른 강의도 함께 병행하면 도움이 될 것 같다.&lt;/p&gt;
+&lt;h3&gt;빅오 표기법이란&lt;/h3&gt;
+&lt;p&gt;알고리즘의 효율성을 표기해주는 표기법이다. 알고리즘의 효율성은 데이터 개수(n)가 주어졌을 때 덧셈, 뺄셈, 곱셈 같은 기본 연산의 횟수를 의미한다.&lt;br&gt;
+빅오 표기법은 알고리즘의 시간 복잡도와 공간 복잡도를 나타내는데 주로 사용된다.&lt;br&gt;
+(시간 복잡도는 알고리즘의 시간 효율성을 의미하고, 공간 복잡도는 알고리즘의 공간(메모리) 효율성을 의미한다.)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/24996316/154831296-dc1994da-af15-4c35-bc02-57e48279714b.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;시간 복잡도&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;시간의 효율성&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;O(n) : 실행 비율이 1:1로 늘어나는 것.&lt;/p&gt;
+&lt;p&gt;가장 쉬운 예로 변수 n 값을 받았을 때 1부터 n까지를 더하는 루프 함수가 있다면 이 경우 빅O(n) 효율성을 가진 시간 복잡도를 의미한다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;O(n^2) : 실행 시간이 n^2으로 늘어나는 것.&lt;br&gt;
+&lt;img src=&quot;https://user-images.githubusercontent.com/24996316/154831345-12c37cef-5606-4e56-bed5-0e37a104a85a.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;루프문의 중첩된 함수의 경우 빅오 n^2(제곱) 효율성을 가진 시간 복잡도를 의미한다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;O(log n) : 실행 시간이 로그형으로 늘어나는 것.&lt;br&gt;
+데이터양이 많아져도 시간이 조금씩 늘어나며 시간 복잡도에서 O(log n)이 나오면 좋은 시간 효율성을 가졌다고 본다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;공간 복잡도&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;공간의 효율성&lt;/li&gt;
+&lt;li&gt;undefined, boolean, number : 입력의 크기와 상관 없이 불변의 공간을 갖는다.&lt;/li&gt;
+&lt;li&gt;string, 객체, 배열: o(n) 공간 복잡도를 갖는다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;공간 복잡도의 예시를 보자.&lt;/p&gt;
+&lt;p&gt;예시1&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function logUpTo(n) {
+    for (var i = 1; i &amp;lt;= n; i++) {
+        console.log(i);
+    }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 코드의 공간 복잡도는 o(1)이 된다. 이유는 루프문을 몇번을 돌아도 함수 내부에 할당된 변수인 var 공간이 변하지 않기 때문이다.&lt;/p&gt;
+&lt;p&gt;예시2&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function onlyElementsAtEvenIndex(array) {
+    var newArray = Array(Math.ceil(array.length / 2));
+    for (var i = 0; i &amp;lt; array.length; i++) {
+        if (i % 2 === 0) {
+            newArray[i / 2] = array[i];
+        }
+    }
+    return newArray;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 코드의 공간 복잡도는 o(n)이 된다. 이유는 루프문을 돌 때마다 배열에 할당된 공간이 매개변수에 맞게 늘어나기 때문이다.&lt;/p&gt;
+&lt;p&gt;예시3&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function subtotals(array) {
+    var subtotalArray = Array(array.length);
+    for (var i = 0; i &amp;lt; array.length; i++) {
+        var subtotal = 0;
+        for (var j = 0; j &amp;lt;= i; j++) {
+            subtotal += array[j];
+        }
+        subtotalArray[i] = subtotal;
+    }
+    return subtotalArray;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 코드의 공간 복잡도는 o(n)이 된다. 함수 내부에 할당된 변수는 i, j가 이중 루프문으로 배열을 증가시키지만 어쨌든 리턴되는 결과값은 이중으로 돌고 나온 하나의 배열이기 때문이다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[쿠버네티스란]]></title><description><![CDATA[목표 사내에서 앞으로 작업될 환경이 쿠버네티스로 이루어진다고 하는데 하나도 못 알아듣겠어서 혼자 학습해 본다. 쿠버네티스란? 컨테이너 오케스트레이션.
+컨테이너를 빠르게 배포/확장이 가능하고 관리를 자동화시켜주는 오픈소스 플랫폼이다. 201…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/project/work/kubernetes/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/project/work/kubernetes/</guid><pubDate>Tue, 15 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;목표&lt;/h3&gt;
+&lt;p&gt;사내에서 앞으로 작업될 환경이 쿠버네티스로 이루어진다고 하는데 하나도 못 알아듣겠어서 혼자 학습해 본다.&lt;/p&gt;
+&lt;h3&gt;쿠버네티스란?&lt;/h3&gt;
+&lt;p&gt;컨테이너 오케스트레이션.
+컨테이너를 빠르게 배포/확장이 가능하고 관리를 자동화시켜주는 오픈소스 플랫폼이다.&lt;br&gt;
+2015년도에 구글에 의해 출시됐고, 현재 아주 거대한 커뮤니티를 형성 중이다.&lt;br&gt;
+하나의 서버가 아닌 굉장히 많은 서버에서 도커를 사용하게 된다면 우리는 가장 이상적인 상태의 서버를 선별해 해당 서버에 도커 컨테이너를 생성해야 한다.&lt;br&gt;
+이 행위를 사람이 일일이 그 많은 서버들에게 접근해 남는 자원이 많은지 확인하는 과정은 굉장히 비효율적인데… 이것을 쿠버네티스가 대신 해 준다고 보면 된다.&lt;/p&gt;
+&lt;h3&gt;들어가기 전에 가상머신 vs 컨테이너 차이부터&lt;/h3&gt;
+&lt;h4&gt;가상머신&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/24996316/154515156-444cedf1-a47e-4f9d-89ce-59297db14438.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;가상머신의 구조는 위의 이미지와 같이, 하드웨어 위에 하이퍼바이저를 두고 독립된 환경의 운영 시스템을 여러개 생성한다. 이런 구조의 장점은 각 환경마다 필요한 리소스가 많거나 적은 경우에 맞춰서 하드웨어 자원을 할당시켜줄 수 있다는 점에 있다. 하지만 특정 머신이 다운되어 버리면? 😕&lt;br&gt;
+이런 경우를 방지하기 위해 수평 확장 형식으로 아래와 같이 필요한 머신을 수평적으로 여러개 생성시켜주는 방식을 요즘은 많이 쓴다고 한다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/24996316/154516264-3433270d-22dc-458f-a5bb-95886f1a7f69.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;h4&gt;컨테이너&lt;/h4&gt;
+&lt;p&gt;컨테이너 방식의 구조는 아래와 같다.&lt;/p&gt;
+&lt;h2&gt;컨테이너|컨테이너|…&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;도커&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;호스트 운영체제&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;하드웨어&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;컨테이너는 가상머신과는 다르게 머신을 생성할 때마다 운영체제를 설치할 필요가 없으므로 일단 가볍다.&lt;br&gt;
+가볍기 때문에 수평확장의 경우도 당연히 컨테이너로 만든 어플리케이션이 빠르게 확산되고 빠르게 축소되는 이점을 가져간다.&lt;/p&gt;
+&lt;p&gt;즉, 컨테이너 방식은 배포를 효율적으로 할 수 있다.&lt;br&gt;
+그런데 만일 컨테이너들을 수평 확장시키고 있는 서버 자체에 오류가 생겨버리면 어떡할까?&lt;br&gt;
+이 경우를 대비하기 위해 나온 것이 멀티 호스트 도커 플랫폼이다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/24996316/154518497-f3f72350-1776-4eb9-a0cf-a35bc03a6bee.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;하지만 여전히 문제는 존재한다. 서버를 여러대 뒀지만 특정 컨테이너를 서버에 할당시켜야할 때 그 기준을 사람이 일일이 서버마다 체크해서 할당시켜야하는 번거로움이 생겼다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/24996316/154519434-bbe896a6-316f-46e8-a0d2-6c8389ac3a10.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;초반부에 나온 쿠버네티스가 이것을 해결해 준다. 컨트롤 패널이라는 마스터 서버가 다른 일꾼 서버들을 관리해 주며 넉넉한 자원을 가진 서버를 마스터 서버가 알아서 찾아서 추가로 더 필요한 컨테이너를 똑똑하게 복제해서 넣어준다.&lt;/p&gt;
+&lt;h3&gt;도움 받은 자료&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Sj9Z6-w1VUE&amp;#x26;list=PLApuRlvrZKohaBHvXAOhUD-RxD0uQ3z0c&amp;#x26;index=2&quot;&gt;따베쿠&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[React 프로젝트 CRA 없이 세팅하기]]></title><description><![CDATA[회사에서 프로젝트 용량 줄이기 작업을 하면서 내가 만든 프로젝트의 번들링에 대한 이해도가 부족하다는 생각이 문득 들었다. CRA (Create Reat App…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/setting/react/without-CRA/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/setting/react/without-CRA/</guid><pubDate>Sun, 06 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;회사에서 프로젝트 용량 줄이기 작업을 하면서 내가 만든 프로젝트의 번들링에 대한 이해도가 부족하다는 생각이 문득 들었다. CRA (Create Reat App) 라는 리액트 보일러 프로젝트 명령어로 주로 프로젝트를 만들어서 활용했는데 이 명령어 하나면 웹팩과 바벨이 자동으로 포함되어 프로젝트 환경을 구성해 주기 때문이다.&lt;/p&gt;
 &lt;p&gt;이번에는 웹팩과 바벨로 리액트 프로젝트를 어떻게 구성할 수 있는지 CRA 없이 환경 세팅을 해 보자.&lt;/p&gt;
 &lt;h3&gt;웹팩과 바벨&lt;/h3&gt;
 &lt;h4&gt;웹팩&lt;/h4&gt;
@@ -356,9 +510,9 @@ deploy_dev:
   script:
     - echo &quot;$SSH_PRIVATE_KEY&quot; | tr -d &apos;\r&apos; &gt; key.pem
     - chmod 400 key.pem
-    - ssh -o StrictHostKeyChecking=no -i key.pem root@$PROD_SERVER_IP -p 6879 &apos;docker stop projectcontainer || true &amp;amp;&amp;amp; docker rm projectcontainer || true&apos;
-    - ssh -o StrictHostKeyChecking=no -i key.pem root@$PROD_SERVER_IP -p 6879 &apos;docker pull $DOCKER_REGISTRY/project-name&apos;
-    - ssh -o StrictHostKeyChecking=no -i key.pem root@$PROD_SERVER_IP -p 6879 &apos;docker run -p 3001:80 -d --name projectcontainer $DOCKER_REGISTRY/project-name&apos;
+    - ssh -o StrictHostKeyChecking=no -i key.pem username@$PROD_SERVER_IP -p 6879 &apos;docker stop projectcontainer || true &amp;amp;&amp;amp; docker rm projectcontainer || true&apos;
+    - ssh -o StrictHostKeyChecking=no -i key.pem username@$PROD_SERVER_IP -p 6879 &apos;docker pull $DOCKER_REGISTRY/project-name&apos;
+    - ssh -o StrictHostKeyChecking=no -i key.pem username@$PROD_SERVER_IP -p 6879 &apos;docker run -p 3001:80 -d --name projectcontainer $DOCKER_REGISTRY/project-name&apos;
   only:
     - master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;배포 자동화의 단계는 크게 총 두단계이다. 빌드-배포.&lt;/p&gt;
@@ -378,16 +532,29 @@ deploy_dev:
 &lt;p&gt;빌드 스테이지에서 깃랩은 kroniak/ssh-client을 실행시킨다.&lt;br&gt;
 이후 러너는 script:에 적힌 순서대로 도커 명령어를 실행한다.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;key.pem 파일의 권한 설정하여 접근 획득&lt;/li&gt;
-&lt;li&gt;ssh 명령어를 이용해 배포하고자하는 서버에 ‘우리가 실행시키고자하는 컨테이너가 있다면 스탑 후 제거한다’ &amp;#x3C;- 컨테이너 중복 에러 방지&lt;/li&gt;
-&lt;li&gt;ssh 명령어를 이용해 배포하고자하는 서버에서 빌드 단계에서 push 했던 $DOCKER_REGISTRY/project-name 이미지를 가져온다&lt;/li&gt;
-&lt;li&gt;ssh 명령어를 이용해 배포하고자하는 서버에서 ‘가져온 이미지를 도커 컨테이너로 실행한다. 이때 호스트의 포트는 3001 포트이고 컨테이너의 포트는 80 포트를 이용해 연결한다’&lt;/li&gt;
+&lt;li&gt;ssh 접속을 위해 key.pem 파일을 lf 형식으로 바꾼 후 400 권한을 부여한다&lt;/li&gt;
+&lt;li&gt;key.pem 파일을 이용해 배포하고자하는 서버에 ‘우리가 실행시키고자하는 컨테이너가 있다면 스탑 후 제거한다’ &amp;#x3C;- 컨테이너 중복 에러 방지&lt;/li&gt;
+&lt;li&gt;key.pem 파일을 이용해 배포하고자하는 서버에서 빌드 단계에서 push 했던 $DOCKER_REGISTRY/project-name 이미지를 가져온다&lt;/li&gt;
+&lt;li&gt;key.pem 파일을 이용해 배포하고자하는 서버에서 ‘가져온 이미지를 도커 컨테이너로 실행한다. 이때 호스트의 포트는 3001 포트이고 컨테이너의 포트는 80 포트를 이용해 연결한다’&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;ssh 명령어를 이용해 서버와 통신을 하기 위한 key 생성&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;ssh-keygen -m PEM -t rsa -b 4096 -C &quot;email@co.kr&quot;&lt;/code&gt;&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;ssh 명령어를 이용해 서버와 통신을 하기 위한 key 생성&lt;/strong&gt;&lt;br&gt;
+&lt;code class=&quot;language-text&quot;&gt;ssh-keygen -m PEM -t rsa -b 4096 -C &quot;email@co.kr&quot;&lt;/code&gt;&lt;br&gt;
 위 명령어를 서버에서 실행하면 id_rsa, id_rsa.pub 키를 생성하고 전자의 키를 복사해 깃랩에서 $SSH_PRIVATE_KEY 환경변수로 지정 후 사용한다&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://shanepark.tistory.com/195&quot;&gt;SSH key 생성하고, 서버에 등록해서 비밀번호 없이 접속하기&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;ssh denided 에러&lt;/strong&gt;&lt;br&gt;
+에러구문: Permission denied (publickey, password)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;서버와 통신하기 위해 key 생성을 할 때 id_rsa를 복사한 authorized_keys 파일을 반드시 생성해야 깃랩에서 원격 서버로 접속 후 도커 실행하는 명령어가 통과한다(이유는 왜지?)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;docker 권한 에러&lt;/strong&gt;&lt;br&gt;
+에러구문: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;ssh 통신은 됐는데 docker 명령어를 사용할 때마다 권한 에러가 떴다. 이유는 현재 사용 중인 유저가 /var/run 내부에서 도커 실행 권한이 없기 때문에 생긴 일. /var/run 폴더에서&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;service docker restart&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;명령어를 실행하면 도커를 재실행하기 위해 권한을 설정시킬 유저 목록들이 나온다. 이후 sudosu &gt; reboot 하여 서버 재시작.&lt;/p&gt;
 &lt;h3&gt;3. 깃랩 러너 등록&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;공유 러너와 개별 러너, 차이점에 대해 공부하기&lt;/li&gt;
@@ -1674,6 +1841,11 @@ fds 모듈은 CRA로 만들어졌기 때문에 react.js 라이브러리가 디�
 &lt;ul&gt;
 &lt;li&gt;개발 버전, 배포 버전 작업 분기 (package.json, package_module.json으로 분기)&lt;/li&gt;
 &lt;li&gt;lab-font, lab-icon, fds 모듈들 verdaccio (사내 npm 저장소)에 업로드&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;22-02-24 - 현재까지 진행된 사항&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;모듈을 프로젝트에 적용&lt;/li&gt;
+&lt;li&gt;1차 배포&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3&gt;해야할 사항&lt;/h3&gt;
