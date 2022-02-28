@@ -53,6 +53,11 @@ tags: [kubenetes]
 
 초반부에 나온 쿠버네티스가 이것을 해결해 준다. 컨트롤 패널이라는 마스터 서버가 다른 일꾼 서버들을 관리해 주며 넉넉한 자원을 가진 서버를 마스터 서버가 알아서 찾아서 추가로 더 필요한 컨테이너를 똑똑하게 복제해서 넣어준다.
 
+### 용어 정리   
+
+kube-apiserver, 쿠브-api서버: 쿠버네티스 API를 노출하는 마스터상의 컴포넌트. 쿠버네티스 컨트롤 플레인에 대한 프론트엔드로 수평적인 스케일링을 위해 설계 되었다.
+
 
 ### 도움 받은 자료
 [따베쿠](https://www.youtube.com/watch?v=Sj9Z6-w1VUE&list=PLApuRlvrZKohaBHvXAOhUD-RxD0uQ3z0c&index=2)
+
