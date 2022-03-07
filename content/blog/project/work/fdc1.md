@@ -84,6 +84,9 @@ fds 모듈은 private npm 서버에 올려서 사용하고 있다.
 
 * data- urI 관련하여 정리 포스팅 필요
 
+### 아이콘 svg -> font화 시키기
+svg 아이콘 파일들을 font 파일로 변환시켜주는 iconmon 사이트를 발견했다.
+
 ### front design system 모듈 보완
 
 fds 모듈은 material-ui를 기반으로 제작되었다.  
