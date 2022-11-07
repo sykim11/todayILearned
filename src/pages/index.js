@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import * as homeStyles from "../components/home.module.css"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -36,7 +37,65 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
       <Bio />
-      <h2>Review</h2>
+      <div className={homeStyles.row}>
+        <section className={homeStyles.section}>
+          <h2>✨ Javascript</h2>
+          <ol style={{ listStyle: `none` }}>
+            {jsPosts.map(post => {
+              const title = post.frontmatter.title || post.fields.slug
+              console.log(post)
+
+              return (
+                <li key={post.fields.slug}>
+                  <article
+                    className="post-list-item"
+                    itemScope
+                    itemType="http://schema.org/Article"
+                  >
+                    <header>
+                      <p>
+                        <Link to={`${post.fields.slug}`} itemProp="url">
+                          <span itemProp="headline">{title}</span>
+                        </Link>
+                      </p>
+                      <small>{post.frontmatter.date}</small>
+                    </header>
+                  </article>
+                </li>
+              )
+            })}
+          </ol>
+        </section>
+        <section className={homeStyles.section}>
+          <h2>🧾 Bug Report</h2>
+          <ol style={{ listStyle: `none` }}>
+            {bugListPosts.map(post => {
+              const title = post.frontmatter.title || post.fields.slug
+              console.log(post)
+
+              return (
+                <li key={post.fields.slug}>
+                  <article
+                    className="post-list-item"
+                    itemScope
+                    itemType="http://schema.org/Article"
+                  >
+                    <header>
+                      <p>
+                        <Link to={`${post.fields.slug}`} itemProp="url">
+                          <span itemProp="headline">{title}</span>
+                        </Link>
+                      </p>
+                      <small>{post.frontmatter.date}</small>
+                    </header>
+                  </article>
+                </li>
+              )
+            })}
+          </ol>
+        </section>
+      </div>
+      <h2>🙄 Review</h2>
       <ol style={{ listStyle: `none` }}>
         {reviewPosts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
@@ -70,59 +129,8 @@ const BlogIndex = ({ data, location }) => {
           )
         })}
       </ol>
-      <h2>Bug Report</h2>
-      <ol style={{ listStyle: `none` }}>
-        {bugListPosts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
-          console.log(post)
 
-          return (
-            <li key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <p>
-                    <Link to={`${post.fields.slug}`} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </p>
-                  <small>{post.frontmatter.date}</small>
-                </header>
-              </article>
-            </li>
-          )
-        })}
-      </ol>
-      <h2>Javascript</h2>
-      <ol style={{ listStyle: `none` }}>
-        {jsPosts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
-          console.log(post)
-
-          return (
-            <li key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <p>
-                    <Link to={`${post.fields.slug}`} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </p>
-                  <small>{post.frontmatter.date}</small>
-                </header>
-              </article>
-            </li>
-          )
-        })}
-      </ol>
-      <h2>Docker</h2>
+      {/* <h2>Docker</h2>
       <ol style={{ listStyle: `none` }}>
         {dockerPosts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
@@ -147,7 +155,7 @@ const BlogIndex = ({ data, location }) => {
             </li>
           )
         })}
-      </ol>
+      </ol> */}
     </Layout>
   )
 }

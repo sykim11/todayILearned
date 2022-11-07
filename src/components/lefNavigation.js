@@ -31,9 +31,9 @@ const LeftNavigation = ({ data, location }) => {
 
   return (
     <div className="left-navigation">
-      <p>
+      <div className="home">
         <Link to="/">Home</Link>
-      </p>
+      </div>
       <ul className="sidebar-links">
         {data?.group?.map((group, index) => (
           <li

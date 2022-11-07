@@ -1,0 +1,12 @@
+.container {
+  margin: 3rem auto;
+  max-width: 600px;
+}
+
+.section {
+  flex: 1;
+}
+
+.row {
+  display: flex;
+}
