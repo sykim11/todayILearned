@@ -26,7 +26,7 @@ output:
 ❓ **콜스택이란**  
 코드가 호출되면서 스택으로 쌓이는 영역을 의미
 
-```js
+```js{numberLines: true}
 const 첫번째함수 = (x, y) => {
   return console.log(x + y)
 }
@@ -50,7 +50,7 @@ const 두번째함수 = (a, b) => {
 ❓ **웹 API란**  
 브라우저에서 자체 지원하는 API이다. 웹 API는 Dom 이벤트, Ajax (XmlHttpRequest), setTimeout 등의 비동기 작업들을 수행할 수 있도록 API로 기능을 지원한다.
 
-```js
+```js{numberLines: true}
 console.log("첫번째 실행")
 setTimeout(() => console.log("세번째 실행"), 1000)
 console.log("두번째 실행")
@@ -98,7 +98,7 @@ console.log("두번째 실행")
 1. 함수가 호출하는 다른 콜백 함수
 2. 비동기적으로 호출되는 콜백 함수
 
-```js
+```js{numberLines: true}
 // 1. Synchronous (동기)
 ;[1, 2, 3, 4].forEach(function (i) {
   console.log(i)
