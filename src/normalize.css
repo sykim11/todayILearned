@@ -64,6 +64,20 @@ hr {
 pre {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
+  font-family: var(--font-body) !important;
+}
+
+pre[class*="language-"] {
+  padding: 1.5em 0 1.5em 3.8em !important;
+}
+
+.line-numbers .line-numbers-rows {
+  width: 2.5rem !important;
+  top: 1.5em !important;
+}
+.line-numbers-rows > span:before {
+  padding-right: 0 !important;
+  text-align: center !important;
 }
 
 /* Text-level semantics
@@ -107,6 +121,7 @@ kbd,
 samp {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
+  font-family: var(--font-body) !important;
 }
 
 /**

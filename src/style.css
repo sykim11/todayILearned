@@ -367,8 +367,18 @@ a:focus {
 
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
+  /* color: #fff !important; */
 }
 
+.gatsby-highlight pre {
+  /* background-color: #252525 !important; */
+  border-radius: 10px;
+}
+
+.gatsby-highlight pre code {
+  /* color: #fff !important; */
+  /* text-shadow: none !important; */
+}
 /* Media queries */
 
 @media (max-width: 42rem) {

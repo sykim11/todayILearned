@@ -26,15 +26,15 @@ output:
 ❓ **콜스택이란**  
 코드가 호출되면서 스택으로 쌓이는 영역을 의미
 
-```
+```js
 const 첫번째함수 = (x, y) => {
-    return console.log(x + y);
+  return console.log(x + y)
 }
 const 두번째함수 = (a, b) => {
   첫번째함수(a, b)
 }
 
-두번째함수(1,2); // 실행 시작
+두번째함수(1, 2) // 실행 시작
 ```
 
 위와 같은 코드가 있다고 가정했을 때 콜스택에서 이루어지는 호출 방식은 아래와 같다.
@@ -50,12 +50,10 @@ const 두번째함수 = (a, b) => {
 ❓ **웹 API란**  
 브라우저에서 자체 지원하는 API이다. 웹 API는 Dom 이벤트, Ajax (XmlHttpRequest), setTimeout 등의 비동기 작업들을 수행할 수 있도록 API로 기능을 지원한다.
 
-```
-console.log('첫번째 실행');
-setTimeout(
-	() => console.log('세번째 실행')
-    , 1000);
-console.log('두번째 실행');
+```js
+console.log("첫번째 실행")
+setTimeout(() => console.log("세번째 실행"), 1000)
+console.log("두번째 실행")
 ```
 
 위 코드의 실행 방식은 아래와 같은 그림처럼 진행이 됩니다.
@@ -100,21 +98,21 @@ console.log('두번째 실행');
 1. 함수가 호출하는 다른 콜백 함수
 2. 비동기적으로 호출되는 콜백 함수
 
-```
+```js
 // 1. Synchronous (동기)
-[1,2,3,4].forEach(function(i) {
-   console.log(i);
-});
+;[1, 2, 3, 4].forEach(function (i) {
+  console.log(i)
+})
 
 // 2. Asynchronous (비동기)
 function asyncForEach(array, cb) {
-    array.forEach(function(){
-       setTimeout(cb, 0);
-    });
+  array.forEach(function () {
+    setTimeout(cb, 0)
+  })
 }
-asyncForEach([1,2,3,4], function(i){
-    console.log(i);
-});
+asyncForEach([1, 2, 3, 4], function (i) {
+  console.log(i)
+})
 ```
 
 1번과 2번 코드는 둘다 forEach라는 함수를 사용하지만 1번의 경우는 콜스택에 쌓이는 방식이고 2번의 경우는 웹 API를 활용해 콜백큐로 이동했다가 이벤트 루프를 통해 콜스택으로 호출되는 방식이다.
