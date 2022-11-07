@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 07 Nov 2022 06:03:16 GMT</lastBuildDate><item><title><![CDATA[nextjs에 써드파티 라이브러리 추가 시 에러]]></title><description><![CDATA[nextjs 기반의 프로젝트로 작업 중… nextjs에 커스텀한 모듈들만 모아둔 써드파티 라이브러리를 추가해야할 일이 생겼다. CRA 기반의 프로젝트 기준으로 작업되었던 모듈들이라 정말 미친듯한 에러들이 떴는데… 이 과정에서 CRA와 nextjs…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/bugLists/nextjs에 써드파티 라이브러리 추가 시 에러/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/bugLists/nextjs에 써드파티 라이브러리 추가 시 에러/</guid><pubDate>Wed, 14 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;nextjs 기반의 프로젝트로 작업 중… nextjs에 커스텀한 모듈들만 모아둔 써드파티 라이브러리를 추가해야할 일이 생겼다.&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 07 Nov 2022 08:10:30 GMT</lastBuildDate><item><title><![CDATA[nextjs에 써드파티 라이브러리 추가 시 에러]]></title><description><![CDATA[nextjs 기반의 프로젝트로 작업 중… nextjs에 커스텀한 모듈들만 모아둔 써드파티 라이브러리를 추가해야할 일이 생겼다. CRA 기반의 프로젝트 기준으로 작업되었던 모듈들이라 정말 미친듯한 에러들이 떴는데… 이 과정에서 CRA와 nextjs…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/bugLists/nextjs에 써드파티 라이브러리 추가 시 에러/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/bugLists/nextjs에 써드파티 라이브러리 추가 시 에러/</guid><pubDate>Wed, 14 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;nextjs 기반의 프로젝트로 작업 중… nextjs에 커스텀한 모듈들만 모아둔 써드파티 라이브러리를 추가해야할 일이 생겼다.&lt;br&gt;
 CRA 기반의 프로젝트 기준으로 작업되었던 모듈들이라 정말 미친듯한 에러들이 떴는데… 이 과정에서 CRA와 nextjs가 외부 모듈을 받아들이는 포맷이 다르다는 걸 알게 되었다.&lt;br&gt;
 프론트 개발자끼리 사용하려고 예쁘게 정리해둔 모듈들을 rollup을 이용해 빌드시킨 후 verdaccio에 배포를 한 뒤 필요한 프로젝트에 추가하는 식으로 사용을 하는데&lt;br&gt;
 여태까지 esm 형식으로 CRA에 추가해 왔던 것이 nextjs에서는 인식이 안 되었던 것… nextjs는 cjs, 즉 common js로만 패키지 모듈을 인식하고 있었다.&lt;br&gt;
@@ -610,7 +610,16 @@ urlpatterns &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span
 &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
 
 urlpatterns &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; format_suffix_patterns&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;urlpatterns&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;여기까지 장고 세팅은 끝났다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[무작정 장고로 사이드 프로젝트 만들기]]></title><description><![CDATA[개발 환경 세팅 python IDE 툴인 pycharm을 이용해 python 가상 환경을 만들자. 이렇게 만들어진 폴더 경로 앞에 (env)가 붙는데 이런식으로 격리된 환경을 사용하는 이유는 각 프로젝트마다 python…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/project/work/django/01.setting/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/project/work/django/01.setting/</guid><pubDate>Sat, 02 Jul 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;개발 환경 세팅&lt;/h3&gt;
+&lt;p&gt;여기까지 장고 세팅은 끝났다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[무작정 장고로 사이드 프로젝트 만들기 2]]></title><description><![CDATA[django 패턴 django 프로젝트의 패턴은 mvc 구조를 따라간다고 한다. M odel V iew C ontroller Model 단에서는 django와 데이터베이스가 연결되어 상호작용을 하는 역할을 한다. 데이터베이스의 컬럼이 django…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/project/work/django/02.pattern/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/project/work/django/02.pattern/</guid><pubDate>Sat, 02 Jul 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;django 패턴&lt;/h3&gt;
+&lt;p&gt;django 프로젝트의 패턴은 mvc 구조를 따라간다고 한다.&lt;br&gt;
+M odel&lt;br&gt;
+V iew&lt;br&gt;
+C ontroller&lt;/p&gt;
+&lt;p&gt;Model 단에서는 django와 데이터베이스가 연결되어 상호작용을 하는 역할을 한다. 데이터베이스의 컬럼이 django 내부에서 개발자가 지정한 모델 형태에 맞게 매칭된다고 이해했다.&lt;br&gt;
+예를 들어 유저라는 모델에 유저 이름, 유저 나이, 유저 핸드폰 번호가 있다면 데이터베이스의 컬럼으로는 userName, userAge, userPhone 컬럼이 있을 것이다.&lt;/p&gt;
+&lt;p&gt;View 단에서는 유저가 django 서버에 요청을 했을 때 일련의 과정을 거쳐서 보여주는 역할을 한다.&lt;br&gt;
+요청한 유저가 권한이 있는지, 유효한 정보값을 요청했는지 등 요청자를 체크를 하기도 하고 요청한 페이지가 회원가입 페이지라면 회원가입 페이지에 해당하는 리소스를 만들어 응답을 내려주기도 한다.&lt;/p&gt;
+&lt;p&gt;Controller 단은 프론트엔드의 역할을 한다. 유저 인터페이스가 이 부분에 해당하고 django 프레임워크에서 제공하는 템플릿을 사용해 인터페이스를 개발할 수 있다. 아마도 나는 이 템플릿을 사용하지 않고 리액트 어플리케이션을 따로 만들어 대체할 예정이다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[무작정 장고로 사이드 프로젝트 만들기]]></title><description><![CDATA[개발 환경 세팅 python IDE 툴인 pycharm을 이용해 python 가상 환경을 만들자. 이렇게 만들어진 폴더 경로 앞에 (env)가 붙는데 이런식으로 격리된 환경을 사용하는 이유는 각 프로젝트마다 python…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/project/work/django/01.setting/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/project/work/django/01.setting/</guid><pubDate>Sat, 02 Jul 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;개발 환경 세팅&lt;/h3&gt;
 &lt;p&gt;python IDE 툴인 pycharm을 이용해 python 가상 환경을 만들자.&lt;br&gt;
 이렇게 만들어진 폴더 경로 앞에 (env)가 붙는데 이런식으로 격리된 환경을 사용하는 이유는 각 프로젝트마다 python 프로그램들이 혼용되어 사용된다면 버전 관리도 어렵고 충돌나기 쉽다.&lt;br&gt;
 (npm 라이브러리들도 가상 환경을 만들어 관리가 가능하면 좋겠다… 이미 있나?)&lt;/p&gt;
@@ -621,16 +630,7 @@ urlpatterns &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; format_s
 &lt;p&gt;django를 설치하면 manage.py 파일이 생성되는데 이 파일을 이용해 django 서버를 실행할 수 있다!&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;python manage.py runserver&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/24996316/176993389-544d9513-880f-4aa6-9ed7-34b29bbd4297.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
-&lt;p&gt;프레임워크를 사용할 때마다 느끼지만 명령어 몇 번에 뚝딱뚝딱 만들어지는 것들이 참 신기하고 편하다. 그리고 가끔은 제대로된 원리를 파악하지 않고 지나가기 쉬워져 독이 되는 묘한 불안감이 들지만 일단 진행해 보자.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[무작정 장고로 사이드 프로젝트 만들기 2]]></title><description><![CDATA[django 패턴 django 프로젝트의 패턴은 mvc 구조를 따라간다고 한다. M odel V iew C ontroller Model 단에서는 django와 데이터베이스가 연결되어 상호작용을 하는 역할을 한다. 데이터베이스의 컬럼이 django…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/project/work/django/02.pattern/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/project/work/django/02.pattern/</guid><pubDate>Sat, 02 Jul 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;django 패턴&lt;/h3&gt;
-&lt;p&gt;django 프로젝트의 패턴은 mvc 구조를 따라간다고 한다.&lt;br&gt;
-M odel&lt;br&gt;
-V iew&lt;br&gt;
-C ontroller&lt;/p&gt;
-&lt;p&gt;Model 단에서는 django와 데이터베이스가 연결되어 상호작용을 하는 역할을 한다. 데이터베이스의 컬럼이 django 내부에서 개발자가 지정한 모델 형태에 맞게 매칭된다고 이해했다.&lt;br&gt;
-예를 들어 유저라는 모델에 유저 이름, 유저 나이, 유저 핸드폰 번호가 있다면 데이터베이스의 컬럼으로는 userName, userAge, userPhone 컬럼이 있을 것이다.&lt;/p&gt;
-&lt;p&gt;View 단에서는 유저가 django 서버에 요청을 했을 때 일련의 과정을 거쳐서 보여주는 역할을 한다.&lt;br&gt;
-요청한 유저가 권한이 있는지, 유효한 정보값을 요청했는지 등 요청자를 체크를 하기도 하고 요청한 페이지가 회원가입 페이지라면 회원가입 페이지에 해당하는 리소스를 만들어 응답을 내려주기도 한다.&lt;/p&gt;
-&lt;p&gt;Controller 단은 프론트엔드의 역할을 한다. 유저 인터페이스가 이 부분에 해당하고 django 프레임워크에서 제공하는 템플릿을 사용해 인터페이스를 개발할 수 있다. 아마도 나는 이 템플릿을 사용하지 않고 리액트 어플리케이션을 따로 만들어 대체할 예정이다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[무작정 장고로 사이드 프로젝트 만들기 3]]></title><description><![CDATA[장고로 앱 만들기 장고라는 프레임워크 안에 여러개의 앱들이 만들어질 예정이다. 유저를 관리하는 accountApp 게시글을 관리하는 articleApp 댓글을 관리하는 commentApp ❗ 모든 프로젝트들의 시작인 hello_world…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/project/work/django/03.startapp/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/project/work/django/03.startapp/</guid><pubDate>Sat, 02 Jul 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;장고로 앱 만들기&lt;/h3&gt;
+&lt;p&gt;프레임워크를 사용할 때마다 느끼지만 명령어 몇 번에 뚝딱뚝딱 만들어지는 것들이 참 신기하고 편하다. 그리고 가끔은 제대로된 원리를 파악하지 않고 지나가기 쉬워져 독이 되는 묘한 불안감이 들지만 일단 진행해 보자.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[무작정 장고로 사이드 프로젝트 만들기 3]]></title><description><![CDATA[장고로 앱 만들기 장고라는 프레임워크 안에 여러개의 앱들이 만들어질 예정이다. 유저를 관리하는 accountApp 게시글을 관리하는 articleApp 댓글을 관리하는 commentApp ❗ 모든 프로젝트들의 시작인 hello_world…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/project/work/django/03.startapp/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/project/work/django/03.startapp/</guid><pubDate>Sat, 02 Jul 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;장고로 앱 만들기&lt;/h3&gt;
 &lt;p&gt;장고라는 프레임워크 안에 여러개의 앱들이 만들어질 예정이다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -1838,7 +1838,45 @@ ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;registry&lt
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
   &lt;span class=&quot;token function&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; arguments&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
   ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;stroke &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; _stroke
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 입문 수업 1 ~ 5]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker1/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker1/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작년부터 궁금했던 도커라는 녀석을 공부해 보기로 했다.&lt;br&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[vscode에서 crlf 파일들을 일괄로 lf파일로 변환하는 법]]></title><description><![CDATA[파일 형상 관리를 git을 이용해 하고 있다. 그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/bugLists/vscode_setting/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/bugLists/vscode_setting/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;파일 형상 관리를 git을 이용해 하고 있다.&lt;br&gt;
+그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf로 변환된 채로 코드상 빨간 줄을 뿜고 있는데… 이걸 파일 하나하나 바꿔주다보니 갑갑해서 일괄 수정할 수 있는 방법을 찾아냈다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 11.39240506329114%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAe0lEQVQI12OQ1Lb4D8GWUGyBRmMXl4KypXQs/8voWv0XUTP57x2V+p+Bq+Hsf+mui//lui/+l+y48J+n8dx/nclX/qv1X/4v3Hr+v2DL+f8qfZf+CzSf+y/QAuHrTr7yX3vS5f+y3Rf/czee+8/ffO4/W8P5/zZd+/4DAL+gTvIIXhXiAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;lf&quot;
+        title=&quot;lf&quot;
+        src=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png&quot;
+        srcset=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/c26ae/lf.png 158w,
+/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/6bdcf/lf.png 315w,
+/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png 630w,
+/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png 772w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;터미널창에 아래 명령어 수행&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;git config core&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;autocrlf &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
+git rm &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;cached &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;r &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 입문 수업 1 ~ 5]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker1/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker1/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작년부터 궁금했던 도커라는 녀석을 공부해 보기로 했다.&lt;br&gt;
 무작정 유튜브에 도커를 쳐보니 생활코딩 유튜브 채널에 도커 입문용 강의가 있더라… 감사합니다!&lt;/p&gt;
 &lt;h3&gt;도커를 사용하게 된 배경&lt;/h3&gt;
 &lt;p&gt;어떠한 어플리케이션을 개발할 때 웹서버와 데이터베이스가 필요하다. 그런데 만일 웹서버에 맞는 운영체제와 데이터베이스에 맞는 운영체제가 다른 경우 가장 이상적인 그림은 아래와 같을 것이다.&lt;/p&gt;
@@ -2183,45 +2221,7 @@ ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;registry&lt
 &lt;h3&gt;도움 받은 자료들&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&quot;&gt;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[vscode에서 crlf 파일들을 일괄로 lf파일로 변환하는 법]]></title><description><![CDATA[파일 형상 관리를 git을 이용해 하고 있다. 그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/bugLists/vscode_setting/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/bugLists/vscode_setting/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;파일 형상 관리를 git을 이용해 하고 있다.&lt;br&gt;
-그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf로 변환된 채로 코드상 빨간 줄을 뿜고 있는데… 이걸 파일 하나하나 바꿔주다보니 갑갑해서 일괄 수정할 수 있는 방법을 찾아냈다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 11.39240506329114%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAe0lEQVQI12OQ1Lb4D8GWUGyBRmMXl4KypXQs/8voWv0XUTP57x2V+p+Bq+Hsf+mui//lui/+l+y48J+n8dx/nclX/qv1X/4v3Hr+v2DL+f8qfZf+CzSf+y/QAuHrTr7yX3vS5f+y3Rf/czee+8/ffO4/W8P5/zZd+/4DAL+gTvIIXhXiAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;lf&quot;
-        title=&quot;lf&quot;
-        src=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png&quot;
-        srcset=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/c26ae/lf.png 158w,
-/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/6bdcf/lf.png 315w,
-/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png 630w,
-/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png 772w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;터미널창에 아래 명령어 수행&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;git config core&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;autocrlf &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
-git rm &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;cached &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;r &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
-git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Javascript 작동 원리]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works/</guid><pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;자바스크립트의 작동 원리에 대해 조금 더 깊은 학습이 필요하다 생각되어 글로 정리해 보았다.&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Javascript 작동 원리]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works/</guid><pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;자바스크립트의 작동 원리에 대해 조금 더 깊은 학습이 필요하다 생각되어 글로 정리해 보았다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;자바스크립트는 싱글스레드로 동작하는 언어&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2263,14 +2263,14 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
 메모리를 할당하는 영역을 의미&lt;/p&gt;
 &lt;p&gt;❓ &lt;strong&gt;콜스택이란&lt;/strong&gt;&lt;br&gt;
 코드가 호출되면서 스택으로 쌓이는 영역을 의미&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const 첫번째함수 = (x, y) =&gt; {
-    return console.log(x + y);
-}
-const 두번째함수 = (a, b) =&gt; {
-  첫번째함수(a, b)
-}
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;첫번째함수&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;x&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; y&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;x &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;두번째함수&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;첫번째함수&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-두번째함수(1,2); // 실행 시작&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;token function&quot;&gt;두번째함수&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 실행 시작&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;위와 같은 코드가 있다고 가정했을 때 콜스택에서 이루어지는 호출 방식은 아래와 같다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -2308,11 +2308,9 @@ const 두번째함수 = (a, b) =&gt; {
 &lt;h3&gt;비동기는 웹 API 환경에서 이루어진다&lt;/h3&gt;
 &lt;p&gt;❓ &lt;strong&gt;웹 API란&lt;/strong&gt;&lt;br&gt;
 브라우저에서 자체 지원하는 API이다. 웹 API는 Dom 이벤트, Ajax (XmlHttpRequest), setTimeout 등의 비동기 작업들을 수행할 수 있도록 API로 기능을 지원한다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;console.log(&apos;첫번째 실행&apos;);
-setTimeout(
-	() =&gt; console.log(&apos;세번째 실행&apos;)
-    , 1000);
-console.log(&apos;두번째 실행&apos;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;첫번째 실행&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;세번째 실행&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;두번째 실행&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;위 코드의 실행 방식은 아래와 같은 그림처럼 진행이 됩니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -2471,20 +2469,20 @@ console.log(&apos;두번째 실행&apos;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;li&gt;함수가 호출하는 다른 콜백 함수&lt;/li&gt;
 &lt;li&gt;비동기적으로 호출되는 콜백 함수&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// 1. Synchronous (동기)
-[1,2,3,4].forEach(function(i) {
-   console.log(i);
-});
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// 1. Synchronous (동기)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-// 2. Asynchronous (비동기)
-function asyncForEach(array, cb) {
-    array.forEach(function(){
-       setTimeout(cb, 0);
-    });
-}
-asyncForEach([1,2,3,4], function(i){
-    console.log(i);
-});&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 2. Asynchronous (비동기)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;asyncForEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;array&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; cb&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  array&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;cb&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;asyncForEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;1번과 2번 코드는 둘다 forEach라는 함수를 사용하지만 1번의 경우는 콜스택에 쌓이는 방식이고 2번의 경우는 웹 API를 활용해 콜백큐로 이동했다가 이벤트 루프를 통해 콜스택으로 호출되는 방식이다.&lt;/p&gt;
 &lt;h4&gt;비동기 콜백을 이용해 블로킹 완화시키기&lt;/h4&gt;
 &lt;p&gt;1번 코드와 같은 기본적인 콜백 방식의 문제점은 웹 브라우저의 렌더링을 못하게 하여 UI를 블로킹시키는데 있다고 합니다. 웹 브라우저는 1초에 60 프레임을 그리는 게 가장 이상적인데, 렌더링 또한 콜백처럼 작용을 해서 콜스택에 들어가게 된다.&lt;br&gt;
