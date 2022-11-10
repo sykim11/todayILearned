@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-blog-post-js",
-    "path": "/project/work/django/11. 게시글의 댓글 생성하기/",
-    "result": {"data":{"site":{"siteMetadata":{"title":"Today I Learned"}},"markdownRemark":{"id":"09ec386b-3282-5a85-940e-21de3b934ec9","excerpt":"만들어볼 API 종류","html":"<h3>만들어볼 API 종류</h3>","frontmatter":{"title":"무작정 장고로 사이드프로젝트 만들기 9. 게시글의 댓글 생성하기","date":"August 08, 2022","description":null,"tags":["Django REST framework"]}},"previous":{"fields":{"slug":"/setting/react/웹취약점관련/"},"frontmatter":{"title":"웹 보안, 웹 취약점 설정"}},"next":{"fields":{"slug":"/setting/react/Nextjs/"},"frontmatter":{"title":"NextJS API 공부 - 동적 페이지 서버사이드 렌더링 작업 (getStaticPaths, getStaticProps)"}}},"pageContext":{"id":"09ec386b-3282-5a85-940e-21de3b934ec9","previousPostId":"e4cbac9a-e079-50f0-b0e1-0d50a1e8a444","nextPostId":"c638cefd-e36a-59a7-b926-694d8d448d11"}},
-    "staticQueryHashes": ["2841359383","3382539634"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-index-js",
+    "path": "/javascript",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Today I Learned"}},"categories":{"totalCount":37,"all":[{"name":"Django","totalCount":11},{"name":"base","totalCount":2},{"name":"docker","totalCount":5},{"name":"git","totalCount":1},{"name":"javascript","totalCount":1},{"name":"kubenetes","totalCount":1},{"name":"nextjs","totalCount":1},{"name":"reactjs","totalCount":1},{"name":"review","totalCount":2},{"name":"setting","totalCount":2},{"name":"버그리포트","totalCount":6}]},"posts":{"categories":[{"name":"javascript","totalCount":1}],"nodes":[{"fields":{"slug":"/javascript/how_it_works/"},"frontmatter":{"date":"2022-01-05","title":"Javascript 작동 원리","tags":["javascript"],"description":null,"publish":true}}]}},"pageContext":{"tag":"javascript"}},
+    "staticQueryHashes": ["2841359383","3257411868","3708219967"]}
