@@ -2,6 +2,7 @@
 title: 생활코딩 Docker compose를 이용해 복잡한 도커 컨테이너 제어하기
 date: 2022-01-31
 tags: ["docker"]
+publish: true
 ---
 
 도커 컴포즈가 무엇인지 궁금해 다시 생활코딩을 찾아갔다.  

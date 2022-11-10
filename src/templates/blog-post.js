@@ -9,8 +9,6 @@ const BlogPostTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
 
-  console.log(post)
-
   return (
     <>
       <Layout location={location} title={siteTitle}>
@@ -27,7 +25,6 @@ const BlogPostTemplate = ({ data, location }) => {
             <h1 itemProp="headline">{post.frontmatter.title}</h1>
             <p>{post.frontmatter.date}</p>
           </header>
-
           <section
             dangerouslySetInnerHTML={{ __html: post.html }}
             itemProp="articleBody"
@@ -84,7 +81,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY-MM-DD")
         description
         tags
       }

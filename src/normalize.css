@@ -24,6 +24,10 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 /**
  * Render the `main` element consistently in IE.
  */
@@ -162,6 +166,7 @@ sup {
 
 img {
   border-style: none;
+  width: 100%;
 }
 
 /* Forms
@@ -355,4 +360,21 @@ summary {
 
 [hidden] {
   display: none;
+}
+
+/* 스크롤바 설정*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* 스크롤바 막대 설정*/
+::-webkit-scrollbar-thumb {
+  height: 17%;
+  background-color: var(--color-primary);
+  border-radius: 10px;
+}
+
+/* 스크롤바 뒷 배경 설정*/
+::-webkit-scrollbar-track {
+  background-color: #eee;
 }

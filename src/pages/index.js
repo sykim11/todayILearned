@@ -1,185 +1,109 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import * as homeStyles from "../components/home.module.css"
+import * as list from "../components/home.module.css"
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
-
-  console.log(posts)
-
-  const bugListPosts = posts.filter(post =>
-    post.fields.slug.includes("/bugLists")
+const BlogMain = ({ data, location }) => {
+  const posts = data.posts.nodes.filter(
+    post => post.frontmatter.publish === true
   )
-  const reviewPosts = posts.filter(post => post.fields.slug.includes("/review"))
-  const jsPosts = posts.filter(post => post.fields.slug.includes("/javascript"))
-  const dockerPosts = posts.filter(post => post.fields.slug.includes("/docker"))
+  const categories = data.categories
 
   if (posts.length === 0) {
     return (
-      <Layout location={location} title={siteTitle}>
+      <Layout location={location}>
         <Seo title="All posts" />
         <Bio />
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
+        <p>블로그 글들을 확인할 수 없습니다.</p>
       </Layout>
     )
   }
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
       <Seo title="All posts" />
       <Bio />
-      <div className={homeStyles.row}>
-        <section className={homeStyles.section}>
-          <h2>✨ Javascript</h2>
-          <ol style={{ listStyle: `none` }}>
-            {jsPosts.map(post => {
-              const title = post.frontmatter.title || post.fields.slug
-              console.log(post)
-
-              return (
-                <li key={post.fields.slug}>
-                  <article
-                    className="post-list-item"
-                    itemScope
-                    itemType="http://schema.org/Article"
-                  >
-                    <header>
-                      <p>
-                        <Link to={`${post.fields.slug}`} itemProp="url">
-                          <span itemProp="headline">{title}</span>
-                        </Link>
-                      </p>
-                      <small>{post.frontmatter.date}</small>
-                    </header>
-                  </article>
-                </li>
-              )
-            })}
-          </ol>
-        </section>
-        <section className={homeStyles.section}>
-          <h2>🧾 Bug Report</h2>
-          <ol style={{ listStyle: `none` }}>
-            {bugListPosts.map(post => {
-              const title = post.frontmatter.title || post.fields.slug
-              console.log(post)
-
-              return (
-                <li key={post.fields.slug}>
-                  <article
-                    className="post-list-item"
-                    itemScope
-                    itemType="http://schema.org/Article"
-                  >
-                    <header>
-                      <p>
-                        <Link to={`${post.fields.slug}`} itemProp="url">
-                          <span itemProp="headline">{title}</span>
-                        </Link>
-                      </p>
-                      <small>{post.frontmatter.date}</small>
-                    </header>
-                  </article>
-                </li>
-              )
-            })}
-          </ol>
-        </section>
+      <div className={list.tagsWrap}>
+        <div className={list.post_tag}>
+          <Link to={`/`}>
+            <span className={list.post_tag_txt}>전체</span>
+            <span className={list.post_tag_count}>{categories.totalCount}</span>
+          </Link>
+        </div>
+        {categories.all?.map(ctr => (
+          <div className={list.post_tag}>
+            <Link to={`/${ctr.name}`}>
+              <span className={list.post_tag_txt}># {ctr.name}</span>
+              <span className={list.post_tag_count}>{ctr.totalCount}</span>
+            </Link>
+          </div>
+        ))}
       </div>
-      <h2>🙄 Review</h2>
-      <ol style={{ listStyle: `none` }}>
-        {reviewPosts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
-          console.log(post)
-
+      <div className={list.postsWrap}>
+        {posts?.map((post, i) => {
           return (
-            <li key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <p>
-                    <Link to={`${post.fields.slug}`} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </p>
-                  <small>{post.frontmatter.date}</small>
-                </header>
-                {/* <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
-                    }}
-                    itemProp="description"
-                  />
-                </section> */}
-              </article>
-            </li>
+            <div key={i} className={list.post}>
+              <div className={list.thumbnail}></div>
+              <div className={list.post_content}>
+                <span className={list.post_tag}>
+                  <span className={list.post_tag_txt}>
+                    # {`${post.frontmatter.tags?.[0] || ""}`}
+                  </span>
+                </span>
+                <p className={list.post_content_title}>
+                  <Link to={`${post.fields.slug}`} itemProp="url">
+                    {post.frontmatter.title}
+                  </Link>
+                </p>
+                <small>{post.frontmatter.date}</small>
+              </div>
+            </div>
           )
         })}
-      </ol>
-
-      {/* <h2>Docker</h2>
-      <ol style={{ listStyle: `none` }}>
-        {dockerPosts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
-          console.log(post)
-
-          return (
-            <li key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <p>
-                    <Link to={`${post.fields.slug}`} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </p>
-                  <small>{post.frontmatter.date}</small>
-                </header>
-              </article>
-            </li>
-          )
-        })}
-      </ol> */}
+      </div>
     </Layout>
   )
 }
 
-export default BlogIndex
+export default BlogMain
 
 export const pageQuery = graphql`
-  query {
+  query BlogMain($tag: String) {
     site {
       siteMetadata {
         title
       }
     }
-
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    categories: allMarkdownRemark(
+      sort: { fields: frontmatter___date, order: ASC }
+    ) {
+      totalCount
+      all: group(field: frontmatter___tags) {
+        name: fieldValue
+        totalCount
+      }
+    }
+    posts: allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { tags: { eq: $tag } } }
+    ) {
+      categories: group(field: frontmatter___tags) {
+        name: fieldValue
+        totalCount
+      }
       nodes {
-        excerpt
         fields {
           slug
         }
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
+          date(formatString: "YYYY-MM-DD")
           title
+          tags
           description
+          publish
         }
       }
     }

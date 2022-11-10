@@ -35,22 +35,22 @@ const LeftNavigation = ({ data, location }) => {
         <Link to="/">Home</Link>
       </div>
       <ul className="sidebar-links">
-        {data?.group?.map((group, index) => (
+        {console.log(data?.categories)}
+        {data?.categories?.map((group, index) => (
           <li
             key={index}
             className={
-              currentPath === group.fieldValue || selected === index
-                ? "open"
-                : ""
+              currentPath === group.name || selected === index ? "open" : ""
             }
             onClick={() => onClickCategory(index)}
           >
             <section>
-              <p className="sidebar">{group.fieldValue}</p>
+              <p className="sidebar">{group.name}</p>
               <ul>
-                {group.nodes?.map((list, index) => (
+                {console.log("group.nodes", group.nodes)}
+                {group.posts?.map(({ node }, index) => (
                   <li key={index}>
-                    <Link to={list.fields.slug}>{list.frontmatter.title}</Link>
+                    <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
                   </li>
                 ))}
               </ul>

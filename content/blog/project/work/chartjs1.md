@@ -1,10 +1,8 @@
 ---
 title: react-chartjs 에서 라인에 glow 효과 주는 법
 date: 2022-01-07
-tags: []
-output:
-  html_document:
-    css: "./assets/css/style.css"
+tags: [reactjs]
+publish: true
 ---
 
 ### 개발 환경

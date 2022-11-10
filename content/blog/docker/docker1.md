@@ -2,9 +2,7 @@
 title: 생활코딩 Docker 입문 수업 1 ~ 5
 date: 2022-01-06
 tags: ["docker"]
-output:
-  html_document:
-    css: "./assets/css/style.css"
+publish: true
 ---
 
 작년부터 궁금했던 도커라는 녀석을 공부해 보기로 했다.  

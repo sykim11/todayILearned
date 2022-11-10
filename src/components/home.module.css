@@ -10,3 +10,63 @@
 .row {
   display: flex;
 }
+
+.postsWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post {
+  width: 32.33%;
+  height: auto;
+  margin: 0 0.5% 1%;
+  border: 1px solid #ddd;
+  min-height: 15rem;
+  min-width: 30%;
+}
+
+.tagsWrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0.5% 0.5rem;
+}
+
+.post_tag {
+  display: inline-block;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  background-color: var(--color-primary);
+  font-size: 0.75rem;
+}
+
+.post_tag_txt {
+  color: #fff !important;
+}
+
+.post_tag_count {
+  color: #fff !important;
+  margin-left: 0.25rem;
+}
+
+.thumbnail {
+  min-height: 8rem;
+  background-color: #ddd;
+}
+
+.post_content {
+  padding: 0.5rem;
+}
+
+.post_content p {
+  /* padding-top: var(--spacing-1); */
+  margin-bottom: var(--spacing-0);
+  min-height: 5rem;
+  font-weight: 600;
+  letter-spacing: -0.7px;
+}
+
+.post_content_title {
+  font-size: 14px;
+}

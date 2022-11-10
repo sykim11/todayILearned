@@ -1,6 +1,8 @@
 ---
 title: 그라파나 iframe deny 에러
 date: 2022-05-04
+tags: [버그리포트]
+publish: true
 ---
 
 개발 환경 : 쿠버네티스에 그라파나와 웹서버인 nginx가 있고 리액트 어플리케이션 서버인 http://localhost:3000은 https://${쿠버네티스 배포용 ip}:{쿠버네티스 배포용 port}로 프록시 서버가 연결되어 있다.

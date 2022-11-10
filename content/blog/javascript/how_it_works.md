@@ -2,9 +2,7 @@
 title: Javascript 작동 원리
 date: 2022-01-05
 tags: ["javascript"]
-output:
-  html_document:
-    css: "./assets/css/style.css"
+publish: true
 ---
 
 자바스크립트의 작동 원리에 대해 조금 더 깊은 학습이 필요하다 생각되어 글로 정리해 보았다.

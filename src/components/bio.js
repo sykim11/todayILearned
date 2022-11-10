@@ -32,18 +32,18 @@ const Bio = () => {
 
   return (
     <div className="bio">
-      <p>무엇이든 꾸준히</p>
-      {/* <StaticImage
+      <StaticImage
         className="bio-avatar"
         layout="fixed"
         formats={["auto", "webp", "avif"]}
-        src="../images/profile-pic.png"
-        width={50}
-        height={50}
+        src="../images/main-pic.png"
+        width={80}
+        height={80}
         quality={95}
         alt="Profile picture"
       />
-      {author?.name && (
+      <p>수영아 오늘도 공부했니</p>
+      {/*{author?.name && (
         <p>
           Written by <strong>{author.name}</strong> {author?.summary || null}
           <a href={`https://twitter.com/${social?.twitter || ``}`}>

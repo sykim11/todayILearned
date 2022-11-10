@@ -2,9 +2,7 @@
 title: 2022 회고
 date: 2022-11-07
 tags: ["review"]
-output:
-  html_document:
-    css: "./assets/css/style.css"
+publish: false
 ---
 
 ### ✨ 2022 초창기 목표

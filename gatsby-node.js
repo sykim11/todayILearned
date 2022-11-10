@@ -4,7 +4,8 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
-  // Define a template for blog post
+  // Define a template for page
+  const mainPost = path.resolve(`./src/pages/index.js`)
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
 
   // Get all markdown blog posts sorted by date
@@ -28,6 +29,18 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       }
     `
   )
+  const groupResult = await graphql(
+    `
+      {
+        allMarkdownRemark(sort: { fields: [frontmatter___date], order: ASC }) {
+          categories: group(field: frontmatter___tags) {
+            name: fieldValue
+            totalCount
+          }
+        }
+      }
+    `
+  )
 
   if (result.errors) {
     reporter.panicOnBuild(
@@ -36,10 +49,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     )
     return
   }
+  if (groupResult.errors) {
+    reporter.panicOnBuild(
+      `There was an error loading your blog posts`,
+      groupResult.errors
+    )
+    return
+  }
 
   const posts = result.data.allMarkdownRemark.nodes
-  // const posts = result.data.postsRemark.nodes
-  console.log(posts)
+  const groups = groupResult.data.allMarkdownRemark.categories
+  console.log(groups)
 
   // Create blog posts pages
   // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
@@ -57,6 +77,18 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           id: post.id,
           previousPostId,
           nextPostId,
+        },
+      })
+    })
+  }
+
+  if (groups.length > 0) {
+    groups.forEach((ctr, index) => {
+      createPage({
+        path: `/${ctr.name}`,
+        component: mainPost,
+        context: {
+          tag: ctr.name,
         },
       })
     })
