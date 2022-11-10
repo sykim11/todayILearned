@@ -1,7 +1,7 @@
 ---
 title: 리소스
 date: 2022-11-10
-tags: []
+tags: ['리소스']
 publish: false
 ---
 
