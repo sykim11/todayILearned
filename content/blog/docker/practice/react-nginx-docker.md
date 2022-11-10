@@ -3,6 +3,7 @@ title: 리액트 어플리케이션을 nginx 정적 서버에 배포하는 도�
 date: 2022-01-12
 tags: ["docker"]
 publish: true
+image: "../docker.jpg"
 ---
 
 도커 이미지 만드는 법을 배웠으니 사이드 프로젝트로 만들고 있는 리액트 어플리케이션을 도커 이미지로 nginx에 배포해 보자!

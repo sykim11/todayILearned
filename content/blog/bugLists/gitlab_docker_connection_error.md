@@ -3,6 +3,7 @@ title: vscode에서 crlf 파일들을 일괄로 lf파일로 변환하는 법
 date: 2022-02-25
 tags: [버그리포트]
 publish: true
+image: "./bugreport.jpg"
 ---
 
 ### 에러 문구

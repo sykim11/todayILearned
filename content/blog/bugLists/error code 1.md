@@ -3,6 +3,7 @@ title: npm 빌드 중 erroe code 1
 date: 2022-03-14
 tags: [버그리포트]
 publish: true
+image: "./bugreport.jpg"
 ---
 
 npm 환경에서 빌드 중 error code 1을 맞이했다.  

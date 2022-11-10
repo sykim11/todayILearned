@@ -3,6 +3,7 @@ title: 생활코딩 Docker 이미지 만드는 법
 date: 2022-01-11
 tags: ["docker"]
 publish: true
+image: "./docker.jpg"
 ---
 
 도커 허브에서 내려 받은 이미지를 다운 받아 컨테이너로 만들어 런을 시켜보고 나니 나도 도커 허브에 내 이미지를 올려보고 싶다는 생각이 들었다.

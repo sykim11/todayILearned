@@ -1,15 +1,17 @@
 import * as React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as list from "../components/home.module.css"
+import Img from "gatsby-image"
 
 const BlogMain = ({ data, location }) => {
   const posts = data.posts.nodes.filter(
     post => post.frontmatter.publish === true
   )
+  console.log("posts", posts)
   const categories = data.categories
 
   if (posts.length === 0) {
@@ -46,7 +48,9 @@ const BlogMain = ({ data, location }) => {
         {posts?.map((post, i) => {
           return (
             <div key={i} className={list.post}>
-              <div className={list.thumbnail}></div>
+              <div className={list.thumbnail}>
+                <Img fluid={post.frontmatter.image?.childImageSharp?.fluid} />
+              </div>
               <div className={list.post_content}>
                 <span className={list.post_tag}>
                   <span className={list.post_tag_txt}>
@@ -104,6 +108,13 @@ export const pageQuery = graphql`
           tags
           description
           publish
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       }
     }

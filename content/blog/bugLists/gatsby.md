@@ -3,6 +3,7 @@ title: gatsby 배포시 uri 오류
 date: 2022-01-04
 tags: [버그리포트]
 publish: true
+image: "./bugreport.jpg"
 ---
 
 배포 환경에서 레파지토리명이 url 시작부에 붙어서 나오지 않는 문제로 페이지간의 이동에 에러가 발생했다.

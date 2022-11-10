@@ -3,6 +3,7 @@ title: nextjs에 써드파티 라이브러리 추가 시 에러
 date: 2022-09-14
 tags: [버그리포트]
 publish: true
+image: "./bugreport.jpg"
 ---
 
 nextjs 기반의 프로젝트로 작업 중... nextjs에 커스텀한 모듈들만 모아둔 써드파티 라이브러리를 추가해야할 일이 생겼다.  

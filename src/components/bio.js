@@ -39,7 +39,7 @@ const Bio = () => {
         src="../images/main-pic.png"
         width={80}
         height={80}
-        quality={95}
+        quality={90}
         alt="Profile picture"
       />
       <p>수영아 오늘도 공부했니</p>

@@ -3,6 +3,7 @@ title: NextJS API 공부 - 동적 페이지 서버사이드 렌더링 작업 (ge
 date: 2022-08-25
 tags: [nextjs]
 publish: true
+image: "./nextjs.jpg"
 ---
 
 리액트로 작업 중 서버사이드 렌더링이 필요한 페이지가 생겨 공부하기 시작한 NextJS 의 API 중 두 개만 우선 정리해 보자.  
