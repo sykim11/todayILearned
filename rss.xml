@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 10 Nov 2022 09:28:44 GMT</lastBuildDate><item><title><![CDATA[리소스]]></title><description><![CDATA[타겟-소스 관계도를 나타낼 때 활용 가능한 타임라인형 그래프 (three.js 기반의 react-3d 라이브러리 활용)
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 11 Nov 2022 05:35:15 GMT</lastBuildDate><item><title><![CDATA[리소스]]></title><description><![CDATA[타겟-소스 관계도를 나타낼 때 활용 가능한 타임라인형 그래프 (three.js 기반의 react-3d 라이브러리 활용)
 캡처]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/project/work/resource/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/project/work/resource/</guid><pubDate>Thu, 10 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;ol&gt;
 &lt;li&gt;타겟-소스 관계도를 나타낼 때 활용 가능한 타임라인형 그래프 (three.js 기반의 react-3d 라이브러리 활용)
 &lt;img src=&quot;https://user-images.githubusercontent.com/24996316/200713086-86e0b6e1-91aa-45c5-95a9-d5e7342d15f9.JPG&quot; alt=&quot;캡처&quot;&gt;&lt;/li&gt;
@@ -1613,60 +1613,7 @@ url이 마치 이동을 하는 것 같지만 실제로 한 화면 안에서 다�
 &lt;h3&gt;출처&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=0kQC19w0gTI&quot;&gt;https://www.youtube.com/watch?v=0kQC19w0gTI&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[react-chartjs 에서 라인에 glow 효과 주는 법]]></title><description><![CDATA[개발 환경 chart.js 3.7 버전 react-chartjs-2 4.0 버전 환경 리액트에서 그래프 작업을 할 때 주로 chart.js 라이브러리를 사용하고 있다. 선 그래프 작업을 할 때 라인에 glow…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/project/work/chartjs1/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/project/work/chartjs1/</guid><pubDate>Fri, 07 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;개발 환경&lt;/h3&gt;
-&lt;p&gt;chart.js 3.7 버전&lt;br&gt;
-react-chartjs-2 4.0 버전 환경&lt;/p&gt;
-&lt;p&gt;리액트에서 그래프 작업을 할 때 주로 chart.js 라이브러리를 사용하고 있다.&lt;br&gt;
-선 그래프 작업을 할 때 라인에 glow 효과를 주고 싶어 구글신에 검색을 해보았는데&lt;br&gt;
-예제 코드를 적용하기만 하면 line을 찾을 수 없다며 뜨는 undefined 에러… 😥&lt;br&gt;
-왜 그런지 콘솔을 찍어가며 확인해 보니 chart.js 3 버전에서 line 프로토타입을 찾아내는 경로가 조금 달라졌다.&lt;/p&gt;
-&lt;h3&gt;소스코드&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;chart.js 임포트&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  Chart &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; ChartJS&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  CategoryScale&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  LinearScale&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  PointElement&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  LineElement&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  Title&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  Tooltip&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  Legend&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;chart.js&quot;&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; Line &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;react-chartjs-2&quot;&lt;/span&gt;
-
-ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;register&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
-  CategoryScale&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  LinearScale&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  PointElement&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  LineElement&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  Title&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  Tooltip&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  Legend
-&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;https://react-chartjs-2.netlify.app/examples/line-chart&quot;&gt;react-chartjs 공식문서&lt;/a&gt;에 나와있는대로 원하는 차트 컴포넌트를 사용할 때는 리액트에서 불러오는 방식대로 해당 라이브러리를 임포트한다.&lt;/p&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;ChartJS.registry 하위를 따라 line 프로토타입 찾기&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; draw &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;registry&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;controllers&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;items&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;line&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;draw
-
-ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;registry&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;controllers&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;items&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;line&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;draw&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; chart &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;chart
-  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; ctx &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; chart&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ctx
-  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; _stroke &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;stroke
-  ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;stroke&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;shadowColor &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;strokeStyle
-    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;shadowBlur &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;
-    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;shadowOffsetX &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
-    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;shadowOffsetY &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;
-    &lt;span class=&quot;token function&quot;&gt;_stroke&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; arguments&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;restore&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;token function&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; arguments&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-  ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;stroke &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; _stroke
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 입문 수업 6 ~ 8]]></title><description><![CDATA[도커 컨테이너 안에 있는 파일 조작하기  도커를 이용해 웹서버를 띄웠다. 그리고 이제 이 내용물을 다르게 바꿔보자. 도커에 올라가있는 컨테이너 ws…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker2/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker2/</guid><pubDate>Fri, 07 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;도커 컨테이너 안에 있는 파일 조작하기&lt;/h3&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 입문 수업 6 ~ 8]]></title><description><![CDATA[도커 컨테이너 안에 있는 파일 조작하기  도커를 이용해 웹서버를 띄웠다. 그리고 이제 이 내용물을 다르게 바꿔보자. 도커에 올라가있는 컨테이너 ws…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker2/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker2/</guid><pubDate>Fri, 07 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;도커 컨테이너 안에 있는 파일 조작하기&lt;/h3&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
@@ -1890,45 +1837,60 @@ ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;registry&lt
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&quot;&gt;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=0kQC19w0gTI&quot;&gt;https://www.youtube.com/watch?v=0kQC19w0gTI&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[vscode에서 crlf 파일들을 일괄로 lf파일로 변환하는 법]]></title><description><![CDATA[파일 형상 관리를 git을 이용해 하고 있다. 그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/bugLists/vscode_setting/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/bugLists/vscode_setting/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;파일 형상 관리를 git을 이용해 하고 있다.&lt;br&gt;
-그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf로 변환된 채로 코드상 빨간 줄을 뿜고 있는데… 이걸 파일 하나하나 바꿔주다보니 갑갑해서 일괄 수정할 수 있는 방법을 찾아냈다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 11.39240506329114%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAe0lEQVQI12OQ1Lb4D8GWUGyBRmMXl4KypXQs/8voWv0XUTP57x2V+p+Bq+Hsf+mui//lui/+l+y48J+n8dx/nclX/qv1X/4v3Hr+v2DL+f8qfZf+CzSf+y/QAuHrTr7yX3vS5f+y3Rf/czee+8/ffO4/W8P5/zZd+/4DAL+gTvIIXhXiAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;lf&quot;
-        title=&quot;lf&quot;
-        src=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png&quot;
-        srcset=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/c26ae/lf.png 158w,
-/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/6bdcf/lf.png 315w,
-/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png 630w,
-/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png 772w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[react-chartjs 에서 라인에 glow 효과 주는 법]]></title><description><![CDATA[개발 환경 chart.js 3.7 버전 react-chartjs-2 4.0 버전 환경 리액트에서 그래프 작업을 할 때 주로 chart.js 라이브러리를 사용하고 있다. 선 그래프 작업을 할 때 라인에 glow…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/project/work/chartjs1/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/project/work/chartjs1/</guid><pubDate>Fri, 07 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;개발 환경&lt;/h3&gt;
+&lt;p&gt;chart.js 3.7 버전&lt;br&gt;
+react-chartjs-2 4.0 버전 환경&lt;/p&gt;
+&lt;p&gt;리액트에서 그래프 작업을 할 때 주로 chart.js 라이브러리를 사용하고 있다.&lt;br&gt;
+선 그래프 작업을 할 때 라인에 glow 효과를 주고 싶어 구글신에 검색을 해보았는데&lt;br&gt;
+예제 코드를 적용하기만 하면 line을 찾을 수 없다며 뜨는 undefined 에러… 😥&lt;br&gt;
+왜 그런지 콘솔을 찍어가며 확인해 보니 chart.js 3 버전에서 line 프로토타입을 찾아내는 경로가 조금 달라졌다.&lt;/p&gt;
+&lt;h3&gt;소스코드&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;터미널창에 아래 명령어 수행&lt;/li&gt;
+&lt;li&gt;chart.js 임포트&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;git config core&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;autocrlf &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
-git rm &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;cached &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;r &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
-git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 입문 수업 1 ~ 5]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker1/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker1/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작년부터 궁금했던 도커라는 녀석을 공부해 보기로 했다.&lt;br&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  Chart &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; ChartJS&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  CategoryScale&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  LinearScale&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  PointElement&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  LineElement&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  Title&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  Tooltip&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  Legend&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;chart.js&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; Line &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;react-chartjs-2&quot;&lt;/span&gt;
+
+ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;register&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+  CategoryScale&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  LinearScale&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  PointElement&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  LineElement&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  Title&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  Tooltip&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  Legend
+&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://react-chartjs-2.netlify.app/examples/line-chart&quot;&gt;react-chartjs 공식문서&lt;/a&gt;에 나와있는대로 원하는 차트 컴포넌트를 사용할 때는 리액트에서 불러오는 방식대로 해당 라이브러리를 임포트한다.&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;ChartJS.registry 하위를 따라 line 프로토타입 찾기&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; draw &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;registry&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;controllers&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;items&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;line&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;draw
+
+ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;registry&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;controllers&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;items&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;line&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;draw&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; chart &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;chart
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; ctx &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; chart&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ctx
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; _stroke &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;stroke
+  ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;stroke&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;shadowColor &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;strokeStyle
+    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;shadowBlur &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;
+    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;shadowOffsetX &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;shadowOffsetY &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;_stroke&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; arguments&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;restore&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; arguments&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;stroke &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; _stroke
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 입문 수업 1 ~ 5]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker1/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker1/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작년부터 궁금했던 도커라는 녀석을 공부해 보기로 했다.&lt;br&gt;
 무작정 유튜브에 도커를 쳐보니 생활코딩 유튜브 채널에 도커 입문용 강의가 있더라… 감사합니다!&lt;/p&gt;
 &lt;h3&gt;도커를 사용하게 된 배경&lt;/h3&gt;
 &lt;p&gt;어떠한 어플리케이션을 개발할 때 웹서버와 데이터베이스가 필요하다. 그런데 만일 웹서버에 맞는 운영체제와 데이터베이스에 맞는 운영체제가 다른 경우 가장 이상적인 그림은 아래와 같을 것이다.&lt;/p&gt;
@@ -2273,89 +2235,45 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
 &lt;h3&gt;도움 받은 자료들&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&quot;&gt;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[프론트 디자인 컨벤션]]></title><description><![CDATA[리액트 기반의 프로젝트에 사용할 수 있는 UI 모음 모듈을 만들며 자잘한 내용들을 적어보려고 한다. 투두 리스트는 일정과 역량(?)에 따라 유동적으로 가져갈 생각이다. 22-01-0…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/project/work/fdc1/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/project/work/fdc1/</guid><pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;리액트 기반의 프로젝트에 사용할 수 있는 UI 모음 모듈을 만들며 자잘한 내용들을 적어보려고 한다.&lt;br&gt;
-투두 리스트는 일정과 역량(?)에 따라 유동적으로 가져갈 생각이다.&lt;/p&gt;
-&lt;h3&gt;22-01-04 - 현재까지 진행된 사항&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;간단한 컴포넌트 몇 개를 개발해 사설 npm에 배포&lt;/li&gt;
-&lt;li&gt;사설 npm에서 내려 받은 &lt;strong&gt;front design system&lt;/strong&gt; 모듈(줄여서 &lt;strong&gt;fds&lt;/strong&gt;라 지칭)을 리액트 기반의 데모 프로젝트에 설치하여 사용 가능 확인&lt;/li&gt;
-&lt;li&gt;fds모듈에 사용 중인 색상코드파일, 폰트, 아이콘 중 색상코드 파일만 fds모듈 내부에 포함&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;22-01-06 - 현재까지 진행된 사항&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;폰트 경량화하여 독립 모듈로 배포&lt;/li&gt;
-&lt;li&gt;팀 프로젝트의 폰트 파일들 전부 제거 후 폰트 모듈 사용&lt;/li&gt;
-&lt;li&gt;사용 중인 폰트가 16픽셀 이하에서 깨지는 현상이 발생했는데 본문용 폰트를 고르고 추가할 시간이 부족해 일단은 16픽셀 이하의 텍스트는 시스템 기본 폰트 사용&lt;/li&gt;
-&lt;li&gt;팀 프로젝트에 사용 중인 오픈소스 디자인 라이브러리를 걷어내기 시작. 해당 라이브러리에서 사용하는 컴포넌트를 검색해보니 버튼과 인풋 정도만 사용 중이었다… 제대로 활용도 못한 무거운 라이브러리는 빨리 걷어내자!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;22-01-15 - 현재까지 진행된 사항&lt;/h3&gt;
-&lt;p&gt;fds 모듈을 기존 프로젝트에 이식시키는 과정에서 리액트 버전 에러가 났다.&lt;br&gt;
-fds 모듈은 CRA로 만들어졌기 때문에 react.js 라이브러리가 디펜던시에 존재한다. 그래서 나는 기존 프로젝트의 react.js를 삭제해버렸다. 이후 node_modules를 전부 날리고 새로 npm install 로 다시 package.json을 설치하니, 리액트 훅 에러와 린트 에러가 뜨면서 웹화면이 열리지 않았다. 😳 기존프로젝트가 리액트 파일을 찾지 못하게 되었다.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;원인 규명&lt;br&gt;
-: 기존 프로젝트의 리액트 버전과 fds 모듈의 리액트 메이저 버전이 달라서 생긴 문제였다.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;해결 방안
-: 기존 프로젝트에 원래 사용 중이던 버전의 리액트를 설치 해 주니 정상 동작했다.&lt;br&gt;
-기존 프로젝트는 해당 버전의 리액트에 의존하여 개발된 많은 기타 라이브러리들이 존재하기 때문에 프로젝트를 다시 걷어내는 수준에서 새로 시작할 생각이 아니라면 기존에 설치되어있는 라이브러리들은 유지하는 게 좋겠다.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;의문점
-: fds 모듈을 npm에 배포할 때 리액트가 없다면 설치해 주고 있다면 건너뛰는 방식으로 설치할 수는 없을까?&lt;br&gt;
-방법은 있었다.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1. fds 모듈에서 리액트를 peerdependency에 넣어주고 배포해보기
-2. fds모듈의 index 파일 경로에 npm init 으로 package.json 만들어서 해당 모듈에 꼭 필요한 파일들만 다시 배포해 보기&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;package.json에서 디펜던시에 있는 녀석들은 해당 모듈을 사용하기 위해서는 꼭 필요한 아이들이라 명시해주는 곳이라 node_modules폴더에 설치가 된다. fds모듈의 리액트는 디펜던시에 있다. 그래서 CRA를 이용해 만든 프로젝트에서 리액트 모듈들을 제거해주고 fds만 설치해도 작동했던 것이 그 이유다.&lt;/p&gt;
-&lt;p&gt;devdependecy는 개발상에서 필요한 녀석들만 명시해주는 곳이다. 때문에 배포할 때 개발 도구로만 사용했던 라이브러리들은 이곳에 넣어줘야 모듈 배포 때 불필요한 파일을 설치하지 않을 수 있다.&lt;/p&gt;
-&lt;p&gt;peerdependecy는 반대로 생각해야 한다. fds모듈 package.json의 피어디펜던시에 리액트를 넣는다는 것은, 리액트의 입장에서 fds 모듈이 부속품이라는 의미가 된다. 즉, fds는 리액트 라이브러리 하에서 구동하는 라이브러리라고 명시해주는 것이다.&lt;/p&gt;
-&lt;h3&gt;22-02-11 - 현재까지 진행된 사항&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;개발 버전, 배포 버전 작업 분기 (package.json, package_module.json으로 분기)&lt;/li&gt;
-&lt;li&gt;lab-font, lab-icon, fds 모듈들 verdaccio (사내 npm 저장소)에 업로드&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;22-02-24 - 현재까지 진행된 사항&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;모듈을 프로젝트에 적용&lt;/li&gt;
-&lt;li&gt;1차 배포&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;22-03-04 - 현재까지 진행된 사항&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;달력 모듈 배포 후 프로젝트에 적용&lt;/li&gt;
-&lt;li&gt;셀렉트 박스 모듈 배포 후 프로젝트에 적용&lt;/li&gt;
-&lt;li&gt;프로젝트 기한이 촉박한 관계로 버그 발견 시, 배포 -&gt; 적용 -&gt; 스토리북에서 버그 수정 -&gt; 배포 -&gt; 적용 … 단계 반복하며 모듈 관리 중&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3&gt;해야할 사항&lt;/h3&gt;
-&lt;ul class=&quot;contains-task-list&quot;&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; fds를 앞으로 어떻게 가져갈지 도식화하기&lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; 폰트 경량화 작업&lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; 폰트 모듈 생성 후 배포&lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; 아이콘 모듈 생성 후 배포&lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; 작업용 프로젝트에 fds 모듈 추가&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;폰트 경량화 작업&lt;/h3&gt;
-&lt;p&gt;fds 모듈은 private npm 서버에 올려서 사용하고 있다.&lt;br&gt;
-원래는 디자인 컴포넌트에 사용된 폰트들도 함께 묶어서 올리려고 했는데 413 Request Entity Too Large 에러가 떠서 용량에 대한 문제를 고려하게 되었다.&lt;br&gt;
-“무거운 폰트 모듈은 독립적으로 만들고 경량화 작업을 해보자”&lt;br&gt;
-(물론 서버측에서 요청 받는 바디의 용량 limit 설정은 진행해야했다. 설정하지 않으면 기본적으론 1mb만 주고 받도록 되어 있다.)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;ttf -&gt; woff&lt;/li&gt;
-&lt;li&gt;data-urI 변환하여 배포&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;data- urI 관련하여 정리 포스팅 필요&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;아이콘 svg -&gt; font화 시키기&lt;/h3&gt;
-&lt;p&gt;svg 아이콘 파일들을 font 파일로 변환시켜주는 iconmon 사이트를 발견했다.&lt;/p&gt;
-&lt;h3&gt;front design system 모듈 보완&lt;/h3&gt;
-&lt;p&gt;fds 모듈은 material-ui를 기반으로 제작되었다.&lt;br&gt;
-하지만 “팀 내부 디자인 시스템이 특정 라이브러리에 종속되는 게 맞을까?” 하여, 사용 중이던 디자인 라이브러리를 삭제 결정. 컴포넌트들은 그 자체의 기능에 집중하도록 하고 스타일 작업은 최소한으로 줄이는 방향으로 바꿨다.&lt;/p&gt;
-&lt;h4&gt;모듈 번들링에 참고한 링크들&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://velog.io/@velopert/bundle-with-rollup-and-publish-to-npm&quot;&gt;Rollup 옵션들&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Javascript 작동 원리]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works/</guid><pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;자바스크립트의 작동 원리에 대해 조금 더 깊은 학습이 필요하다 생각되어 글로 정리해 보았다.&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[vscode에서 crlf 파일들을 일괄로 lf파일로 변환하는 법]]></title><description><![CDATA[파일 형상 관리를 git을 이용해 하고 있다. 그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/bugLists/vscode_setting/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/bugLists/vscode_setting/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;파일 형상 관리를 git을 이용해 하고 있다.&lt;br&gt;
+그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf로 변환된 채로 코드상 빨간 줄을 뿜고 있는데… 이걸 파일 하나하나 바꿔주다보니 갑갑해서 일괄 수정할 수 있는 방법을 찾아냈다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 11.39240506329114%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAe0lEQVQI12OQ1Lb4D8GWUGyBRmMXl4KypXQs/8voWv0XUTP57x2V+p+Bq+Hsf+mui//lui/+l+y48J+n8dx/nclX/qv1X/4v3Hr+v2DL+f8qfZf+CzSf+y/QAuHrTr7yX3vS5f+y3Rf/czee+8/ffO4/W8P5/zZd+/4DAL+gTvIIXhXiAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;lf&quot;
+        title=&quot;lf&quot;
+        src=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png&quot;
+        srcset=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/c26ae/lf.png 158w,
+/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/6bdcf/lf.png 315w,
+/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png 630w,
+/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png 772w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;터미널창에 아래 명령어 수행&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;git config core&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;autocrlf &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
+git rm &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;cached &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;r &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Javascript 작동 원리]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works/</guid><pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;자바스크립트의 작동 원리에 대해 조금 더 깊은 학습이 필요하다 생각되어 글로 정리해 보았다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;자바스크립트는 싱글스레드로 동작하는 언어&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2662,7 +2580,104 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=8aGhZQkoFbQ&amp;#x26;feature=youtu.be&quot;&gt;https://www.youtube.com/watch?v=8aGhZQkoFbQ&amp;#x26;feature=youtu.be&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://baeharam.github.io/posts/javascript/jshow-javascript-works/&quot;&gt;https://baeharam.github.io/posts/javascript/jshow-javascript-works/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://medium.com/@vdongbin/javascript-%EC%9E%91%EB%8F%99%EC%9B%90%EB%A6%AC-single-thread-event-loop-asynchronous-e47e07b24d1c&quot;&gt;https://medium.com/@vdongbin/javascript-%EC%9E%91%EB%8F%99%EC%9B%90%EB%A6%AC-single-thread-event-loop-asynchronous-e47e07b24d1c&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[2021 회고]]></title><description><![CDATA[개인사로 너무 바빠서 건강만 챙겨도 성공할 것만 같았던 한 해가 지나갔다. 그럼에도 그 사이사이에 많은 일들을 해낸 것 같아 결론적으론 뿌듯한 마음을 안고 2022년을 맞이했다. ✨ 2021 초창기 목표 엘리의 React 강의 듣기 (10…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/review/2021/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/review/2021/</guid><pubDate>Tue, 04 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;개인사로 너무 바빠서 건강만 챙겨도 성공할 것만 같았던 한 해가 지나갔다.&lt;br&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[프론트 디자인 컨벤션]]></title><description><![CDATA[리액트 기반의 프로젝트에 사용할 수 있는 UI 모음 모듈을 만들며 자잘한 내용들을 적어보려고 한다. 투두 리스트는 일정과 역량(?)에 따라 유동적으로 가져갈 생각이다. 22-01-0…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/project/work/fdc1/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/project/work/fdc1/</guid><pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;리액트 기반의 프로젝트에 사용할 수 있는 UI 모음 모듈을 만들며 자잘한 내용들을 적어보려고 한다.&lt;br&gt;
+투두 리스트는 일정과 역량(?)에 따라 유동적으로 가져갈 생각이다.&lt;/p&gt;
+&lt;h3&gt;22-01-04 - 현재까지 진행된 사항&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;간단한 컴포넌트 몇 개를 개발해 사설 npm에 배포&lt;/li&gt;
+&lt;li&gt;사설 npm에서 내려 받은 &lt;strong&gt;front design system&lt;/strong&gt; 모듈(줄여서 &lt;strong&gt;fds&lt;/strong&gt;라 지칭)을 리액트 기반의 데모 프로젝트에 설치하여 사용 가능 확인&lt;/li&gt;
+&lt;li&gt;fds모듈에 사용 중인 색상코드파일, 폰트, 아이콘 중 색상코드 파일만 fds모듈 내부에 포함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;22-01-06 - 현재까지 진행된 사항&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;폰트 경량화하여 독립 모듈로 배포&lt;/li&gt;
+&lt;li&gt;팀 프로젝트의 폰트 파일들 전부 제거 후 폰트 모듈 사용&lt;/li&gt;
+&lt;li&gt;사용 중인 폰트가 16픽셀 이하에서 깨지는 현상이 발생했는데 본문용 폰트를 고르고 추가할 시간이 부족해 일단은 16픽셀 이하의 텍스트는 시스템 기본 폰트 사용&lt;/li&gt;
+&lt;li&gt;팀 프로젝트에 사용 중인 오픈소스 디자인 라이브러리를 걷어내기 시작. 해당 라이브러리에서 사용하는 컴포넌트를 검색해보니 버튼과 인풋 정도만 사용 중이었다… 제대로 활용도 못한 무거운 라이브러리는 빨리 걷어내자!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;22-01-15 - 현재까지 진행된 사항&lt;/h3&gt;
+&lt;p&gt;fds 모듈을 기존 프로젝트에 이식시키는 과정에서 리액트 버전 에러가 났다.&lt;br&gt;
+fds 모듈은 CRA로 만들어졌기 때문에 react.js 라이브러리가 디펜던시에 존재한다. 그래서 나는 기존 프로젝트의 react.js를 삭제해버렸다. 이후 node_modules를 전부 날리고 새로 npm install 로 다시 package.json을 설치하니, 리액트 훅 에러와 린트 에러가 뜨면서 웹화면이 열리지 않았다. 😳 기존프로젝트가 리액트 파일을 찾지 못하게 되었다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;원인 규명&lt;br&gt;
+: 기존 프로젝트의 리액트 버전과 fds 모듈의 리액트 메이저 버전이 달라서 생긴 문제였다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;해결 방안
+: 기존 프로젝트에 원래 사용 중이던 버전의 리액트를 설치 해 주니 정상 동작했다.&lt;br&gt;
+기존 프로젝트는 해당 버전의 리액트에 의존하여 개발된 많은 기타 라이브러리들이 존재하기 때문에 프로젝트를 다시 걷어내는 수준에서 새로 시작할 생각이 아니라면 기존에 설치되어있는 라이브러리들은 유지하는 게 좋겠다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;의문점
+: fds 모듈을 npm에 배포할 때 리액트가 없다면 설치해 주고 있다면 건너뛰는 방식으로 설치할 수는 없을까?&lt;br&gt;
+방법은 있었다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1. fds 모듈에서 리액트를 peerdependency에 넣어주고 배포해보기
+2. fds모듈의 index 파일 경로에 npm init 으로 package.json 만들어서 해당 모듈에 꼭 필요한 파일들만 다시 배포해 보기&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;package.json에서 디펜던시에 있는 녀석들은 해당 모듈을 사용하기 위해서는 꼭 필요한 아이들이라 명시해주는 곳이라 node_modules폴더에 설치가 된다. fds모듈의 리액트는 디펜던시에 있다. 그래서 CRA를 이용해 만든 프로젝트에서 리액트 모듈들을 제거해주고 fds만 설치해도 작동했던 것이 그 이유다.&lt;/p&gt;
+&lt;p&gt;devdependecy는 개발상에서 필요한 녀석들만 명시해주는 곳이다. 때문에 배포할 때 개발 도구로만 사용했던 라이브러리들은 이곳에 넣어줘야 모듈 배포 때 불필요한 파일을 설치하지 않을 수 있다.&lt;/p&gt;
+&lt;p&gt;peerdependecy는 반대로 생각해야 한다. fds모듈 package.json의 피어디펜던시에 리액트를 넣는다는 것은, 리액트의 입장에서 fds 모듈이 부속품이라는 의미가 된다. 즉, fds는 리액트 라이브러리 하에서 구동하는 라이브러리라고 명시해주는 것이다.&lt;/p&gt;
+&lt;h3&gt;22-02-11 - 현재까지 진행된 사항&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;개발 버전, 배포 버전 작업 분기 (package.json, package_module.json으로 분기)&lt;/li&gt;
+&lt;li&gt;lab-font, lab-icon, fds 모듈들 verdaccio (사내 npm 저장소)에 업로드&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;22-02-24 - 현재까지 진행된 사항&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;모듈을 프로젝트에 적용&lt;/li&gt;
+&lt;li&gt;1차 배포&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;22-03-04 - 현재까지 진행된 사항&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;달력 모듈 배포 후 프로젝트에 적용&lt;/li&gt;
+&lt;li&gt;셀렉트 박스 모듈 배포 후 프로젝트에 적용&lt;/li&gt;
+&lt;li&gt;프로젝트 기한이 촉박한 관계로 버그 발견 시, 배포 -&gt; 적용 -&gt; 스토리북에서 버그 수정 -&gt; 배포 -&gt; 적용 … 단계 반복하며 모듈 관리 중&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3&gt;해야할 사항&lt;/h3&gt;
+&lt;ul class=&quot;contains-task-list&quot;&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; fds를 앞으로 어떻게 가져갈지 도식화하기&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; 폰트 경량화 작업&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; 폰트 모듈 생성 후 배포&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; 아이콘 모듈 생성 후 배포&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; 작업용 프로젝트에 fds 모듈 추가&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;폰트 경량화 작업&lt;/h3&gt;
+&lt;p&gt;fds 모듈은 private npm 서버에 올려서 사용하고 있다.&lt;br&gt;
+원래는 디자인 컴포넌트에 사용된 폰트들도 함께 묶어서 올리려고 했는데 413 Request Entity Too Large 에러가 떠서 용량에 대한 문제를 고려하게 되었다.&lt;br&gt;
+“무거운 폰트 모듈은 독립적으로 만들고 경량화 작업을 해보자”&lt;br&gt;
+(물론 서버측에서 요청 받는 바디의 용량 limit 설정은 진행해야했다. 설정하지 않으면 기본적으론 1mb만 주고 받도록 되어 있다.)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ttf -&gt; woff&lt;/li&gt;
+&lt;li&gt;data-urI 변환하여 배포&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;data- urI 관련하여 정리 포스팅 필요&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;아이콘 svg -&gt; font화 시키기&lt;/h3&gt;
+&lt;p&gt;svg 아이콘 파일들을 font 파일로 변환시켜주는 iconmon 사이트를 발견했다.&lt;/p&gt;
+&lt;h3&gt;front design system 모듈 보완&lt;/h3&gt;
+&lt;p&gt;fds 모듈은 material-ui를 기반으로 제작되었다.&lt;br&gt;
+하지만 “팀 내부 디자인 시스템이 특정 라이브러리에 종속되는 게 맞을까?” 하여, 사용 중이던 디자인 라이브러리를 삭제 결정. 컴포넌트들은 그 자체의 기능에 집중하도록 하고 스타일 작업은 최소한으로 줄이는 방향으로 바꿨다.&lt;/p&gt;
+&lt;h4&gt;모듈 번들링에 참고한 링크들&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://velog.io/@velopert/bundle-with-rollup-and-publish-to-npm&quot;&gt;Rollup 옵션들&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[gatsby 배포시 uri 오류]]></title><description><![CDATA[배포 환경에서 레파지토리명이 url 시작부에 붙어서 나오지 않는 문제로 페이지간의 이동에 에러가 발생했다. package.json deploy 명령어 수정 개츠비로 빌드를 할 때 prefix-paths를 지정하여 빌드하겠다고 지정해 준다. gatsby…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/bugLists/gatsby/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/bugLists/gatsby/</guid><pubDate>Tue, 04 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;배포 환경에서 레파지토리명이 url 시작부에 붙어서 나오지 않는 문제로 페이지간의 이동에 에러가 발생했다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;package.json deploy 명령어 수정&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token string&quot;&gt;&quot;deploy&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;gatsby build --prefix-paths &amp;amp;&amp;amp; gh-pages -d public&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;개츠비로 빌드를 할 때 prefix-paths를 지정하여 빌드하겠다고 지정해 준다.&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;gatsby-config.js 파일에서 pathPrefix 명을 지정&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  pathPrefix&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/todayILearned&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;해당하는 prefix-paths의 값을 개츠비 설정 파일에서 지정해 준다.&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;cache 파일 삭제 후 다시 배포 해보면 의도했던 대로 prefix가 붙어서 배포된다&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npm run clean&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[2021 회고]]></title><description><![CDATA[개인사로 너무 바빠서 건강만 챙겨도 성공할 것만 같았던 한 해가 지나갔다. 그럼에도 그 사이사이에 많은 일들을 해낸 것 같아 결론적으론 뿌듯한 마음을 안고 2022년을 맞이했다. ✨ 2021 초창기 목표 엘리의 React 강의 듣기 (10…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/review/2021/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/review/2021/</guid><pubDate>Tue, 04 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;개인사로 너무 바빠서 건강만 챙겨도 성공할 것만 같았던 한 해가 지나갔다.&lt;br&gt;
 그럼에도 그 사이사이에 많은 일들을 해낸 것 같아 결론적으론 뿌듯한 마음을 안고 2022년을 맞이했다.&lt;/p&gt;
 &lt;h3&gt;✨ 2021 초창기 목표&lt;/h3&gt;
 &lt;ul class=&quot;contains-task-list&quot;&gt;
@@ -2772,19 +2787,4 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;h4&gt;🔹 삶의 패턴 방향성 회고&lt;/h4&gt;
 &lt;p&gt;운동과 책 읽는 습관은 아주 오래된 나의 투두리스트였다.&lt;br&gt;
 다행히 운동은 극하반기에 부랴부랴 시작을 해서 다행이라 생각하는데 책 읽는 습관은 5,6월 이후부터 다시 또 뚝 끊겼다. 읽은 책들도 독후감을 쓰지 않으니 머리에 남지도 않은 기분…&lt;br&gt;
-2022년에는 욕심내지않고 뭐든 &lt;code class=&quot;language-text&quot;&gt;꾸준히&lt;/code&gt; 이행하도록 하자.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[gatsby 배포시 uri 오류]]></title><description><![CDATA[배포 환경에서 레파지토리명이 url 시작부에 붙어서 나오지 않는 문제로 페이지간의 이동에 에러가 발생했다. package.json deploy 명령어 수정 개츠비로 빌드를 할 때 prefix-paths를 지정하여 빌드하겠다고 지정해 준다. gatsby…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/bugLists/gatsby/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/bugLists/gatsby/</guid><pubDate>Tue, 04 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;배포 환경에서 레파지토리명이 url 시작부에 붙어서 나오지 않는 문제로 페이지간의 이동에 에러가 발생했다.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;package.json deploy 명령어 수정&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token string&quot;&gt;&quot;deploy&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;gatsby build --prefix-paths &amp;amp;&amp;amp; gh-pages -d public&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;개츠비로 빌드를 할 때 prefix-paths를 지정하여 빌드하겠다고 지정해 준다.&lt;/p&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;gatsby-config.js 파일에서 pathPrefix 명을 지정&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  pathPrefix&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/todayILearned&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;해당하는 prefix-paths의 값을 개츠비 설정 파일에서 지정해 준다.&lt;/p&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;cache 파일 삭제 후 다시 배포 해보면 의도했던 대로 prefix가 붙어서 배포된다&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npm run clean&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
+2022년에는 욕심내지않고 뭐든 &lt;code class=&quot;language-text&quot;&gt;꾸준히&lt;/code&gt; 이행하도록 하자.&lt;/p&gt;</content:encoded></item></channel></rss>
