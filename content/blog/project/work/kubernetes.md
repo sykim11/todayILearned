@@ -3,6 +3,7 @@ title: 쿠버네티스란
 date: 2022-02-15
 tags: [kubenetes]
 publish: true
+# image: "./django/django.jpg"
 ---
 
 ### 목표

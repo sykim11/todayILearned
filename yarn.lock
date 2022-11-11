@@ -5406,6 +5406,11 @@
     "@types/reach__router" "^1.3.9"
     "prop-types" "^15.7.2"
 
+"gatsby-omni-font-loader@^2.0.2":
+  "integrity" "sha512-Bp6truuUwbDRHWtL+u/lUvMsAT5ipO45LNJgqNdOzTUGw3GB7dw8k4RHDtpxwFTgacdk25kH8aOYfh460jJYCQ=="
+  "resolved" "https://registry.npmjs.org/gatsby-omni-font-loader/-/gatsby-omni-font-loader-2.0.2.tgz"
+  "version" "2.0.2"
+
 "gatsby-page-utils@^2.4.0":
   "integrity" "sha512-GXYpHZOR1M3aq45bmOukjpdXL96BU1At0kPjTqQy3d5nw8wpU625wQdHT+CumET50+4A/JU86TqHi1kFWcbYsw=="
   "resolved" "https://registry.npmjs.org/gatsby-page-utils/-/gatsby-page-utils-2.4.0.tgz"
@@ -5802,7 +5807,7 @@
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-"gatsby@^4.0.0-next", "gatsby@^4.4.0":
+"gatsby@^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0", "gatsby@^4.0.0-next", "gatsby@^4.4.0":
   "integrity" "sha512-fx/US6rpVMhwSBqMp/lRvWBTJV1cnL7nXZKfpAcsxmuMjDqBQGQQY2LqTpaLTD09WZc5lAYfQd8ckUKdzezbqQ=="
   "resolved" "https://registry.npmjs.org/gatsby/-/gatsby-4.4.0.tgz"
   "version" "4.4.0"
@@ -9776,7 +9781,7 @@
   "resolved" "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.0.tgz"
   "version" "3.2.0"
 
-"react-helmet@^5.1.3 || ^6.0.0", "react-helmet@^6.1.0":
+"react-helmet@^5.1.3 || ^6.0.0", "react-helmet@^6.1.0", "react-helmet@>=6.0.0":
   "integrity" "sha512-4uMzEY9nlDlgxr61NL3XbKRy1hEkXmKNXhjbAIOVw5vcFrsdYbH2FEwcNyWvWinl103nXgzYNlns9ca+8kFiWw=="
   "resolved" "https://registry.npmjs.org/react-helmet/-/react-helmet-6.1.0.tgz"
   "version" "6.1.0"

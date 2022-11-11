@@ -27,13 +27,14 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  --fontFamily-sans: Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --fontFamily-sans: "Noto Sans KR", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
   --fontFamily-serif: "Apple SD Gothic Neo", Roboto, "Noto Sans KR", NanumGothic,
     "Malgun Gothic", sans-serif;
-  --font-body: var(--fontFamily-serif);
-  --font-heading: var(--fontFamily-serif);
+  --font-body: var(--fontFamily-sans);
+  --font-heading: var(--fontFamily-sans);
   --fontWeight-normal: 400;
   --fontWeight-medium: 500;
   --fontWeight-semibold: 600;
@@ -243,7 +244,7 @@ a:focus {
 .global-wrapper {
   margin: 61px auto 0;
   max-width: var(--maxWidth-4xl);
-  padding: var(--spacing-5) var(--spacing-0);
+  padding: var(--spacing-5) var(--spacing-5);
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {
@@ -256,12 +257,17 @@ a:focus {
   left: 0;
   width: 100%;
   background-color: #fff;
-  padding: 0 5rem;
+  padding: 0 5%;
   margin: 0;
   height: 60px;
   line-height: 60px;
   border-bottom: 1px solid #ddd;
   z-index: 10;
+}
+
+.global-header a {
+  color: rgb(112, 120, 209) !important;
+  font-weight: bold;
 }
 
 [aria-current]:not([aria-current="false"]) {

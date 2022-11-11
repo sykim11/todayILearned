@@ -10,6 +10,7 @@
   "dependencies": {
     "gatsby": "^4.4.0",
     "gatsby-image": "^3.11.0",
+    "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-feed": "^4.4.0",
     "gatsby-plugin-gatsby-cloud": "^4.4.0",
     "gatsby-plugin-google-analytics": "^4.4.0",
