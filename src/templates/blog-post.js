@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Comment from "../components/comment"
+import TableOfContents from "../components/tableOfContents"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -17,21 +18,24 @@ const BlogPostTemplate = ({ data, location }) => {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article
-          className="blog-post"
-          itemScope
-          itemType="http://schema.org/Article"
-        >
-          <header>
-            <h1 itemProp="headline">{post.frontmatter.title}</h1>
-            <p>{post.frontmatter.date}</p>
-          </header>
-          <section
-            dangerouslySetInnerHTML={{ __html: post.html }}
-            itemProp="articleBody"
-          />
-          <hr />
-        </article>
+        <div className="blog-post-container">
+          <article
+            className="blog-post"
+            itemScope
+            itemType="http://schema.org/Article"
+          >
+            <header>
+              <h1 itemProp="headline">{post.frontmatter.title}</h1>
+              <p>{post.frontmatter.date}</p>
+            </header>
+            <section
+              dangerouslySetInnerHTML={{ __html: post.html }}
+              itemProp="articleBody"
+            />
+          </article>
+          <TableOfContents content={data.markdownRemark.tableOfContents} />
+        </div>
+        <hr />
         <Comment repo="ksy8230/blog-commnets" />
         {/* <nav className="blog-post-nav">
           <ul
@@ -87,6 +91,7 @@ export const pageQuery = graphql`
         description
         tags
       }
+      tableOfContents
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
       fields {
