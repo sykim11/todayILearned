@@ -9,7 +9,8 @@
   --maxWidth-xl: 36rem;
   --maxWidth-2xl: 42rem;
   --maxWidth-3xl: 48rem;
-  --maxWidth-4xl: 56rem;
+  --maxWidth-4xl: 60rem;
+  --maxWidth-5xl: 67.5rem;
   --maxWidth-full: "100%";
   --maxWidth-wrapper: var(--maxWidth-2xl);
   --spacing-px: "1px";
@@ -243,7 +244,7 @@ a:focus {
 
 .global-wrapper {
   margin: 61px auto 0;
-  max-width: var(--maxWidth-4xl);
+  max-width: var(--maxWidth-5xl);
   padding: var(--spacing-5) var(--spacing-5);
 }
 
@@ -394,9 +395,78 @@ a:focus {
   /* text-shadow: none !important; */
 }
 
-/*  */
+/* 블로그 포스트 컨텐츠 */
+.blog-post-container {
+  display: flex;
+}
+
+.blog-post-container .blog-post {
+  flex-grow: 0;
+  max-width: 80%;
+  flex-basis: 80%;
+}
+
+.blog-post-container .blog-table {
+  flex-grow: 0;
+  max-width: 20%;
+  flex-basis: 20%;
+  font-size: 0.95rem;
+}
+
+/* 블로그 포스트 목차 */
+.table-of-contents {
+  position: sticky;
+  top: 75px;
+}
+.table-of-contents a {
+  border-radius: 6px;
+  color: var(--color-text);
+  display: block;
+  overflow: hidden;
+  padding: 4px 8px;
+  text-decoration: none;
+  /* text-overflow: ellipsis; */
+  color: rgba(59, 69, 78, 0.7);
+  transition: all 0.25s ease 0s;
+  /* white-space: nowrap; */
+}
+.table-of-contents a:hover {
+  background-color: #cfd8dc;
+}
+.table-of-contents li,
+.table-of-contents p {
+  margin-bottom: var(--spacing-0);
+}
+.table-of-contents ul {
+  list-style: none;
+  margin-bottom: 32px;
+  margin-left: 10%;
+}
+.table-of-contents ul ul {
+  border-left: 2px solid #dddddf;
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+.table-of-contents ul ul li {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+/* utterances */
+.utterances {
+  max-width: 100% !important;
+}
 
 /* Media queries */
+@media (max-width: 48rem) {
+  .blog-post-container .blog-post {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .blog-table {
+    display: none;
+  }
+}
 
 @media (max-width: 42rem) {
   blockquote {
