@@ -3,11 +3,12 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Comment from "../components/comment"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const { previous, next } = data
+  // const { previous, next } = data
 
   return (
     <>
@@ -31,7 +32,8 @@ const BlogPostTemplate = ({ data, location }) => {
           />
           <hr />
         </article>
-        <nav className="blog-post-nav">
+        <Comment repo="ksy8230/blog-commnets" />
+        {/* <nav className="blog-post-nav">
           <ul
             style={{
               display: `flex`,
@@ -56,7 +58,7 @@ const BlogPostTemplate = ({ data, location }) => {
               )}
             </li>
           </ul>
-        </nav>
+        </nav> */}
       </Layout>
     </>
   )
