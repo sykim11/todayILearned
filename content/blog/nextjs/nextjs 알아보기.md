@@ -1,5 +1,5 @@
 ---
-title: NextJS 기본 개념
+title: NextJS로 마이그레이션하기 - 개념
 date: 2022-11-15
 tags: [nextjs]
 publish: false
@@ -37,4 +37,26 @@ http://localhost:3000/detail/1 (동적 페이지) -> /page/detail/[id].ts
 
 NextJS 사용 방법을 검색해 보면 nginx가 심심찮게 보이는 걸 확인할 수 있다. 사내 프로젝트에서도 리액트의 정적인 빌드 결과물을 nginx를 이용해 서버로 올린다는 표현을 했는데... 웹 서버에 nginx를 사용하는 이유가 뭔지 궁금해 겸사로 찾아보았다. (어차피 이 다음 해 볼 일이 NextJS 배포 관련이니 지금 미리 공부해 둔다고 생각하자)   
 nginx가 웹에서 하는 역할로는 프록시 서버라는 기능이 있다. 웹 리소스를 올리는 서버의 실제 포트가 3000이라면 nginx에서 80으로 연결시켜 실제 서버의 정보를 한 겹 숨겨주는 보안적 기능을 가져갈 수 있다.
+
+#### nginx 프로세스와 nginx.conf 파일
+nginx 프로세스는 쿠버네티스처럼 마스터와 워커들이라는 개념이 있고 이것들을 각각 마스터 프로세스, 여러 작업자 프로세스라고 부른다. 마스터 프로세스가 하는 일은 nginx.conf 파일을 토대로 구성을 하고 평가하여 여러 작업자 프로세스들이 실제 요청된 일을 처리하도록 관리한다.   
+http 컨텍스트 안에서 여러 개의 서버를 선언할 수 있고 server 컨텍스트 안에서 여러 개의 location을 선언할 수 있다.
+
+```conf
+http {
+  server {
+    listen 80;
+    location / {
+      root   /usr/share/nginx/html;
+      index  index.html index.htm;
+      try_files $uri $uri/ /index.html;
+    }
+    error_page 500 502 503 504 /50x.html;
+    location = /50x.html {
+        root /var/www;
+    }
+  }
+}
+```
+
 
