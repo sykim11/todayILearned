@@ -55,15 +55,17 @@ NextJS를 빌드한 결과물은 다음과 같다.
 ReactJS를 빌드했던 결과물과 비교했을 때 가장 어색한 부분은 아마 root(뼈대 html)에 해당하는 html 파일이 없다는 것이다.   
 ![image](https://user-images.githubusercontent.com/24996316/202132315-c0ef4078-55fb-40de-8b2f-0b178abbe68d.png)   
 NextJS에서 뼈대 html에 해당하는 파일은 _app.tsx 파일이 역할을 하는데 나는 이 말에도 구현 방식이 확 닿지 않아서 express를 살펴보니 아하... 싶은 개념이 떠올랐다. 잠깐 express 기반의 웹 구동 방식을 살펴보면 얼핏 유사하다. express 모듈을 설치하고 app.js 파일을 아래와 같이 기재 후 node app.js로 실행을 하면   
-```js
+
+```js{numberLines: true}
 var express = requeire('express') // node_modules에 있는 express 관련 파일 임포트
 var app = express() // express 함수의 결과값을 app으로 지정
-app.listen(3000, function() {}) // 3000 포트로 서버 열기
+app.listen(3002, function() {}) // 3002 포트로 서버 열기
 
 app.get('/', function(req, res) { // "/" 라우트로 접속 시 작성된 태그를 반환하여 브라우저에 노출
   res.send("<h1>i am root content</h1>")
 })
 ```
+
 이렇게 뿅... 내가 접근한 라우팅 페이지에 들어가면 작성했던 html 태그가 반환되어 정상적인 페이지를 그려준다. 정적 페이지 정도는 js 모듈들만으로도 만들어지는 신기한 세상...   
 ![image](https://user-images.githubusercontent.com/24996316/202136308-1b88e877-5840-4941-bbcb-40d2051f2159.png)   
 
