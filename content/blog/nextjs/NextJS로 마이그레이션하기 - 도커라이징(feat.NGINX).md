@@ -2,7 +2,7 @@
 title: NextJS로 마이그레이션하기 - 도커라이징(feat.NGINX)
 date: 2022-11-18
 tags: [nextjs]
-publish: false
+publish: true
 image: "./nextjs.jpg"
 ---
 
@@ -95,7 +95,8 @@ NextJS는 리액트 기반의 웹 어플리케이션 기능들을 가능하게 �
 
 ### NGINX 설정 파일 생성
 
-(nginx, nextjs 도커라이진된 컨테이너 도식화 그림 추가)
+![Frame 12](https://user-images.githubusercontent.com/24996316/202807237-a3695ff9-0f12-4af4-a0f5-17066b607350.jpg)   
+
 위 그림과 같이 NGINX는 NextJS 웹앱으로 들어오는 모든 요청을 다루는 디폴트 서버의 역할을 할 예정이라 default.conf라 이름 지었다. 이름은 뭐라 짓든 관련이 전혀 없으나 `.conf` 확장자는 꼭 잊지 말자.
 
 nginx 폴더 하위 경로에 default.conf 파일을 생성했다.  
@@ -237,10 +238,9 @@ server{
 ```
 
 NextJS는 빌드할 때 웹앱에서 구동할 각 페이지들을 만들어주기 위해 자바스크립트 번들러를 생성한다. 그리고 이 자바스크립트 번들러들은 /\_next/static/\* 경로에서 생성되어 NextJS가 페이지를 렌더링하게끔 만들어준다.  
-이 정적인 번들러 파일들을 캐싱하기 위해 /\_next/static 경로로 설정된 location 블럭 내부에 STATIC이라는 이름을 가진 프록시 캐시를 지정해주었다. 이렇게 지정해 두면 /\_next/static 디렉터리 하위에 포함하고 있는 리소스들이 캐싱된다.  
-캐싱된 이후 모든 요청들은 NextJS 웹앱으로 전달된다.   
+이 정적인 번들러 파일들을 캐싱하기 위해 /\_next/static 경로로 설정된 location 블럭 내부에 STATIC이라는 이름을 가진 프록시 캐시를 지정해주었다. 이렇게 지정해 두면 /\_next/static 디렉터리 하위에 포함하고 있는 리소스들이 캐싱된다. 이렇게 해당 경로의 리소스들이 캐싱된 이후 모든 요청들은 NextJS 웹앱으로 전달된다.   
 
-![image](https://user-images.githubusercontent.com/24996316/202636898-b00441bd-f54e-47ae-8305-0d5b67ecbe99.png)   
+![image](https://user-images.githubusercontent.com/24996316/202636898-b00441bd-f54e-47ae-8305-0d5b67ecbe99.png)      
 
 NextJS는 웹에서 브라우저 캐싱 작업을 처리하기 위해 응답의 헤더를 설정하는데 /\_next/static/\* 에 있는 빌드된 정적인 리소스의 경우 각 URL에 고유한 빌드 ID가 존재해 브라우저 캐시 헤더가 동작하도록 설정한다. (NextJS를 다시 빌드해 보면 이 ID 값들이 달라져있는 걸 확인할 수 있다.)  
 문제는 static/ 디렉터리(사용자가 생성한)의 동적 리소스에는 고유한 빌드 ID가 생성되지 않는다는 점이다. NextJS는 이런 리소스들에 대해서는 캐시가 없는 헤더를 설정하기 때문에 브라우저가 해당 리소스들은 캐시하지 않게 된다. 이 경우 NGINX에 해당 디렉터리에 대한 추가 설정이 필요하다.
@@ -357,6 +357,11 @@ NextJS 웹앱 앞단에 NGINX를 적용해 프록시 리소스 캐싱을 적용�
 ![nginx_설정후_nextjs_정적리소스_캐시화면_hit](https://user-images.githubusercontent.com/24996316/202618212-74d00b8a-ae9f-4c93-8cd6-e76c54d8e021.jpg)
 
 다시 새로고침을 해서 결과를 보면 X-Cache-Status 값이 HIT 로 바뀌면서 NGINX 캐싱 영역에서 해당 리소스를 찾아 캐싱된 결과를 볼 수 있다.   
+
+
+### 마치며
+
+[본문](https://steveholgado.com/nginx-for-nextjs/)글을 한 줄 한 줄 번역하며 실습하는 과정이 생각보다 꽤 재밌었다. 모르는 개념에 대해서 조금 더 찾아내 살을 붙이고 공부를 해본 경험이 된 것 같고 무엇보다 NGINX와 친해질 마음이 생긴(?) 계기도 된 것 같아 기쁘다. 조금 더 잘 다루게 되면 내가 띄운 웹에서 어떤 부분을 어떻게 캐싱 정책으로 가져갈지도 고민해 봐야겠다. 그리고 NextJS와 NGINX 두 개의 컨테이너를 띄우는 게 아니라 하나의 컨테이너에 같이 띄우는 것도 시도해 보자. (마이그레이션할 현재 프로젝트가 이렇게 되어있으니까)   
 
 
 
