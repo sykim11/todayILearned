@@ -1,6 +1,6 @@
 ---
 title: NextJS로 마이그레이션하기 - 도커라이징(feat.NGINX)
-date: 2022-11-18
+date: 2022-11-19
 tags: [nextjs]
 publish: true
 image: "./nextjs.jpg"
@@ -14,7 +14,7 @@ NGINX가 웹에서 하는 역할로는 프록시 서버라는 기능이 있다. 
 
 #### NGINX 설정 파일 내부 위치별 역할
 
-```conf{numberLines: true}
+```nginx{numberLines: true}
 # core 모듈 설정
 worker_process 1;
 
@@ -95,14 +95,14 @@ NextJS는 리액트 기반의 웹 어플리케이션 기능들을 가능하게 �
 
 ### NGINX 설정 파일 생성
 
-![Frame 12](https://user-images.githubusercontent.com/24996316/202807237-a3695ff9-0f12-4af4-a0f5-17066b607350.jpg)   
+![Frame 12](https://user-images.githubusercontent.com/24996316/202807237-a3695ff9-0f12-4af4-a0f5-17066b607350.jpg)
 
 위 그림과 같이 NGINX는 NextJS 웹앱으로 들어오는 모든 요청을 다루는 디폴트 서버의 역할을 할 예정이라 default.conf라 이름 지었다. 이름은 뭐라 짓든 관련이 전혀 없으나 `.conf` 확장자는 꼭 잊지 말자.
 
 nginx 폴더 하위 경로에 default.conf 파일을 생성했다.  
 /nginx/default.conf
 
-```conf{numberLines: true}
+```nginx{numberLines: true}
 upstream nextjs_upstream {
   server nextjs:3000;
 }
@@ -119,7 +119,7 @@ server {
 NGINX에 설정한 디폴트 서버는 단 하나이기 때문에 다른 여러 server 블록이 필요 없어서 http 블록을 생략하고 바로 server 블록부터 지시했다. 또한 디폴트 하나라서 이름도 필요가 없기에 \_; 으로 지정했다. server_tokens off; 는 NGINX 버전이 응답의 헤더에 나타나지 않도록 하는 기능이다. 마찬가지로 보안 이슈와 관련이 있는 것 같다.  
 위 그림과 같이 도커 컨테이너는 NGINX, NextJS 두 개가 뜰 예정이다. NextJS 웹앱이 어떤 이유로 두 개 이상 띄워야한다면 서로 다른 포트를 가진 여러 개의 NextJS 컨테이너들을 NGINX 상단에 업스트림 형태로 추가할 수 있다. 그리고 NGINX는 이들 간의 요청을 로드 밸런싱하는 역할을 해 준다.
 
-```conf{numberLines: true}
+```nginx{numberLines: true}
 upstream nextjs_upstream {
   server nextjs:3000;
 }
@@ -137,7 +137,7 @@ upstream nextjs_upstream {
 
 NextJS 웹앱 앞단에 NGINX를 리버스 프록시로 사용하고 있기 때문에 모든 요청들이 NGINX에 들어온다. 그리고 이 NGINX가 올바른 응답을 NextJS 웹앱으로 넘겨주기 위해선 프록시 헤더와 관련된 추가 설정이 필요하다.
 
-```conf{numberLines: true}
+```nginx{numberLines: true}
 upstream nextjs_upstream {
   server nextjs:3000;
 }
@@ -197,7 +197,7 @@ NGINX는 어떤 방식으로 캐싱시키는 걸까?
 NGINX는 우선 캐싱 영역이라는 메모리 영역을 생성한다. 그리고 그 캐싱 영역에 특정 파일에 대한 캐시 키를 저장해 놓는데, 이 키는 해당 파일이 캐싱 영역에 저장되어있는지 아닌지 판별하기 위해 사용된다.  
 캐싱 설정은 NGINX 설정 파일 최상단에 아래와 같이 기재해 준다.
 
-```conf{numberLines: true}
+```nginx{numberLines: true}
 proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=STATIC:10m inactive=7d use_temp_path=off;
 
 upstream nextjs_upstream {
@@ -209,15 +209,15 @@ upstream nextjs_upstream {
 
 NGINX에서 캐싱 영역에 대한 세부 설정은 아래와 같이 설명된다
 
-`/var/cache/nginx` 캐싱된 리소스를 저장할 디렉터리     
-`levels=1:2` 너무 많은 파일이 하나의 디렉터리에 있는 경우 파일 접근 속도가 감소될 수 있으니 2단계 디렉터리의 계층 구조로 만들겠다는 의미   
-`keys_zone=STATIC:10m` STATIC이라는 이름을 가진 캐시용 메모리 영역을 명명하고 크기 제한은 10MB로 설정한다 (파일이 수천 개가 아닌 이상 충분)   
-`inactive=7d` 캐싱된 리소스가 유지되는 기간이고 이후에 접근되지 않은 리소스는 캐싱 영역에서 삭제한다   
-`use_temp_path=off` 리소스를 캐싱 디렉터리에 직접 사용하고 임시 저장될 영역을 자동으로 생성하지 않도록 설정한다   
+`/var/cache/nginx` 캐싱된 리소스를 저장할 디렉터리  
+`levels=1:2` 너무 많은 파일이 하나의 디렉터리에 있는 경우 파일 접근 속도가 감소될 수 있으니 2단계 디렉터리의 계층 구조로 만들겠다는 의미  
+`keys_zone=STATIC:10m` STATIC이라는 이름을 가진 캐시용 메모리 영역을 명명하고 크기 제한은 10MB로 설정한다 (파일이 수천 개가 아닌 이상 충분)  
+`inactive=7d` 캐싱된 리소스가 유지되는 기간이고 이후에 접근되지 않은 리소스는 캐싱 영역에서 삭제한다  
+`use_temp_path=off` 리소스를 캐싱 디렉터리에 직접 사용하고 임시 저장될 영역을 자동으로 생성하지 않도록 설정한다
 
 ** NextJS에서 빌드된 정적 리소스 캐싱 설정 **
 
-```conf{numberLines: true}
+```nginx{numberLines: true}
 proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=STATIC:10m inactive=7d use_temp_path=off;
 
 upstream nextjs_upstream {
@@ -238,16 +238,16 @@ server{
 ```
 
 NextJS는 빌드할 때 웹앱에서 구동할 각 페이지들을 만들어주기 위해 자바스크립트 번들러를 생성한다. 그리고 이 자바스크립트 번들러들은 /\_next/static/\* 경로에서 생성되어 NextJS가 페이지를 렌더링하게끔 만들어준다.  
-이 정적인 번들러 파일들을 캐싱하기 위해 /\_next/static 경로로 설정된 location 블럭 내부에 STATIC이라는 이름을 가진 프록시 캐시를 지정해주었다. 이렇게 지정해 두면 /\_next/static 디렉터리 하위에 포함하고 있는 리소스들이 캐싱된다. 이렇게 해당 경로의 리소스들이 캐싱된 이후 모든 요청들은 NextJS 웹앱으로 전달된다.   
+이 정적인 번들러 파일들을 캐싱하기 위해 /\_next/static 경로로 설정된 location 블럭 내부에 STATIC이라는 이름을 가진 프록시 캐시를 지정해주었다. 이렇게 지정해 두면 /\_next/static 디렉터리 하위에 포함하고 있는 리소스들이 캐싱된다. 이렇게 해당 경로의 리소스들이 캐싱된 이후 모든 요청들은 NextJS 웹앱으로 전달된다.
 
-![image](https://user-images.githubusercontent.com/24996316/202636898-b00441bd-f54e-47ae-8305-0d5b67ecbe99.png)      
+![image](https://user-images.githubusercontent.com/24996316/202636898-b00441bd-f54e-47ae-8305-0d5b67ecbe99.png)
 
 NextJS는 웹에서 브라우저 캐싱 작업을 처리하기 위해 응답의 헤더를 설정하는데 /\_next/static/\* 에 있는 빌드된 정적인 리소스의 경우 각 URL에 고유한 빌드 ID가 존재해 브라우저 캐시 헤더가 동작하도록 설정한다. (NextJS를 다시 빌드해 보면 이 ID 값들이 달라져있는 걸 확인할 수 있다.)  
 문제는 static/ 디렉터리(사용자가 생성한)의 동적 리소스에는 고유한 빌드 ID가 생성되지 않는다는 점이다. NextJS는 이런 리소스들에 대해서는 캐시가 없는 헤더를 설정하기 때문에 브라우저가 해당 리소스들은 캐시하지 않게 된다. 이 경우 NGINX에 해당 디렉터리에 대한 추가 설정이 필요하다.
 
 ** NextJS에서 빌드된 동적 리소스 캐싱 설정 **
 
-```conf{numberLines: true}
+```nginx{numberLines: true}
 proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=STATIC:10m inactive=7d use_temp_path=off;
 
 upstream nextjs_upstream {
@@ -275,7 +275,7 @@ server{
 
 NGINX 서버에서 gzip을 활성화해 사용자에게 리소스들이 압축된 상태로 로드되도록 설정하자.
 
-```conf{numberLines: true}
+```nginx{numberLines: true}
 proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=STATIC:10m inactive=7d use_temp_path=off;
 
 upstream nextjs_upstream {
@@ -294,7 +294,7 @@ server{
 
 `gzip on` gzip 활성  
 `gzip_proxied any` NGINX에게 어떤 파일이든 gzip되도록 지정  
-`gzip_comp_level 4` gzip 압축 레벨 설정 (4 정도가 평균)
+`gzip_comp_level 4` gzip 압축 레벨 설정 (4 정도가 평균)  
 `gzip_types text/css application/javascript image/svg+xml` 압축할 파일 타입 지정
 
 파일의 크기가 작을수록 압축 수준을 높게 설정할 수 있지만 압축 수준이 높을수록 압축 및 압축 해제에 시간이 더 오래 걸린다. 그리고 본문 글에 따르면 파일 크기가 절약되는 구간이 4 이후부터 감소된다고 하니 평균 4 정도가 적당하다고 본다. gzip 압축 형식은 텍스트가 많은 파일에서 가장 잘 작동하고 일반적으로 이미지 파일을 압축하는 건 권장하지 않는다. 이미지 파일의 경우 고도로 압축되는 경향이 있어 gzip에 실행되는 시간이 예상보다 더 많이 걸릴 수 있다. 하지만 svg 는 텍스트 기반이라 gzip 압축의 장점을 고스란히 가져갈 수 있다고 한다. 이미지들을 웬만하면 svg 형태로 표현해주는 게 최적화에 도움이 되겠다.
@@ -322,15 +322,15 @@ CMD [ "nginx", "-g", "daemon off;" ]
 
 도커 파일이 있는 곳에서 각각 NextJS 이미지, NGNX 이미지를 생성한다.
 
-```cmd
-> docker build --t nextjs-image .
-> docker build --t nextjs-image ./nginx
+```sh
+docker build --t nextjs-image .
+docker build --t nextjs-image ./nginx
 ```
 
 두 컨테이너가 공유할 네트워크를 생성한다.
 
-```cmd
-> docker network create my-network
+```sh
+docker network create my-network
 ```
 
 두 컨테이너를 링크시켜 실행한다.  
@@ -339,31 +339,28 @@ NGINX 도커 컨테이너의 네트워크도 앞서 생성한 my-network에 연�
 
 반드시 --link 옵션을사용해 default.conf에서 nextjs로 참조되는 Next.js 컨테이너를 NGINX 컨테이너에 매핑해야 한다.
 
-```cmd
-> docker run --network my-network --name nextjs-container nextjs-image
-> docker run --network my-network --link nextjs-container:nextjs --publish 80:80 nginx-image
+```sh
+docker run --network my-network --name nextjs-container nextjs-image
+docker run --network my-network --link nextjs-container:nextjs --publish 80:80 nginx-image
 ```
 
 ### 캐싱 결과
 
 ![nginx_설정전_nextjs화면](https://user-images.githubusercontent.com/24996316/202617408-9221d78c-49d3-4f62-884a-e18b3a2c29a3.jpg)
 
-NGINX를 적용하기 전 그냥 도커로 NextJS를 띄운 웹앱 화면을 보면 /static 경로에 들어있는 이미지의 네트워크 탭에서 해당 이미지를 로딩하는데 70 밀리초정도 걸린다.   
+NGINX를 적용하기 전 그냥 도커로 NextJS를 띄운 웹앱 화면을 보면 /static 경로에 들어있는 이미지의 네트워크 탭에서 해당 이미지를 로딩하는데 70 밀리초정도 걸린다.
 
 ![nginx_설정후_nextjs_정적리소스_캐시화면_miss](https://user-images.githubusercontent.com/24996316/202617872-dbe14d20-f775-44fa-9d86-d14c94d676e4.jpg)
 
-NextJS 웹앱 앞단에 NGINX를 적용해 프록시 리소스 캐싱을 적용한 웹앱 화면을 보면 NGINX 적용 전과 달리 30 밀리초보다 조금 덜 미치는 걸 확인할 수 있다. 그리고 NextJS 웹앱의 응답 헤더에 X-Cache-Status: MISS 값이 보이는데 이 의미는 해당 리소스가 첫 로딩이라 NGINX 캐싱 영역에 해당 리소스가 없어서 나오는 결과다.   
+NextJS 웹앱 앞단에 NGINX를 적용해 프록시 리소스 캐싱을 적용한 웹앱 화면을 보면 NGINX 적용 전과 달리 30 밀리초보다 조금 덜 미치는 걸 확인할 수 있다. 그리고 NextJS 웹앱의 응답 헤더에 X-Cache-Status: MISS 값이 보이는데 이 의미는 해당 리소스가 첫 로딩이라 NGINX 캐싱 영역에 해당 리소스가 없어서 나오는 결과다.
 
 ![nginx_설정후_nextjs_정적리소스_캐시화면_hit](https://user-images.githubusercontent.com/24996316/202618212-74d00b8a-ae9f-4c93-8cd6-e76c54d8e021.jpg)
 
-다시 새로고침을 해서 결과를 보면 X-Cache-Status 값이 HIT 로 바뀌면서 NGINX 캐싱 영역에서 해당 리소스를 찾아 캐싱된 결과를 볼 수 있다.   
-
+다시 새로고침을 해서 결과를 보면 X-Cache-Status 값이 HIT 로 바뀌면서 NGINX 캐싱 영역에서 해당 리소스를 찾아 캐싱된 결과를 볼 수 있다.
 
 ### 마치며
 
-[본문](https://steveholgado.com/nginx-for-nextjs/)글을 한 줄 한 줄 번역하며 실습하는 과정이 생각보다 꽤 재밌었다. 모르는 개념에 대해서 조금 더 찾아내 살을 붙이고 공부를 해본 경험이 된 것 같고 무엇보다 NGINX와 친해질 마음이 생긴(?) 계기도 된 것 같아 기쁘다. 조금 더 잘 다루게 되면 내가 띄운 웹에서 어떤 부분을 어떻게 캐싱 정책으로 가져갈지도 고민해 봐야겠다. 그리고 NextJS와 NGINX 두 개의 컨테이너를 띄우는 게 아니라 하나의 컨테이너에 같이 띄우는 것도 시도해 보자. (마이그레이션할 현재 프로젝트가 이렇게 되어있으니까)   
-
-
+[본문](https://steveholgado.com/nginx-for-nextjs/)글을 한 줄 한 줄 번역하며 실습하는 과정이 생각보다 꽤 재밌었다. 모르는 개념에 대해서 조금 더 찾아내 살을 붙이고 공부를 해본 경험이 된 것 같고 무엇보다 NGINX와 친해질 마음이 생긴(?) 계기도 된 것 같아 기쁘다. 조금 더 잘 다루게 되면 내가 띄운 웹에서 어떤 부분을 어떻게 캐싱 정책으로 가져갈지도 고민해 봐야겠다. 그리고 NextJS와 NGINX 두 개의 컨테이너를 띄우는 게 아니라 하나의 컨테이너에 같이 띄우는 것도 시도해 보자. (마이그레이션할 현재 프로젝트가 이렇게 되어있으니까)
 
 ### 참고 자료
 

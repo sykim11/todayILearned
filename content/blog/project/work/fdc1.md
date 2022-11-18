@@ -1,7 +1,9 @@
 ---
 title: 프론트 디자인 컨벤션
 date: 2022-01-05
+tags: ["design-system"]
 publish: true
+image: "./design-system.jpg"
 ---
 
 리액트 기반의 프로젝트에 사용할 수 있는 UI 모음 모듈을 만들며 자잘한 내용들을 적어보려고 한다.  
@@ -36,8 +38,8 @@ fds 모듈은 CRA로 만들어졌기 때문에 react.js 라이브러리가 디�
 > : fds 모듈을 npm에 배포할 때 리액트가 없다면 설치해 주고 있다면 건너뛰는 방식으로 설치할 수는 없을까?  
 > 방법은 있었다.
 
-    1. fds 모듈에서 리액트를 peerdependency에 넣어주고 배포해보기
-    2. fds모듈의 index 파일 경로에 npm init 으로 package.json 만들어서 해당 모듈에 꼭 필요한 파일들만 다시 배포해 보기
+✔ 1. fds 모듈에서 리액트를 peerdependency에 넣어주고 배포해보기  
+✔ 2. fds모듈의 index 파일 경로에 npm init 으로 package.json 만들어서 해당 모듈에 꼭 필요한 파일들만 다시 배포해 보기
 
 package.json에서 디펜던시에 있는 녀석들은 해당 모듈을 사용하기 위해서는 꼭 필요한 아이들이라 명시해주는 곳이라 node_modules폴더에 설치가 된다. fds모듈의 리액트는 디펜던시에 있다. 그래서 CRA를 이용해 만든 프로젝트에서 리액트 모듈들을 제거해주고 fds만 설치해도 작동했던 것이 그 이유다.
 

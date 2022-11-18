@@ -3,6 +3,7 @@ title: 깃랩 cicd
 date: 2022-01-22
 tags: [git]
 publish: true
+image: "./git.jpg"
 ---
 
 ### 목표
@@ -33,7 +34,7 @@ publish: true
 
 깃랩 cicd 파이프라인 기능을 사용하기 위해선 yml 파일을 작성해야 한다. 그리고 이 파일은 **프로젝트의 루트 폴더**에 위치해야 한다. (나의 경우 package.json과 동일한 위치에 해당 파일을 작성)
 
-```
+```yml{numberLines: true}
 stages:
   - build
   - deploy
@@ -45,11 +46,11 @@ docker-build:
   image: docker:stable
   services:
     - name: docker:dind
-      command: ['--tls=false', '--insecure-registry=$DOCKER_REGISTRY']
+      command: ["--tls=false", "--insecure-registry=$DOCKER_REGISTRY"]
   variables:
     DOCKER_HOST: tcp://docker:2375/
     DOCKER_DRIVER: overlay2
-    DOCKER_TLS_CERTDIR: ''
+    DOCKER_TLS_CERTDIR: ""
   before_script:
     - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
   script:
