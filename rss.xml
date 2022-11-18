@@ -1,36 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 18 Nov 2022 22:01:57 GMT</lastBuildDate><item><title><![CDATA[NextJS로 마이그레이션하기 - 도커라이징(feat.NGINX)]]></title><description><![CDATA[해당 포스팅은 이 글을 번역해 실습하며 정리한 글이다. 또한 NextJS 사용 방법을 검색해 보면 NGINX가 심심찮게 보이는 걸 확인할 수 있다. 사내 프로젝트에서도 리액트의 정적인 빌드 결과물을 NGINX…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/nextjs/NextJS로 마이그레이션하기 - 도커라이징(feat.NGINX)/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/nextjs/NextJS로 마이그레이션하기 - 도커라이징(feat.NGINX)/</guid><pubDate>Fri, 18 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;해당 포스팅은 &lt;a href=&quot;https://steveholgado.com/nginx-for-nextjs/&quot;&gt;이 글&lt;/a&gt;을 번역해 실습하며 정리한 글이다. 또한 NextJS 사용 방법을 검색해 보면 NGINX가 심심찮게 보이는 걸 확인할 수 있다. 사내 프로젝트에서도 리액트의 정적인 빌드 결과물을 NGINX를 이용해 서버로 올린다는 표현을 했는데 웹 서버에 NGINX를 사용하는 이유가 뭔지 궁금해 NextJS 웹앱을 도커로 배포하는 작업과 함께 NGINX에 대해서도 짤막하게 공부해 봤다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 18 Nov 2022 22:58:14 GMT</lastBuildDate><item><title><![CDATA[NextJS로 마이그레이션하기 - 도커라이징(feat.NGINX)]]></title><description><![CDATA[해당 포스팅은 이 글을 번역해 실습하며 정리한 글이다. 또한 NextJS 사용 방법을 검색해 보면 NGINX가 심심찮게 보이는 걸 확인할 수 있다. 사내 프로젝트에서도 리액트의 정적인 빌드 결과물을 NGINX…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/nextjs/NextJS로 마이그레이션하기 - 도커라이징(feat.NGINX)/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/nextjs/NextJS로 마이그레이션하기 - 도커라이징(feat.NGINX)/</guid><pubDate>Sat, 19 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;해당 포스팅은 &lt;a href=&quot;https://steveholgado.com/nginx-for-nextjs/&quot;&gt;이 글&lt;/a&gt;을 번역해 실습하며 정리한 글이다. 또한 NextJS 사용 방법을 검색해 보면 NGINX가 심심찮게 보이는 걸 확인할 수 있다. 사내 프로젝트에서도 리액트의 정적인 빌드 결과물을 NGINX를 이용해 서버로 올린다는 표현을 했는데 웹 서버에 NGINX를 사용하는 이유가 뭔지 궁금해 NextJS 웹앱을 도커로 배포하는 작업과 함께 NGINX에 대해서도 짤막하게 공부해 봤다.&lt;/p&gt;
 &lt;h3 id=&quot;NGINX와-웹앱의-연관성&quot; style=&quot;position:relative;&quot;&gt;NGINX와 웹앱의 연관성&lt;a href=&quot;#NGINX%EC%99%80-%EC%9B%B9%EC%95%B1%EC%9D%98-%EC%97%B0%EA%B4%80%EC%84%B1&quot; aria-label=&quot;NGINX와 웹앱의 연관성 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;NGINX가 웹에서 하는 역할로는 프록시 서버라는 기능이 있다. 웹을 띄워주는 서버의 실제 포트가 3000이라면 NGINX에서 80으로 맵핑시켜 실제 서버의 주소를 한 겹 숨겨주는 보안적 기능을 가져갈 수 있다. NGINX는 프록시 기능 외에도 고성능 기능들이 많다는데 이 글에서는 프록시와 NextJS 웹앱의 정적 리소스를 캐싱시켜주는 기능에 대해서만 다룰 예정이다.&lt;/p&gt;
 &lt;h4 id=&quot;NGINX-설정-파일-내부-위치별-역할&quot; style=&quot;position:relative;&quot;&gt;NGINX 설정 파일 내부 위치별 역할&lt;a href=&quot;#NGINX-%EC%84%A4%EC%A0%95-%ED%8C%8C%EC%9D%BC-%EB%82%B4%EB%B6%80-%EC%9C%84%EC%B9%98%EB%B3%84-%EC%97%AD%ED%95%A0&quot; aria-label=&quot;NGINX 설정 파일 내부 위치별 역할 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h4&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;conf&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-conf line-numbers&quot;&gt;&lt;code class=&quot;language-conf&quot;&gt;# core 모듈 설정
-worker_process 1;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;nginx&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-nginx line-numbers&quot;&gt;&lt;code class=&quot;language-nginx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# core 모듈 설정&lt;/span&gt;
+&lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;worker_process&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-# events 블록
-events {
-  worker_connections 100;
-}
+&lt;span class=&quot;token comment&quot;&gt;# events 블록&lt;/span&gt;
+&lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;events&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;worker_connections&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-# http 블록
-http {
+&lt;span class=&quot;token comment&quot;&gt;# http 블록&lt;/span&gt;
+&lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;http&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   ...
-  # server 블록들
-  server {
-    server_name domain1.com;
-    root /var/www/domain1.com;
-    # location 블록들
-    location / {
-      root html;
-      index index.html index.htm;
-    }
-    location /user/ {
-      root /home/user;
-    }
-  }
-  server {
-    server_name domain2.com;
-    root /var/www/domain2.com;
-  }
-}
+  &lt;span class=&quot;token comment&quot;&gt;# server 블록들&lt;/span&gt;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;server&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;server_name&lt;/span&gt; domain1.com&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;root&lt;/span&gt; /var/www/domain1.com&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;# location 블록들&lt;/span&gt;
+    &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;location&lt;/span&gt; /&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;root&lt;/span&gt; html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;index&lt;/span&gt; index.html index.htm&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;location&lt;/span&gt; /user/&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;root&lt;/span&gt; /home/user&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;server&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;server_name&lt;/span&gt; domain2.com&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;root&lt;/span&gt; /var/www/domain2.com&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;** core 모듈 설정 **&lt;br&gt;
 NGINX conf 파일의 최상단에는 NGINX의 프로세스를 관리해 주는 프로세스의 수 및 기본적인 동작 방식을 정의한다. NGINX는 하나의 마스터 프로세스와 여러 개의 작업자 프로세스로 구성되어 실행된다. 마스터의 역할은 설정 파일을 읽고 이를 토대로 구성 및 평가하여 여러 작업자 프로세스들이 실제 요청된 일을 처리하도록 관리한다.&lt;/p&gt;
@@ -68,22 +68,22 @@ location 블록은 server 블록 안에 쓰여지며 server와 마찬가지로 �
 &lt;p&gt;위 그림과 같이 NGINX는 NextJS 웹앱으로 들어오는 모든 요청을 다루는 디폴트 서버의 역할을 할 예정이라 default.conf라 이름 지었다. 이름은 뭐라 짓든 관련이 전혀 없으나 &lt;code class=&quot;language-text&quot;&gt;.conf&lt;/code&gt; 확장자는 꼭 잊지 말자.&lt;/p&gt;
 &lt;p&gt;nginx 폴더 하위 경로에 default.conf 파일을 생성했다.&lt;br&gt;
 /nginx/default.conf&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;conf&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-conf line-numbers&quot;&gt;&lt;code class=&quot;language-conf&quot;&gt;upstream nextjs_upstream {
-  server nextjs:3000;
-}
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;nginx&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-nginx line-numbers&quot;&gt;&lt;code class=&quot;language-nginx&quot;&gt;&lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;upstream&lt;/span&gt; nextjs_upstream&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;server&lt;/span&gt; nextjs:3000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-server {
-  listen 80 default_server;
+&lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;server&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;listen&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;80&lt;/span&gt; default_server&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-  server_name _;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;server_name&lt;/span&gt; _&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-  server_tokens off;
-}&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;server_tokens&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;off&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;NGINX에 설정한 디폴트 서버는 단 하나이기 때문에 다른 여러 server 블록이 필요 없어서 http 블록을 생략하고 바로 server 블록부터 지시했다. 또한 디폴트 하나라서 이름도 필요가 없기에 _; 으로 지정했다. server_tokens off; 는 NGINX 버전이 응답의 헤더에 나타나지 않도록 하는 기능이다. 마찬가지로 보안 이슈와 관련이 있는 것 같다.&lt;br&gt;
 위 그림과 같이 도커 컨테이너는 NGINX, NextJS 두 개가 뜰 예정이다. NextJS 웹앱이 어떤 이유로 두 개 이상 띄워야한다면 서로 다른 포트를 가진 여러 개의 NextJS 컨테이너들을 NGINX 상단에 업스트림 형태로 추가할 수 있다. 그리고 NGINX는 이들 간의 요청을 로드 밸런싱하는 역할을 해 준다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;conf&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-conf line-numbers&quot;&gt;&lt;code class=&quot;language-conf&quot;&gt;upstream nextjs_upstream {
-  server nextjs:3000;
-}
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;nginx&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-nginx line-numbers&quot;&gt;&lt;code class=&quot;language-nginx&quot;&gt;&lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;upstream&lt;/span&gt; nextjs_upstream&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;server&lt;/span&gt; nextjs:3000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 ...&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;여기서 nextjs:3000 은 어디서 읽어들이고 있는 걸까?&lt;br&gt;
 위 conf 파일은 NGINX 컨테이너고 해당 컨테이너의 localhost는 NGINX 자체를 참조한다. NGINX 컨테이너에서 NextJS 웹앱을 띄우고 있는 다른 컨테이너를 참조할 수 있는 방법은 IP 주소를 통해 가능하다. 또한 도커를 실행시킬 때 링크 옵션 기능을 이용해 참조할 수 있는 이름을 nextjs로 할당시켜주면 해당 IP 주소를 이름을 이용해서도 매핑할 수 있다.&lt;/p&gt;
@@ -91,27 +91,27 @@ server {
 &lt;p&gt;어쨌든 링크 옵션 기능을 사용하든 Docker Composer 설정으로 컨테이너를 실행하든 nextjs:3000을 참조할 때 실제로는 NextJS 컨테이너의 localhost:3000을 참조하게 된다.&lt;/p&gt;
 &lt;h3 id=&quot;NextJS-웹앱으로-요청-보내기&quot; style=&quot;position:relative;&quot;&gt;NextJS 웹앱으로 요청 보내기&lt;a href=&quot;#NextJS-%EC%9B%B9%EC%95%B1%EC%9C%BC%EB%A1%9C-%EC%9A%94%EC%B2%AD-%EB%B3%B4%EB%82%B4%EA%B8%B0&quot; aria-label=&quot;NextJS 웹앱으로 요청 보내기 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;NextJS 웹앱 앞단에 NGINX를 리버스 프록시로 사용하고 있기 때문에 모든 요청들이 NGINX에 들어온다. 그리고 이 NGINX가 올바른 응답을 NextJS 웹앱으로 넘겨주기 위해선 프록시 헤더와 관련된 추가 설정이 필요하다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;conf&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-conf line-numbers&quot;&gt;&lt;code class=&quot;language-conf&quot;&gt;upstream nextjs_upstream {
-  server nextjs:3000;
-}
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;nginx&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-nginx line-numbers&quot;&gt;&lt;code class=&quot;language-nginx&quot;&gt;&lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;upstream&lt;/span&gt; nextjs_upstream&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;server&lt;/span&gt; nextjs:3000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-server {
-  listen 80 default_server;
+&lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;server&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;listen&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;80&lt;/span&gt; default_server&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-  server_name _;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;server_name&lt;/span&gt; _&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-  server_tokens off;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;server_tokens&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;off&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-  proxy_http_version 1.1;
-  proxy_set_header Upgrade $http_upgrade;
-  proxy_set_header Connection &amp;#39;upgrade&amp;#39;;
-  proxy_set_header Host $host;
-  proxy_cache_bypass $http_upgrade;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;proxy_http_version&lt;/span&gt; 1.1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;proxy_set_header&lt;/span&gt; Upgrade &lt;span class=&quot;token variable&quot;&gt;$http_upgrade&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;proxy_set_header&lt;/span&gt; Connection &lt;span class=&quot;token string&quot;&gt;&apos;upgrade&apos;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;proxy_set_header&lt;/span&gt; Host &lt;span class=&quot;token variable&quot;&gt;$host&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;proxy_cache_bypass&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$http_upgrade&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-  location / {
-    proxy_pass http://nextjs_upstream;
-  }
-}&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;location&lt;/span&gt; /&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;proxy_pass&lt;/span&gt; http://nextjs_upstream&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;모든 요청은 NextJS 웹앱 서버 구성에 지정된 &lt;a href=&quot;http://localhost:3000&quot;&gt;http://localhost:3000&lt;/a&gt; 으로 들어가는 게 아니라 NGINX 설정과 같이 업스트림으로 지정된 http://nextjs_upstream 에 요청을 전달하고 있다.&lt;/p&gt;
 &lt;p&gt;❓ NGINX 에서 upstream 이란?&lt;br&gt;
 proxy_pass 지시자를 통해 NGINX가 받은 요청을 넘겨줄 서버들을 정의하는 지시자를 의미한다.&lt;br&gt;
@@ -139,11 +139,11 @@ NGINX는 설정한 디렉터리에 한해서 효율적인 캐싱 기능을 제�
 &lt;p&gt;NGINX는 어떤 방식으로 캐싱시키는 걸까?&lt;br&gt;
 NGINX는 우선 캐싱 영역이라는 메모리 영역을 생성한다. 그리고 그 캐싱 영역에 특정 파일에 대한 캐시 키를 저장해 놓는데, 이 키는 해당 파일이 캐싱 영역에 저장되어있는지 아닌지 판별하기 위해 사용된다.&lt;br&gt;
 캐싱 설정은 NGINX 설정 파일 최상단에 아래와 같이 기재해 준다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;conf&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-conf line-numbers&quot;&gt;&lt;code class=&quot;language-conf&quot;&gt;proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=STATIC:10m inactive=7d use_temp_path=off;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;nginx&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-nginx line-numbers&quot;&gt;&lt;code class=&quot;language-nginx&quot;&gt;&lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;proxy_cache_path&lt;/span&gt; /var/cache/nginx levels=1:2 keys_zone=STATIC:10m inactive=7d use_temp_path=off&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-upstream nextjs_upstream {
-  server nextjs:3000;
-}
+&lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;upstream&lt;/span&gt; nextjs_upstream&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;server&lt;/span&gt; nextjs:3000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
 ...&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;NGINX에서 캐싱 영역에 대한 세부 설정은 아래와 같이 설명된다&lt;/p&gt;
@@ -153,68 +153,68 @@ upstream nextjs_upstream {
 &lt;code class=&quot;language-text&quot;&gt;inactive=7d&lt;/code&gt; 캐싱된 리소스가 유지되는 기간이고 이후에 접근되지 않은 리소스는 캐싱 영역에서 삭제한다&lt;br&gt;
 &lt;code class=&quot;language-text&quot;&gt;use_temp_path=off&lt;/code&gt; 리소스를 캐싱 디렉터리에 직접 사용하고 임시 저장될 영역을 자동으로 생성하지 않도록 설정한다&lt;/p&gt;
 &lt;p&gt;** NextJS에서 빌드된 정적 리소스 캐싱 설정 **&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;conf&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-conf line-numbers&quot;&gt;&lt;code class=&quot;language-conf&quot;&gt;proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=STATIC:10m inactive=7d use_temp_path=off;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;nginx&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-nginx line-numbers&quot;&gt;&lt;code class=&quot;language-nginx&quot;&gt;&lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;proxy_cache_path&lt;/span&gt; /var/cache/nginx levels=1:2 keys_zone=STATIC:10m inactive=7d use_temp_path=off&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-upstream nextjs_upstream {
-  server nextjs:3000;
-}
+&lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;upstream&lt;/span&gt; nextjs_upstream&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;server&lt;/span&gt; nextjs:3000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-server{
+&lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;server&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   ...
-    location /_next/static {
-      proxy_cache STATIC;
-      proxy_pass http://nextjs_upstream;
+    &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;location&lt;/span&gt; /_next/static&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;proxy_cache&lt;/span&gt; STATIC&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;proxy_pass&lt;/span&gt; http://nextjs_upstream&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-      # For testing cache - remove before deploying to production
-      add_header X-Cache-Status $upstream_cache_status;
-    }
+      &lt;span class=&quot;token comment&quot;&gt;# For testing cache - remove before deploying to production&lt;/span&gt;
+      &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;add_header&lt;/span&gt; X-Cache-Status &lt;span class=&quot;token variable&quot;&gt;$upstream_cache_status&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
   ...
-}&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;NextJS는 빌드할 때 웹앱에서 구동할 각 페이지들을 만들어주기 위해 자바스크립트 번들러를 생성한다. 그리고 이 자바스크립트 번들러들은 /_next/static/* 경로에서 생성되어 NextJS가 페이지를 렌더링하게끔 만들어준다.&lt;br&gt;
 이 정적인 번들러 파일들을 캐싱하기 위해 /_next/static 경로로 설정된 location 블럭 내부에 STATIC이라는 이름을 가진 프록시 캐시를 지정해주었다. 이렇게 지정해 두면 /_next/static 디렉터리 하위에 포함하고 있는 리소스들이 캐싱된다. 이렇게 해당 경로의 리소스들이 캐싱된 이후 모든 요청들은 NextJS 웹앱으로 전달된다.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/24996316/202636898-b00441bd-f54e-47ae-8305-0d5b67ecbe99.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
 &lt;p&gt;NextJS는 웹에서 브라우저 캐싱 작업을 처리하기 위해 응답의 헤더를 설정하는데 /_next/static/* 에 있는 빌드된 정적인 리소스의 경우 각 URL에 고유한 빌드 ID가 존재해 브라우저 캐시 헤더가 동작하도록 설정한다. (NextJS를 다시 빌드해 보면 이 ID 값들이 달라져있는 걸 확인할 수 있다.)&lt;br&gt;
 문제는 static/ 디렉터리(사용자가 생성한)의 동적 리소스에는 고유한 빌드 ID가 생성되지 않는다는 점이다. NextJS는 이런 리소스들에 대해서는 캐시가 없는 헤더를 설정하기 때문에 브라우저가 해당 리소스들은 캐시하지 않게 된다. 이 경우 NGINX에 해당 디렉터리에 대한 추가 설정이 필요하다.&lt;/p&gt;
 &lt;p&gt;** NextJS에서 빌드된 동적 리소스 캐싱 설정 **&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;conf&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-conf line-numbers&quot;&gt;&lt;code class=&quot;language-conf&quot;&gt;proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=STATIC:10m inactive=7d use_temp_path=off;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;nginx&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-nginx line-numbers&quot;&gt;&lt;code class=&quot;language-nginx&quot;&gt;&lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;proxy_cache_path&lt;/span&gt; /var/cache/nginx levels=1:2 keys_zone=STATIC:10m inactive=7d use_temp_path=off&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-upstream nextjs_upstream {
-  server nextjs:3000;
-}
+&lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;upstream&lt;/span&gt; nextjs_upstream&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;server&lt;/span&gt; nextjs:3000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-server{
+&lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;server&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   ...
-    location /static {
-      proxy_cache STATIC;
-      proxy_ignore_headers Cache-Control;
-      proxy_cache_valid 60m;
-      proxy_pass http://nextjs_upstream;
+    &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;location&lt;/span&gt; /static&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;proxy_cache&lt;/span&gt; STATIC&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;proxy_ignore_headers&lt;/span&gt; Cache-Control&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;proxy_cache_valid&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;60m&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;proxy_pass&lt;/span&gt; http://nextjs_upstream&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-      # For testing cache - remove before deploying to production
-      add_header X-Cache-Status $upstream_cache_status;
-    }
+      &lt;span class=&quot;token comment&quot;&gt;# For testing cache - remove before deploying to production&lt;/span&gt;
+      &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;add_header&lt;/span&gt; X-Cache-Status &lt;span class=&quot;token variable&quot;&gt;$upstream_cache_status&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
   ...
-}&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;위와 같이 NGINX에 들어오는 요청들 /static 하위 경로에 한해서, 캐시가 없는 헤더를 무시하는 작업이 필요하다. /static 경로로 설정된 location 블럭 내부에 마찬가지로 아까 이름 지어둔 STATIC 캐시를 연결해 주고 캐시된 파일의 유효 기간을 60분으로 설정했다. 이렇게 설정해 두면 /static/* 리소스에 한해서 최대 60분에 한 번만 캐시 메모리를 새로고침해 준다. 만약에 유효 기간을 설정하지 않으면 리소스들이 캐시 영역에 무기한으로 남지만 캐싱된 리소스는 기본적으로 비활성 기간이 7일이기 때문에 7일이 지나면 캐싱 영역에서 제거된다.&lt;/p&gt;
 &lt;h3 id=&quot;NGINX에서-gzip-설정&quot; style=&quot;position:relative;&quot;&gt;NGINX에서 gzip 설정&lt;a href=&quot;#NGINX%EC%97%90%EC%84%9C-gzip-%EC%84%A4%EC%A0%95&quot; aria-label=&quot;NGINX에서 gzip 설정 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;NGINX 서버에서 gzip을 활성화해 사용자에게 리소스들이 압축된 상태로 로드되도록 설정하자.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;conf&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-conf line-numbers&quot;&gt;&lt;code class=&quot;language-conf&quot;&gt;proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=STATIC:10m inactive=7d use_temp_path=off;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;nginx&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-nginx line-numbers&quot;&gt;&lt;code class=&quot;language-nginx&quot;&gt;&lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;proxy_cache_path&lt;/span&gt; /var/cache/nginx levels=1:2 keys_zone=STATIC:10m inactive=7d use_temp_path=off&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-upstream nextjs_upstream {
-  server nextjs:3000;
-}
+&lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;upstream&lt;/span&gt; nextjs_upstream&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;server&lt;/span&gt; nextjs:3000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-server{
+&lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;server&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   ...
-  gzip on;
-  gzip_proxied any;
-  gzip_comp_level 4;
-  gzip_types text/css application/javascript image/svg+xml;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;gzip&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;on&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;gzip_proxied&lt;/span&gt; any&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;gzip_comp_level&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token directive&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;gzip_types&lt;/span&gt; text/css application/javascript image/svg+xml&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
   ...
-}&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;gzip on&lt;/code&gt; gzip 활성&lt;br&gt;
 &lt;code class=&quot;language-text&quot;&gt;gzip_proxied any&lt;/code&gt; NGINX에게 어떤 파일이든 gzip되도록 지정&lt;br&gt;
-&lt;code class=&quot;language-text&quot;&gt;gzip_comp_level 4&lt;/code&gt; gzip 압축 레벨 설정 (4 정도가 평균)
+&lt;code class=&quot;language-text&quot;&gt;gzip_comp_level 4&lt;/code&gt; gzip 압축 레벨 설정 (4 정도가 평균)&lt;br&gt;
 &lt;code class=&quot;language-text&quot;&gt;gzip_types text/css application/javascript image/svg+xml&lt;/code&gt; 압축할 파일 타입 지정&lt;/p&gt;
 &lt;p&gt;파일의 크기가 작을수록 압축 수준을 높게 설정할 수 있지만 압축 수준이 높을수록 압축 및 압축 해제에 시간이 더 오래 걸린다. 그리고 본문 글에 따르면 파일 크기가 절약되는 구간이 4 이후부터 감소된다고 하니 평균 4 정도가 적당하다고 본다. gzip 압축 형식은 텍스트가 많은 파일에서 가장 잘 작동하고 일반적으로 이미지 파일을 압축하는 건 권장하지 않는다. 이미지 파일의 경우 고도로 압축되는 경향이 있어 gzip에 실행되는 시간이 예상보다 더 많이 걸릴 수 있다. 하지만 svg 는 텍스트 기반이라 gzip 압축의 장점을 고스란히 가져갈 수 있다고 한다. 이미지들을 웬만하면 svg 형태로 표현해주는 게 최적화에 도움이 되겠다.&lt;/p&gt;
 &lt;h3 id=&quot;NGINX-도커라이징&quot; style=&quot;position:relative;&quot;&gt;NGINX 도커라이징&lt;a href=&quot;#NGINX-%EB%8F%84%EC%BB%A4%EB%9D%BC%EC%9D%B4%EC%A7%95&quot; aria-label=&quot;NGINX 도커라이징 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
@@ -232,16 +232,16 @@ server{
 &lt;p&gt;리눅스의 alpine 배포판을 사용해 NGINX 도커 이미지를 기반으로 컨테이너를 생성한다. 그런 다음 NGINX 에 기본적으로 제공되는 구성 파일을 삭제하고 위에서 작업한 설정 파일로 교체하고 컨테이너 80 포트를 열어 실행해주면 해당 이미지를 실행 시 우리가 설정한 NGINX.conf 파일에 따라 NGINX가 실행된다.&lt;/p&gt;
 &lt;h3 id=&quot;도커에서-생성된-컨테이너들-실행하기&quot; style=&quot;position:relative;&quot;&gt;도커에서 생성된 컨테이너들 실행하기&lt;a href=&quot;#%EB%8F%84%EC%BB%A4%EC%97%90%EC%84%9C-%EC%83%9D%EC%84%B1%EB%90%9C-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%EB%93%A4-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0&quot; aria-label=&quot;도커에서 생성된 컨테이너들 실행하기 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;도커 파일이 있는 곳에서 각각 NextJS 이미지, NGNX 이미지를 생성한다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cmd&quot;&gt;&lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;&amp;gt; docker build --t nextjs-image .
-&amp;gt; docker build --t nextjs-image ./nginx&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;docker build --t nextjs-image .
+docker build --t nextjs-image ./nginx&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;두 컨테이너가 공유할 네트워크를 생성한다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cmd&quot;&gt;&lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;&amp;gt; docker network create my-network&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;docker network create my-network&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;두 컨테이너를 링크시켜 실행한다.&lt;br&gt;
 NextJS 도커 컨테이너의 네트워크는 앞서 생성한 my-network에 연결해 주고 컨테이너 이름을 nextjs-container라 명명한 뒤 nextjs-image 이미지를 이용해 도커 실행&lt;br&gt;
 NGINX 도커 컨테이너의 네트워크도 앞서 생성한 my-network에 연결해 주고 nextjs-container 컨테이너를 nextjs로 link 옵션을 이용해 맵핑시킨 뒤 nginx-image 이미지를 이용해 localhost:80 포트로 도커를 실행&lt;/p&gt;
 &lt;p&gt;반드시 —link 옵션을사용해 default.conf에서 nextjs로 참조되는 Next.js 컨테이너를 NGINX 컨테이너에 매핑해야 한다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cmd&quot;&gt;&lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;&amp;gt; docker run --network my-network --name nextjs-container nextjs-image
-&amp;gt; docker run --network my-network --link nextjs-container:nextjs --publish 80:80 nginx-image&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;docker run --network my-network --name nextjs-container nextjs-image
+docker run --network my-network --link nextjs-container:nextjs --publish 80:80 nginx-image&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3 id=&quot;캐싱-결과&quot; style=&quot;position:relative;&quot;&gt;캐싱 결과&lt;a href=&quot;#%EC%BA%90%EC%8B%B1-%EA%B2%B0%EA%B3%BC&quot; aria-label=&quot;캐싱 결과 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/24996316/202617408-9221d78c-49d3-4f62-884a-e18b3a2c29a3.jpg&quot; alt=&quot;nginx_설정전_nextjs화면&quot;&gt;&lt;/p&gt;
 &lt;p&gt;NGINX를 적용하기 전 그냥 도커로 NextJS를 띄운 웹앱 화면을 보면 /static 경로에 들어있는 이미지의 네트워크 탭에서 해당 이미지를 로딩하는데 70 밀리초정도 걸린다.&lt;/p&gt;
@@ -386,7 +386,7 @@ app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
 위 캡처의 형태와 같이 &lt;strong&gt;파일&lt;/strong&gt; 형태의 데이터를 웹 브라우저와 서버가 주고 받을 때는 &lt;strong&gt;blob 혹은 arraybuffer 값을 이용&lt;/strong&gt;한다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-js line-numbers&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token function&quot;&gt;axios&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     method&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;GET&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    url&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;/getImageApi&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;                 
+    url&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;/getImageApi&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     responseType&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;blob&apos;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;res&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;res&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
@@ -443,7 +443,7 @@ NextJS를 활용하면 리액트만 사용했을 때보다 편리하게 정적�
 &lt;blockquote&gt;
 &lt;p&gt;getStaticPaths : 동적인 데이터에 따라 미리 렌더링할 페이지의 동적인 경로를 지정하게 해 주는 함수&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;ts&quot;&gt;&lt;pre class=&quot;language-ts&quot;&gt;&lt;code class=&quot;language-ts&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;review&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;deit &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;id&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;tsx
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;ts&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-ts line-numbers&quot;&gt;&lt;code class=&quot;language-ts&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;review&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;deit &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;id&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;tsx
 
 &lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;getStaticPaths&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; res &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fetch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;http://localhost:8000/review/list&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 포스팅 리스트들을 가져오는 백엔드 API&lt;/span&gt;
@@ -455,13 +455,13 @@ NextJS를 활용하면 리액트만 사용했을 때보다 편리하게 정적�
     paths&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     fallback&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;getStaticPaths 함수를 사용해 동적 페이지로 활용될 수 있는 리스트의 id 값들을 &lt;code class=&quot;language-text&quot;&gt;[ { params: { id: 1} }, { params: { id: 2} }, ... ]&lt;/code&gt; 형태로 paths 값에 넣어 리턴시켜준다. 이것만으로 동적 파라미터 경로 준비는 완료가 된다.&lt;/p&gt;
 &lt;h3 id=&quot;getStaticProps&quot; style=&quot;position:relative;&quot;&gt;getStaticProps&lt;a href=&quot;#getStaticProps&quot; aria-label=&quot;getStaticProps permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;getStaticProps : nextjs 서버에서 페이지를 빌드할 때 데이터를 패치시켜주는 함수&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;ts&quot;&gt;&lt;pre class=&quot;language-ts&quot;&gt;&lt;code class=&quot;language-ts&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;review&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;deit &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;id&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;tsx
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;ts&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-ts line-numbers&quot;&gt;&lt;code class=&quot;language-ts&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;review&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;deit &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;id&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;tsx
 
 &lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;getStaticPaths&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; res &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fetch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;http://localhost:8000/review/list&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 포스팅 리스트들을 가져오는 백엔드 API&lt;/span&gt;
@@ -481,7 +481,7 @@ NextJS를 활용하면 리액트만 사용했을 때보다 편리하게 정적�
   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     props&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; post &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 해당 페이지 컴포넌트에 상위 props로 주입&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;getStaticProps 함수를 활용해 해당 페이지 경로의 params 값을 받아와서 id를 통해 적절한 API 호출을 시켜줄 수 있다.&lt;br&gt;
 1번 페이지는 id = 1 데이터에 맞는 상세 api 호출, 2번 페이지는 id = 2 데이터에 맞는 상세 api 호출 등등…&lt;/p&gt;
 &lt;p&gt;위 두 개의 NextJS API 흐름을 가장 보기 쉽게 그린 그림은 아래와 같다.&lt;/p&gt;
@@ -1561,7 +1561,7 @@ services:
 첫 줄의 루트 정보를 ksy로 변경&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;user ksy&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;nginx 재시작하면 웹서버가 정상 동작한다!&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo systemctl restart nginx&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[깃랩 cicd]]></title><description><![CDATA[목표 웹서버에 올릴 프론트 파일을 깃랩을 이용해 자동 배포하도록 설정해 본다. 어떻게 돌아가는 걸까 & 시나리오 깃랩의 cicd…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/project/work/gitlab_cicd/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/project/work/gitlab_cicd/</guid><pubDate>Sat, 22 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;목표&quot; style=&quot;position:relative;&quot;&gt;목표&lt;a href=&quot;#%EB%AA%A9%ED%91%9C&quot; aria-label=&quot;목표 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo systemctl restart nginx&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[깃랩 cicd]]></title><description><![CDATA[목표 웹서버에 올릴 프론트 파일을 깃랩을 이용해 자동 배포하도록 설정해 본다. 어떻게 돌아가는 걸까 & 시나리오 깃랩의 cicd…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/git/gitlab_cicd/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/git/gitlab_cicd/</guid><pubDate>Sat, 22 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;목표&quot; style=&quot;position:relative;&quot;&gt;목표&lt;a href=&quot;#%EB%AA%A9%ED%91%9C&quot; aria-label=&quot;목표 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;웹서버에 올릴 프론트 파일을 깃랩을 이용해 자동 배포하도록 설정해 본다.&lt;/p&gt;
 &lt;h3 id=&quot;어떻게-돌아가는-걸까--시나리오&quot; style=&quot;position:relative;&quot;&gt;어떻게 돌아가는 걸까 &amp;#x26; 시나리오&lt;a href=&quot;#%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%8F%8C%EC%95%84%EA%B0%80%EB%8A%94-%EA%B1%B8%EA%B9%8C--%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4&quot; aria-label=&quot;어떻게 돌아가는 걸까  시나리오 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;깃랩의 cicd는 도커에서 돌아간다. 그리고 연결된 쿠버네티스에 배포가 된다. (@.@? 쿠버네티스가 뭔지 모르겠지만 일단은 넘어가자) 깃랩의 cicd는 프로젝트의 루트 위치에 .gitlab-ci.yml이 있는 상태에서 새로운 푸시가 들어오면 yml에 작성된 명령어들이 일련의 묶음으로 연결되어 실행된다. 이것을 파이프라인이라고도 한다.&lt;br&gt;
@@ -1611,45 +1611,45 @@ services:
 &lt;p&gt;나의 경우 create-react-app 명령어를 이용해 보일러 프로젝트로 간단하게만 만들어보았다.&lt;/p&gt;
 &lt;h3 id=&quot;2-루트-위치에-yml-파일-생성&quot; style=&quot;position:relative;&quot;&gt;2. 루트 위치에 yml 파일 생성&lt;a href=&quot;#2-%EB%A3%A8%ED%8A%B8-%EC%9C%84%EC%B9%98%EC%97%90-yml-%ED%8C%8C%EC%9D%BC-%EC%83%9D%EC%84%B1&quot; aria-label=&quot;2 루트 위치에 yml 파일 생성 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;깃랩 cicd 파이프라인 기능을 사용하기 위해선 yml 파일을 작성해야 한다. 그리고 이 파일은 &lt;strong&gt;프로젝트의 루트 폴더&lt;/strong&gt;에 위치해야 한다. (나의 경우 package.json과 동일한 위치에 해당 파일을 작성)&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;stages:
-  - build
-  - deploy
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yml&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-yml line-numbers&quot;&gt;&lt;code class=&quot;language-yml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;stages&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; build
+  &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; deploy
 
-docker-build:
-  stage: build
-  tags:
-    - ci-tag
-  image: docker:stable
-  services:
-    - name: docker:dind
-      command: [&apos;--tls=false&apos;, &apos;--insecure-registry=$DOCKER_REGISTRY&apos;]
-  variables:
-    DOCKER_HOST: tcp://docker:2375/
-    DOCKER_DRIVER: overlay2
-    DOCKER_TLS_CERTDIR: &apos;&apos;
-  before_script:
-    - docker login -u &quot;$CI_REGISTRY_USER&quot; -p &quot;$CI_REGISTRY_PASSWORD&quot; $CI_REGISTRY
-  script:
-    - docker build -t project-name .
-    - docker tag project-name $DOCKER_REGISTRY/project-name
-    - docker push $DOCKER_REGISTRY/project-name
+&lt;span class=&quot;token key atrule&quot;&gt;docker-build&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;stage&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; build
+  &lt;span class=&quot;token key atrule&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; ci&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;tag
+  &lt;span class=&quot;token key atrule&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; docker&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;stable
+  &lt;span class=&quot;token key atrule&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; docker&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;dind
+      &lt;span class=&quot;token key atrule&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;--tls=false&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;--insecure-registry=$DOCKER_REGISTRY&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;variables&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;DOCKER_HOST&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; tcp&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;//docker&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;2375/
+    &lt;span class=&quot;token key atrule&quot;&gt;DOCKER_DRIVER&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; overlay2
+    &lt;span class=&quot;token key atrule&quot;&gt;DOCKER_TLS_CERTDIR&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;before_script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; docker login &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;u &quot;$CI_REGISTRY_USER&quot; &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;p &quot;$CI_REGISTRY_PASSWORD&quot; $CI_REGISTRY
+  &lt;span class=&quot;token key atrule&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; docker build &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;t project&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;name .
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; docker tag project&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;name $DOCKER_REGISTRY/project&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;name
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; docker push $DOCKER_REGISTRY/project&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;name
 
-deploy_dev:
-  stage: deploy
-  tags:
-    - ci-tag
-  needs: [docker-build]
-  image: kroniak/ssh-client
-  before_script:
-    - echo &quot;deploying app&quot;
-  script:
-    - echo &quot;$SSH_PRIVATE_KEY&quot; | tr -d &apos;\r&apos; &gt; key.pem
-    - chmod 400 key.pem
-    - ssh -o StrictHostKeyChecking=no -i key.pem username@$PROD_SERVER_IP -p 6879 &apos;docker stop projectcontainer || true &amp;amp;&amp;amp; docker rm projectcontainer || true&apos;
-    - ssh -o StrictHostKeyChecking=no -i key.pem username@$PROD_SERVER_IP -p 6879 &apos;docker pull $DOCKER_REGISTRY/project-name&apos;
-    - ssh -o StrictHostKeyChecking=no -i key.pem username@$PROD_SERVER_IP -p 6879 &apos;docker run -p 3001:80 -d --name projectcontainer $DOCKER_REGISTRY/project-name&apos;
-  only:
-    - master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;deploy_dev&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;stage&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; deploy
+  &lt;span class=&quot;token key atrule&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; ci&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;tag
+  &lt;span class=&quot;token key atrule&quot;&gt;needs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;docker&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;build&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; kroniak/ssh&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;client
+  &lt;span class=&quot;token key atrule&quot;&gt;before_script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; echo &quot;deploying app&quot;
+  &lt;span class=&quot;token key atrule&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; echo &quot;$SSH_PRIVATE_KEY&quot; &lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt; tr &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;d &apos;\r&apos; &lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt; key.pem
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; chmod 400 key.pem
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; ssh &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;o StrictHostKeyChecking=no &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;i key.pem username@$PROD_SERVER_IP &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;p 6879 &apos;docker stop projectcontainer &lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt; true &lt;span class=&quot;token important&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; docker rm projectcontainer &lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt; true&apos;
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; ssh &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;o StrictHostKeyChecking=no &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;i key.pem username@$PROD_SERVER_IP &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;p 6879 &apos;docker pull $DOCKER_REGISTRY/project&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;name&apos;
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; ssh &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;o StrictHostKeyChecking=no &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;i key.pem username@$PROD_SERVER_IP &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;p 6879 &apos;docker run &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;p 3001&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;80 &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;d &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;name projectcontainer $DOCKER_REGISTRY/project&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;name&apos;
+  &lt;span class=&quot;token key atrule&quot;&gt;only&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; master&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;배포 자동화의 단계는 크게 총 두단계이다. 빌드-배포.&lt;/p&gt;
 &lt;h4 id=&quot;빌드&quot; style=&quot;position:relative;&quot;&gt;빌드&lt;a href=&quot;#%EB%B9%8C%EB%93%9C&quot; aria-label=&quot;빌드 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;배포 스테이지에서 깃랩은 docker in docker를 실행시킨다. 그리고 깃랩에 등록한 러너가 sciprt: 부분을 실행시키기 전에 도커로 로그인한다.&lt;br&gt;
@@ -2964,8 +2964,8 @@ fds 모듈은 CRA로 만들어졌기 때문에 react.js 라이브러리가 디�
 : fds 모듈을 npm에 배포할 때 리액트가 없다면 설치해 주고 있다면 건너뛰는 방식으로 설치할 수는 없을까?&lt;br&gt;
 방법은 있었다.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1. fds 모듈에서 리액트를 peerdependency에 넣어주고 배포해보기
-2. fds모듈의 index 파일 경로에 npm init 으로 package.json 만들어서 해당 모듈에 꼭 필요한 파일들만 다시 배포해 보기&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;✔ 1. fds 모듈에서 리액트를 peerdependency에 넣어주고 배포해보기&lt;br&gt;
+✔ 2. fds모듈의 index 파일 경로에 npm init 으로 package.json 만들어서 해당 모듈에 꼭 필요한 파일들만 다시 배포해 보기&lt;/p&gt;
 &lt;p&gt;package.json에서 디펜던시에 있는 녀석들은 해당 모듈을 사용하기 위해서는 꼭 필요한 아이들이라 명시해주는 곳이라 node_modules폴더에 설치가 된다. fds모듈의 리액트는 디펜던시에 있다. 그래서 CRA를 이용해 만든 프로젝트에서 리액트 모듈들을 제거해주고 fds만 설치해도 작동했던 것이 그 이유다.&lt;/p&gt;
 &lt;p&gt;devdependecy는 개발상에서 필요한 녀석들만 명시해주는 곳이다. 때문에 배포할 때 개발 도구로만 사용했던 라이브러리들은 이곳에 넣어줘야 모듈 배포 때 불필요한 파일을 설치하지 않을 수 있다.&lt;/p&gt;
 &lt;p&gt;peerdependecy는 반대로 생각해야 한다. fds모듈 package.json의 피어디펜던시에 리액트를 넣는다는 것은, 리액트의 입장에서 fds 모듈이 부속품이라는 의미가 된다. 즉, fds는 리액트 라이브러리 하에서 구동하는 라이브러리라고 명시해주는 것이다.&lt;/p&gt;
