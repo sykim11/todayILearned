@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 19 Nov 2022 22:40:11 GMT</lastBuildDate><item><title><![CDATA[NextJS로 마이그레이션하기 - 도커라이징(feat.NGINX)]]></title><description><![CDATA[해당 포스팅은 이 글을 번역해 실습하며 정리한 글이다. 또한 NextJS 사용 방법을 검색해 보면 NGINX가 심심찮게 보이는 걸 확인할 수 있다. 사내 프로젝트에서도 리액트의 정적인 빌드 결과물을 NGINX…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/nextjs/02.NextJS-migration-docker/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/nextjs/02.NextJS-migration-docker/</guid><pubDate>Sat, 19 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;해당 포스팅은 &lt;a href=&quot;https://steveholgado.com/nginx-for-nextjs/&quot;&gt;이 글&lt;/a&gt;을 번역해 실습하며 정리한 글이다. 또한 NextJS 사용 방법을 검색해 보면 NGINX가 심심찮게 보이는 걸 확인할 수 있다. 사내 프로젝트에서도 리액트의 정적인 빌드 결과물을 NGINX를 이용해 서버로 올린다는 표현을 했는데 웹 서버에 NGINX를 사용하는 이유가 뭔지 궁금해 NextJS 웹앱을 도커로 배포하는 작업과 함께 NGINX에 대해서도 짤막하게 공부해 봤다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 21 Nov 2022 06:04:57 GMT</lastBuildDate><item><title><![CDATA[Javascript 작동 원리 2]]></title><link>https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works2/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works2/</guid><pubDate>Mon, 21 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-js line-numbers&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;c&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;b&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; result&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; number &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-js line-numbers&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;c&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; d&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; sumResult &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; c &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; d&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; sumResult&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;b&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;expr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; calcResult &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;expr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; calcResult&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; number &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; sum&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-js line-numbers&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; discount &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getDiscountedPrice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;price&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; price &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; discount&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; result&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; totalPrice &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getDiscountedPrice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-js line-numbers&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; number &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;increase&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        number &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; increase&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; newCalc &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;newCalc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;newCalc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[NextJS로 마이그레이션하기 - 도커라이징(feat.NGINX)]]></title><description><![CDATA[해당 포스팅은 이 글을 번역해 실습하며 정리한 글이다. 또한 NextJS 사용 방법을 검색해 보면 NGINX가 심심찮게 보이는 걸 확인할 수 있다. 사내 프로젝트에서도 리액트의 정적인 빌드 결과물을 NGINX…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/nextjs/02.NextJS-migration-docker/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/nextjs/02.NextJS-migration-docker/</guid><pubDate>Sat, 19 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;해당 포스팅은 &lt;a href=&quot;https://steveholgado.com/nginx-for-nextjs/&quot;&gt;이 글&lt;/a&gt;을 번역해 실습하며 정리한 글이다. 또한 NextJS 사용 방법을 검색해 보면 NGINX가 심심찮게 보이는 걸 확인할 수 있다. 사내 프로젝트에서도 리액트의 정적인 빌드 결과물을 NGINX를 이용해 서버로 올린다는 표현을 했는데 웹 서버에 NGINX를 사용하는 이유가 뭔지 궁금해 NextJS 웹앱을 도커로 배포하는 작업과 함께 NGINX에 대해서도 짤막하게 공부해 봤다.&lt;/p&gt;
 &lt;h3 id=&quot;nginx와-웹앱의-연관성&quot; style=&quot;position:relative;&quot;&gt;NGINX와 웹앱의 연관성&lt;a href=&quot;#nginx%EC%99%80-%EC%9B%B9%EC%95%B1%EC%9D%98-%EC%97%B0%EA%B4%80%EC%84%B1&quot; aria-label=&quot;nginx와 웹앱의 연관성 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;NGINX가 웹에서 하는 역할로는 프록시 서버라는 기능이 있다. 웹을 띄워주는 서버의 실제 포트가 3000이라면 NGINX에서 80으로 맵핑시켜 실제 서버의 주소를 한 겹 숨겨주는 보안적 기능을 가져갈 수 있다. NGINX는 프록시 기능 외에도 고성능 기능들이 많다는데 이 글에서는 프록시와 NextJS 웹앱의 정적 리소스를 캐싱시켜주는 기능에 대해서만 다룰 예정이다.&lt;/p&gt;
 &lt;h4 id=&quot;nginx-설정-파일-내부-위치별-역할&quot; style=&quot;position:relative;&quot;&gt;NGINX 설정 파일 내부 위치별 역할&lt;a href=&quot;#nginx-%EC%84%A4%EC%A0%95-%ED%8C%8C%EC%9D%BC-%EB%82%B4%EB%B6%80-%EC%9C%84%EC%B9%98%EB%B3%84-%EC%97%AD%ED%95%A0&quot; aria-label=&quot;nginx 설정 파일 내부 위치별 역할 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h4&gt;
@@ -252,6 +295,252 @@ docker run --network my-network --link nextjs-container:nextjs --publish 80:80 n
 &lt;h3 id=&quot;마치며&quot; style=&quot;position:relative;&quot;&gt;마치며&lt;a href=&quot;#%EB%A7%88%EC%B9%98%EB%A9%B0&quot; aria-label=&quot;마치며 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://steveholgado.com/nginx-for-nextjs/&quot;&gt;본문&lt;/a&gt;글을 한 줄 한 줄 번역하며 실습하는 과정이 생각보다 꽤 재밌었다. 모르는 개념에 대해서 조금 더 찾아내 살을 붙이고 공부를 해본 경험이 된 것 같고 무엇보다 NGINX와 친해질 마음이 생긴(?) 계기도 된 것 같아 기쁘다. 조금 더 잘 다루게 되면 내가 띄운 웹에서 어떤 부분을 어떻게 캐싱 정책으로 가져갈지도 고민해 봐야겠다. 그리고 NextJS와 NGINX 두 개의 컨테이너를 띄우는 게 아니라 하나의 컨테이너에 같이 띄우는 것도 시도해 보자. (마이그레이션할 현재 프로젝트가 이렇게 되어있으니까)&lt;/p&gt;
 &lt;h3 id=&quot;참고-자료&quot; style=&quot;position:relative;&quot;&gt;참고 자료&lt;a href=&quot;#%EC%B0%B8%EA%B3%A0-%EC%9E%90%EB%A3%8C&quot; aria-label=&quot;참고 자료 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://steveholgado.com/nginx-for-nextjs/&quot;&gt;https://steveholgado.com/nginx-for-nextjs/&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[NextJS로 마이그레이션하기 - 도커라이징(feat.NGINX)]]></title><description><![CDATA[해당 포스팅은 이 글을 번역해 실습하며 정리한 글이다. 또한 NextJS 사용 방법을 검색해 보면 NGINX가 심심찮게 보이는 걸 확인할 수 있다. 사내 프로젝트에서도 리액트의 정적인 빌드 결과물을 NGINX…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/nextjs/nextjs로 마이그레이션하기 - 도커라이징(feat.nginx)/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/nextjs/nextjs로 마이그레이션하기 - 도커라이징(feat.nginx)/</guid><pubDate>Fri, 18 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;해당 포스팅은 &lt;a href=&quot;https://steveholgado.com/nginx-for-nextjs/&quot;&gt;이 글&lt;/a&gt;을 번역해 실습하며 정리한 글이다. 또한 NextJS 사용 방법을 검색해 보면 NGINX가 심심찮게 보이는 걸 확인할 수 있다. 사내 프로젝트에서도 리액트의 정적인 빌드 결과물을 NGINX를 이용해 서버로 올린다는 표현을 했는데 웹 서버에 NGINX를 사용하는 이유가 뭔지 궁금해 NextJS 웹앱을 도커로 배포하는 작업과 함께 NGINX에 대해서도 짤막하게 공부해 봤다.&lt;/p&gt;
+&lt;h3 id=&quot;nginx와-웹앱의-연관성&quot; style=&quot;position:relative;&quot;&gt;NGINX와 웹앱의 연관성&lt;a href=&quot;#nginx%EC%99%80-%EC%9B%B9%EC%95%B1%EC%9D%98-%EC%97%B0%EA%B4%80%EC%84%B1&quot; aria-label=&quot;nginx와 웹앱의 연관성 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;NGINX가 웹에서 하는 역할로는 프록시 서버라는 기능이 있다. 웹을 띄워주는 서버의 실제 포트가 3000이라면 NGINX에서 80으로 맵핑시켜 실제 서버의 주소를 한 겹 숨겨주는 보안적 기능을 가져갈 수 있다. NGINX는 프록시 기능 외에도 고성능 기능들이 많다는데 이 글에서는 프록시와 NextJS 웹앱의 정적 리소스를 캐싱시켜주는 기능에 대해서만 다룰 예정이다.&lt;/p&gt;
+&lt;h4 id=&quot;nginx-설정-파일-내부-위치별-역할&quot; style=&quot;position:relative;&quot;&gt;NGINX 설정 파일 내부 위치별 역할&lt;a href=&quot;#nginx-%EC%84%A4%EC%A0%95-%ED%8C%8C%EC%9D%BC-%EB%82%B4%EB%B6%80-%EC%9C%84%EC%B9%98%EB%B3%84-%EC%97%AD%ED%95%A0&quot; aria-label=&quot;nginx 설정 파일 내부 위치별 역할 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;conf&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-conf line-numbers&quot;&gt;&lt;code class=&quot;language-conf&quot;&gt;# core 모듈 설정
+worker_process 1;
+
+# events 블록
+events {
+  worker_connections 100;
+}
+
+# http 블록
+http {
+  ...
+  # server 블록들
+  server {
+    server_name domain1.com;
+    root /var/www/domain1.com;
+    # location 블록들
+    location / {
+      root html;
+      index index.html index.htm;
+    }
+    location /user/ {
+      root /home/user;
+    }
+  }
+  server {
+    server_name domain2.com;
+    root /var/www/domain2.com;
+  }
+}
+&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;** core 모듈 설정 **&lt;br&gt;
+NGINX conf 파일의 최상단에는 NGINX의 프로세스를 관리해 주는 프로세스의 수 및 기본적인 동작 방식을 정의한다. NGINX는 하나의 마스터 프로세스와 여러 개의 작업자 프로세스로 구성되어 실행된다. 마스터의 역할은 설정 파일을 읽고 이를 토대로 구성 및 평가하여 여러 작업자 프로세스들이 실제 요청된 일을 처리하도록 관리한다.&lt;/p&gt;
+&lt;p&gt;** events 블록 **&lt;br&gt;
+이벤트 블록 안에서는 네트워크 동작 방법에 관련된 설정이 가능하다.&lt;br&gt;
+예시로 worker_connections의 값이 100이라는 의미는 한 개의 작업자 프로세스가 동시에 처리할 수 있는 커넥션의 수를 의미한다.&lt;/p&gt;
+&lt;p&gt;** http 블록 **&lt;br&gt;
+http 블록은 server 블록의 루트 역할을 한다. 루트에 기재한 값들은 모든 server 블록들의 기본값이 된다. 테스트해 보니 server가 하나인 경우 생략해도 정상 작동하는 것 같다.&lt;/p&gt;
+&lt;p&gt;** server 블록 **&lt;br&gt;
+서버의 포트가 어디로 연결될 것인지 해당 서버의 이름은 무엇인지 정의하는 곳이다. 또한, 하나의 서버에서 한 개 이상의 도메인을 서비스할 수 있다.&lt;/p&gt;
+&lt;p&gt;** location 블록 **&lt;br&gt;
+location 블록은 server 블록 안에 쓰여지며 server와 마찬가지로 여러 개 사용 가능하다. 해당 링크로 접근했을 때 어떤 경로의 파일을 root로 정할 지 결정하는 지시문이다.&lt;/p&gt;
+&lt;p&gt;❗ 아래 글부터는 NextJS 프레임워크를 설치했다는 가정하에 진행된다.&lt;/p&gt;
+&lt;h3 id=&quot;nextjs-웹앱-컨테이너화&quot; style=&quot;position:relative;&quot;&gt;NextJS 웹앱 컨테이너화&lt;a href=&quot;#nextjs-%EC%9B%B9%EC%95%B1-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%ED%99%94&quot; aria-label=&quot;nextjs 웹앱 컨테이너화 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;NextJS를 설치한 프로젝트 폴더를 열어보면 package.json이 있는데 해당 파일과 동일한 위치에 Dockerfile을 생성한다.&lt;br&gt;
+./Dockerfile&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;dockerfile&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-dockerfile line-numbers&quot;&gt;&lt;code class=&quot;language-dockerfile&quot;&gt;&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;FROM&lt;/span&gt; node:16-alpine &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; builder&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;WORKDIR&lt;/span&gt; /app&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;COPY&lt;/span&gt; package.json .&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;RUN&lt;/span&gt; npm install --force&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;COPY&lt;/span&gt; . .&lt;/span&gt;
+
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;RUN&lt;/span&gt; npm run build&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;EXPOSE&lt;/span&gt; 3000&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# USER node&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;CMD&lt;/span&gt; [&lt;span class=&quot;token string&quot;&gt;&quot;npm&quot;&lt;/span&gt;, &lt;span class=&quot;token string&quot;&gt;&quot;start&quot;&lt;/span&gt;]&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;NextJS는 리액트 기반의 웹 어플리케이션 기능들을 가능하게 하는 NodeJS 위에서 빌드된 웹 개발 프레임워크이기 때문에 NodeJS가 반드시 설치되어야 NextJS 웹앱 서버가 구동된다.&lt;br&gt;
+해당 도커파일에 설치된 노드 버전이 16-alpine인데 alpine은 보안 및 작은 파일 크기에 중점을 둔 무척 가벼운 리눅스 배포판이라는 뜻이다.&lt;br&gt;
+이후 작업 폴더를 /app 으로 지정하고 package.json 파일을 복사해 NextJS에 종속된 패키지가 설치되도록 설정한다. package.json을 먼저 복사하는 이유는 도커 캐싱 시스템을 활용하기 위함이다. 프로세스의 각 단계마다 레이어가 생성이 되고 도커 캐싱 시스템은 이 레이어들을 기억할 수 있다. 만일 package.json에 변화가 없다면 NextJS에 종속된 패키지 설치를 진행하지 않고 캐싱시켜 건너뛰어준다. (도커 이미지 만드는 속도가 빨라진다 👍)&lt;/p&gt;
+&lt;p&gt;❗ 기본적으로 도커는 컨테이너를 루트로 실행한다. 하지만 NodeJS를 루트로 실행하면 보안 문제가 발생할 수 있다. 이를 방지하기 위해 &lt;code class=&quot;language-text&quot;&gt;USER node&lt;/code&gt; 를 통해 루트 권한이 없는 사용자인 노드로 전환해 주는 게 좋다. node라는 사용자는 node:16-alpine에서 제공이 된다. 하지만 나는 테스트용 프로젝트를 작업 중이므로… 권한이 맘껏 뚫린 루트 권한 그대로 가져가려고 한다. 배포 때 추가해 보자.&lt;/p&gt;
+&lt;p&gt;종속된 패키지 설치까지 끝낸다면 NextJS 빌드 작업이 진행되고 로컬 포트 3000에서 npm start 스크립트를 통해 NextJS 서버가 배포 모드로 실행이 된다.&lt;/p&gt;
+&lt;p&gt;🙄 해당 글에는 pm2를 배포 준비 프로세스에 포함시켰다. pm2는 NodeJS 어플리케이션을 위한 배포용 준비 프로세스로 어떤 이유에서 웹앱 이미지가 깨져 NodeJS 프로세스가 종료되면 웹앱을 더이상 사용할 수 없게 된다. 이를 방지하기 위해 pm2는 충돌 및 에러가 난 경우 앱이 항상 자동으로 다시 시작되도록 되살림 기능을 해 주는 역할을 하는데 내가 진행하고 있는 NextJS 웹앱은 쿠버네티스로 올라갈 것 같아서 pm2 프로세스는 제거한 상태로 진행했다.&lt;/p&gt;
+&lt;h3 id=&quot;nginx-설정-파일-생성&quot; style=&quot;position:relative;&quot;&gt;NGINX 설정 파일 생성&lt;a href=&quot;#nginx-%EC%84%A4%EC%A0%95-%ED%8C%8C%EC%9D%BC-%EC%83%9D%EC%84%B1&quot; aria-label=&quot;nginx 설정 파일 생성 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;(nginx, nextjs 도커라이진된 컨테이너 도식화 그림 추가)
+위 그림과 같이 NGINX는 NextJS 웹앱으로 들어오는 모든 요청을 다루는 디폴트 서버의 역할을 할 예정이라 default.conf라 이름 지었다. 이름은 뭐라 짓든 관련이 전혀 없으나 &lt;code class=&quot;language-text&quot;&gt;.conf&lt;/code&gt; 확장자는 꼭 잊지 말자.&lt;/p&gt;
+&lt;p&gt;nginx 폴더 하위 경로에 default.conf 파일을 생성했다.&lt;br&gt;
+/nginx/default.conf&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;conf&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-conf line-numbers&quot;&gt;&lt;code class=&quot;language-conf&quot;&gt;upstream nextjs_upstream {
+  server nextjs:3000;
+}
+
+server {
+  listen 80 default_server;
+
+  server_name _;
+
+  server_tokens off;
+}&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;NGINX에 설정한 디폴트 서버는 단 하나이기 때문에 다른 여러 server 블록이 필요 없어서 http 블록을 생략하고 바로 server 블록부터 지시했다. 또한 디폴트 하나라서 이름도 필요가 없기에 _; 으로 지정했다. server_tokens off; 는 NGINX 버전이 응답의 헤더에 나타나지 않도록 하는 기능이다. 마찬가지로 보안 이슈와 관련이 있는 것 같다.&lt;br&gt;
+위 그림과 같이 도커 컨테이너는 NGINX, NextJS 두 개가 뜰 예정이다. NextJS 웹앱이 어떤 이유로 두 개 이상 띄워야한다면 서로 다른 포트를 가진 여러 개의 NextJS 컨테이너들을 NGINX 상단에 업스트림 형태로 추가할 수 있다. 그리고 NGINX는 이들 간의 요청을 로드 밸런싱하는 역할을 해 준다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;conf&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-conf line-numbers&quot;&gt;&lt;code class=&quot;language-conf&quot;&gt;upstream nextjs_upstream {
+  server nextjs:3000;
+}
+...&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;여기서 nextjs:3000 은 어디서 읽어들이고 있는 걸까?&lt;br&gt;
+위 conf 파일은 NGINX 컨테이너고 해당 컨테이너의 localhost는 NGINX 자체를 참조한다. NGINX 컨테이너에서 NextJS 웹앱을 띄우고 있는 다른 컨테이너를 참조할 수 있는 방법은 IP 주소를 통해 가능하다. 또한 도커를 실행시킬 때 링크 옵션 기능을 이용해 참조할 수 있는 이름을 nextjs로 할당시켜주면 해당 IP 주소를 이름을 이용해서도 매핑할 수 있다.&lt;/p&gt;
+&lt;p&gt;🙄 나중에 Docker Compose를 설정해서 컨테이너를 실행하면 서로 다른 컨테이너끼리의 링크가 자동으로 설정된다고 한다. 하지만 마이그레이션 대상인 현재 웹앱은 Docker Compose를 사용하고 있지 않다. 쿠버네티스에 올라가 있는 앱들의 폴더 내부에 Docker Compose 파일이 없고 도커 파일만 존재하기에… 일단 Docker Compose 설정 없이 진행해 보았다. 어떤 경우에서 Docker Compose를 사용할 수 없는지도 나중에 꼭 알아보자.&lt;/p&gt;
+&lt;p&gt;어쨌든 링크 옵션 기능을 사용하든 Docker Composer 설정으로 컨테이너를 실행하든 nextjs:3000을 참조할 때 실제로는 NextJS 컨테이너의 localhost:3000을 참조하게 된다.&lt;/p&gt;
+&lt;h3 id=&quot;nextjs-웹앱으로-요청-보내기&quot; style=&quot;position:relative;&quot;&gt;NextJS 웹앱으로 요청 보내기&lt;a href=&quot;#nextjs-%EC%9B%B9%EC%95%B1%EC%9C%BC%EB%A1%9C-%EC%9A%94%EC%B2%AD-%EB%B3%B4%EB%82%B4%EA%B8%B0&quot; aria-label=&quot;nextjs 웹앱으로 요청 보내기 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;NextJS 웹앱 앞단에 NGINX를 리버스 프록시로 사용하고 있기 때문에 모든 요청들이 NGINX에 들어온다. 그리고 이 NGINX가 올바른 응답을 NextJS 웹앱으로 넘겨주기 위해선 프록시 헤더와 관련된 추가 설정이 필요하다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;conf&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-conf line-numbers&quot;&gt;&lt;code class=&quot;language-conf&quot;&gt;upstream nextjs_upstream {
+  server nextjs:3000;
+}
+
+server {
+  listen 80 default_server;
+
+  server_name _;
+
+  server_tokens off;
+
+  proxy_http_version 1.1;
+  proxy_set_header Upgrade $http_upgrade;
+  proxy_set_header Connection &amp;#39;upgrade&amp;#39;;
+  proxy_set_header Host $host;
+  proxy_cache_bypass $http_upgrade;
+
+  location / {
+    proxy_pass http://nextjs_upstream;
+  }
+}&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;모든 요청은 NextJS 웹앱 서버 구성에 지정된 &lt;a href=&quot;http://localhost:3000&quot;&gt;http://localhost:3000&lt;/a&gt; 으로 들어가는 게 아니라 NGINX 설정과 같이 업스트림으로 지정된 http://nextjs_upstream 에 요청을 전달하고 있다.&lt;/p&gt;
+&lt;p&gt;❓ NGINX 에서 upstream 이란?&lt;br&gt;
+proxy_pass 지시자를 통해 NGINX가 받은 요청을 넘겨줄 서버들을 정의하는 지시자를 의미한다.&lt;br&gt;
+&lt;a href=&quot;https://brunch.co.kr/@alden/11&quot;&gt;nginx stream 성능 최적화에 관련된 글&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;🙄 잘 쫓아가다 갑자기 헤더 설정이 나오니 어려워지기 시작해 서브 공부한 내용을 간략하게 적어보았다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HTTP 헤더의 역할&lt;/strong&gt;&lt;br&gt;
+클라이언트와 서버가 요청 또는 응답으로 부가적인 정보를 전송하도록 도와주는 역할을 한다.&lt;br&gt;
+헤더라는 이름에서 알 수 있듯 저장되거나 전송되는 데이터 블록의 맨 앞에 위치한 데이터를 HTTP 헤더라고도 한다. 특정 프로토콜로 통신해야하는 경우엔 특정 프로토콜의 기능을 제공하는 헤더 정보로 담아줘야 한다. 헤더의 뒤에 이어지는 데이터가 바로 프론트에서 주로 전달 받는 페이로드, 혹은 바디라 불리는 본문 데이터다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HTTP 헤더의 종류&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;end-to-end&lt;/li&gt;
+&lt;li&gt;** hop-by-hop ** : Connection, Keep-Alive, Proxy-Authenticate, Proxy-Authorization, TE, Trailer, Transfer-Encoding, Upgrade&lt;/li&gt;
+&lt;li&gt;general header&lt;/li&gt;
+&lt;li&gt;request header&lt;/li&gt;
+&lt;li&gt;response header&lt;/li&gt;
+&lt;li&gt;entity header&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이 많은 헤더 중 프록시 설정에 Upgrade와 Connection이라는 hop-by-hop 헤더를 사용했다. NGINX.conf 파일에서 프록시 서버의 헤더를 설정할 때 hop-by-hop을 사용하는 이유가 뭘까?&lt;br&gt;
+여기서 나오는 홉이란 쉽게 말해 네크워크에서 출발지와 목적지 사이의 경로를 의미한다. 홉 바이 홉 = 네트워크 경로 간의 경로를 의미하는데 프록시 특성상 버스 환승점처럼 원래의 목적지로 가기 위해 한 점을 찍고 넘어간다는 의미에서 hop-by-hop 헤더를 사용한 것이다. 그런데 이런 헤더의 특징으로는 요청의 헤더들이 다음 연결점에 영향을 끼쳐선 안 되기 때문에 현재 요청의 헤더 정보들을 모두 삭제하고 다음 연결점으로 넘어간다. 하지만 여기서 쓰고 있는 프록시 헤더들의 정보를 NextJS 웹앱 목적지로 모두 넘어가야하기 때문에 &lt;code class=&quot;language-text&quot;&gt;Upgrade&lt;/code&gt; 값을 사용해 클라이언트의 헤더 값들을 NextJS 헤더로 넘겨주고 있는 것이다.&lt;br&gt;
+다양한 &lt;a href=&quot;http://nginx.org/en/docs/varindex.html&quot;&gt;NGINX 변수들&lt;/a&gt;이 있는데 나중에 꼭 참고하자.&lt;/p&gt;
+&lt;h3 id=&quot;nginx를-이용한-정적-리소스-캐시&quot; style=&quot;position:relative;&quot;&gt;NGINX를 이용한 정적 리소스 캐시&lt;a href=&quot;#nginx%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%A0%95%EC%A0%81-%EB%A6%AC%EC%86%8C%EC%8A%A4-%EC%BA%90%EC%8B%9C&quot; aria-label=&quot;nginx를 이용한 정적 리소스 캐시 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;NGINX를 사용했을 때 가져갈 수 있는 주요 이점 중 하나는 NodeJS보다 정적 리소스를 효율적으로 관리할 수 있다는 점이다.&lt;br&gt;
+NGINX는 설정한 디렉터리에 한해서 효율적인 캐싱 기능을 제공한다. 사용자가 최초에 웹앱에서 정적 리소스를 요청하면 (ex. 첫 화면에서 이미지 로드) NGINX가 해당 파일이 캐싱으로 설정한 디렉터리에 있는 경우, 요청 정보를 저장해 둔다. 이렇게 하면 사용자는 매 요청마다 같은 리소스를 반복해서 NodeJS 서버에 요청하지 않아도 된다.&lt;/p&gt;
+&lt;p&gt;** 캐싱 영역 만들기 **&lt;/p&gt;
+&lt;p&gt;NGINX는 어떤 방식으로 캐싱시키는 걸까?&lt;br&gt;
+NGINX는 우선 캐싱 영역이라는 메모리 영역을 생성한다. 그리고 그 캐싱 영역에 특정 파일에 대한 캐시 키를 저장해 놓는데, 이 키는 해당 파일이 캐싱 영역에 저장되어있는지 아닌지 판별하기 위해 사용된다.&lt;br&gt;
+캐싱 설정은 NGINX 설정 파일 최상단에 아래와 같이 기재해 준다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;conf&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-conf line-numbers&quot;&gt;&lt;code class=&quot;language-conf&quot;&gt;proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=STATIC:10m inactive=7d use_temp_path=off;
+
+upstream nextjs_upstream {
+  server nextjs:3000;
+}
+
+...&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;NGINX에서 캐싱 영역에 대한 세부 설정은 아래와 같이 설명된다&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;/var/cache/nginx&lt;/code&gt; 캐싱된 리소스를 저장할 디렉터리&lt;br&gt;
+&lt;code class=&quot;language-text&quot;&gt;levels=1:2&lt;/code&gt; 너무 많은 파일이 하나의 디렉터리에 있는 경우 파일 접근 속도가 감소될 수 있으니 2단계 디렉터리의 계층 구조로 만들겠다는 의미
+&lt;code class=&quot;language-text&quot;&gt;keys_zone=STATIC:10m&lt;/code&gt; STATIC이라는 이름을 가진 캐시용 메모리 영역을 명명하고 크기 제한은 10MB로 설정한다 (파일이 수천 개가 아닌 이상 충분)
+&lt;code class=&quot;language-text&quot;&gt;inactive=7d&lt;/code&gt; 캐싱된 리소스가 유지되는 기간이고 이후에 접근되지 않은 리소스는 캐싱 영역에서 삭제한다
+&lt;code class=&quot;language-text&quot;&gt;use_temp_path=off&lt;/code&gt; 리소스를 캐싱 디렉터리에 직접 사용하고 임시 저장될 영역을 자동으로 생성하지 않도록 설정한다&lt;/p&gt;
+&lt;p&gt;** NextJS에서 빌드된 정적 리소스 캐싱 설정 **&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;conf&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-conf line-numbers&quot;&gt;&lt;code class=&quot;language-conf&quot;&gt;proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=STATIC:10m inactive=7d use_temp_path=off;
+
+upstream nextjs_upstream {
+  server nextjs:3000;
+}
+
+server{
+  ...
+    location /_next/static {
+      proxy_cache STATIC;
+      proxy_pass http://nextjs_upstream;
+
+      # For testing cache - remove before deploying to production
+      add_header X-Cache-Status $upstream_cache_status;
+    }
+  ...
+}&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;NextJS는 빌드할 때 웹앱에서 구동할 각 페이지들을 만들어주기 위해 자바스크립트 번들러를 생성한다. 그리고 이 자바스크립트 번들러들은 /_next/static/* 경로에서 생성되어 NextJS가 페이지를 렌더링하게끔 만들어준다.&lt;br&gt;
+이 정적인 번들러 파일들을 캐싱하기 위해 /_next/static 경로로 설정된 location 블럭 내부에 STATIC이라는 이름을 가진 프록시 캐시를 지정해주었다. 이렇게 지정해 두면 /_next/static 디렉터리 하위에 포함하고 있는 리소스들이 캐싱된다.&lt;br&gt;
+캐싱된 이후 모든 요청들은 NextJS 웹앱으로 전달된다.&lt;br&gt;
+(NextJS 빌드된 캡처)&lt;br&gt;
+NextJS는 웹에서 브라우저 캐싱 작업을 처리하기 위해 응답의 헤더를 설정하는데 /_next/static/* 에 있는 빌드된 정적인 리소스의 경우 각 URL에 고유한 빌드 ID가 존재해 브라우저 캐시 헤더가 동작하도록 설정한다. (NextJS를 다시 빌드해 보면 이 ID 값들이 달라져있는 걸 확인할 수 있다.)&lt;br&gt;
+문제는 static/ 디렉터리(사용자가 생성한)의 동적 리소스에는 고유한 빌드 ID가 생성되지 않는다는 점이다. NextJS는 이런 리소스들에 대해서는 캐시가 없는 헤더를 설정하기 때문에 브라우저가 해당 리소스들은 캐시하지 않게 된다. 이 경우 NGINX에 해당 디렉터리에 대한 추가 설정이 필요하다.&lt;/p&gt;
+&lt;p&gt;** NextJS에서 빌드된 동적 리소스 캐싱 설정 **&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;conf&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-conf line-numbers&quot;&gt;&lt;code class=&quot;language-conf&quot;&gt;proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=STATIC:10m inactive=7d use_temp_path=off;
+
+upstream nextjs_upstream {
+  server nextjs:3000;
+}
+
+server{
+  ...
+    location /static {
+      proxy_cache STATIC;
+      proxy_ignore_headers Cache-Control;
+      proxy_cache_valid 60m;
+      proxy_pass http://nextjs_upstream;
+
+      # For testing cache - remove before deploying to production
+      add_header X-Cache-Status $upstream_cache_status;
+    }
+  ...
+}&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위와 같이 NGINX에 들어오는 요청들 /static 하위 경로에 한해서, 캐시가 없는 헤더를 무시하는 작업이 필요하다. /static 경로로 설정된 location 블럭 내부에 마찬가지로 아까 이름 지어둔 STATIC 캐시를 연결해 주고 캐시된 파일의 유효 기간을 60분으로 설정했다. 이렇게 설정해 두면 /static/* 리소스에 한해서 최대 60분에 한 번만 캐시 메모리를 새로고침해 준다. 만약에 유효 기간을 설정하지 않으면 리소스들이 캐시 영역에 무기한으로 남지만 캐싱된 리소스는 기본적으로 비활성 기간이 7일이기 때문에 7일이 지나면 캐싱 영역에서 제거된다.&lt;/p&gt;
+&lt;h3 id=&quot;nginx에서-gzip-설정&quot; style=&quot;position:relative;&quot;&gt;NGINX에서 gzip 설정&lt;a href=&quot;#nginx%EC%97%90%EC%84%9C-gzip-%EC%84%A4%EC%A0%95&quot; aria-label=&quot;nginx에서 gzip 설정 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;NGINX 서버에서 gzip을 활성화해 사용자에게 리소스들이 압축된 상태로 로드되도록 설정하자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;conf&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-conf line-numbers&quot;&gt;&lt;code class=&quot;language-conf&quot;&gt;proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=STATIC:10m inactive=7d use_temp_path=off;
+
+upstream nextjs_upstream {
+  server nextjs:3000;
+}
+
+server{
+  ...
+  gzip on;
+  gzip_proxied any;
+  gzip_comp_level 4;
+  gzip_types text/css application/javascript image/svg+xml;
+  ...
+}&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;gzip on&lt;/code&gt; gzip 활성&lt;br&gt;
+&lt;code class=&quot;language-text&quot;&gt;gzip_proxied any&lt;/code&gt; NGINX에게 어떤 파일이든 gzip되도록 지정&lt;br&gt;
+&lt;code class=&quot;language-text&quot;&gt;gzip_comp_level 4&lt;/code&gt; gzip 압축 레벨 설정 (4 정도가 평균)
+&lt;code class=&quot;language-text&quot;&gt;gzip_types text/css application/javascript image/svg+xml&lt;/code&gt; 압축할 파일 타입 지정&lt;/p&gt;
+&lt;p&gt;파일의 크기가 작을수록 압축 수준을 높게 설정할 수 있지만 압축 수준이 높을수록 압축 및 압축 해제에 시간이 더 오래 걸린다. 그리고 본문 글에 따르면 파일 크기가 절약되는 구간이 4 이후부터 감소된다고 하니 평균 4 정도가 적당하다고 본다. gzip 압축 형식은 텍스트가 많은 파일에서 가장 잘 작동하고 일반적으로 이미지 파일을 압축하는 건 권장하지 않는다. 이미지 파일의 경우 고도로 압축되는 경향이 있어 gzip에 실행되는 시간이 예상보다 더 많이 걸릴 수 있다. 하지만 svg 는 텍스트 기반이라 gzip 압축의 장점을 고스란히 가져갈 수 있다고 한다. 이미지들을 웬만하면 svg 형태로 표현해주는 게 최적화에 도움이 되겠다.&lt;/p&gt;
+&lt;h3 id=&quot;nginx-도커라이징&quot; style=&quot;position:relative;&quot;&gt;NGINX 도커라이징&lt;a href=&quot;#nginx-%EB%8F%84%EC%BB%A4%EB%9D%BC%EC%9D%B4%EC%A7%95&quot; aria-label=&quot;nginx 도커라이징 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;nginx 폴더 하위 경로에 Dockerfile 파일을 생성했다.&lt;br&gt;
+/nginx/Dockerfile&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;dockerfile&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-dockerfile line-numbers&quot;&gt;&lt;code class=&quot;language-dockerfile&quot;&gt;&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;FROM&lt;/span&gt; nginx:alpine&lt;/span&gt;
+
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;RUN&lt;/span&gt; rm /etc/nginx/conf.d/*&lt;/span&gt;
+
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;COPY&lt;/span&gt; ./default.conf /etc/nginx/conf.d/&lt;/span&gt;
+
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;EXPOSE&lt;/span&gt; 80&lt;/span&gt;
+
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;CMD&lt;/span&gt; [ &lt;span class=&quot;token string&quot;&gt;&quot;nginx&quot;&lt;/span&gt;, &lt;span class=&quot;token string&quot;&gt;&quot;-g&quot;&lt;/span&gt;, &lt;span class=&quot;token string&quot;&gt;&quot;daemon off;&quot;&lt;/span&gt; ]&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;리눅스의 alpine 배포판을 사용해 NGINX 도커 이미지를 기반으로 컨테이너를 생성한다. 그런 다음 NGINX 에 기본적으로 제공되는 구성 파일을 삭제하고 위에서 작업한 설정 파일로 교체하고 컨테이너 80 포트를 열어 실행해주면 해당 이미지를 실행 시 우리가 설정한 NGINX.conf 파일에 따라 NGINX가 실행된다.&lt;/p&gt;
+&lt;h3 id=&quot;도커에서-생성된-컨테이너들-실행하기&quot; style=&quot;position:relative;&quot;&gt;도커에서 생성된 컨테이너들 실행하기&lt;a href=&quot;#%EB%8F%84%EC%BB%A4%EC%97%90%EC%84%9C-%EC%83%9D%EC%84%B1%EB%90%9C-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%EB%93%A4-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0&quot; aria-label=&quot;도커에서 생성된 컨테이너들 실행하기 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;도커 파일이 있는 곳에서 각각 NextJS 이미지, NGNX 이미지를 생성한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;&amp;gt; docker build --t nextjs-image .
+&amp;gt; docker build --t nextjs-image ./nginx&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;두 컨테이너가 공유할 네트워크를 생성한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;&amp;gt; docker network create my-network&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;두 컨테이너를 링크시켜 실행한다.&lt;br&gt;
+NextJS 도커 컨테이너의 네트워크는 앞서 생성한 my-network에 연결해 주고 컨테이너 이름을 nextjs-container라 명명한 뒤 nextjs-image 이미지를 이용해 도커 실행&lt;br&gt;
+NGINX 도커 컨테이너의 네트워크도 앞서 생성한 my-network에 연결해 주고 nextjs-container 컨테이너를 nextjs로 link 옵션을 이용해 맵핑시킨 뒤 nginx-image 이미지를 이용해 localhost:80 포트로 도커를 실행&lt;/p&gt;
+&lt;p&gt;반드시 —link 옵션을사용해 default.conf에서 nextjs로 참조되는 Next.js 컨테이너를 NGINX 컨테이너에 매핑해야 한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;&amp;gt; docker run --network my-network --name nextjs-container nextjs-image
+&amp;gt; docker run --network my-network --link nextjs-container:nextjs --publish 80:80 nginx-image&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;참고-자료&quot; style=&quot;position:relative;&quot;&gt;참고 자료&lt;a href=&quot;#%EC%B0%B8%EA%B3%A0-%EC%9E%90%EB%A3%8C&quot; aria-label=&quot;참고 자료 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://steveholgado.com/nginx-for-nextjs/&quot;&gt;https://steveholgado.com/nginx-for-nextjs/&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[NextJS로 마이그레이션하기 - 개념]]></title><description><![CDATA[기존에 개발된 프로젝트들이 모두 CRA(Create React App…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/nextjs/01.NextJS-migration-basic/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/nextjs/01.NextJS-migration-basic/</guid><pubDate>Thu, 17 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;기존에 개발된 프로젝트들이 모두 CRA(Create React App)를 이용한 리액트 라이브러리로 이루어져있고 배포를 위한 빌드 단계에서 긴 시간을 잡아먹는 게 불편하다는 생각이 들었다. 그래서 빌드 툴만 바꿀 생각으로 이런 저런 내용들을 찾아보았는데… 결국 NextJS로 다시 돌아왔다. 리액트 api들을 그대로 쓸 수 있다는 점에서 마이그레이션 기간이 짧을 것 같았고 (&amp;#x26; 거대한 커뮤니티 = 물어볼 슨생님들이 많아보였다) NextJS 의 컴파일러가 SWC라는 점에서 채택을 하게 됐다. (*추후에 SWC로도 개발을 해 보고 SWC 도입 전후 웹앱 속도가 얼마나 빠른지 느껴보고 싶지만 우선은 조금 더 진입장벽이 낮아보이는 NextJS를 선택)&lt;br&gt;
 현재까지 나온 NextJS의 버전은 13이고 버전 12부터 SWC 라는 컴파일러를 사용한다고 한다. (*SWC는 웹을 위해 나온 러스트 기반의 플랫폼이다)&lt;/p&gt;
 &lt;h3 id=&quot;nextjs란&quot; style=&quot;position:relative;&quot;&gt;NextJS란&lt;a href=&quot;#nextjs%EB%9E%80&quot; aria-label=&quot;nextjs란 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
@@ -287,7 +576,7 @@ NextJS에서 사용하는 SPA 방식이다. 처음에 웹 서버에 요청을 �
 &lt;blockquote&gt;
 &lt;p&gt;브라우저가 렌더링 과정 한 줄 👉 서버로부터 빈 html을 받아 브라우저가 html 돔트리, CCS 돔트리를 결합해 화면에 배치시키는 Render 트리를 만들어 주고, 페인팅 과정을 거쳐 사용자 눈에 완성된 페이지가 보인다. 이후 자바스크립트(리액트.js)가 실제 돔의 구조를 분석해 실행되는데 이 자바스크립트 안에서 ui를 완성시키는 코드들이 동적으로 생성되고 동적인 기능도 함께 등록된다.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&quot;root-html이-없는-nextjs&quot; style=&quot;position:relative;&quot;&gt;root html이 없는 nextjs&lt;a href=&quot;#root-html%EC%9D%B4-%EC%97%86%EB%8A%94-nextjs&quot; aria-label=&quot;root html이 없는 nextjs permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;root-html이-없는-nextjs&quot; style=&quot;position:relative;&quot;&gt;root html이 없는 NextJS&lt;a href=&quot;#root-html%EC%9D%B4-%EC%97%86%EB%8A%94-nextjs&quot; aria-label=&quot;root html이 없는 nextjs permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;NextJS를 빌드한 결과물은 다음과 같다.&lt;br&gt;
 &lt;img src=&quot;https://user-images.githubusercontent.com/24996316/202131938-87e20156-8380-484e-8338-093227c268e7.png&quot; alt=&quot;image&quot;&gt;&lt;br&gt;
 ReactJS를 빌드했던 결과물과 비교했을 때 가장 어색한 부분은 아마 root(뼈대 html)에 해당하는 html 파일이 없다는 것이다.&lt;br&gt;
@@ -2242,7 +2531,45 @@ ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;registry&lt
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
   &lt;span class=&quot;token function&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; arguments&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
   ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;stroke &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; _stroke
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 입문 수업 1 ~ 5]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker1/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker1/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작년부터 궁금했던 도커라는 녀석을 공부해 보기로 했다.&lt;br&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[vscode에서 crlf 파일들을 일괄로 lf파일로 변환하는 법]]></title><description><![CDATA[파일 형상 관리를 git을 이용해 하고 있다. 그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/bugLists/vscode_setting/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/bugLists/vscode_setting/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;파일 형상 관리를 git을 이용해 하고 있다.&lt;br&gt;
+그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf로 변환된 채로 코드상 빨간 줄을 뿜고 있는데… 이걸 파일 하나하나 바꿔주다보니 갑갑해서 일괄 수정할 수 있는 방법을 찾아냈다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 11.39240506329114%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAe0lEQVQI12OQ1Lb4D8GWUGyBRmMXl4KypXQs/8voWv0XUTP57x2V+p+Bq+Hsf+mui//lui/+l+y48J+n8dx/nclX/qv1X/4v3Hr+v2DL+f8qfZf+CzSf+y/QAuHrTr7yX3vS5f+y3Rf/czee+8/ffO4/W8P5/zZd+/4DAL+gTvIIXhXiAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;lf&quot;
+        title=&quot;lf&quot;
+        src=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png&quot;
+        srcset=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/c26ae/lf.png 158w,
+/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/6bdcf/lf.png 315w,
+/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png 630w,
+/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png 772w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;터미널창에 아래 명령어 수행&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;git config core&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;autocrlf &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
+git rm &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;cached &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;r &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 입문 수업 1 ~ 5]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/docker/docker1/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/docker/docker1/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작년부터 궁금했던 도커라는 녀석을 공부해 보기로 했다.&lt;br&gt;
 무작정 유튜브에 도커를 쳐보니 생활코딩 유튜브 채널에 도커 입문용 강의가 있더라… 감사합니다!&lt;/p&gt;
 &lt;h3 id=&quot;도커를-사용하게-된-배경&quot; style=&quot;position:relative;&quot;&gt;도커를 사용하게 된 배경&lt;a href=&quot;#%EB%8F%84%EC%BB%A4%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B2%8C-%EB%90%9C-%EB%B0%B0%EA%B2%BD&quot; aria-label=&quot;도커를 사용하게 된 배경 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;어떠한 어플리케이션을 개발할 때 웹서버와 데이터베이스가 필요하다. 그런데 만일 웹서버에 맞는 운영체제와 데이터베이스에 맞는 운영체제가 다른 경우 가장 이상적인 그림은 아래와 같을 것이다.&lt;/p&gt;
@@ -2587,45 +2914,7 @@ ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;registry&lt
 &lt;h3 id=&quot;도움-받은-자료들&quot; style=&quot;position:relative;&quot;&gt;도움 받은 자료들&lt;a href=&quot;#%EB%8F%84%EC%9B%80-%EB%B0%9B%EC%9D%80-%EC%9E%90%EB%A3%8C%EB%93%A4&quot; aria-label=&quot;도움 받은 자료들 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&quot;&gt;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[vscode에서 crlf 파일들을 일괄로 lf파일로 변환하는 법]]></title><description><![CDATA[파일 형상 관리를 git을 이용해 하고 있다. 그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/bugLists/vscode_setting/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/bugLists/vscode_setting/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;파일 형상 관리를 git을 이용해 하고 있다.&lt;br&gt;
-그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf로 변환된 채로 코드상 빨간 줄을 뿜고 있는데… 이걸 파일 하나하나 바꿔주다보니 갑갑해서 일괄 수정할 수 있는 방법을 찾아냈다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 11.39240506329114%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAe0lEQVQI12OQ1Lb4D8GWUGyBRmMXl4KypXQs/8voWv0XUTP57x2V+p+Bq+Hsf+mui//lui/+l+y48J+n8dx/nclX/qv1X/4v3Hr+v2DL+f8qfZf+CzSf+y/QAuHrTr7yX3vS5f+y3Rf/czee+8/ffO4/W8P5/zZd+/4DAL+gTvIIXhXiAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;lf&quot;
-        title=&quot;lf&quot;
-        src=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png&quot;
-        srcset=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/c26ae/lf.png 158w,
-/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/6bdcf/lf.png 315w,
-/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png 630w,
-/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png 772w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;터미널창에 아래 명령어 수행&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;git config core&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;autocrlf &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
-git rm &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;cached &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;r &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
-git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Javascript 작동 원리]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works/</guid><pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;자바스크립트의 작동 원리에 대해 조금 더 깊은 학습이 필요하다 생각되어 글로 정리해 보았다.&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Javascript 비동기 작동 원리]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/javascript/how_it_works/</guid><pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;자바스크립트의 작동 원리에 대해 조금 더 깊은 학습이 필요하다 생각되어 글로 정리해 보았다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;자바스크립트는 싱글스레드로 동작하는 언어&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2635,28 +2924,27 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
 &lt;h3 id=&quot;자바스크립트-동작-방식&quot; style=&quot;position:relative;&quot;&gt;자바스크립트 동작 방식&lt;a href=&quot;#%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%8F%99%EC%9E%91-%EB%B0%A9%EC%8B%9D&quot; aria-label=&quot;자바스크립트 동작 방식 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 430px; &quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 315px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/todayILearned/static/8cbf152455b14242d26b3813e6692229/05ed2/js1.png&quot;
+    href=&quot;/todayILearned/static/84b7ff25679ca1c691b50a67cb450a93/6bdcf/js1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 104.43037974683544%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAACvklEQVQ4y52Uz08TQRTH+1d5UTHqiYNn/w1/JBg1cPLsiZACF2232922wWAqtKVAoZQEMVYOYKIhopZ2oS3ddrc/9ufXvFl228UV1Ele3szOm89+Z96bCeEPzbZtr2/ZjtkBcxdbKBhmMa8ru1B+TECTpqCfTEL5+RTm4Lsv5i+BJvOavIzm/hi23t7G4usbqH66A2tw8P9Ao5PH0e44Xr64i8mJW9jJjAPmF7b1fwayU+pmkBOuYTEyBj58He+XbwLG58uB7gGTtyyLeds633JnB73KY2jSc2jSMwyqT2D0jxygZTqxI+vJQldljaYsyzHTsgNjSYjL8RT2+33UajW0Wi2oqoqzszM0m02YpulbRI1iaL5er8MwDN98yO0QLJvNobCxiVKphOJWEZlMBnKr5YEIsr1dQjabRT6fRzqdRqFQgCRJQ4Usm4aB+fl55Fey2NpYQS6Xw2p+FUvvlsBxnAekGIKsra0x4Pr6OoNPT097SkPOFmSkEnGoFlCu+M8nGo1C13Vm1A9qqVQK7XZ7CJTbHbxJxbFfsfFqA1CMLu5v3sPH+gcsCAvQdI0piEQiw0oYybAgCFAUZQgkOs/H3ZzB6HZQqK2gOWhA4AXohs6ApJDO8fT0lCWEPI1jsdjvwHgs5uAOD4GHj4Ce83eOizKYCyRQtVplSSRP42AgzztAtQv74ACmrrECjnHcpUBSGQyMx/0FfV4GFDwKbDQaHpCMgFQJF4Ad8OcKH0w1sLqpOo+DabFgF0hJIYXHx8cM6ioMALaRSCTYh2R6gK/fhteLlBOMyobUUixBSSmZLMu/Z5muWjgcZhWvKidoNiTUahIqlQrm5uZYqdAVnJ2dxd7eHsrlsmc0npmZQa/X8782xWKRKRDFJEQxgWQyybZCi9xGffpGuxFFkXka01rf1bvstRl9mq6KIYW/AJ2oD1nDa4idAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 104.43037974683544%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAIAAADJt1n/AAAACXBIWXMAAAsTAAALEwEAmpwYAAACmElEQVQ4y52SS2/TQBSF+6vYgSpVILFgw5afwAIhqGABCBZsEW1XUdI6LzumdmiKREidOlHTViJBcaO2dIFQaUQSe9I4MXFsx56xB2WmpC+VIM7GI937zTlzfafw1QoC7Pt/qeOpS8So3RsoZv2pB17B9svBzxdoeERq/kQYYYxdQ9K/Xv+cnfnI3tB2b/rO7vjeyTAyi4eV229e33o+O1NZu4PRQfDvMLby8vK11fg0H7pe/jSN4d4EOKDySex+2Ty677Rm7cYjp/kQ2t+DUQOiLVc7j+8i0w7IYcK0bdtut4FhGKZp9no9wzAghOMfhhAyDKNLZNs2jTmC6QdoWqFY3Nza3t7eKpfLxWJB13UKG4ZRqVQkSZJlOZfLbWxs0FIQBCNn3/dDoZCUyxbXs9lsdi23tvJ+heM4CkcikUwmUygU8vm8LMuSJM3NvfXJ9ozggWUtRcImwrXGyTwRQslk0iNKJpP+n0WjB4ZZouEpbPNs7KCFI4Xgl9u7t3n3i1ZeFT+4ngshZFnW8zyak8KJRMJxnBPYsuxYLEZvdofmeisHLE18J1JnjuM6nc4xEQCg3+/HYtHzMMNgjGH9R/DkMe73IcZ8KgWJWI7TNE0lajab3W43GmXOw9Eo2cpBsLcXQBcixPP8CcyyAACNqNVq9Xq9SzCJPR4MhJDCNDYA4KwzwzDD4fAi/OAZKG4OMMbDoXfWWVXVFlGj0dB1/SIcj8cxxlzG/naIiDMSBIEOjOd5Xdc7RO122zTNRCJ+GttxnIWFhePjjmVqekdVVa1ery8uLiKicDisKEqtVtvZ2VEUZX9/f35+znXd0/UslUo8zy8LaUEQ0+k0x3HVapW+v1qtsiwriqIgCKIoplKpUql0up7/rd+pTm0s81/q3QAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;메모리힙과 콜스택&quot;
         title=&quot;메모리힙과 콜스택&quot;
-        src=&quot;/todayILearned/static/8cbf152455b14242d26b3813e6692229/05ed2/js1.png&quot;
-        srcset=&quot;/todayILearned/static/8cbf152455b14242d26b3813e6692229/c26ae/js1.png 158w,
-/todayILearned/static/8cbf152455b14242d26b3813e6692229/6bdcf/js1.png 315w,
-/todayILearned/static/8cbf152455b14242d26b3813e6692229/05ed2/js1.png 430w&quot;
-        sizes=&quot;(max-width: 430px) 100vw, 430px&quot;
+        src=&quot;/todayILearned/static/84b7ff25679ca1c691b50a67cb450a93/6bdcf/js1.png&quot;
+        srcset=&quot;/todayILearned/static/84b7ff25679ca1c691b50a67cb450a93/c26ae/js1.png 158w,
+/todayILearned/static/84b7ff25679ca1c691b50a67cb450a93/6bdcf/js1.png 315w&quot;
+        sizes=&quot;(max-width: 315px) 100vw, 315px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
         decoding=&quot;async&quot;
@@ -2682,24 +2970,26 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/todayILearned/static/0bfb85b44f1dc9356b5c7276b349f898/23296/js2.png&quot;
+    href=&quot;/todayILearned/static/d192b8f4c1a54f0c4de519a2b9cb1c52/78958/js2.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 41.77215189873418%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAABMklEQVQoz42RS2vCUBCF/d1VCFayENzYjQj+El0VN1KIXRorNA8fBPM2JiZiOeWMzSWFtnRxuZdzz3wznGn5vo/9fg/P8+TO8xxJkmC32yktyzI52+1WafScz2elHQ4HBEGAFoEUCXBdV0w0881C3mmaCrCphWEoXr5ZS8bxeLwDKdBI8T9A+qIoUhNSI4OsFqm1WE9IQDOG0+kkp9nkV2CdITPgJzNkFqZpYrPZwFytEEYRsq9i+lj854SO40hXy7JwvV6xWCzQ7XbxNBziod3Gy3yOKk3xbtvic2xbmvwInM1mGAwGGI/H0DRNoIZhQNd1jEYjdDodvC6XeFuv0e/3MZlM8Njr4Xk6lSa246iFylLiOFab4qSXy0Vtr86LMRRF8c3HxX3cbuIvy1LuqqrwCTr2RDSfmxJ8AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 34.177215189873415%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAABu0lEQVQozy2Pz4oTQRDG5yk8CV4FRVlZELx59iQIPofZnfxZnUAcsxLwMnNYwT27BLMRh1yyaALrBBNk4yWT7qre7kxDlkheYHCSSUqazKH5Fd9X/VWVVavVnnc6nSfz+fxBFEX7SZLcqlarT33ff7ZYLO5Pp9P95XJ5p9Fo3KvX6y8mk8keIj6K4/hus9m87TjOy36//1hr/ZBzvmcppRIhRAoAKSISANSUUpdSSlMnufZVSvnBaIiYAIDRUAhRUEoZ7R8ArBFxbeWmETc5XcbYb8YYcc7XnHPjBwDgw65eo+kDUABQzP1tPphM4DZ/mRE4529ns9lIa01a69RQKfWNA3hgPiGmfMdrBLBhF56hCQXYWuYMs7ZSKjN1HMdut9sdnbfOqd1up60vLer1eoFWylOMkeJ8NePcUAKinQ/Z5CRrOBxSGIY0CAdZ+DMkIYTre/7oqHJEzus3qX14SJ9OTwMRRd7g4oJ+ff+xMhz2+vJaShsZI2Rsk5Os98fHVHhVoFKxlJVLJbON+/HkZFQulanqOGnRLtLZ57MgCALvoHBAlXJlZfpd9538e3Nj49WYxNV4IwzHf+g/BO2z9PmcyYsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;선입선출&quot;
         title=&quot;선입선출&quot;
-        src=&quot;/todayILearned/static/0bfb85b44f1dc9356b5c7276b349f898/f058b/js2.png&quot;
-        srcset=&quot;/todayILearned/static/0bfb85b44f1dc9356b5c7276b349f898/c26ae/js2.png 158w,
-/todayILearned/static/0bfb85b44f1dc9356b5c7276b349f898/6bdcf/js2.png 315w,
-/todayILearned/static/0bfb85b44f1dc9356b5c7276b349f898/f058b/js2.png 630w,
-/todayILearned/static/0bfb85b44f1dc9356b5c7276b349f898/23296/js2.png 675w&quot;
+        src=&quot;/todayILearned/static/d192b8f4c1a54f0c4de519a2b9cb1c52/f058b/js2.png&quot;
+        srcset=&quot;/todayILearned/static/d192b8f4c1a54f0c4de519a2b9cb1c52/c26ae/js2.png 158w,
+/todayILearned/static/d192b8f4c1a54f0c4de519a2b9cb1c52/6bdcf/js2.png 315w,
+/todayILearned/static/d192b8f4c1a54f0c4de519a2b9cb1c52/f058b/js2.png 630w,
+/todayILearned/static/d192b8f4c1a54f0c4de519a2b9cb1c52/40601/js2.png 945w,
+/todayILearned/static/d192b8f4c1a54f0c4de519a2b9cb1c52/78612/js2.png 1260w,
+/todayILearned/static/d192b8f4c1a54f0c4de519a2b9cb1c52/78958/js2.png 1320w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2722,24 +3012,24 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/todayILearned/static/7cf0f19afa56484addf8cf151124229b/c0255/js3.png&quot;
+    href=&quot;/todayILearned/static/3068775de07202f09345eac23e23e565/c0255/js3.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 62.0253164556962%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAACbElEQVQoz22TW28SQRiG9+f4T7z0V6h/oNUYtUmr0aAxxhtjoolXJraJ3pCUY2jLqQuFwnKmhQJpiz1Qll3YXSiHx8zUYpt0kndmdub73v0O7yihUIjRaIRhmBhGF/2PG/PkJ71ODrPvYNsWh4eHJJNJbo6vP/o8f3vKkuuYVx87vHTpaMUhyvb2tjSYydmhHH3A6pd7WOdrc2fTNEmn09i2TavVwjAM3n82efykw+KKzuJKl4cL56hpByUWi0mn6VTMNhX1EaHf9zFP3XPCbrdLKpXCdhyazSa6rvN91eLZmwuWP+gSL1w6udIQJR6PS6fhaMR4cgnTC+BcnDAaXcq7fr8vCW+OT98Mnr7u8tLVZemdzsLyBSltiBKNxjg4qKFlUmjpHEfHJ9IhXyiSSKiSaG9vj0wmI88nkwmz2YzhcIZlT7GdK4j9eDxDCfi9eAIxtssnhPMh1ISKaRiIZola1et1fD4f+Xz+X2mmkvDuMUPxeT3kK016HZt4y0O+XKKn9ygWi9JEKCASiaBp2q0IBabT/7g+Uzzr61QbdWgfcNk8olit0tP1OcFgMGBra2se4TyWO6IU0Ss+n5dCoUK5CQNnSKlUlF3M7u5KI8M0CYfD7OzsMB6PZYNElNdyEt9inV7JBMXv95He1ShUhpyddcjlNCzL5tfaGurmJn63G6/HQy6Xo91uS9kIQiF2URaBQqFAtVqV8lJEwcXfk4kIGxsbMjVxEQwGZWOCgQCRcJhsNkuj0WB/f1+WQVVVhOTEmkgkZBa1Wk3oMIZ4LUI+wkAgGo3echDGgkykJdIWsCxLEov1eu84Dn8BjxRfot6NjEYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 62.0253164556962%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAACU0lEQVQoz4VTy27TUBD15/AnLPkCxI5dxQdUwKoLYAM7FiAhgYBWhU2kJk6ipHnbeTTxI8/mqZZQkjSO7diOE9sHzRUJbVkw0tyx78wcz+OYSyQScF0Xum5A1+fQfoZgXH3FYibDMB3YtoWLiwsUi0XclHefTTx9McHzl2McvJ7h2asFpMYKXKFQYAEBOx00sw9w+PYerOnRLtkwDFQqFdi2jdFoBF3XcfBGx6MnU+ztz7G3f42HexPkSw64XC7HknyfThst4TES3+/D+BXaAc7nc5TLZTiOg+FwCE3TEE2t8P6LgY/HJj4dm/hwaKI/WoPL5/MsaeW62HhrwL8GMKUbuO6a+UzTZID/lwBcNptDv9+FVC1Dqsi4/HHFXIpahygKDKjT6aBarbJ7z/MQBAF8P4DnBfD8v0p3XCwaQTiWQ6F5hbSSgCAKMHQdtCyaVa/XA8/zUBTlz2j8f+sKgp3l+EgYSmuIxcxGfhSG0mxgoS1Qr9dZEDEgk8lAkqRbFW4B7ioXPjlBe9ADxn2sh5eot9tYaNoOYLlcIpVK7Sq8W9VNoeo5no9AVVtoDoGls0KjUWdbrJ2dsSDdMJBOp1EqlbDZbNiCqMotneid7HYUXDTKo3ImQW2tMJnMIMsSLMvGt6MjCKeniIZCiITDkGUZ4/GY0YYAiew0FlJVVdFutxm9OBo4fb0oZpBMJllr5IjH42wx8VgMmXQatVoNg8EA5+fnbAyCIIAoR1YURdZFt9slHuZAfwvRhwJIs9nsrQQKJjBqi9omtSyLAZPdPhPxfwPelGahD3tDDgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;호출진행1&quot;
         title=&quot;호출진행1&quot;
-        src=&quot;/todayILearned/static/7cf0f19afa56484addf8cf151124229b/f058b/js3.png&quot;
-        srcset=&quot;/todayILearned/static/7cf0f19afa56484addf8cf151124229b/c26ae/js3.png 158w,
-/todayILearned/static/7cf0f19afa56484addf8cf151124229b/6bdcf/js3.png 315w,
-/todayILearned/static/7cf0f19afa56484addf8cf151124229b/f058b/js3.png 630w,
-/todayILearned/static/7cf0f19afa56484addf8cf151124229b/c0255/js3.png 920w&quot;
+        src=&quot;/todayILearned/static/3068775de07202f09345eac23e23e565/f058b/js3.png&quot;
+        srcset=&quot;/todayILearned/static/3068775de07202f09345eac23e23e565/c26ae/js3.png 158w,
+/todayILearned/static/3068775de07202f09345eac23e23e565/6bdcf/js3.png 315w,
+/todayILearned/static/3068775de07202f09345eac23e23e565/f058b/js3.png 630w,
+/todayILearned/static/3068775de07202f09345eac23e23e565/c0255/js3.png 920w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
