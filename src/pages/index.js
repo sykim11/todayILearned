@@ -83,6 +83,7 @@ export const pageQuery = graphql`
     }
     categories: allMarkdownRemark(
       sort: { fields: frontmatter___date, order: ASC }
+      filter: { frontmatter: { publish: { eq: true } } }
     ) {
       totalCount
       all: group(field: frontmatter___tags) {

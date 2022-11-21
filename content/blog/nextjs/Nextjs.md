@@ -20,7 +20,7 @@ http://localhost:3000/review/edit/2
 
 > getStaticPaths : 동적인 데이터에 따라 미리 렌더링할 페이지의 동적인 경로를 지정하게 해 주는 함수
 
-```ts
+```ts{numberLines: true}
 ;/review/deit / [id].tsx
 
 export const getStaticPaths = async () => {
@@ -42,7 +42,7 @@ getStaticPaths 함수를 사용해 동적 페이지로 활용될 수 있는 리�
 
 > getStaticProps : nextjs 서버에서 페이지를 빌드할 때 데이터를 패치시켜주는 함수
 
-```ts
+```ts{numberLines: true}
 ;/review/deit / [id].tsx
 
 export const getStaticPaths = async () => {

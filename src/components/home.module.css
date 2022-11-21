@@ -71,3 +71,10 @@
 .post_content_title {
   font-size: 14px;
 }
+
+/* Media queries */
+@media (max-width: 60rem) {
+  .post {
+    width: 100%;
+  }
+}

@@ -36,14 +36,14 @@ a {
   margin-left: 17px;
 }
 .blog-post :not(pre) > code[class*="language-"] {
-  background: #f5f2f0;
+  /* background: #f5f2f0; */
 }
 
 .blog-post blockquote {
   padding: 1rem;
   margin-left: var(--spacing-0);
   margin-right: var(--spacing-0);
-  background: #f5f2f0;
+  /* background: #f5f2f0; */
   font-size: 16px;
 }
 

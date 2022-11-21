@@ -3,6 +3,7 @@ title: 2021 회고
 date: 2022-01-04
 tags: ["review"]
 publish: true
+image: "../review.jpg"
 ---
 
 개인사로 너무 바빠서 건강만 챙겨도 성공할 것만 같았던 한 해가 지나갔다.  
