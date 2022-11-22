@@ -16,7 +16,7 @@ image: "./javascript.jpg"
 자바스크립트 엔진 = 콜스택 + 메모리로 이루어져있다
 ***
 
-## 실행 컨텍스트
+### 실행 컨텍스트
 
 ![Frame 33](https://user-images.githubusercontent.com/24996316/203189541-2bfe5764-88bd-42ab-8814-abdae71c9ae0.jpg)
 
@@ -394,7 +394,8 @@ newCalc() 함수를 호출할 때마다 새로운 렉시컬 환경 객체가 만
 ### 참고한 글
 
 [nhn 2021 포럼](https://forward.nhn.com/2021/sessions/17)   
-[es6-block-scope](https://poiemaweb.com/es6-block-scope)   
-[are-variables-declared-with-let-or-const-hoisted?](https://stackoverflow.com/questions/31219420/are-variables-declared-with-let-or-const-hoisted)   [변수의 유효범위와 클로저](https://ko.javascript.info/closure)
+[es6-block-scope](https://poiemaweb.com/es6-block-scope)      
+[are-variables-declared-with-let-or-const-hoisted?](https://stackoverflow.com/questions/31219420/are-variables-declared-with-let-or-const-hoisted)         
+[변수의 유효범위와 클로저](https://ko.javascript.info/closure)   
 
 
