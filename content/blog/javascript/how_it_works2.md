@@ -81,16 +81,15 @@ let number = calc(1,2, sum);
 
 ```
 
-![Group 7 (2)](https://user-images.githubusercontent.com/24996316/203011761-2ebcc9f2-6714-4ae4-ade9-a57bfb94c1e1.png)
+![Frame 48 (2)](https://user-images.githubusercontent.com/24996316/203241814-9deeff15-6b1f-4650-8604-67f17cc92655.png)
 
 1. 해당 코드가 자바스크립트로 실행되면 전역 메모리에 sum 함수, calc 함수, number 변수가 등록된다.   
 2. 그리고 calc () 호출을 통해 전역 실행 컨텍스트 내부에 calc 함수 실행 컨텍스트가 생성된다. 이때 calc 함수 실행 컨텍스트가 콜스택에 쌓인다.   
 3. calc 함수 실행컨텍스트가 만들어질 때 해당 함수와 관련된 정보가 등록된 함수 및 변수들(a, b, exterFn)이 지역 메모리 안에 등록되는데 이때 exterFn 변수는 전역 메모리에 등록된 sum 함수 정보가 연결된다. 
 4. 이후 exterFn 함수가 호출되면서 exterFn 함수 실행 컨텍스트가 콜스택에 쌓인다.    
 
-***
-콜스택에서 비워지는 그림 도식
-***
+
+![Frame 49](https://user-images.githubusercontent.com/24996316/203241781-08463a46-5c25-4869-8c96-6cb8ef2c5853.png)
 
 이렇게 콜스택에 쌓여 대기 중인 실행 컨텍스트를 자바스크립트 엔진이 콜스택을 보고 위에서부터 차례로 실행하기 시작한다.   
 
@@ -221,14 +220,16 @@ let test2;
 ```
 위와 같이 var 키워드와 달리 let 키워드는 선언 이전의 변수를 실행시켰을 때 참조 에러를 띄운다. 하지만 참조 에러를 띄웠다는 게 호이스팅이 일어나지 않았다는 의미는 아니다. 이를 설명하기 위해서는 자바스크립트가 변수를 생성하는 단계를 알아야한다. 변수는 총 세 단계에 거쳐 생성된다.     
 
-> 1. 선언 단계
+> 1. 선언 단계   
 > 변수를 실행 컨텍스트의 변수 객체에 등록한다. 이 변수 객체는 스코프가 참조하는 대상이 된다.
 
-> 2. 초기화 단계
+> 2. 초기화 단계   
 > 변수 객체에 등록된 변수를 위한 공간을 메모리에 확보한다. 이 단계에서 변수는 undefined로 초기화된다.
 
-> 3. 할당 단계
+> 3. 할당 단계   
 > undefined로 초기화된 변수에 실제 값을 할당한다.
+
+
 
 ```js{numberLines: true}
 console.log(test1); // 변수 등록도 하고 undefined 할당되어 있음
@@ -247,6 +248,7 @@ let 키워드는 선언과 초기화 단계가 분리되어 진행된다. 스코
  
 ### 참고한 글
 
-[es6-block-scope](https://poiemaweb.com/es6-block-scope)
+[nhn 2021 포럼](https://forward.nhn.com/2021/sessions/17)
+[es6-block-scope](https://poiemaweb.com/es6-block-scope)   
 [are-variables-declared-with-let-or-const-hoisted?](https://stackoverflow.com/questions/31219420/are-variables-declared-with-let-or-const-hoisted)
  
