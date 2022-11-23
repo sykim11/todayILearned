@@ -40,11 +40,43 @@ a {
 }
 
 .blog-post blockquote {
-  padding: 1rem;
+  padding: 0.75rem;
   margin-left: var(--spacing-0);
   margin-right: var(--spacing-0);
-  /* background: #f5f2f0; */
   font-size: 16px;
+  background-color: #f0f2f5;
+  font-weight: 500;
+  font-style: initial;
+}
+
+.blog-post hr + p {
+  margin-bottom: var(--spacing-0);
+}
+
+.blog-post table {
+  /* box-shadow: 2px 2px 8px rgb(0 0 0 / 20%); */
+  /* border: 2px solid #ddd; */
+}
+.blog-post table th {
+  background-color: rgb(112, 120, 209);
+  color: #fff;
+}
+.blog-post table th,
+td {
+  padding: 0.25rem 0;
+  border: 4px solid #fff;
+}
+.blog-post table td {
+  background-color: #f7f7f7;
+}
+.blog-post strong {
+  color: #dd0700;
+  background: rgba(112, 120, 209, 0.2);
+}
+
+::selection {
+  color: #dd0700;
+  background: rgba(112, 120, 209, 0.2);
 }
 
 /**

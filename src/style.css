@@ -428,6 +428,7 @@ a:focus {
   /* text-overflow: ellipsis; */
   color: rgba(59, 69, 78, 0.7);
   transition: all 0.25s ease 0s;
+  letter-spacing: -0.045rem;
   /* white-space: nowrap; */
 }
 .table-of-contents a:hover {
