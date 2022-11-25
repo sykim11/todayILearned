@@ -1,8 +1,8 @@
 ---
-title: Javascript 기본-객체와 메세드, 그리고 this
-date: 2022-11-23
+title: Javascript 기본-객체와 메서드, 그리고 this
+date: 2022-11-25
 tags: ["javascript"]
-publish: false
+publish: true
 image: "./javascript.jpg"
 ---
 
@@ -97,12 +97,63 @@ function makeUser() {
 let user = makeUser();
 console.log(user.ref())
 ```   
-this를 할당한 ref 프로퍼티를 메서드로 바꾸면 콘솔에 본래 의도했던대로 makerUser 함수에 대한 정보가 찍힌다.   
+**함수를 객체 프로퍼티에 저장해 object.method() 형태로 호출하면 this는 object를 참조한다.** 따라서 해당 코드는 콘솔에 본래 의도했던대로 makerUser 함수에 대한 정보가 찍힌다.   
 
 ```sh
 { name: 'John', ref: [Function: ref] }
 ```
 
+#### setTimeout과 this 
+
+이런 경우는 어떨까? setTimeout에 객체의 메서드를 콜백으로 전달해도 this가 호출한 객체를 기억할까?      
+
+```js{numberLines: true}
+function makeUser() {
+    return {
+        name: "ksy",
+        hi() {
+            console.log(`${this.name} 안녕!`)
+        }
+    }
+};
+
+let user = makeUser();
+setTimeout(user.hi, 1000); // ?
+``` 
+결과는 undefined다.   
+user.hi 메서드가 setTimeout으로 전달될 때 user 객체에서 분리된 채로 전달되어 name이라는 정보를 잃어버리기 때문이다. 이는 setTimeout만이 가진 특별한 동작 방식 때문인데, setTimeout은 인수로 전달받은 함수를 호출할 때 this에 window를 할당한다. 위 코드에선 window.name 값은 미리 지정하지 않았으니 당연히 undefined가 떴던 것이다.   
+
+**방법1: 래핑 함수로 this 잡아두기**   
+```js{numberLines: true}
+function makeUser() {
+    return {
+        name: "ksy",
+        hi() {
+            console.log(`${this.name} 안녕!`)
+        }
+    }
+};
+
+let user = makeUser();
+setTimeout(() => { user.hi }, 1000); // () => {} 래핑!
+``` 
+위와 같이 전달한 메서드 위에 함수를 한겹 씌워주면 메서드 내부 this가 참조하는 값은 () => {} 함수에 걸리게 되고 user를 참조하면서 user 안의 name 정보를 가져와 올바른 결과값이 나온다.   
+
+**방법2: bind 메서드로 this 붙여놓기**
+```js{numberLines: true}
+function makeUser() {
+    return {
+        name: "ksy",
+        hi() {
+            console.log(`${this.name} 안녕!`)
+        }
+    }
+};
+
+let user = makeUser();
+setTimeout(user.hi.bind(user), 1000); // bind!
+``` 
+**모든 함수는 this를 수정하게 해주는 내장 메서드 bind를 제공한다** this가 바라봤으면 하는 객체를 대상 함수 뒤에 bind 메서드로 붙여놓으면 원하는 결과값이 나온다.   
 
 
 ### 참고한 글   
