@@ -1,2 +1,4 @@
 User-agent: *
-Disallow:
+Allow: /
+Sitemap: https://ksy8230.github.io/todayILearned/sitemap-0.xml
+Host: https://ksy8230.github.io
