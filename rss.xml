@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[This blog is powered by gatsby]]></description><link>https://ksy8230.github.io/todayILearned</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 28 Nov 2022 07:27:39 GMT</lastBuildDate><item><title><![CDATA[Javascript 기본-프로토타입]]></title><description><![CDATA[Frame 55 개체를 표현하기 위해 객체라는 개념이 있고 이 객체의 행위를 위해 메서드 함수를 사용하며 메서드 함수가 객체에 접근하기 위해 this…]]></description><link>https://ksy8230.github.io/todayILearned/javascript/how_it_works4/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/javascript/how_it_works4/</guid><pubDate>Mon, 28 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/24996316/203940809-40ff5208-ed46-46ba-8568-4ff0237c59da.png&quot; alt=&quot;Frame 55&quot;&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[This blog is powered by gatsby]]></description><link>https://ksy8230.github.io/todayILearned</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 01 Dec 2022 00:43:23 GMT</lastBuildDate><item><title><![CDATA[Javascript 기본-클래스]]></title><link>https://ksy8230.github.io/todayILearned/javascript/how_it_works5/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/javascript/how_it_works5/</guid><pubDate>Wed, 30 Nov 2022 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Javascript 기본-프로토타입]]></title><description><![CDATA[Frame 55 개체를 표현하기 위해 객체라는 개념이 있고 이 객체의 행위를 위해 메서드 함수를 사용하며 메서드 함수가 객체에 접근하기 위해 this…]]></description><link>https://ksy8230.github.io/todayILearned/javascript/how_it_works4/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/javascript/how_it_works4/</guid><pubDate>Mon, 28 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/24996316/203940809-40ff5208-ed46-46ba-8568-4ff0237c59da.png&quot; alt=&quot;Frame 55&quot;&gt;&lt;/p&gt;
 &lt;p&gt;개체를 표현하기 위해 객체라는 개념이 있고 이 객체의 행위를 위해 메서드 함수를 사용하며 메서드 함수가 객체에 접근하기 위해 this라는 개념이 있다는 것까지 정리되었다.&lt;br&gt;
 그런데 이 객체가 아주 많은 케이스를 개발해야하는 상황이 온다면 이 모든 객체들을 어떻게 만들어줘야할까? 단순히 백 개의 객체를 만들어야한다고 해서 100번의 복붙 작업이 이루어지지는 않을 것이다.&lt;br&gt;
 객체들끼리의 상관관계를 따져서 최대한 비슷한 기능을 가진 추상적인 객체를 만들어 재활용 가능한 객체를 만든다면 훨씬 더 유용하다. 바로 프로토타입이 존재하는 이유가 여기서 나온다.&lt;/p&gt;
@@ -441,13 +441,16 @@ newCalc 함수를 두 번째로 호출했을 때도 앞선 동작과 마찬가�
 &lt;h3 id=&quot;렉시컬-환경&quot; style=&quot;position:relative;&quot;&gt;렉시컬 환경&lt;a href=&quot;#%EB%A0%89%EC%8B%9C%EC%BB%AC-%ED%99%98%EA%B2%BD&quot; aria-label=&quot;렉시컬 환경 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/24996316/203262429-4124cfbc-b921-4fdb-8473-0af4214ce19c.png&quot; alt=&quot;Frame 41 (1)&quot;&gt;&lt;/p&gt;
 &lt;p&gt;클로저가 주변 환경 정보를 기억해서 가져오는 부분에 대해 조금 자세히 이해하려면 렉시컬 환경에 대한 이해가 선행되어야한다.&lt;br&gt;
-렉시컬 환경이란 변수와 변수에 할당된 값, 그리고 상위 스코프에 대한 참조를 기록하는 컨텍스트이다.&lt;/p&gt;
-&lt;p&gt;자바스크립트 동작의 모든 기반에 컨텍스트가 있다는 걸 기억한다면 렉시컬 환경이 바로 자바스크립트 실행 시 근간이 되는 공간이라는 해석이 된다.&lt;br&gt;
-실행 중인 함수, 코드 블럭, 스크립트 전체는 렉시컬 환경이라 불리는 내부 숨김 연관 객체(internal hidden associated object)를 갖는다.&lt;br&gt;
+렉시컬 환경이란 변수와 변수에 할당된 값, 그리고 상위 스코프에 대한 참조를 기록하는 사전적 정의 환경이다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;💡 자바스크립트 동작의 모든 기반에 컨텍스트가 있고, 이 컨텍스트의 환경을 사전적 정의로 풀어낸 객체가 렉시컬 환경이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;실행 중인 함수, 코드 블럭 등 스크립트를 구성하는 전체는 렉시컬 환경이라 불리는 내부 숨김 연관 객체(internal hidden associated object)를 갖는다.&lt;br&gt;
 렉시컬 환경 객체는 두 부분으로 구성된다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/24996316/204733344-7bfbb998-08a7-4c35-8fde-11edf01a72d7.png&quot; alt=&quot;Frame 57&quot;&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;환경 레코드 : 모든 지역 변수 정보를 저장하는 객체&lt;br&gt;
-외부 렉시컬 환경 : 외부 코드와 연관된 환경 정보&lt;/p&gt;
+&lt;p&gt;환경 레코드 : 모든 지역 변수에 대한 정보를 저장하는 객체&lt;br&gt;
+외부 환경 참조 : 외부 코드와 연관된 환경 정보&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4 id=&quot;렉시컬-환경-변수&quot; style=&quot;position:relative;&quot;&gt;렉시컬 환경-변수&lt;a href=&quot;#%EB%A0%89%EC%8B%9C%EC%BB%AC-%ED%99%98%EA%B2%BD-%EB%B3%80%EC%88%98&quot; aria-label=&quot;렉시컬 환경 변수 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;우리가 자바스크립트 파일에서 아래와 같이 변수를 만든다는 것은 결국 렉시컬 환경 객체에 환경 레코드의 프로퍼티를 만든다는 이야기와 동일하다.&lt;/p&gt;
@@ -2983,7 +2986,45 @@ ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;registry&lt
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
   &lt;span class=&quot;token function&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; arguments&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
   ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;stroke &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; _stroke
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 입문 수업 1 ~ 5]]></title><description><![CDATA[…]]></description><link>https://ksy8230.github.io/todayILearned/docker/docker1/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/docker/docker1/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작년부터 궁금했던 도커라는 녀석을 공부해 보기로 했다.&lt;br&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[vscode에서 crlf 파일들을 일괄로 lf파일로 변환하는 법]]></title><description><![CDATA[파일 형상 관리를 git을 이용해 하고 있다. 그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf…]]></description><link>https://ksy8230.github.io/todayILearned/bugLists/vscode_setting/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/bugLists/vscode_setting/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;파일 형상 관리를 git을 이용해 하고 있다.&lt;br&gt;
+그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf로 변환된 채로 코드상 빨간 줄을 뿜고 있는데… 이걸 파일 하나하나 바꿔주다보니 갑갑해서 일괄 수정할 수 있는 방법을 찾아냈다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 11.39240506329114%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAe0lEQVQI12OQ1Lb4D8GWUGyBRmMXl4KypXQs/8voWv0XUTP57x2V+p+Bq+Hsf+mui//lui/+l+y48J+n8dx/nclX/qv1X/4v3Hr+v2DL+f8qfZf+CzSf+y/QAuHrTr7yX3vS5f+y3Rf/czee+8/ffO4/W8P5/zZd+/4DAL+gTvIIXhXiAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;lf&quot;
+        title=&quot;lf&quot;
+        src=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png&quot;
+        srcset=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/c26ae/lf.png 158w,
+/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/6bdcf/lf.png 315w,
+/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png 630w,
+/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png 772w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;터미널창에 아래 명령어 수행&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;git config core&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;autocrlf &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
+git rm &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;cached &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;r &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 입문 수업 1 ~ 5]]></title><description><![CDATA[…]]></description><link>https://ksy8230.github.io/todayILearned/docker/docker1/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/docker/docker1/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작년부터 궁금했던 도커라는 녀석을 공부해 보기로 했다.&lt;br&gt;
 무작정 유튜브에 도커를 쳐보니 생활코딩 유튜브 채널에 도커 입문용 강의가 있더라… 감사합니다!&lt;/p&gt;
 &lt;h3 id=&quot;도커를-사용하게-된-배경&quot; style=&quot;position:relative;&quot;&gt;도커를 사용하게 된 배경&lt;a href=&quot;#%EB%8F%84%EC%BB%A4%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B2%8C-%EB%90%9C-%EB%B0%B0%EA%B2%BD&quot; aria-label=&quot;도커를 사용하게 된 배경 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;어떠한 어플리케이션을 개발할 때 웹서버와 데이터베이스가 필요하다. 그런데 만일 웹서버에 맞는 운영체제와 데이터베이스에 맞는 운영체제가 다른 경우 가장 이상적인 그림은 아래와 같을 것이다.&lt;/p&gt;
@@ -3328,45 +3369,7 @@ ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;registry&lt
 &lt;h3 id=&quot;도움-받은-자료들&quot; style=&quot;position:relative;&quot;&gt;도움 받은 자료들&lt;a href=&quot;#%EB%8F%84%EC%9B%80-%EB%B0%9B%EC%9D%80-%EC%9E%90%EB%A3%8C%EB%93%A4&quot; aria-label=&quot;도움 받은 자료들 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&quot;&gt;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[vscode에서 crlf 파일들을 일괄로 lf파일로 변환하는 법]]></title><description><![CDATA[파일 형상 관리를 git을 이용해 하고 있다. 그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf…]]></description><link>https://ksy8230.github.io/todayILearned/bugLists/vscode_setting/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/bugLists/vscode_setting/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;파일 형상 관리를 git을 이용해 하고 있다.&lt;br&gt;
-그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf로 변환된 채로 코드상 빨간 줄을 뿜고 있는데… 이걸 파일 하나하나 바꿔주다보니 갑갑해서 일괄 수정할 수 있는 방법을 찾아냈다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 11.39240506329114%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAe0lEQVQI12OQ1Lb4D8GWUGyBRmMXl4KypXQs/8voWv0XUTP57x2V+p+Bq+Hsf+mui//lui/+l+y48J+n8dx/nclX/qv1X/4v3Hr+v2DL+f8qfZf+CzSf+y/QAuHrTr7yX3vS5f+y3Rf/czee+8/ffO4/W8P5/zZd+/4DAL+gTvIIXhXiAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;lf&quot;
-        title=&quot;lf&quot;
-        src=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png&quot;
-        srcset=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/c26ae/lf.png 158w,
-/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/6bdcf/lf.png 315w,
-/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png 630w,
-/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png 772w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;터미널창에 아래 명령어 수행&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;git config core&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;autocrlf &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
-git rm &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;cached &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;r &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
-git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Javascript 비동기 작동 원리]]></title><description><![CDATA[…]]></description><link>https://ksy8230.github.io/todayILearned/javascript/how_it_works/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/javascript/how_it_works/</guid><pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;자바스크립트의 작동 원리에 대해 조금 더 깊은 학습이 필요하다 생각되어 글로 정리해 보았다.&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Javascript 비동기 작동 원리]]></title><description><![CDATA[…]]></description><link>https://ksy8230.github.io/todayILearned/javascript/how_it_works/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/javascript/how_it_works/</guid><pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;자바스크립트의 작동 원리에 대해 조금 더 깊은 학습이 필요하다 생각되어 글로 정리해 보았다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;자바스크립트는 싱글스레드로 동작하는 언어&lt;/p&gt;
 &lt;/blockquote&gt;
