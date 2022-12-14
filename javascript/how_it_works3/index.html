@@ -144,8 +144,8 @@ user.hi 메서드가 setTimeout으로 전달될 때 user 객체에서 분리된 
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 
 <span class="token keyword">let</span> user <span class="token operator">=</span> <span class="token function">makeUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span> user<span class="token punctuation">.</span>hi <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// () => {} 래핑!</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
-<p>위와 같이 전달한 메서드 위에 함수를 한겹 씌워주면 메서드 내부 this가 참조하는 값은 () => {} 함수에 걸리게 되고 user를 참조하면서 user 안의 name 정보를 가져와 올바른 결과값이 나온다.</p>
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span> user<span class="token punctuation">.</span><span class="token function">hi</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// () => {} 래핑!</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>위와 같이 전달한 메서드 위에 함수를 한겹 씌워서 호출하면 메서드 내부 this가 참조하는 값은 () => {} 함수 블록에 걸리게 되고 user 값을 찾 user 안의 name 정보를 가져와 올바른 결과값이 나온다.</p>
 <p><strong>방법2: bind 메서드로 this 붙여놓기</strong></p>
 <div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber 0" class="language-js line-numbers"><code class="language-js"><span class="token keyword">function</span> <span class="token function">makeUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">{</span>
@@ -159,6 +159,160 @@ user.hi 메서드가 setTimeout으로 전달될 때 user 객체에서 분리된 
 <span class="token keyword">let</span> user <span class="token operator">=</span> <span class="token function">makeUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token function">setTimeout</span><span class="token punctuation">(</span>user<span class="token punctuation">.</span><span class="token function">hi</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// bind!</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
 <p><strong>모든 함수는 this를 수정하게 해주는 내장 메서드 bind를 제공한다</strong> this가 바라봤으면 하는 객체를 대상 함수 뒤에 bind 메서드로 붙여놓으면 원하는 결과값이 나온다.</p>
+<h4 id="헷갈리기-쉬운-예시-코드들-test" style="position:relative;">헷갈리기 쉬운 예시 코드들 Test!<a href="#%ED%97%B7%EA%B0%88%EB%A6%AC%EA%B8%B0-%EC%89%AC%EC%9A%B4-%EC%98%88%EC%8B%9C-%EC%BD%94%EB%93%9C%EB%93%A4-test" aria-label="헷갈리기 쉬운 예시 코드들 test permalink" class="custom-class after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h4>
+<p>예시 코드들의 답을 유추해 보자.</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber 0" class="language-js line-numbers"><code class="language-js"><span class="token keyword">let</span> test <span class="token operator">=</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">"tester"</span><span class="token punctuation">,</span>
+  sy<span class="token operator">:</span> <span class="token punctuation">{</span>
+    name2<span class="token operator">:</span> <span class="token string">"test2"</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">play</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>name2<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> play!</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+test<span class="token punctuation">.</span>sy<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<details>
+    <summary> 정답 </summary>
+<!-- empty line -->
+    this는 호출한 당시의 주체를 가리키기 때문에 roto를 가리키고 roto 안에 name 값이 없기 때문에 undefined test2 play! 가 찍힌다
+</details>
+<!-- empty line -->
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber 0" class="language-js line-numbers"><code class="language-js"><span class="token keyword">let</span> test <span class="token operator">=</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">"tester"</span><span class="token punctuation">,</span>
+  sy<span class="token operator">:</span> <span class="token punctuation">{</span>
+    name2<span class="token operator">:</span> <span class="token string">"test2"</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">play</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>name2<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> play!</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+test<span class="token punctuation">.</span>sy<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<details>
+    <summary> 정답 </summary>
+<!-- empty line -->
+    this는 호출한 당시의 주체를 가리키는데 화살표 함수는 this 값이 존재하지 않으므로 undefined undefined play!가 찍힌다
+</details>
+<!-- empty line -->
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber 0" class="language-js line-numbers"><code class="language-js"><span class="token keyword">function</span> <span class="token function">makeUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">"John"</span><span class="token punctuation">,</span>
+    ref<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> user <span class="token operator">=</span> <span class="token function">makeUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span>user<span class="token punctuation">.</span>ref<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<details>
+    <summary> 정답 </summary>
+<!-- empty line -->
+    this는 호출한 당시의 주체를 가리키는데 makeUser 호출 시 this가 객체의 메서드로 호출된게 아니라서 this는 undefined가 되므로 name 값을 찾을 수 없다고 찍힌다.
+</details>
+<!-- empty line -->
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber 0" class="language-js line-numbers"><code class="language-js"><span class="token keyword">function</span> <span class="token function">makeUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">"John"</span><span class="token punctuation">,</span>
+    <span class="token function">ref</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> user <span class="token operator">=</span> <span class="token function">makeUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span>user<span class="token punctuation">.</span><span class="token function">ref</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<details>
+    <summary> 정답 </summary>
+<!-- empty line -->
+    this는 호출한 당시의 주체를 가리키는데 this는 객체의 메서드 ref()로 호출되었으므로 . 앞에 있는 주체인 user를 가리킨다. 그러므로 user를 가리키는 this는 name 값을 찾을 수 있게 된다.
+</details>
+<!-- empty line -->
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber 0" class="language-js line-numbers"><code class="language-js"><span class="token keyword">function</span> <span class="token function">RockBand</span><span class="token punctuation">(</span><span class="token parameter">members</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>members <span class="token operator">=</span> members<span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function-variable function">perform</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>members<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">member</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        member<span class="token punctuation">.</span><span class="token function">perform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> theOralCigarettes <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RockBand</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">"takuya"</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">perform</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"a e u i a e u i"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+theOralCigarettes<span class="token punctuation">.</span><span class="token function">perform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<details>
+    <summary> 정답 </summary>
+<!-- empty line -->
+    setTimeout은 인수로 전달받은 함수를 호출할 때 this를 window에 할당한다. this가 RockBand를 가리키고 있지 않기 때문에 this.members가 undefined가 뜬다.
+</details>
+<!-- empty line -->
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber 0" class="language-js line-numbers"><code class="language-js"><span class="token keyword">function</span> <span class="token function">RockBand</span><span class="token punctuation">(</span><span class="token parameter">members</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> that <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>members <span class="token operator">=</span> members<span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function-variable function">perform</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      that<span class="token punctuation">.</span>members<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">member</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        member<span class="token punctuation">.</span><span class="token function">perform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> theOralCigarettes <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RockBand</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">"takuya"</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">perform</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"a e u i a e u i"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+theOralCigarettes<span class="token punctuation">.</span><span class="token function">perform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<details>
+    <summary> 해결법1 - 클로저 </summary>
+<!-- empty line -->
+    자바스크립트에서는 함수가 함수를 반환할 때 당시의 환경정보를 기억한다.
+    this.perform 함수를 호출할 때 that 정보를 기억하고 this 값이 할당된 that은 Rockband 객체를 가리키고 있어서 Rockband 내부에 members 값을 읽을 수 있으므로 정상 값이 출력된다.
+</details>
+<!-- empty line -->
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber 0" class="language-js line-numbers"><code class="language-js"><span class="token keyword">function</span> <span class="token function">RockBand</span><span class="token punctuation">(</span><span class="token parameter">members</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>members <span class="token operator">=</span> members<span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function-variable function">perform</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>members<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">member</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        member<span class="token punctuation">.</span><span class="token function">perform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> theOralCigarettes <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RockBand</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">"takuya"</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">perform</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"a e u i a e u i"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+theOralCigarettes<span class="token punctuation">.</span><span class="token function">perform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<details>
+    <summary> 해결법2 - bind </summary>
+<!-- empty line -->
+    모든 함수는 this를 수정시켜주는 bind를 제공한다.
+    setTimeout은 인수로 전달받은 함수를 호출할 때 this를 window에 할당하는데 이때 this를 RockBand로 바라보도록 수정한다.
+</details>
+<!-- empty line -->
 <h3 id="참고한-글" style="position:relative;">참고한 글<a href="#%EC%B0%B8%EA%B3%A0%ED%95%9C-%EA%B8%80" aria-label="참고한 글 permalink" class="custom-class after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
 <p><a href="https://ko.javascript.info/object-methods">메서드와 this</a></p></section></article><div class="blog-table"><div class="table-of-contents"><ul>
 <li>
@@ -172,6 +326,7 @@ user.hi 메서드가 setTimeout으로 전달될 때 user 객체에서 분리된 
 <ul>
 <li><a href="#%EA%B8%B8%EC%9D%84-%EC%9E%83%EC%9D%80-this">길을 잃은 this</a></li>
 <li><a href="#settimeout%EA%B3%BC-this">setTimeout과 this</a></li>
+<li><a href="#%ED%97%B7%EA%B0%88%EB%A6%AC%EA%B8%B0-%EC%89%AC%EC%9A%B4-%EC%98%88%EC%8B%9C-%EC%BD%94%EB%93%9C%EB%93%A4-test">헷갈리기 쉬운 예시 코드들 Test!</a></li>
 </ul>
 </li>
 <li>
