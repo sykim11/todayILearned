@@ -140,10 +140,10 @@ function makeUser() {
 };
 
 let user = makeUser();
-setTimeout(() => { user.hi }, 1000); // () => {} 래핑!
+setTimeout(() => { user.hi() }, 1000); // () => {} 래핑!
 ```
 
-위와 같이 전달한 메서드 위에 함수를 한겹 씌워주면 메서드 내부 this가 참조하는 값은 () => {} 함수에 걸리게 되고 user를 참조하면서 user 안의 name 정보를 가져와 올바른 결과값이 나온다.
+위와 같이 전달한 메서드 위에 함수를 한겹 씌워서 호출하면 메서드 내부 this가 참조하는 값은 () => {} 함수 블록에 걸리게 되고 user 값을 찾 user 안의 name 정보를 가져와 올바른 결과값이 나온다.
 
 **방법2: bind 메서드로 this 붙여놓기**
 
@@ -162,6 +162,193 @@ setTimeout(user.hi.bind(user), 1000); // bind!
 ```
 
 **모든 함수는 this를 수정하게 해주는 내장 메서드 bind를 제공한다** this가 바라봤으면 하는 객체를 대상 함수 뒤에 bind 메서드로 붙여놓으면 원하는 결과값이 나온다.
+
+
+#### 헷갈리기 쉬운 예시 코드들 Test!
+
+예시 코드들의 답을 유추해 보자.   
+
+```js{numberLines: true}
+let test = {
+  name: "tester",
+  sy: {
+    name2: "test2",
+    play: function () {
+      console.log(`${this.name} ${this.name2} play!`);
+    },
+  },
+};
+
+test.sy.play();
+```
+<details>
+    <summary> 정답 </summary>
+<!-- empty line -->
+    this는 호출한 당시의 주체를 가리키기 때문에 roto를 가리키고 roto 안에 name 값이 없기 때문에 undefined test2 play! 가 찍힌다
+</details>
+<!-- empty line -->
+
+
+```js{numberLines: true}
+let test = {
+  name: "tester",
+  sy: {
+    name2: "test2",
+    play: () => {
+      console.log(`${this.name} ${this.name2} play!`);
+    },
+  },
+};
+
+test.sy.play();
+```
+<details>
+    <summary> 정답 </summary>
+<!-- empty line -->
+    this는 호출한 당시의 주체를 가리키는데 화살표 함수는 this 값이 존재하지 않으므로 undefined undefined play!가 찍힌다
+</details>
+<!-- empty line -->
+
+
+```js{numberLines: true}
+function makeUser() {
+  return {
+    name: "John",
+    ref: this,
+  };
+}
+
+let user = makeUser();
+
+alert(user.ref.name);
+```
+<details>
+    <summary> 정답 </summary>
+<!-- empty line -->
+    this는 호출한 당시의 주체를 가리키는데 makeUser 호출 시 this가 객체의 메서드로 호출된게 아니라서 this는 undefined가 되므로 name 값을 찾을 수 없다고 찍힌다.
+</details>
+<!-- empty line -->
+
+
+```js{numberLines: true}
+function makeUser() {
+  return {
+    name: "John",
+    ref() {
+      return this;
+    },
+  };
+}
+
+let user = makeUser();
+
+alert(user.ref().name);
+```
+<details>
+    <summary> 정답 </summary>
+<!-- empty line -->
+    this는 호출한 당시의 주체를 가리키는데 this는 객체의 메서드 ref()로 호출되었으므로 . 앞에 있는 주체인 user를 가리킨다. 그러므로 user를 가리키는 this는 name 값을 찾을 수 있게 된다.
+</details>
+<!-- empty line -->
+
+
+```js{numberLines: true}
+function RockBand(members) {
+  this.members = members;
+  this.perform = function () {
+    setTimeout(function () {
+      this.members.forEach(function (member) {
+        member.perform();
+      });
+    }, 1000);
+  };
+}
+
+var theOralCigarettes = new RockBand([
+  {
+    name: "takuya",
+    perform: function () {
+      console.log("a e u i a e u i");
+    },
+  },
+]);
+
+theOralCigarettes.perform();
+```
+<details>
+    <summary> 정답 </summary>
+<!-- empty line -->
+    setTimeout은 인수로 전달받은 함수를 호출할 때 this를 window에 할당한다. this가 RockBand를 가리키고 있지 않기 때문에 this.members가 undefined가 뜬다.
+</details>
+<!-- empty line -->
+
+
+
+```js{numberLines: true}
+function RockBand(members) {
+  let that = this;
+  this.members = members;
+  this.perform = function () {
+    setTimeout(function () {
+      that.members.forEach(function (member) {
+        member.perform();
+      });
+    }, 1000);
+  };
+}
+
+var theOralCigarettes = new RockBand([
+  {
+    name: "takuya",
+    perform: function () {
+      console.log("a e u i a e u i");
+    },
+  },
+]);
+
+theOralCigarettes.perform();
+```
+<details>
+    <summary> 해결법1 - 클로저 </summary>
+<!-- empty line -->
+    자바스크립트에서는 함수가 함수를 반환할 때 당시의 환경정보를 기억한다.
+    this.perform 함수를 호출할 때 that 정보를 기억하고 this 값이 할당된 that은 Rockband 객체를 가리키고 있어서 Rockband 내부에 members 값을 읽을 수 있으므로 정상 값이 출력된다.
+</details>
+<!-- empty line -->
+
+
+```js{numberLines: true}
+function RockBand(members) {
+  this.members = members;
+  this.perform = function () {
+    setTimeout(function () {
+      this.members.forEach(function (member) {
+        member.perform();
+      });
+    }.bind(this), 1000);
+  };
+}
+
+var theOralCigarettes = new RockBand([
+  {
+    name: "takuya",
+    perform: function () {
+      console.log("a e u i a e u i");
+    },
+  },
+]);
+
+theOralCigarettes.perform();
+```
+<details>
+    <summary> 해결법2 - bind </summary>
+<!-- empty line -->
+    모든 함수는 this를 수정시켜주는 bind를 제공한다.
+    setTimeout은 인수로 전달받은 함수를 호출할 때 this를 window에 할당하는데 이때 this를 RockBand로 바라보도록 수정한다.
+</details>
+<!-- empty line -->
+
+
 
 ### 참고한 글
 
