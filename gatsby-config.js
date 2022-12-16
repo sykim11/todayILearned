@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: "/todayILearned",
   siteMetadata: {
-    title: `Today I Learned`,
+    title: `ksy8230.github.io`,
     menuLinks: [
       {
         name: "home",
@@ -13,13 +13,12 @@ module.exports = {
       },
     ],
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `suyoungKim`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `This blog is powered by gatsby`,
+    siteUrl: `https://ksy8230.github.io/todayILearned/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `-`,
     },
   },
   plugins: [
@@ -178,6 +177,23 @@ module.exports = {
         // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    // "gatsby-plugin-advanced-sitemap",
+    {
+      resolve: "gatsby-plugin-advanced-sitemap",
+      options: {
+        mapping: {
+          allSitePage: {},
+        },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://ksy8230.github.io/todayILearned/",
+        sitemap: "https://ksy8230.github.io/todayILearned/sitemap-0.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
 
