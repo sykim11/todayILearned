@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[This blog is powered by gatsby]]></description><link>https://ksy8230.github.io/todayILearned</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 16 Dec 2022 22:56:58 GMT</lastBuildDate><item><title><![CDATA[웹 성능 개선 지표들]]></title><description><![CDATA[웹반응성 로딩 성능 개선 실험적 환경 속 테스트
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[This blog is powered by gatsby]]></description><link>https://ksy8230.github.io/todayILearned</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 16 Dec 2022 23:15:19 GMT</lastBuildDate><item><title><![CDATA[웹 성능 개선 지표들]]></title><description><![CDATA[웹반응성 로딩 성능 개선 실험적 환경 속 테스트
 리얼 유저 환경 속 테스트 성능 개선 가이드 로드 이후 인터렉션(상호작용)에 집중 사용자인식 연구 결과
 사용자 입력 이후 100ms 이내 반응하는게 목표 웹 반응성 지표들
 TBT INP CLS…]]></description><link>https://ksy8230.github.io/todayILearned/base/web-performance/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/base/web-performance/</guid><pubDate>Mon, 12 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;웹반응성&lt;/p&gt;
@@ -2933,7 +2933,60 @@ url이 마치 이동을 하는 것 같지만 실제로 한 화면 안에서 다�
 &lt;h3 id=&quot;출처&quot; style=&quot;position:relative;&quot;&gt;출처&lt;a href=&quot;#%EC%B6%9C%EC%B2%98&quot; aria-label=&quot;출처 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=0kQC19w0gTI&quot;&gt;https://www.youtube.com/watch?v=0kQC19w0gTI&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 입문 수업 6 ~ 8]]></title><description><![CDATA[도커 컨테이너 안에 있는 파일 조작하기  도커를 이용해 웹서버를 띄웠다. 그리고 이제 이 내용물을 다르게 바꿔보자. 도커에 올라가있는 컨테이너 ws…]]></description><link>https://ksy8230.github.io/todayILearned/docker/docker2/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/docker/docker2/</guid><pubDate>Fri, 07 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;도커-컨테이너-안에-있는-파일-조작하기&quot; style=&quot;position:relative;&quot;&gt;도커 컨테이너 안에 있는 파일 조작하기&lt;a href=&quot;#%EB%8F%84%EC%BB%A4-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%EC%95%88%EC%97%90-%EC%9E%88%EB%8A%94-%ED%8C%8C%EC%9D%BC-%EC%A1%B0%EC%9E%91%ED%95%98%EA%B8%B0&quot; aria-label=&quot;도커 컨테이너 안에 있는 파일 조작하기 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[react-chartjs 에서 라인에 glow 효과 주는 법]]></title><description><![CDATA[개발 환경 chart.js 3.7 버전 react-chartjs-2 4.0 버전 환경 리액트에서 그래프 작업을 할 때 주로 chart.js 라이브러리를 사용하고 있다. 선 그래프 작업을 할 때 라인에 glow…]]></description><link>https://ksy8230.github.io/todayILearned/reactjs/chartjs1/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/reactjs/chartjs1/</guid><pubDate>Fri, 07 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;개발-환경&quot; style=&quot;position:relative;&quot;&gt;개발 환경&lt;a href=&quot;#%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD&quot; aria-label=&quot;개발 환경 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;chart.js 3.7 버전&lt;br&gt;
+react-chartjs-2 4.0 버전 환경&lt;/p&gt;
+&lt;p&gt;리액트에서 그래프 작업을 할 때 주로 chart.js 라이브러리를 사용하고 있다.&lt;br&gt;
+선 그래프 작업을 할 때 라인에 glow 효과를 주고 싶어 구글신에 검색을 해보았는데&lt;br&gt;
+예제 코드를 적용하기만 하면 line을 찾을 수 없다며 뜨는 undefined 에러… 😥&lt;br&gt;
+왜 그런지 콘솔을 찍어가며 확인해 보니 chart.js 3 버전에서 line 프로토타입을 찾아내는 경로가 조금 달라졌다.&lt;/p&gt;
+&lt;h3 id=&quot;소스코드&quot; style=&quot;position:relative;&quot;&gt;소스코드&lt;a href=&quot;#%EC%86%8C%EC%8A%A4%EC%BD%94%EB%93%9C&quot; aria-label=&quot;소스코드 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;chart.js 임포트&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  Chart &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; ChartJS&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  CategoryScale&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  LinearScale&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  PointElement&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  LineElement&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  Title&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  Tooltip&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  Legend&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;chart.js&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; Line &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;react-chartjs-2&quot;&lt;/span&gt;
+
+ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;register&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+  CategoryScale&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  LinearScale&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  PointElement&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  LineElement&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  Title&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  Tooltip&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  Legend
+&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://react-chartjs-2.netlify.app/examples/line-chart&quot;&gt;react-chartjs 공식문서&lt;/a&gt;에 나와있는대로 원하는 차트 컴포넌트를 사용할 때는 리액트에서 불러오는 방식대로 해당 라이브러리를 임포트한다.&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;ChartJS.registry 하위를 따라 line 프로토타입 찾기&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; draw &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;registry&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;controllers&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;items&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;line&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;draw
+
+ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;registry&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;controllers&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;items&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;line&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;draw&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; chart &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;chart
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; ctx &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; chart&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ctx
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; _stroke &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;stroke
+  ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;stroke&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;shadowColor &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;strokeStyle
+    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;shadowBlur &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;
+    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;shadowOffsetX &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;shadowOffsetY &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;_stroke&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; arguments&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;restore&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; arguments&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;stroke &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; _stroke
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 입문 수업 6 ~ 8]]></title><description><![CDATA[도커 컨테이너 안에 있는 파일 조작하기  도커를 이용해 웹서버를 띄웠다. 그리고 이제 이 내용물을 다르게 바꿔보자. 도커에 올라가있는 컨테이너 ws…]]></description><link>https://ksy8230.github.io/todayILearned/docker/docker2/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/docker/docker2/</guid><pubDate>Fri, 07 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;도커-컨테이너-안에-있는-파일-조작하기&quot; style=&quot;position:relative;&quot;&gt;도커 컨테이너 안에 있는 파일 조작하기&lt;a href=&quot;#%EB%8F%84%EC%BB%A4-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%EC%95%88%EC%97%90-%EC%9E%88%EB%8A%94-%ED%8C%8C%EC%9D%BC-%EC%A1%B0%EC%9E%91%ED%95%98%EA%B8%B0&quot; aria-label=&quot;도커 컨테이너 안에 있는 파일 조작하기 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
@@ -3157,60 +3210,45 @@ url이 마치 이동을 하는 것 같지만 실제로 한 화면 안에서 다�
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&quot;&gt;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=0kQC19w0gTI&quot;&gt;https://www.youtube.com/watch?v=0kQC19w0gTI&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[react-chartjs 에서 라인에 glow 효과 주는 법]]></title><description><![CDATA[개발 환경 chart.js 3.7 버전 react-chartjs-2 4.0 버전 환경 리액트에서 그래프 작업을 할 때 주로 chart.js 라이브러리를 사용하고 있다. 선 그래프 작업을 할 때 라인에 glow…]]></description><link>https://ksy8230.github.io/todayILearned/reactjs/chartjs1/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/reactjs/chartjs1/</guid><pubDate>Fri, 07 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;개발-환경&quot; style=&quot;position:relative;&quot;&gt;개발 환경&lt;a href=&quot;#%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD&quot; aria-label=&quot;개발 환경 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;chart.js 3.7 버전&lt;br&gt;
-react-chartjs-2 4.0 버전 환경&lt;/p&gt;
-&lt;p&gt;리액트에서 그래프 작업을 할 때 주로 chart.js 라이브러리를 사용하고 있다.&lt;br&gt;
-선 그래프 작업을 할 때 라인에 glow 효과를 주고 싶어 구글신에 검색을 해보았는데&lt;br&gt;
-예제 코드를 적용하기만 하면 line을 찾을 수 없다며 뜨는 undefined 에러… 😥&lt;br&gt;
-왜 그런지 콘솔을 찍어가며 확인해 보니 chart.js 3 버전에서 line 프로토타입을 찾아내는 경로가 조금 달라졌다.&lt;/p&gt;
-&lt;h3 id=&quot;소스코드&quot; style=&quot;position:relative;&quot;&gt;소스코드&lt;a href=&quot;#%EC%86%8C%EC%8A%A4%EC%BD%94%EB%93%9C&quot; aria-label=&quot;소스코드 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[vscode에서 crlf 파일들을 일괄로 lf파일로 변환하는 법]]></title><description><![CDATA[파일 형상 관리를 git을 이용해 하고 있다. 그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf…]]></description><link>https://ksy8230.github.io/todayILearned/bugLists/vscode_setting/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/bugLists/vscode_setting/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;파일 형상 관리를 git을 이용해 하고 있다.&lt;br&gt;
+그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf로 변환된 채로 코드상 빨간 줄을 뿜고 있는데… 이걸 파일 하나하나 바꿔주다보니 갑갑해서 일괄 수정할 수 있는 방법을 찾아냈다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 11.39240506329114%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAe0lEQVQI12OQ1Lb4D8GWUGyBRmMXl4KypXQs/8voWv0XUTP57x2V+p+Bq+Hsf+mui//lui/+l+y48J+n8dx/nclX/qv1X/4v3Hr+v2DL+f8qfZf+CzSf+y/QAuHrTr7yX3vS5f+y3Rf/czee+8/ffO4/W8P5/zZd+/4DAL+gTvIIXhXiAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;lf&quot;
+        title=&quot;lf&quot;
+        src=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png&quot;
+        srcset=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/c26ae/lf.png 158w,
+/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/6bdcf/lf.png 315w,
+/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png 630w,
+/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png 772w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;chart.js 임포트&lt;/li&gt;
+&lt;li&gt;터미널창에 아래 명령어 수행&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  Chart &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; ChartJS&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  CategoryScale&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  LinearScale&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  PointElement&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  LineElement&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  Title&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  Tooltip&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  Legend&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;chart.js&quot;&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; Line &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;react-chartjs-2&quot;&lt;/span&gt;
-
-ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;register&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
-  CategoryScale&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  LinearScale&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  PointElement&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  LineElement&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  Title&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  Tooltip&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  Legend
-&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;https://react-chartjs-2.netlify.app/examples/line-chart&quot;&gt;react-chartjs 공식문서&lt;/a&gt;에 나와있는대로 원하는 차트 컴포넌트를 사용할 때는 리액트에서 불러오는 방식대로 해당 라이브러리를 임포트한다.&lt;/p&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;ChartJS.registry 하위를 따라 line 프로토타입 찾기&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; draw &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;registry&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;controllers&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;items&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;line&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;draw
-
-ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;registry&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;controllers&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;items&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;line&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;draw&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; chart &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;chart
-  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; ctx &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; chart&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ctx
-  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; _stroke &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;stroke
-  ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;stroke&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;shadowColor &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;strokeStyle
-    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;shadowBlur &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;
-    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;shadowOffsetX &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
-    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;shadowOffsetY &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;
-    &lt;span class=&quot;token function&quot;&gt;_stroke&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; arguments&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;restore&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;token function&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; arguments&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-  ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;stroke &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; _stroke
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 입문 수업 1 ~ 5]]></title><description><![CDATA[…]]></description><link>https://ksy8230.github.io/todayILearned/docker/docker1/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/docker/docker1/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작년부터 궁금했던 도커라는 녀석을 공부해 보기로 했다.&lt;br&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;git config core&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;autocrlf &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
+git rm &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;cached &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;r &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 입문 수업 1 ~ 5]]></title><description><![CDATA[…]]></description><link>https://ksy8230.github.io/todayILearned/docker/docker1/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/docker/docker1/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작년부터 궁금했던 도커라는 녀석을 공부해 보기로 했다.&lt;br&gt;
 무작정 유튜브에 도커를 쳐보니 생활코딩 유튜브 채널에 도커 입문용 강의가 있더라… 감사합니다!&lt;/p&gt;
 &lt;h3 id=&quot;도커를-사용하게-된-배경&quot; style=&quot;position:relative;&quot;&gt;도커를 사용하게 된 배경&lt;a href=&quot;#%EB%8F%84%EC%BB%A4%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B2%8C-%EB%90%9C-%EB%B0%B0%EA%B2%BD&quot; aria-label=&quot;도커를 사용하게 된 배경 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;어떠한 어플리케이션을 개발할 때 웹서버와 데이터베이스가 필요하다. 그런데 만일 웹서버에 맞는 운영체제와 데이터베이스에 맞는 운영체제가 다른 경우 가장 이상적인 그림은 아래와 같을 것이다.&lt;/p&gt;
@@ -3555,45 +3593,7 @@ ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;registry&lt
 &lt;h3 id=&quot;도움-받은-자료들&quot; style=&quot;position:relative;&quot;&gt;도움 받은 자료들&lt;a href=&quot;#%EB%8F%84%EC%9B%80-%EB%B0%9B%EC%9D%80-%EC%9E%90%EB%A3%8C%EB%93%A4&quot; aria-label=&quot;도움 받은 자료들 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&quot;&gt;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[vscode에서 crlf 파일들을 일괄로 lf파일로 변환하는 법]]></title><description><![CDATA[파일 형상 관리를 git을 이용해 하고 있다. 그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf…]]></description><link>https://ksy8230.github.io/todayILearned/bugLists/vscode_setting/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/bugLists/vscode_setting/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;파일 형상 관리를 git을 이용해 하고 있다.&lt;br&gt;
-그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf로 변환된 채로 코드상 빨간 줄을 뿜고 있는데… 이걸 파일 하나하나 바꿔주다보니 갑갑해서 일괄 수정할 수 있는 방법을 찾아냈다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 11.39240506329114%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAe0lEQVQI12OQ1Lb4D8GWUGyBRmMXl4KypXQs/8voWv0XUTP57x2V+p+Bq+Hsf+mui//lui/+l+y48J+n8dx/nclX/qv1X/4v3Hr+v2DL+f8qfZf+CzSf+y/QAuHrTr7yX3vS5f+y3Rf/czee+8/ffO4/W8P5/zZd+/4DAL+gTvIIXhXiAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;lf&quot;
-        title=&quot;lf&quot;
-        src=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png&quot;
-        srcset=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/c26ae/lf.png 158w,
-/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/6bdcf/lf.png 315w,
-/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png 630w,
-/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png 772w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;터미널창에 아래 명령어 수행&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;git config core&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;autocrlf &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
-git rm &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;cached &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;r &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
-git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Javascript 비동기 작동 원리]]></title><description><![CDATA[…]]></description><link>https://ksy8230.github.io/todayILearned/javascript/how_it_works/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/javascript/how_it_works/</guid><pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;자바스크립트의 작동 원리에 대해 조금 더 깊은 학습이 필요하다 생각되어 글로 정리해 보았다.&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Javascript 비동기 작동 원리]]></title><description><![CDATA[…]]></description><link>https://ksy8230.github.io/todayILearned/javascript/how_it_works/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/javascript/how_it_works/</guid><pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;자바스크립트의 작동 원리에 대해 조금 더 깊은 학습이 필요하다 생각되어 글로 정리해 보았다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;자바스크립트는 싱글스레드로 동작하는 언어&lt;/p&gt;
 &lt;/blockquote&gt;
