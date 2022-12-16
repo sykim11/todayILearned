@@ -184,10 +184,11 @@ test.sy.play();
 <details>
     <summary> 정답 </summary>
 <!-- empty line -->
-    this는 호출한 당시의 주체를 가리키기 때문에 roto를 가리키고 roto 안에 name 값이 없기 때문에 undefined test2 play! 가 찍힌다
+    this는 호출한 당시의 주체를 가리키기 때문에 sy를 가리키고 roto 안에 name 값이 없기 때문에 undefined test2 play! 가 찍힌다
 </details>
 <!-- empty line -->
 
+---
 
 ```js{numberLines: true}
 let test = {
@@ -209,6 +210,7 @@ test.sy.play();
 </details>
 <!-- empty line -->
 
+---
 
 ```js{numberLines: true}
 function makeUser() {
@@ -229,6 +231,7 @@ alert(user.ref.name);
 </details>
 <!-- empty line -->
 
+---
 
 ```js{numberLines: true}
 function makeUser() {
@@ -251,6 +254,7 @@ alert(user.ref().name);
 </details>
 <!-- empty line -->
 
+---
 
 ```js{numberLines: true}
 function RockBand(members) {
@@ -282,7 +286,7 @@ theOralCigarettes.perform();
 </details>
 <!-- empty line -->
 
-
+---
 
 ```js{numberLines: true}
 function RockBand(members) {
@@ -316,6 +320,7 @@ theOralCigarettes.perform();
 </details>
 <!-- empty line -->
 
+---
 
 ```js{numberLines: true}
 function RockBand(members) {
