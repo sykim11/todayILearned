@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[This blog is powered by gatsby]]></description><link>https://ksy8230.github.io/todayILearned</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 17 Dec 2022 00:25:54 GMT</lastBuildDate><item><title><![CDATA[웹 성능 개선 지표들]]></title><description><![CDATA[웹반응성 로딩 성능 개선 실험적 환경 속 테스트
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[This blog is powered by gatsby]]></description><link>https://ksy8230.github.io/todayILearned</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 17 Dec 2022 00:31:53 GMT</lastBuildDate><item><title><![CDATA[웹 성능 개선 지표들]]></title><description><![CDATA[웹반응성 로딩 성능 개선 실험적 환경 속 테스트
 리얼 유저 환경 속 테스트 성능 개선 가이드 로드 이후 인터렉션(상호작용)에 집중 사용자인식 연구 결과
 사용자 입력 이후 100ms 이내 반응하는게 목표 웹 반응성 지표들
 TBT INP CLS…]]></description><link>https://ksy8230.github.io/todayILearned/base/web-performance/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/base/web-performance/</guid><pubDate>Mon, 12 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;웹반응성&lt;/p&gt;
@@ -2266,7 +2266,7 @@ container runtime: 실제 컨테이너를 실행하는 컨테이너 실행 환�
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/652edc1768a7c11ec41a81de7cf1d252/f8402/image1.jpg&quot;
+    href=&quot;/todayILearned/static/652edc1768a7c11ec41a81de7cf1d252/f8402/image1.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2279,12 +2279,12 @@ container runtime: 실제 컨테이너를 실행하는 컨테이너 실행 환�
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;웹팩&quot;
         title=&quot;웹팩&quot;
-        src=&quot;/static/652edc1768a7c11ec41a81de7cf1d252/828fb/image1.jpg&quot;
-        srcset=&quot;/static/652edc1768a7c11ec41a81de7cf1d252/ff44c/image1.jpg 158w,
-/static/652edc1768a7c11ec41a81de7cf1d252/a6688/image1.jpg 315w,
-/static/652edc1768a7c11ec41a81de7cf1d252/828fb/image1.jpg 630w,
-/static/652edc1768a7c11ec41a81de7cf1d252/0ede0/image1.jpg 945w,
-/static/652edc1768a7c11ec41a81de7cf1d252/f8402/image1.jpg 1066w&quot;
+        src=&quot;/todayILearned/static/652edc1768a7c11ec41a81de7cf1d252/828fb/image1.jpg&quot;
+        srcset=&quot;/todayILearned/static/652edc1768a7c11ec41a81de7cf1d252/ff44c/image1.jpg 158w,
+/todayILearned/static/652edc1768a7c11ec41a81de7cf1d252/a6688/image1.jpg 315w,
+/todayILearned/static/652edc1768a7c11ec41a81de7cf1d252/828fb/image1.jpg 630w,
+/todayILearned/static/652edc1768a7c11ec41a81de7cf1d252/0ede0/image1.jpg 945w,
+/todayILearned/static/652edc1768a7c11ec41a81de7cf1d252/f8402/image1.jpg 1066w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2330,7 +2330,7 @@ container runtime: 실제 컨테이너를 실행하는 컨테이너 실행 환�
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/570dec95b68427bd6a6bb7634d9ce6bf/e8a7f/image1.jpg&quot;
+    href=&quot;/todayILearned/static/570dec95b68427bd6a6bb7634d9ce6bf/e8a7f/image1.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2343,12 +2343,12 @@ container runtime: 실제 컨테이너를 실행하는 컨테이너 실행 환�
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;도커&quot;
         title=&quot;도커&quot;
-        src=&quot;/static/570dec95b68427bd6a6bb7634d9ce6bf/828fb/image1.jpg&quot;
-        srcset=&quot;/static/570dec95b68427bd6a6bb7634d9ce6bf/ff44c/image1.jpg 158w,
-/static/570dec95b68427bd6a6bb7634d9ce6bf/a6688/image1.jpg 315w,
-/static/570dec95b68427bd6a6bb7634d9ce6bf/828fb/image1.jpg 630w,
-/static/570dec95b68427bd6a6bb7634d9ce6bf/0ede0/image1.jpg 945w,
-/static/570dec95b68427bd6a6bb7634d9ce6bf/e8a7f/image1.jpg 1138w&quot;
+        src=&quot;/todayILearned/static/570dec95b68427bd6a6bb7634d9ce6bf/828fb/image1.jpg&quot;
+        srcset=&quot;/todayILearned/static/570dec95b68427bd6a6bb7634d9ce6bf/ff44c/image1.jpg 158w,
+/todayILearned/static/570dec95b68427bd6a6bb7634d9ce6bf/a6688/image1.jpg 315w,
+/todayILearned/static/570dec95b68427bd6a6bb7634d9ce6bf/828fb/image1.jpg 630w,
+/todayILearned/static/570dec95b68427bd6a6bb7634d9ce6bf/0ede0/image1.jpg 945w,
+/todayILearned/static/570dec95b68427bd6a6bb7634d9ce6bf/e8a7f/image1.jpg 1138w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2411,7 +2411,7 @@ wordpress:latest&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/9366721452576d77bcbd07ca5e9cd8b1/b0abb/image2.jpg&quot;
+    href=&quot;/todayILearned/static/9366721452576d77bcbd07ca5e9cd8b1/b0abb/image2.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2424,11 +2424,11 @@ wordpress:latest&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;도커&quot;
         title=&quot;도커&quot;
-        src=&quot;/static/9366721452576d77bcbd07ca5e9cd8b1/828fb/image2.jpg&quot;
-        srcset=&quot;/static/9366721452576d77bcbd07ca5e9cd8b1/ff44c/image2.jpg 158w,
-/static/9366721452576d77bcbd07ca5e9cd8b1/a6688/image2.jpg 315w,
-/static/9366721452576d77bcbd07ca5e9cd8b1/828fb/image2.jpg 630w,
-/static/9366721452576d77bcbd07ca5e9cd8b1/b0abb/image2.jpg 717w&quot;
+        src=&quot;/todayILearned/static/9366721452576d77bcbd07ca5e9cd8b1/828fb/image2.jpg&quot;
+        srcset=&quot;/todayILearned/static/9366721452576d77bcbd07ca5e9cd8b1/ff44c/image2.jpg 158w,
+/todayILearned/static/9366721452576d77bcbd07ca5e9cd8b1/a6688/image2.jpg 315w,
+/todayILearned/static/9366721452576d77bcbd07ca5e9cd8b1/828fb/image2.jpg 630w,
+/todayILearned/static/9366721452576d77bcbd07ca5e9cd8b1/b0abb/image2.jpg 717w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2479,7 +2479,7 @@ services:
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/7ac2dcf05274afca744cc6e8c5f63949/29d31/image3.jpg&quot;
+    href=&quot;/todayILearned/static/7ac2dcf05274afca744cc6e8c5f63949/29d31/image3.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2492,11 +2492,11 @@ services:
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;도커&quot;
         title=&quot;도커&quot;
-        src=&quot;/static/7ac2dcf05274afca744cc6e8c5f63949/828fb/image3.jpg&quot;
-        srcset=&quot;/static/7ac2dcf05274afca744cc6e8c5f63949/ff44c/image3.jpg 158w,
-/static/7ac2dcf05274afca744cc6e8c5f63949/a6688/image3.jpg 315w,
-/static/7ac2dcf05274afca744cc6e8c5f63949/828fb/image3.jpg 630w,
-/static/7ac2dcf05274afca744cc6e8c5f63949/29d31/image3.jpg 700w&quot;
+        src=&quot;/todayILearned/static/7ac2dcf05274afca744cc6e8c5f63949/828fb/image3.jpg&quot;
+        srcset=&quot;/todayILearned/static/7ac2dcf05274afca744cc6e8c5f63949/ff44c/image3.jpg 158w,
+/todayILearned/static/7ac2dcf05274afca744cc6e8c5f63949/a6688/image3.jpg 315w,
+/todayILearned/static/7ac2dcf05274afca744cc6e8c5f63949/828fb/image3.jpg 630w,
+/todayILearned/static/7ac2dcf05274afca744cc6e8c5f63949/29d31/image3.jpg 700w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2540,7 +2540,7 @@ services:
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/88c579e2db04f4e5f530f4f29707032e/2ee51/gitlab_cicd_image1.jpg&quot;
+    href=&quot;/todayILearned/static/88c579e2db04f4e5f530f4f29707032e/2ee51/gitlab_cicd_image1.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2553,12 +2553,12 @@ services:
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;gitlab cicd image1&quot;
         title=&quot;gitlab cicd image1&quot;
-        src=&quot;/static/88c579e2db04f4e5f530f4f29707032e/828fb/gitlab_cicd_image1.jpg&quot;
-        srcset=&quot;/static/88c579e2db04f4e5f530f4f29707032e/ff44c/gitlab_cicd_image1.jpg 158w,
-/static/88c579e2db04f4e5f530f4f29707032e/a6688/gitlab_cicd_image1.jpg 315w,
-/static/88c579e2db04f4e5f530f4f29707032e/828fb/gitlab_cicd_image1.jpg 630w,
-/static/88c579e2db04f4e5f530f4f29707032e/0ede0/gitlab_cicd_image1.jpg 945w,
-/static/88c579e2db04f4e5f530f4f29707032e/2ee51/gitlab_cicd_image1.jpg 1043w&quot;
+        src=&quot;/todayILearned/static/88c579e2db04f4e5f530f4f29707032e/828fb/gitlab_cicd_image1.jpg&quot;
+        srcset=&quot;/todayILearned/static/88c579e2db04f4e5f530f4f29707032e/ff44c/gitlab_cicd_image1.jpg 158w,
+/todayILearned/static/88c579e2db04f4e5f530f4f29707032e/a6688/gitlab_cicd_image1.jpg 315w,
+/todayILearned/static/88c579e2db04f4e5f530f4f29707032e/828fb/gitlab_cicd_image1.jpg 630w,
+/todayILearned/static/88c579e2db04f4e5f530f4f29707032e/0ede0/gitlab_cicd_image1.jpg 945w,
+/todayILearned/static/88c579e2db04f4e5f530f4f29707032e/2ee51/gitlab_cicd_image1.jpg 1043w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2699,7 +2699,7 @@ stage2에서 리액트 build 폴더를 nginx html 폴더에 복사하여 넣어�
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/aa3e3ad9278faaafdd77898c71baca7a/15ec7/dockerFileSystem.jpg&quot;
+    href=&quot;/todayILearned/static/aa3e3ad9278faaafdd77898c71baca7a/15ec7/dockerFileSystem.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2712,11 +2712,11 @@ stage2에서 리액트 build 폴더를 nginx html 폴더에 복사하여 넣어�
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;도커&quot;
         title=&quot;도커&quot;
-        src=&quot;/static/aa3e3ad9278faaafdd77898c71baca7a/828fb/dockerFileSystem.jpg&quot;
-        srcset=&quot;/static/aa3e3ad9278faaafdd77898c71baca7a/ff44c/dockerFileSystem.jpg 158w,
-/static/aa3e3ad9278faaafdd77898c71baca7a/a6688/dockerFileSystem.jpg 315w,
-/static/aa3e3ad9278faaafdd77898c71baca7a/828fb/dockerFileSystem.jpg 630w,
-/static/aa3e3ad9278faaafdd77898c71baca7a/15ec7/dockerFileSystem.jpg 690w&quot;
+        src=&quot;/todayILearned/static/aa3e3ad9278faaafdd77898c71baca7a/828fb/dockerFileSystem.jpg&quot;
+        srcset=&quot;/todayILearned/static/aa3e3ad9278faaafdd77898c71baca7a/ff44c/dockerFileSystem.jpg 158w,
+/todayILearned/static/aa3e3ad9278faaafdd77898c71baca7a/a6688/dockerFileSystem.jpg 315w,
+/todayILearned/static/aa3e3ad9278faaafdd77898c71baca7a/828fb/dockerFileSystem.jpg 630w,
+/todayILearned/static/aa3e3ad9278faaafdd77898c71baca7a/15ec7/dockerFileSystem.jpg 690w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2773,7 +2773,7 @@ url이 마치 이동을 하는 것 같지만 실제로 한 화면 안에서 다�
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/7cffaf691a2ba9187006a35b62e576eb/7bf67/docker16.jpg&quot;
+    href=&quot;/todayILearned/static/7cffaf691a2ba9187006a35b62e576eb/7bf67/docker16.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2786,11 +2786,11 @@ url이 마치 이동을 하는 것 같지만 실제로 한 화면 안에서 다�
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;도커&quot;
         title=&quot;도커&quot;
-        src=&quot;/static/7cffaf691a2ba9187006a35b62e576eb/828fb/docker16.jpg&quot;
-        srcset=&quot;/static/7cffaf691a2ba9187006a35b62e576eb/ff44c/docker16.jpg 158w,
-/static/7cffaf691a2ba9187006a35b62e576eb/a6688/docker16.jpg 315w,
-/static/7cffaf691a2ba9187006a35b62e576eb/828fb/docker16.jpg 630w,
-/static/7cffaf691a2ba9187006a35b62e576eb/7bf67/docker16.jpg 680w&quot;
+        src=&quot;/todayILearned/static/7cffaf691a2ba9187006a35b62e576eb/828fb/docker16.jpg&quot;
+        srcset=&quot;/todayILearned/static/7cffaf691a2ba9187006a35b62e576eb/ff44c/docker16.jpg 158w,
+/todayILearned/static/7cffaf691a2ba9187006a35b62e576eb/a6688/docker16.jpg 315w,
+/todayILearned/static/7cffaf691a2ba9187006a35b62e576eb/828fb/docker16.jpg 630w,
+/todayILearned/static/7cffaf691a2ba9187006a35b62e576eb/7bf67/docker16.jpg 680w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2819,7 +2819,7 @@ url이 마치 이동을 하는 것 같지만 실제로 한 화면 안에서 다�
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/aa3350c742a5bbc423e69fab16ea2071/b040c/docker17.jpg&quot;
+    href=&quot;/todayILearned/static/aa3350c742a5bbc423e69fab16ea2071/b040c/docker17.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2832,11 +2832,11 @@ url이 마치 이동을 하는 것 같지만 실제로 한 화면 안에서 다�
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;도커&quot;
         title=&quot;도커&quot;
-        src=&quot;/static/aa3350c742a5bbc423e69fab16ea2071/828fb/docker17.jpg&quot;
-        srcset=&quot;/static/aa3350c742a5bbc423e69fab16ea2071/ff44c/docker17.jpg 158w,
-/static/aa3350c742a5bbc423e69fab16ea2071/a6688/docker17.jpg 315w,
-/static/aa3350c742a5bbc423e69fab16ea2071/828fb/docker17.jpg 630w,
-/static/aa3350c742a5bbc423e69fab16ea2071/b040c/docker17.jpg 844w&quot;
+        src=&quot;/todayILearned/static/aa3350c742a5bbc423e69fab16ea2071/828fb/docker17.jpg&quot;
+        srcset=&quot;/todayILearned/static/aa3350c742a5bbc423e69fab16ea2071/ff44c/docker17.jpg 158w,
+/todayILearned/static/aa3350c742a5bbc423e69fab16ea2071/a6688/docker17.jpg 315w,
+/todayILearned/static/aa3350c742a5bbc423e69fab16ea2071/828fb/docker17.jpg 630w,
+/todayILearned/static/aa3350c742a5bbc423e69fab16ea2071/b040c/docker17.jpg 844w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2873,7 +2873,7 @@ url이 마치 이동을 하는 것 같지만 실제로 한 화면 안에서 다�
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/c30dd07b76c96d5bf696c1c6bacb38ea/c64a7/docker18.jpg&quot;
+    href=&quot;/todayILearned/static/c30dd07b76c96d5bf696c1c6bacb38ea/c64a7/docker18.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2886,10 +2886,10 @@ url이 마치 이동을 하는 것 같지만 실제로 한 화면 안에서 다�
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;도커&quot;
         title=&quot;도커&quot;
-        src=&quot;/static/c30dd07b76c96d5bf696c1c6bacb38ea/c64a7/docker18.jpg&quot;
-        srcset=&quot;/static/c30dd07b76c96d5bf696c1c6bacb38ea/ff44c/docker18.jpg 158w,
-/static/c30dd07b76c96d5bf696c1c6bacb38ea/a6688/docker18.jpg 315w,
-/static/c30dd07b76c96d5bf696c1c6bacb38ea/c64a7/docker18.jpg 528w&quot;
+        src=&quot;/todayILearned/static/c30dd07b76c96d5bf696c1c6bacb38ea/c64a7/docker18.jpg&quot;
+        srcset=&quot;/todayILearned/static/c30dd07b76c96d5bf696c1c6bacb38ea/ff44c/docker18.jpg 158w,
+/todayILearned/static/c30dd07b76c96d5bf696c1c6bacb38ea/a6688/docker18.jpg 315w,
+/todayILearned/static/c30dd07b76c96d5bf696c1c6bacb38ea/c64a7/docker18.jpg 528w&quot;
         sizes=&quot;(max-width: 528px) 100vw, 528px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2932,230 +2932,6 @@ url이 마치 이동을 하는 것 같지만 실제로 한 화면 안에서 다�
 &lt;p&gt;위 방법을 이용하면 create-react-app 을 이용해 리액트 빌드 파일을 도커 컨테이너에서 실행한 파이썬 서버에 올려볼 수도 있겠다. 꼭 해보자.&lt;/p&gt;
 &lt;h3 id=&quot;출처&quot; style=&quot;position:relative;&quot;&gt;출처&lt;a href=&quot;#%EC%B6%9C%EC%B2%98&quot; aria-label=&quot;출처 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=0kQC19w0gTI&quot;&gt;https://www.youtube.com/watch?v=0kQC19w0gTI&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 입문 수업 6 ~ 8]]></title><description><![CDATA[도커 컨테이너 안에 있는 파일 조작하기  도커를 이용해 웹서버를 띄웠다. 그리고 이제 이 내용물을 다르게 바꿔보자. 도커에 올라가있는 컨테이너 ws…]]></description><link>https://ksy8230.github.io/todayILearned/docker/docker2/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/docker/docker2/</guid><pubDate>Fri, 07 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;도커-컨테이너-안에-있는-파일-조작하기&quot; style=&quot;position:relative;&quot;&gt;도커 컨테이너 안에 있는 파일 조작하기&lt;a href=&quot;#%EB%8F%84%EC%BB%A4-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%EC%95%88%EC%97%90-%EC%9E%88%EB%8A%94-%ED%8C%8C%EC%9D%BC-%EC%A1%B0%EC%9E%91%ED%95%98%EA%B8%B0&quot; aria-label=&quot;도커 컨테이너 안에 있는 파일 조작하기 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/500deb1b6812c353fa878becd1bad6a9/fee13/docker10.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 37.34177215189873%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3qAH/8QAFRABAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQEAAQUCj//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAABD/2gAIAQEABj8Cf//EABcQAAMBAAAAAAAAAAAAAAAAAAABEYH/2gAIAQEAAT8hWiIiP//aAAwDAQACAAMAAAAQAA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAZEAEAAgMAAAAAAAAAAAAAAAABAGERMVH/2gAIAQEAAT8QA2uXZQSgn//Z&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;도커&quot;
-        title=&quot;도커&quot;
-        src=&quot;/static/500deb1b6812c353fa878becd1bad6a9/828fb/docker10.jpg&quot;
-        srcset=&quot;/static/500deb1b6812c353fa878becd1bad6a9/ff44c/docker10.jpg 158w,
-/static/500deb1b6812c353fa878becd1bad6a9/a6688/docker10.jpg 315w,
-/static/500deb1b6812c353fa878becd1bad6a9/828fb/docker10.jpg 630w,
-/static/500deb1b6812c353fa878becd1bad6a9/fee13/docker10.jpg 726w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;도커를 이용해 웹서버를 띄웠다.&lt;br&gt;
-그리고 이제 이 내용물을 다르게 바꿔보자.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker exec ws3 {명령어}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;도커에 올라가있는 컨테이너 ws3(사용자가 명명한 컨테이너 이름) 실행하면 컨테이너 내부를 파일 조회를 할 수 있다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 287px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/7fe3f2aceeb6192ed312e0f3daad0253/b3e6c/docker11.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 83.54430379746836%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAARABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAABxpSAXAAf/8QAFxABAAMAAAAAAAAAAAAAAAAAEAECEf/aAAgBAQABBQLWWz//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAUEAEAAAAAAAAAAAAAAAAAAAAw/9oACAEBAAY/Ah//xAAaEAABBQEAAAAAAAAAAAAAAAABABARITGh/9oACAEBAAE/IaTJ4ib3iK2+g/8A/9oADAMBAAIAAwAAABCHAAD/xAAWEQEBAQAAAAAAAAAAAAAAAAABESD/2gAIAQMBAT8QWkx//8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPxAf/8QAHRABAAEDBQAAAAAAAAAAAAAAAREAIaEQIDFRcf/aAAgBAQABPxC+EJOt80LKR4KSvM7PE1//2Q==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;도커&quot;
-        title=&quot;도커&quot;
-        src=&quot;/static/7fe3f2aceeb6192ed312e0f3daad0253/b3e6c/docker11.jpg&quot;
-        srcset=&quot;/static/7fe3f2aceeb6192ed312e0f3daad0253/ff44c/docker11.jpg 158w,
-/static/7fe3f2aceeb6192ed312e0f3daad0253/b3e6c/docker11.jpg 287w&quot;
-        sizes=&quot;(max-width: 287px) 100vw, 287px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;그런데 매번 컨테이너 안으로 들어가는 명령어를 치기 힘드니 아래와 같이 컨테이너 내부의 쉘을 유지시켜주는 명령어를 치면 # 모양이 뜨면서 이 뒤부터 내리는 명령은 ws3 컨테이너 내부 대상으로 내리는 실행 명령어가 된다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker exec -it ws3 /bin/sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-&lt;p&gt;쉘 : 사용자가 입력한 명령를 쉘 프로그램이 받아서 그것을 운영체제에게 전달해주는 창구 역할을 한다&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/9f8e3c7381fb576833021514f1160d18/49e4f/docker12.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 17.088607594936708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAADABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAABw4AH/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFRABAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQEAAT8hr//aAAwDAQACAAMAAAAQcA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAXEAEAAwAAAAAAAAAAAAAAAAABABAh/9oACAEBAAE/EFLrGv/Z&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;도커&quot;
-        title=&quot;도커&quot;
-        src=&quot;/static/9f8e3c7381fb576833021514f1160d18/828fb/docker12.jpg&quot;
-        srcset=&quot;/static/9f8e3c7381fb576833021514f1160d18/ff44c/docker12.jpg 158w,
-/static/9f8e3c7381fb576833021514f1160d18/a6688/docker12.jpg 315w,
-/static/9f8e3c7381fb576833021514f1160d18/828fb/docker12.jpg 630w,
-/static/9f8e3c7381fb576833021514f1160d18/49e4f/docker12.jpg 836w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;index.html 파일이 있는 경로로 이동을 한다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# cd /usr/local/apache2/htdocs&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;apt 업데이트를 하고 html을 편집할 수 있는 nano라는 프로그램을 설치한 후 index.html을 열면 내용 수정이 가능하다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# apt update
-# apt install nano
-# nano index.html&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 421px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a3a1adb0acd20361260ce5ddfaeec674/5c51b/docker14.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 49.36708860759494%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe1WghY//8QAFhABAQEAAAAAAAAAAAAAAAAAABEg/9oACAEBAAEFAkTH/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFhAAAwAAAAAAAAAAAAAAAAAAASAy/9oACAEBAAY/ApLf/8QAGRAAAwADAAAAAAAAAAAAAAAAAAERICHR/9oACAEBAAE/Ia5yNo2Th//aAAwDAQACAAMAAAAQQw//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAbEAEBAAEFAAAAAAAAAAAAAAABEUEAIDGRof/aAAgBAQABPxBdIKYy90TpGcIU62//2Q==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;도커&quot;
-        title=&quot;도커&quot;
-        src=&quot;/static/a3a1adb0acd20361260ce5ddfaeec674/5c51b/docker14.jpg&quot;
-        srcset=&quot;/static/a3a1adb0acd20361260ce5ddfaeec674/ff44c/docker14.jpg 158w,
-/static/a3a1adb0acd20361260ce5ddfaeec674/a6688/docker14.jpg 315w,
-/static/a3a1adb0acd20361260ce5ddfaeec674/5c51b/docker14.jpg 421w&quot;
-        sizes=&quot;(max-width: 421px) 100vw, 421px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&quot;호스트-파일-시스템과-컨테이너-파일-시스템-연결&quot; style=&quot;position:relative;&quot;&gt;호스트 파일 시스템과 컨테이너 파일 시스템 연결&lt;a href=&quot;#%ED%98%B8%EC%8A%A4%ED%8A%B8-%ED%8C%8C%EC%9D%BC-%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%ED%8C%8C%EC%9D%BC-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%97%B0%EA%B2%B0&quot; aria-label=&quot;호스트 파일 시스템과 컨테이너 파일 시스템 연결 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;열심히 내용물을 수정한 파일이 도커 컨테이너에 반영이 되었다.&lt;br&gt;
-하지만 개발자의 실수로 컨테이너를 날려버리면 열심히 수정한 노력이 물거품이 될 것이다… 그런 일을 미연에 방지하기 위해 파일 작업은 호스트 파일 시스템에서 하고 호스트에서 수정이 되면 컨테이너 파일 시스템에서 자동으로 반영이 되는 구조를 가져가는 편이 더 안전할 것이다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/431b6ec589dbcdf801dcf29f7d7ee3c9/5510b/docker13.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 48.734177215189874%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQCBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe0lwXIx/8QAGhAAAgIDAAAAAAAAAAAAAAAAAREAAhAhMf/aAAgBAQABBQKre48Ewc//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAaEAABBQEAAAAAAAAAAAAAAAABABESIDGB/9oACAEBAAY/AjLi0NX/xAAbEAACAgMBAAAAAAAAAAAAAAABEQAxECFBUf/aAAgBAQABPyEtwE+oSzqUu4s+wzs1DKbn/9oADAMBAAIAAwAAABAjD//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EAB0QAQACAgIDAAAAAAAAAAAAAAEAESFhMVFBcZH/2gAIAQEAAT8QvoeIWxuHqIdhyw3fFeJTsZsfYXAtGKZS+5//2Q==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;도커&quot;
-        title=&quot;도커&quot;
-        src=&quot;/static/431b6ec589dbcdf801dcf29f7d7ee3c9/828fb/docker13.jpg&quot;
-        srcset=&quot;/static/431b6ec589dbcdf801dcf29f7d7ee3c9/ff44c/docker13.jpg 158w,
-/static/431b6ec589dbcdf801dcf29f7d7ee3c9/a6688/docker13.jpg 315w,
-/static/431b6ec589dbcdf801dcf29f7d7ee3c9/828fb/docker13.jpg 630w,
-/static/431b6ec589dbcdf801dcf29f7d7ee3c9/0ede0/docker13.jpg 945w,
-/static/431b6ec589dbcdf801dcf29f7d7ee3c9/5510b/docker13.jpg 1179w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;바탕화면에 htdocs 폴더 생성 후 index.html 파일을 생성한다.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-    hello again!
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;터미널에서 호스트의 파일 경로:컨테이너 파일 경로 연결 후 컨테이너 실행&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker run -p 8888:80 -v C:\Users\{사용자폴더명}\Desktop\htdocs\:/usr/local/apache2/htdocs/ httpd&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 417px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/d9d6d09449da800c4e6e271b2a535728/6eca5/docker15.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 42.405063291139236%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAG6AD//xAAVEAEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAQABBQKIj//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAABD/2gAIAQEABj8Cf//EABcQAQADAAAAAAAAAAAAAAAAAAABEWH/2gAIAQEAAT8hNyq//9oADAMBAAIAAwAAABBzz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABkQAQEBAQEBAAAAAAAAAAAAAAERAGEhQf/aAAgBAQABPxAoKB58yGUZw3Pf/9k=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;도커&quot;
-        title=&quot;도커&quot;
-        src=&quot;/static/d9d6d09449da800c4e6e271b2a535728/6eca5/docker15.jpg&quot;
-        srcset=&quot;/static/d9d6d09449da800c4e6e271b2a535728/ff44c/docker15.jpg 158w,
-/static/d9d6d09449da800c4e6e271b2a535728/a6688/docker15.jpg 315w,
-/static/d9d6d09449da800c4e6e271b2a535728/6eca5/docker15.jpg 417w&quot;
-        sizes=&quot;(max-width: 417px) 100vw, 417px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;이 구조의 장점&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;나에게 익숙한 에디터로 파일 편집이 가능하다&lt;/li&gt;
-&lt;li&gt;버전 관리가 가능해진다&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;멀게만 느껴졌던 도커가 조금은 뚜렷하게 잡혀가는 느낌이다… 도커를 사용해 내가 만든 프로젝트를 커밋을 이용해 도커 허브에 올린다면 다른 사람이 그 이미지를 내려 받아 내가 설정한 환경 그대로 작업을 쉽게 이어갈 수 있을 것 같다.&lt;/p&gt;
-&lt;h3 id=&quot;도움-받은-자료들&quot; style=&quot;position:relative;&quot;&gt;도움 받은 자료들&lt;a href=&quot;#%EB%8F%84%EC%9B%80-%EB%B0%9B%EC%9D%80-%EC%9E%90%EB%A3%8C%EB%93%A4&quot; aria-label=&quot;도움 받은 자료들 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&quot;&gt;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=0kQC19w0gTI&quot;&gt;https://www.youtube.com/watch?v=0kQC19w0gTI&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[react-chartjs 에서 라인에 glow 효과 주는 법]]></title><description><![CDATA[개발 환경 chart.js 3.7 버전 react-chartjs-2 4.0 버전 환경 리액트에서 그래프 작업을 할 때 주로 chart.js 라이브러리를 사용하고 있다. 선 그래프 작업을 할 때 라인에 glow…]]></description><link>https://ksy8230.github.io/todayILearned/reactjs/chartjs1/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/reactjs/chartjs1/</guid><pubDate>Fri, 07 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;개발-환경&quot; style=&quot;position:relative;&quot;&gt;개발 환경&lt;a href=&quot;#%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD&quot; aria-label=&quot;개발 환경 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;chart.js 3.7 버전&lt;br&gt;
@@ -3210,7 +2986,231 @@ ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;registry&lt
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
   &lt;span class=&quot;token function&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; arguments&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
   ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;stroke &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; _stroke
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[vscode에서 crlf 파일들을 일괄로 lf파일로 변환하는 법]]></title><description><![CDATA[파일 형상 관리를 git을 이용해 하고 있다. 그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf…]]></description><link>https://ksy8230.github.io/todayILearned/bugLists/vscode_setting/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/bugLists/vscode_setting/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;파일 형상 관리를 git을 이용해 하고 있다.&lt;br&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[생활코딩 Docker 입문 수업 6 ~ 8]]></title><description><![CDATA[도커 컨테이너 안에 있는 파일 조작하기  도커를 이용해 웹서버를 띄웠다. 그리고 이제 이 내용물을 다르게 바꿔보자. 도커에 올라가있는 컨테이너 ws…]]></description><link>https://ksy8230.github.io/todayILearned/docker/docker2/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/docker/docker2/</guid><pubDate>Fri, 07 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;도커-컨테이너-안에-있는-파일-조작하기&quot; style=&quot;position:relative;&quot;&gt;도커 컨테이너 안에 있는 파일 조작하기&lt;a href=&quot;#%EB%8F%84%EC%BB%A4-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%EC%95%88%EC%97%90-%EC%9E%88%EB%8A%94-%ED%8C%8C%EC%9D%BC-%EC%A1%B0%EC%9E%91%ED%95%98%EA%B8%B0&quot; aria-label=&quot;도커 컨테이너 안에 있는 파일 조작하기 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/fee13/docker10.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 37.34177215189873%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3qAH/8QAFRABAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQEAAQUCj//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAABD/2gAIAQEABj8Cf//EABcQAAMBAAAAAAAAAAAAAAAAAAABEYH/2gAIAQEAAT8hWiIiP//aAAwDAQACAAMAAAAQAA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAZEAEAAgMAAAAAAAAAAAAAAAABAGERMVH/2gAIAQEAAT8QA2uXZQSgn//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/828fb/docker10.jpg&quot;
+        srcset=&quot;/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/ff44c/docker10.jpg 158w,
+/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/a6688/docker10.jpg 315w,
+/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/828fb/docker10.jpg 630w,
+/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/fee13/docker10.jpg 726w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;도커를 이용해 웹서버를 띄웠다.&lt;br&gt;
+그리고 이제 이 내용물을 다르게 바꿔보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker exec ws3 {명령어}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;도커에 올라가있는 컨테이너 ws3(사용자가 명명한 컨테이너 이름) 실행하면 컨테이너 내부를 파일 조회를 할 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 287px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/7fe3f2aceeb6192ed312e0f3daad0253/b3e6c/docker11.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 83.54430379746836%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAARABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAABxpSAXAAf/8QAFxABAAMAAAAAAAAAAAAAAAAAEAECEf/aAAgBAQABBQLWWz//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAUEAEAAAAAAAAAAAAAAAAAAAAw/9oACAEBAAY/Ah//xAAaEAABBQEAAAAAAAAAAAAAAAABABARITGh/9oACAEBAAE/IaTJ4ib3iK2+g/8A/9oADAMBAAIAAwAAABCHAAD/xAAWEQEBAQAAAAAAAAAAAAAAAAABESD/2gAIAQMBAT8QWkx//8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPxAf/8QAHRABAAEDBQAAAAAAAAAAAAAAAREAIaEQIDFRcf/aAAgBAQABPxC+EJOt80LKR4KSvM7PE1//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/7fe3f2aceeb6192ed312e0f3daad0253/b3e6c/docker11.jpg&quot;
+        srcset=&quot;/todayILearned/static/7fe3f2aceeb6192ed312e0f3daad0253/ff44c/docker11.jpg 158w,
+/todayILearned/static/7fe3f2aceeb6192ed312e0f3daad0253/b3e6c/docker11.jpg 287w&quot;
+        sizes=&quot;(max-width: 287px) 100vw, 287px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;그런데 매번 컨테이너 안으로 들어가는 명령어를 치기 힘드니 아래와 같이 컨테이너 내부의 쉘을 유지시켜주는 명령어를 치면 # 모양이 뜨면서 이 뒤부터 내리는 명령은 ws3 컨테이너 내부 대상으로 내리는 실행 명령어가 된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker exec -it ws3 /bin/sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;쉘 : 사용자가 입력한 명령를 쉘 프로그램이 받아서 그것을 운영체제에게 전달해주는 창구 역할을 한다&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/9f8e3c7381fb576833021514f1160d18/49e4f/docker12.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 17.088607594936708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAADABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAABw4AH/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFRABAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQEAAT8hr//aAAwDAQACAAMAAAAQcA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAXEAEAAwAAAAAAAAAAAAAAAAABABAh/9oACAEBAAE/EFLrGv/Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/9f8e3c7381fb576833021514f1160d18/828fb/docker12.jpg&quot;
+        srcset=&quot;/todayILearned/static/9f8e3c7381fb576833021514f1160d18/ff44c/docker12.jpg 158w,
+/todayILearned/static/9f8e3c7381fb576833021514f1160d18/a6688/docker12.jpg 315w,
+/todayILearned/static/9f8e3c7381fb576833021514f1160d18/828fb/docker12.jpg 630w,
+/todayILearned/static/9f8e3c7381fb576833021514f1160d18/49e4f/docker12.jpg 836w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;index.html 파일이 있는 경로로 이동을 한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# cd /usr/local/apache2/htdocs&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;apt 업데이트를 하고 html을 편집할 수 있는 nano라는 프로그램을 설치한 후 index.html을 열면 내용 수정이 가능하다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# apt update
+# apt install nano
+# nano index.html&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 421px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/a3a1adb0acd20361260ce5ddfaeec674/5c51b/docker14.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 49.36708860759494%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe1WghY//8QAFhABAQEAAAAAAAAAAAAAAAAAABEg/9oACAEBAAEFAkTH/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFhAAAwAAAAAAAAAAAAAAAAAAASAy/9oACAEBAAY/ApLf/8QAGRAAAwADAAAAAAAAAAAAAAAAAAERICHR/9oACAEBAAE/Ia5yNo2Th//aAAwDAQACAAMAAAAQQw//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAbEAEBAAEFAAAAAAAAAAAAAAABEUEAIDGRof/aAAgBAQABPxBdIKYy90TpGcIU62//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/a3a1adb0acd20361260ce5ddfaeec674/5c51b/docker14.jpg&quot;
+        srcset=&quot;/todayILearned/static/a3a1adb0acd20361260ce5ddfaeec674/ff44c/docker14.jpg 158w,
+/todayILearned/static/a3a1adb0acd20361260ce5ddfaeec674/a6688/docker14.jpg 315w,
+/todayILearned/static/a3a1adb0acd20361260ce5ddfaeec674/5c51b/docker14.jpg 421w&quot;
+        sizes=&quot;(max-width: 421px) 100vw, 421px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;호스트-파일-시스템과-컨테이너-파일-시스템-연결&quot; style=&quot;position:relative;&quot;&gt;호스트 파일 시스템과 컨테이너 파일 시스템 연결&lt;a href=&quot;#%ED%98%B8%EC%8A%A4%ED%8A%B8-%ED%8C%8C%EC%9D%BC-%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%ED%8C%8C%EC%9D%BC-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%97%B0%EA%B2%B0&quot; aria-label=&quot;호스트 파일 시스템과 컨테이너 파일 시스템 연결 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;열심히 내용물을 수정한 파일이 도커 컨테이너에 반영이 되었다.&lt;br&gt;
+하지만 개발자의 실수로 컨테이너를 날려버리면 열심히 수정한 노력이 물거품이 될 것이다… 그런 일을 미연에 방지하기 위해 파일 작업은 호스트 파일 시스템에서 하고 호스트에서 수정이 되면 컨테이너 파일 시스템에서 자동으로 반영이 되는 구조를 가져가는 편이 더 안전할 것이다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/431b6ec589dbcdf801dcf29f7d7ee3c9/5510b/docker13.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 48.734177215189874%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQCBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe0lwXIx/8QAGhAAAgIDAAAAAAAAAAAAAAAAAREAAhAhMf/aAAgBAQABBQKre48Ewc//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAaEAABBQEAAAAAAAAAAAAAAAABABESIDGB/9oACAEBAAY/AjLi0NX/xAAbEAACAgMBAAAAAAAAAAAAAAABEQAxECFBUf/aAAgBAQABPyEtwE+oSzqUu4s+wzs1DKbn/9oADAMBAAIAAwAAABAjD//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EAB0QAQACAgIDAAAAAAAAAAAAAAEAESFhMVFBcZH/2gAIAQEAAT8QvoeIWxuHqIdhyw3fFeJTsZsfYXAtGKZS+5//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/431b6ec589dbcdf801dcf29f7d7ee3c9/828fb/docker13.jpg&quot;
+        srcset=&quot;/todayILearned/static/431b6ec589dbcdf801dcf29f7d7ee3c9/ff44c/docker13.jpg 158w,
+/todayILearned/static/431b6ec589dbcdf801dcf29f7d7ee3c9/a6688/docker13.jpg 315w,
+/todayILearned/static/431b6ec589dbcdf801dcf29f7d7ee3c9/828fb/docker13.jpg 630w,
+/todayILearned/static/431b6ec589dbcdf801dcf29f7d7ee3c9/0ede0/docker13.jpg 945w,
+/todayILearned/static/431b6ec589dbcdf801dcf29f7d7ee3c9/5510b/docker13.jpg 1179w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;바탕화면에 htdocs 폴더 생성 후 index.html 파일을 생성한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    hello again!
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;터미널에서 호스트의 파일 경로:컨테이너 파일 경로 연결 후 컨테이너 실행&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker run -p 8888:80 -v C:\Users\{사용자폴더명}\Desktop\htdocs\:/usr/local/apache2/htdocs/ httpd&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 417px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/todayILearned/static/d9d6d09449da800c4e6e271b2a535728/6eca5/docker15.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 42.405063291139236%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAG6AD//xAAVEAEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAQABBQKIj//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAABD/2gAIAQEABj8Cf//EABcQAQADAAAAAAAAAAAAAAAAAAABEWH/2gAIAQEAAT8hNyq//9oADAMBAAIAAwAAABBzz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABkQAQEBAQEBAAAAAAAAAAAAAAERAGEhQf/aAAgBAQABPxAoKB58yGUZw3Pf/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;도커&quot;
+        title=&quot;도커&quot;
+        src=&quot;/todayILearned/static/d9d6d09449da800c4e6e271b2a535728/6eca5/docker15.jpg&quot;
+        srcset=&quot;/todayILearned/static/d9d6d09449da800c4e6e271b2a535728/ff44c/docker15.jpg 158w,
+/todayILearned/static/d9d6d09449da800c4e6e271b2a535728/a6688/docker15.jpg 315w,
+/todayILearned/static/d9d6d09449da800c4e6e271b2a535728/6eca5/docker15.jpg 417w&quot;
+        sizes=&quot;(max-width: 417px) 100vw, 417px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;이 구조의 장점&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;나에게 익숙한 에디터로 파일 편집이 가능하다&lt;/li&gt;
+&lt;li&gt;버전 관리가 가능해진다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;멀게만 느껴졌던 도커가 조금은 뚜렷하게 잡혀가는 느낌이다… 도커를 사용해 내가 만든 프로젝트를 커밋을 이용해 도커 허브에 올린다면 다른 사람이 그 이미지를 내려 받아 내가 설정한 환경 그대로 작업을 쉽게 이어갈 수 있을 것 같다.&lt;/p&gt;
+&lt;h3 id=&quot;도움-받은-자료들&quot; style=&quot;position:relative;&quot;&gt;도움 받은 자료들&lt;a href=&quot;#%EB%8F%84%EC%9B%80-%EB%B0%9B%EC%9D%80-%EC%9E%90%EB%A3%8C%EB%93%A4&quot; aria-label=&quot;도움 받은 자료들 permalink&quot; class=&quot;custom-class after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;20&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;20&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&quot;&gt;https://www.youtube.com/watch?v=Ps8HDIAyPD0&amp;#x26;list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=0kQC19w0gTI&quot;&gt;https://www.youtube.com/watch?v=0kQC19w0gTI&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[vscode에서 crlf 파일들을 일괄로 lf파일로 변환하는 법]]></title><description><![CDATA[파일 형상 관리를 git을 이용해 하고 있다. 그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf…]]></description><link>https://ksy8230.github.io/todayILearned/bugLists/vscode_setting/</link><guid isPermaLink="false">https://ksy8230.github.io/todayILearned/bugLists/vscode_setting/</guid><pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;파일 형상 관리를 git을 이용해 하고 있다.&lt;br&gt;
 그런데 가끔가다 브랜치 이동을 하면 몇몇 파일들이 crlf로 변환된 채로 코드상 빨간 줄을 뿜고 있는데… 이걸 파일 하나하나 바꿔주다보니 갑갑해서 일괄 수정할 수 있는 방법을 찾아냈다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -3218,7 +3218,7 @@ ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;registry&lt
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png&quot;
+    href=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3231,11 +3231,11 @@ ChartJS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;registry&lt
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;lf&quot;
         title=&quot;lf&quot;
-        src=&quot;/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png&quot;
-        srcset=&quot;/static/2c334fe15ed3d1ed06dd34f81163a0d4/c26ae/lf.png 158w,
-/static/2c334fe15ed3d1ed06dd34f81163a0d4/6bdcf/lf.png 315w,
-/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png 630w,
-/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png 772w&quot;
+        src=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png&quot;
+        srcset=&quot;/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/c26ae/lf.png 158w,
+/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/6bdcf/lf.png 315w,
+/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/f058b/lf.png 630w,
+/todayILearned/static/2c334fe15ed3d1ed06dd34f81163a0d4/940c5/lf.png 772w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3258,7 +3258,7 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/cb9b300e35b7029562a9053d119b36e5/dde82/docker1.jpg&quot;
+    href=&quot;/todayILearned/static/cb9b300e35b7029562a9053d119b36e5/dde82/docker1.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3271,11 +3271,11 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;도커&quot;
         title=&quot;도커&quot;
-        src=&quot;/static/cb9b300e35b7029562a9053d119b36e5/828fb/docker1.jpg&quot;
-        srcset=&quot;/static/cb9b300e35b7029562a9053d119b36e5/ff44c/docker1.jpg 158w,
-/static/cb9b300e35b7029562a9053d119b36e5/a6688/docker1.jpg 315w,
-/static/cb9b300e35b7029562a9053d119b36e5/828fb/docker1.jpg 630w,
-/static/cb9b300e35b7029562a9053d119b36e5/dde82/docker1.jpg 910w&quot;
+        src=&quot;/todayILearned/static/cb9b300e35b7029562a9053d119b36e5/828fb/docker1.jpg&quot;
+        srcset=&quot;/todayILearned/static/cb9b300e35b7029562a9053d119b36e5/ff44c/docker1.jpg 158w,
+/todayILearned/static/cb9b300e35b7029562a9053d119b36e5/a6688/docker1.jpg 315w,
+/todayILearned/static/cb9b300e35b7029562a9053d119b36e5/828fb/docker1.jpg 630w,
+/todayILearned/static/cb9b300e35b7029562a9053d119b36e5/dde82/docker1.jpg 910w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3293,7 +3293,7 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/f05a030578480a2398713fb6e36e98e1/909c7/docker3.jpg&quot;
+    href=&quot;/todayILearned/static/f05a030578480a2398713fb6e36e98e1/909c7/docker3.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3306,12 +3306,12 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;도커&quot;
         title=&quot;도커&quot;
-        src=&quot;/static/f05a030578480a2398713fb6e36e98e1/828fb/docker3.jpg&quot;
-        srcset=&quot;/static/f05a030578480a2398713fb6e36e98e1/ff44c/docker3.jpg 158w,
-/static/f05a030578480a2398713fb6e36e98e1/a6688/docker3.jpg 315w,
-/static/f05a030578480a2398713fb6e36e98e1/828fb/docker3.jpg 630w,
-/static/f05a030578480a2398713fb6e36e98e1/0ede0/docker3.jpg 945w,
-/static/f05a030578480a2398713fb6e36e98e1/909c7/docker3.jpg 1041w&quot;
+        src=&quot;/todayILearned/static/f05a030578480a2398713fb6e36e98e1/828fb/docker3.jpg&quot;
+        srcset=&quot;/todayILearned/static/f05a030578480a2398713fb6e36e98e1/ff44c/docker3.jpg 158w,
+/todayILearned/static/f05a030578480a2398713fb6e36e98e1/a6688/docker3.jpg 315w,
+/todayILearned/static/f05a030578480a2398713fb6e36e98e1/828fb/docker3.jpg 630w,
+/todayILearned/static/f05a030578480a2398713fb6e36e98e1/0ede0/docker3.jpg 945w,
+/todayILearned/static/f05a030578480a2398713fb6e36e98e1/909c7/docker3.jpg 1041w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3348,7 +3348,7 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/86a8787dfa9fa009b5e1cafae80946c1/0a151/docker4.jpg&quot;
+    href=&quot;/todayILearned/static/86a8787dfa9fa009b5e1cafae80946c1/0a151/docker4.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3361,11 +3361,11 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;도커&quot;
         title=&quot;도커&quot;
-        src=&quot;/static/86a8787dfa9fa009b5e1cafae80946c1/828fb/docker4.jpg&quot;
-        srcset=&quot;/static/86a8787dfa9fa009b5e1cafae80946c1/ff44c/docker4.jpg 158w,
-/static/86a8787dfa9fa009b5e1cafae80946c1/a6688/docker4.jpg 315w,
-/static/86a8787dfa9fa009b5e1cafae80946c1/828fb/docker4.jpg 630w,
-/static/86a8787dfa9fa009b5e1cafae80946c1/0a151/docker4.jpg 866w&quot;
+        src=&quot;/todayILearned/static/86a8787dfa9fa009b5e1cafae80946c1/828fb/docker4.jpg&quot;
+        srcset=&quot;/todayILearned/static/86a8787dfa9fa009b5e1cafae80946c1/ff44c/docker4.jpg 158w,
+/todayILearned/static/86a8787dfa9fa009b5e1cafae80946c1/a6688/docker4.jpg 315w,
+/todayILearned/static/86a8787dfa9fa009b5e1cafae80946c1/828fb/docker4.jpg 630w,
+/todayILearned/static/86a8787dfa9fa009b5e1cafae80946c1/0a151/docker4.jpg 866w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3385,7 +3385,7 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/33728d129afce2dc3401755b4c322cd0/c80d3/docker5.jpg&quot;
+    href=&quot;/todayILearned/static/33728d129afce2dc3401755b4c322cd0/c80d3/docker5.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3398,10 +3398,10 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;도커&quot;
         title=&quot;도커&quot;
-        src=&quot;/static/33728d129afce2dc3401755b4c322cd0/c80d3/docker5.jpg&quot;
-        srcset=&quot;/static/33728d129afce2dc3401755b4c322cd0/ff44c/docker5.jpg 158w,
-/static/33728d129afce2dc3401755b4c322cd0/a6688/docker5.jpg 315w,
-/static/33728d129afce2dc3401755b4c322cd0/c80d3/docker5.jpg 403w&quot;
+        src=&quot;/todayILearned/static/33728d129afce2dc3401755b4c322cd0/c80d3/docker5.jpg&quot;
+        srcset=&quot;/todayILearned/static/33728d129afce2dc3401755b4c322cd0/ff44c/docker5.jpg 158w,
+/todayILearned/static/33728d129afce2dc3401755b4c322cd0/a6688/docker5.jpg 315w,
+/todayILearned/static/33728d129afce2dc3401755b4c322cd0/c80d3/docker5.jpg 403w&quot;
         sizes=&quot;(max-width: 403px) 100vw, 403px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3417,7 +3417,7 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/0a9633474ca9a38e0aebbd0b233b2a25/63577/docker6.jpg&quot;
+    href=&quot;/todayILearned/static/0a9633474ca9a38e0aebbd0b233b2a25/63577/docker6.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3430,11 +3430,11 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;도커&quot;
         title=&quot;도커&quot;
-        src=&quot;/static/0a9633474ca9a38e0aebbd0b233b2a25/828fb/docker6.jpg&quot;
-        srcset=&quot;/static/0a9633474ca9a38e0aebbd0b233b2a25/ff44c/docker6.jpg 158w,
-/static/0a9633474ca9a38e0aebbd0b233b2a25/a6688/docker6.jpg 315w,
-/static/0a9633474ca9a38e0aebbd0b233b2a25/828fb/docker6.jpg 630w,
-/static/0a9633474ca9a38e0aebbd0b233b2a25/63577/docker6.jpg 647w&quot;
+        src=&quot;/todayILearned/static/0a9633474ca9a38e0aebbd0b233b2a25/828fb/docker6.jpg&quot;
+        srcset=&quot;/todayILearned/static/0a9633474ca9a38e0aebbd0b233b2a25/ff44c/docker6.jpg 158w,
+/todayILearned/static/0a9633474ca9a38e0aebbd0b233b2a25/a6688/docker6.jpg 315w,
+/todayILearned/static/0a9633474ca9a38e0aebbd0b233b2a25/828fb/docker6.jpg 630w,
+/todayILearned/static/0a9633474ca9a38e0aebbd0b233b2a25/63577/docker6.jpg 647w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3449,7 +3449,7 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/f8ec75ae71249c57a12540b904bc3fe9/08ff2/docker7.jpg&quot;
+    href=&quot;/todayILearned/static/f8ec75ae71249c57a12540b904bc3fe9/08ff2/docker7.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3462,10 +3462,10 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;도커&quot;
         title=&quot;도커&quot;
-        src=&quot;/static/f8ec75ae71249c57a12540b904bc3fe9/08ff2/docker7.jpg&quot;
-        srcset=&quot;/static/f8ec75ae71249c57a12540b904bc3fe9/ff44c/docker7.jpg 158w,
-/static/f8ec75ae71249c57a12540b904bc3fe9/a6688/docker7.jpg 315w,
-/static/f8ec75ae71249c57a12540b904bc3fe9/08ff2/docker7.jpg 474w&quot;
+        src=&quot;/todayILearned/static/f8ec75ae71249c57a12540b904bc3fe9/08ff2/docker7.jpg&quot;
+        srcset=&quot;/todayILearned/static/f8ec75ae71249c57a12540b904bc3fe9/ff44c/docker7.jpg 158w,
+/todayILearned/static/f8ec75ae71249c57a12540b904bc3fe9/a6688/docker7.jpg 315w,
+/todayILearned/static/f8ec75ae71249c57a12540b904bc3fe9/08ff2/docker7.jpg 474w&quot;
         sizes=&quot;(max-width: 474px) 100vw, 474px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3490,7 +3490,7 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/0539ef0b4ec108b5548c4808effd6bf3/e8a7f/docker9.jpg&quot;
+    href=&quot;/todayILearned/static/0539ef0b4ec108b5548c4808effd6bf3/e8a7f/docker9.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3503,12 +3503,12 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;도커&quot;
         title=&quot;도커&quot;
-        src=&quot;/static/0539ef0b4ec108b5548c4808effd6bf3/828fb/docker9.jpg&quot;
-        srcset=&quot;/static/0539ef0b4ec108b5548c4808effd6bf3/ff44c/docker9.jpg 158w,
-/static/0539ef0b4ec108b5548c4808effd6bf3/a6688/docker9.jpg 315w,
-/static/0539ef0b4ec108b5548c4808effd6bf3/828fb/docker9.jpg 630w,
-/static/0539ef0b4ec108b5548c4808effd6bf3/0ede0/docker9.jpg 945w,
-/static/0539ef0b4ec108b5548c4808effd6bf3/e8a7f/docker9.jpg 1138w&quot;
+        src=&quot;/todayILearned/static/0539ef0b4ec108b5548c4808effd6bf3/828fb/docker9.jpg&quot;
+        srcset=&quot;/todayILearned/static/0539ef0b4ec108b5548c4808effd6bf3/ff44c/docker9.jpg 158w,
+/todayILearned/static/0539ef0b4ec108b5548c4808effd6bf3/a6688/docker9.jpg 315w,
+/todayILearned/static/0539ef0b4ec108b5548c4808effd6bf3/828fb/docker9.jpg 630w,
+/todayILearned/static/0539ef0b4ec108b5548c4808effd6bf3/0ede0/docker9.jpg 945w,
+/todayILearned/static/0539ef0b4ec108b5548c4808effd6bf3/e8a7f/docker9.jpg 1138w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3528,7 +3528,7 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/6647b0ebdb461e4945f580c7fa9bf056/51334/docker8.jpg&quot;
+    href=&quot;/todayILearned/static/6647b0ebdb461e4945f580c7fa9bf056/51334/docker8.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3541,12 +3541,12 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;도커&quot;
         title=&quot;도커&quot;
-        src=&quot;/static/6647b0ebdb461e4945f580c7fa9bf056/828fb/docker8.jpg&quot;
-        srcset=&quot;/static/6647b0ebdb461e4945f580c7fa9bf056/ff44c/docker8.jpg 158w,
-/static/6647b0ebdb461e4945f580c7fa9bf056/a6688/docker8.jpg 315w,
-/static/6647b0ebdb461e4945f580c7fa9bf056/828fb/docker8.jpg 630w,
-/static/6647b0ebdb461e4945f580c7fa9bf056/0ede0/docker8.jpg 945w,
-/static/6647b0ebdb461e4945f580c7fa9bf056/51334/docker8.jpg 1168w&quot;
+        src=&quot;/todayILearned/static/6647b0ebdb461e4945f580c7fa9bf056/828fb/docker8.jpg&quot;
+        srcset=&quot;/todayILearned/static/6647b0ebdb461e4945f580c7fa9bf056/ff44c/docker8.jpg 158w,
+/todayILearned/static/6647b0ebdb461e4945f580c7fa9bf056/a6688/docker8.jpg 315w,
+/todayILearned/static/6647b0ebdb461e4945f580c7fa9bf056/828fb/docker8.jpg 630w,
+/todayILearned/static/6647b0ebdb461e4945f580c7fa9bf056/0ede0/docker8.jpg 945w,
+/todayILearned/static/6647b0ebdb461e4945f580c7fa9bf056/51334/docker8.jpg 1168w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3565,7 +3565,7 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/500deb1b6812c353fa878becd1bad6a9/fee13/docker10.jpg&quot;
+    href=&quot;/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/fee13/docker10.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3578,11 +3578,11 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;도커&quot;
         title=&quot;도커&quot;
-        src=&quot;/static/500deb1b6812c353fa878becd1bad6a9/828fb/docker10.jpg&quot;
-        srcset=&quot;/static/500deb1b6812c353fa878becd1bad6a9/ff44c/docker10.jpg 158w,
-/static/500deb1b6812c353fa878becd1bad6a9/a6688/docker10.jpg 315w,
-/static/500deb1b6812c353fa878becd1bad6a9/828fb/docker10.jpg 630w,
-/static/500deb1b6812c353fa878becd1bad6a9/fee13/docker10.jpg 726w&quot;
+        src=&quot;/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/828fb/docker10.jpg&quot;
+        srcset=&quot;/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/ff44c/docker10.jpg 158w,
+/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/a6688/docker10.jpg 315w,
+/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/828fb/docker10.jpg 630w,
+/todayILearned/static/500deb1b6812c353fa878becd1bad6a9/fee13/docker10.jpg 726w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3607,7 +3607,7 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/84b7ff25679ca1c691b50a67cb450a93/6bdcf/js1.png&quot;
+    href=&quot;/todayILearned/static/84b7ff25679ca1c691b50a67cb450a93/6bdcf/js1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3620,9 +3620,9 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;메모리힙과 콜스택&quot;
         title=&quot;메모리힙과 콜스택&quot;
-        src=&quot;/static/84b7ff25679ca1c691b50a67cb450a93/6bdcf/js1.png&quot;
-        srcset=&quot;/static/84b7ff25679ca1c691b50a67cb450a93/c26ae/js1.png 158w,
-/static/84b7ff25679ca1c691b50a67cb450a93/6bdcf/js1.png 315w&quot;
+        src=&quot;/todayILearned/static/84b7ff25679ca1c691b50a67cb450a93/6bdcf/js1.png&quot;
+        srcset=&quot;/todayILearned/static/84b7ff25679ca1c691b50a67cb450a93/c26ae/js1.png 158w,
+/todayILearned/static/84b7ff25679ca1c691b50a67cb450a93/6bdcf/js1.png 315w&quot;
         sizes=&quot;(max-width: 315px) 100vw, 315px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3649,7 +3649,7 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/d192b8f4c1a54f0c4de519a2b9cb1c52/78958/js2.png&quot;
+    href=&quot;/todayILearned/static/d192b8f4c1a54f0c4de519a2b9cb1c52/78958/js2.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3662,13 +3662,13 @@ git reset &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;hard&lt;/c
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;선입선출&quot;
         title=&quot;선입선출&quot;
-        src=&quot;/static/d192b8f4c1a54f0c4de519a2b9cb1c52/f058b/js2.png&quot;
-        srcset=&quot;/static/d192b8f4c1a54f0c4de519a2b9cb1c52/c26ae/js2.png 158w,
-/static/d192b8f4c1a54f0c4de519a2b9cb1c52/6bdcf/js2.png 315w,
-/static/d192b8f4c1a54f0c4de519a2b9cb1c52/f058b/js2.png 630w,
-/static/d192b8f4c1a54f0c4de519a2b9cb1c52/40601/js2.png 945w,
-/static/d192b8f4c1a54f0c4de519a2b9cb1c52/78612/js2.png 1260w,
-/static/d192b8f4c1a54f0c4de519a2b9cb1c52/78958/js2.png 1320w&quot;
+        src=&quot;/todayILearned/static/d192b8f4c1a54f0c4de519a2b9cb1c52/f058b/js2.png&quot;
+        srcset=&quot;/todayILearned/static/d192b8f4c1a54f0c4de519a2b9cb1c52/c26ae/js2.png 158w,
+/todayILearned/static/d192b8f4c1a54f0c4de519a2b9cb1c52/6bdcf/js2.png 315w,
+/todayILearned/static/d192b8f4c1a54f0c4de519a2b9cb1c52/f058b/js2.png 630w,
+/todayILearned/static/d192b8f4c1a54f0c4de519a2b9cb1c52/40601/js2.png 945w,
+/todayILearned/static/d192b8f4c1a54f0c4de519a2b9cb1c52/78612/js2.png 1260w,
+/todayILearned/static/d192b8f4c1a54f0c4de519a2b9cb1c52/78958/js2.png 1320w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3691,7 +3691,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/3068775de07202f09345eac23e23e565/c0255/js3.png&quot;
+    href=&quot;/todayILearned/static/3068775de07202f09345eac23e23e565/c0255/js3.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3704,11 +3704,11 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;호출진행1&quot;
         title=&quot;호출진행1&quot;
-        src=&quot;/static/3068775de07202f09345eac23e23e565/f058b/js3.png&quot;
-        srcset=&quot;/static/3068775de07202f09345eac23e23e565/c26ae/js3.png 158w,
-/static/3068775de07202f09345eac23e23e565/6bdcf/js3.png 315w,
-/static/3068775de07202f09345eac23e23e565/f058b/js3.png 630w,
-/static/3068775de07202f09345eac23e23e565/c0255/js3.png 920w&quot;
+        src=&quot;/todayILearned/static/3068775de07202f09345eac23e23e565/f058b/js3.png&quot;
+        srcset=&quot;/todayILearned/static/3068775de07202f09345eac23e23e565/c26ae/js3.png 158w,
+/todayILearned/static/3068775de07202f09345eac23e23e565/6bdcf/js3.png 315w,
+/todayILearned/static/3068775de07202f09345eac23e23e565/f058b/js3.png 630w,
+/todayILearned/static/3068775de07202f09345eac23e23e565/c0255/js3.png 920w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3725,7 +3725,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/9b16183359068dfa03532ce9d2891d8a/0eb6d/js4.png&quot;
+    href=&quot;/todayILearned/static/9b16183359068dfa03532ce9d2891d8a/0eb6d/js4.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3738,11 +3738,11 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;호출진행2&quot;
         title=&quot;호출진행2&quot;
-        src=&quot;/static/9b16183359068dfa03532ce9d2891d8a/f058b/js4.png&quot;
-        srcset=&quot;/static/9b16183359068dfa03532ce9d2891d8a/c26ae/js4.png 158w,
-/static/9b16183359068dfa03532ce9d2891d8a/6bdcf/js4.png 315w,
-/static/9b16183359068dfa03532ce9d2891d8a/f058b/js4.png 630w,
-/static/9b16183359068dfa03532ce9d2891d8a/0eb6d/js4.png 913w&quot;
+        src=&quot;/todayILearned/static/9b16183359068dfa03532ce9d2891d8a/f058b/js4.png&quot;
+        srcset=&quot;/todayILearned/static/9b16183359068dfa03532ce9d2891d8a/c26ae/js4.png 158w,
+/todayILearned/static/9b16183359068dfa03532ce9d2891d8a/6bdcf/js4.png 315w,
+/todayILearned/static/9b16183359068dfa03532ce9d2891d8a/f058b/js4.png 630w,
+/todayILearned/static/9b16183359068dfa03532ce9d2891d8a/0eb6d/js4.png 913w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3760,7 +3760,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/5b658df7e8c36b6d5578dae6c64444a6/076ca/js5.png&quot;
+    href=&quot;/todayILearned/static/5b658df7e8c36b6d5578dae6c64444a6/076ca/js5.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3773,11 +3773,11 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;호출진행3&quot;
         title=&quot;호출진행3&quot;
-        src=&quot;/static/5b658df7e8c36b6d5578dae6c64444a6/f058b/js5.png&quot;
-        srcset=&quot;/static/5b658df7e8c36b6d5578dae6c64444a6/c26ae/js5.png 158w,
-/static/5b658df7e8c36b6d5578dae6c64444a6/6bdcf/js5.png 315w,
-/static/5b658df7e8c36b6d5578dae6c64444a6/f058b/js5.png 630w,
-/static/5b658df7e8c36b6d5578dae6c64444a6/076ca/js5.png 914w&quot;
+        src=&quot;/todayILearned/static/5b658df7e8c36b6d5578dae6c64444a6/f058b/js5.png&quot;
+        srcset=&quot;/todayILearned/static/5b658df7e8c36b6d5578dae6c64444a6/c26ae/js5.png 158w,
+/todayILearned/static/5b658df7e8c36b6d5578dae6c64444a6/6bdcf/js5.png 315w,
+/todayILearned/static/5b658df7e8c36b6d5578dae6c64444a6/f058b/js5.png 630w,
+/todayILearned/static/5b658df7e8c36b6d5578dae6c64444a6/076ca/js5.png 914w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3794,7 +3794,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8f8729ca11330c561aff33dbfab58aed/076ca/js6.png&quot;
+    href=&quot;/todayILearned/static/8f8729ca11330c561aff33dbfab58aed/076ca/js6.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3807,11 +3807,11 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;호출진행4&quot;
         title=&quot;호출진행4&quot;
-        src=&quot;/static/8f8729ca11330c561aff33dbfab58aed/f058b/js6.png&quot;
-        srcset=&quot;/static/8f8729ca11330c561aff33dbfab58aed/c26ae/js6.png 158w,
-/static/8f8729ca11330c561aff33dbfab58aed/6bdcf/js6.png 315w,
-/static/8f8729ca11330c561aff33dbfab58aed/f058b/js6.png 630w,
-/static/8f8729ca11330c561aff33dbfab58aed/076ca/js6.png 914w&quot;
+        src=&quot;/todayILearned/static/8f8729ca11330c561aff33dbfab58aed/f058b/js6.png&quot;
+        srcset=&quot;/todayILearned/static/8f8729ca11330c561aff33dbfab58aed/c26ae/js6.png 158w,
+/todayILearned/static/8f8729ca11330c561aff33dbfab58aed/6bdcf/js6.png 315w,
+/todayILearned/static/8f8729ca11330c561aff33dbfab58aed/f058b/js6.png 630w,
+/todayILearned/static/8f8729ca11330c561aff33dbfab58aed/076ca/js6.png 914w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3867,7 +3867,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/eede11f125591e52f4efc65febe17a90/c6bbc/js7.png&quot;
+    href=&quot;/todayILearned/static/eede11f125591e52f4efc65febe17a90/c6bbc/js7.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3880,11 +3880,11 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;렌더큐&quot;
         title=&quot;렌더큐&quot;
-        src=&quot;/static/eede11f125591e52f4efc65febe17a90/f058b/js7.png&quot;
-        srcset=&quot;/static/eede11f125591e52f4efc65febe17a90/c26ae/js7.png 158w,
-/static/eede11f125591e52f4efc65febe17a90/6bdcf/js7.png 315w,
-/static/eede11f125591e52f4efc65febe17a90/f058b/js7.png 630w,
-/static/eede11f125591e52f4efc65febe17a90/c6bbc/js7.png 910w&quot;
+        src=&quot;/todayILearned/static/eede11f125591e52f4efc65febe17a90/f058b/js7.png&quot;
+        srcset=&quot;/todayILearned/static/eede11f125591e52f4efc65febe17a90/c26ae/js7.png 158w,
+/todayILearned/static/eede11f125591e52f4efc65febe17a90/6bdcf/js7.png 315w,
+/todayILearned/static/eede11f125591e52f4efc65febe17a90/f058b/js7.png 630w,
+/todayILearned/static/eede11f125591e52f4efc65febe17a90/c6bbc/js7.png 910w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -4025,7 +4025,7 @@ fds 모듈은 CRA로 만들어졌기 때문에 react.js 라이브러리가 디�
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a018ff7623a6c02e70f741b16ceda6c6/c80f2/courses_220104.jpg&quot;
+    href=&quot;/todayILearned/static/a018ff7623a6c02e70f741b16ceda6c6/c80f2/courses_220104.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -4038,11 +4038,11 @@ fds 모듈은 CRA로 만들어졌기 때문에 react.js 라이브러리가 디�
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;..&quot;
         title=&quot;..&quot;
-        src=&quot;/static/a018ff7623a6c02e70f741b16ceda6c6/828fb/courses_220104.jpg&quot;
-        srcset=&quot;/static/a018ff7623a6c02e70f741b16ceda6c6/ff44c/courses_220104.jpg 158w,
-/static/a018ff7623a6c02e70f741b16ceda6c6/a6688/courses_220104.jpg 315w,
-/static/a018ff7623a6c02e70f741b16ceda6c6/828fb/courses_220104.jpg 630w,
-/static/a018ff7623a6c02e70f741b16ceda6c6/c80f2/courses_220104.jpg 796w&quot;
+        src=&quot;/todayILearned/static/a018ff7623a6c02e70f741b16ceda6c6/828fb/courses_220104.jpg&quot;
+        srcset=&quot;/todayILearned/static/a018ff7623a6c02e70f741b16ceda6c6/ff44c/courses_220104.jpg 158w,
+/todayILearned/static/a018ff7623a6c02e70f741b16ceda6c6/a6688/courses_220104.jpg 315w,
+/todayILearned/static/a018ff7623a6c02e70f741b16ceda6c6/828fb/courses_220104.jpg 630w,
+/todayILearned/static/a018ff7623a6c02e70f741b16ceda6c6/c80f2/courses_220104.jpg 796w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -4061,7 +4061,7 @@ fds 모듈은 CRA로 만들어졌기 때문에 react.js 라이브러리가 디�
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/691e311dab3efe0fb903505d340431fa/9f7af/sides1_220104.jpg&quot;
+    href=&quot;/todayILearned/static/691e311dab3efe0fb903505d340431fa/9f7af/sides1_220104.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -4074,13 +4074,13 @@ fds 모듈은 CRA로 만들어졌기 때문에 react.js 라이브러리가 디�
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;..&quot;
         title=&quot;..&quot;
-        src=&quot;/static/691e311dab3efe0fb903505d340431fa/828fb/sides1_220104.jpg&quot;
-        srcset=&quot;/static/691e311dab3efe0fb903505d340431fa/ff44c/sides1_220104.jpg 158w,
-/static/691e311dab3efe0fb903505d340431fa/a6688/sides1_220104.jpg 315w,
-/static/691e311dab3efe0fb903505d340431fa/828fb/sides1_220104.jpg 630w,
-/static/691e311dab3efe0fb903505d340431fa/0ede0/sides1_220104.jpg 945w,
-/static/691e311dab3efe0fb903505d340431fa/3ac88/sides1_220104.jpg 1260w,
-/static/691e311dab3efe0fb903505d340431fa/9f7af/sides1_220104.jpg 1475w&quot;
+        src=&quot;/todayILearned/static/691e311dab3efe0fb903505d340431fa/828fb/sides1_220104.jpg&quot;
+        srcset=&quot;/todayILearned/static/691e311dab3efe0fb903505d340431fa/ff44c/sides1_220104.jpg 158w,
+/todayILearned/static/691e311dab3efe0fb903505d340431fa/a6688/sides1_220104.jpg 315w,
+/todayILearned/static/691e311dab3efe0fb903505d340431fa/828fb/sides1_220104.jpg 630w,
+/todayILearned/static/691e311dab3efe0fb903505d340431fa/0ede0/sides1_220104.jpg 945w,
+/todayILearned/static/691e311dab3efe0fb903505d340431fa/3ac88/sides1_220104.jpg 1260w,
+/todayILearned/static/691e311dab3efe0fb903505d340431fa/9f7af/sides1_220104.jpg 1475w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
