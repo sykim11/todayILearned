@@ -49,8 +49,12 @@ const BlogMain = ({ data, location }) => {
           return (
             <div key={i} className={list.post}>
               <div className={list.thumbnail}>
-                <Img fluid={post.frontmatter.image?.childImageSharp?.fluid} />
+                {/* <Img fluid={post.frontmatter.image?.childImageSharp?.fluid} /> */}
+                <img
+                  src={`${post.frontmatter.image?.childImageSharp?.fluid?.src}`}
+                />
               </div>
+
               <div className={list.post_content}>
                 <span className={list.post_tag}>
                   <span className={list.post_tag_txt}>
