@@ -2,7 +2,7 @@
 title: 생활코딩 Docker compose를 이용해 복잡한 도커 컨테이너 제어하기
 date: 2022-01-31
 tags: ["docker"]
-publish: true
+publish: false
 image: "../docker.jpg"
 ---
 

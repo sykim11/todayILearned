@@ -2,7 +2,7 @@
 title: 생활코딩 Docker 이미지 만드는 법
 date: 2022-01-11
 tags: ["docker"]
-publish: true
+publish: false
 image: "./docker.jpg"
 ---
 
