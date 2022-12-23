@@ -2,7 +2,7 @@
 title: 쿠버네티스란
 date: 2022-02-15
 tags: [kubenetes]
-publish: true
+publish: false
 image: "./kubernetes.jpg"
 ---
 

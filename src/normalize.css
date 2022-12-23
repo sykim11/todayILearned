@@ -31,32 +31,48 @@ a {
 /**
 * 블로그 포스트 내부 태그 
 */
-.blog-post ul,
-.blog-post li {
-  margin-left: 17px;
+
+.blog-post header .date {
+  font-size: var(--fontSize-0);
 }
+.blog-post ol,
+.blog-post ul {
+  margin-left: var(--spacing-6);
+}
+
+.blog-post blockquote ol,
+.blog-post blockquote ul,
+.blog-post blockquote li {
+  margin: 0;
+}
+.blog-post blockquote ol li,
+.blog-post blockquote ul li {
+  margin-bottom: 0.75rem;
+}
+.blog-post ol li:last-child,
+.blog-post ul li:last-child {
+  margin-bottom: 0;
+}
+.blog-post a {
+  color: var(--color-link);
+  text-decoration: underline;
+}
+
 .blog-post :not(pre) > code[class*="language-"] {
-  /* background: #f5f2f0; */
+  color: #ff3860;
+  background: #f9f1f3;
+  padding: 0 0.5rem;
+  text-shadow: none;
 }
 
 .blog-post blockquote {
-  padding: 0.75rem;
-  margin-left: var(--spacing-0);
-  margin-right: var(--spacing-0);
+  padding: 1.25rem;
+  margin: var(--spacing-8) var(--spacing-0) var(--spacing-8) var(--spacing-0);
   font-size: 16px;
   background-color: #f0f2f5;
-  font-weight: 500;
   font-style: initial;
 }
 
-.blog-post hr + p {
-  margin-bottom: var(--spacing-0);
-}
-
-.blog-post table {
-  /* box-shadow: 2px 2px 8px rgb(0 0 0 / 20%); */
-  /* border: 2px solid #ddd; */
-}
 .blog-post table th {
   background-color: rgb(112, 120, 209);
   color: #fff;
@@ -70,8 +86,18 @@ td {
   background-color: #f7f7f7;
 }
 .blog-post strong {
-  color: #dd0700;
-  background: rgba(112, 120, 209, 0.2);
+  color: var(--color-strong);
+  font-weight: 500;
+}
+.blog-post .token.operator {
+  background: transparent;
+}
+.blog-post details {
+  margin-bottom: var(--spacing-8);
+  cursor: pointer;
+}
+.blog-post details summary {
+  margin-bottom: var(--spacing-4);
 }
 .blog-post .token.operator {
   background: none;

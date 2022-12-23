@@ -47,6 +47,7 @@
   --lineHeight-tight: 1.1;
   --lineHeight-normal: 1.5;
   --lineHeight-relaxed: 1.625;
+  --lineHeight-high: 1.725;
   /* 1.200 Minor Third Type Scale */
   --fontSize-0: 0.833rem;
   --fontSize-1: 1rem;
@@ -57,6 +58,8 @@
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
   --color-primary: #005b99;
+  --color-strong: #0c60c8;
+  --color-link: #448ce4;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
@@ -121,28 +124,28 @@ h6 {
 
 h1 {
   font-weight: var(--fontWeight-black);
-  font-size: var(--fontSize-6);
+  font-size: var(--fontSize-5);
   color: var(--color-heading-black);
 }
 
 h2 {
-  font-size: var(--fontSize-5);
-}
-
-h3 {
   font-size: var(--fontSize-4);
 }
 
-h4 {
+h3 {
   font-size: var(--fontSize-3);
 }
 
-h5 {
+h4 {
   font-size: var(--fontSize-2);
 }
 
-h6 {
+h5 {
   font-size: var(--fontSize-1);
+}
+
+h6 {
+  font-size: var(--fontSize-0);
 }
 
 h1 > a {
@@ -162,7 +165,7 @@ h6 > a {
 /* Prose */
 
 p {
-  line-height: var(--lineHeight-relaxed);
+  line-height: var(--lineHeight-high);
   --baseline-multiplier: 0.179;
   --x-height-multiplier: 0.35;
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0);
@@ -321,6 +324,7 @@ a:focus {
 }
 
 .contents-wrap {
+  margin-top: var(--spacing-4);
 }
 
 .post-list-item {
