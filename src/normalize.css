@@ -73,6 +73,9 @@ td {
   color: #dd0700;
   background: rgba(112, 120, 209, 0.2);
 }
+.blog-post .token.operator {
+  background: none;
+}
 
 ::selection {
   color: #dd0700;
