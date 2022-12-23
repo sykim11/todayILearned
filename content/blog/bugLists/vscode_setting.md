@@ -2,7 +2,7 @@
 title: vscode에서 crlf 파일들을 일괄로 lf파일로 변환하는 법
 date: 2022-01-06
 tags: [버그리포트]
-publish: true
+publish: false
 image: "./bugreport.jpg"
 ---
 
@@ -13,7 +13,7 @@ image: "./bugreport.jpg"
 
 1. 터미널창에 아래 명령어 수행
 
-```js
+```shell
 git config core.autocrlf false
 git rm --cached -r .
 git reset --hard

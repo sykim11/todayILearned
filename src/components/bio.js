@@ -8,6 +8,7 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { memo } from "react"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -43,16 +44,8 @@ const Bio = () => {
         alt="Profile picture"
       />
       <p>수영아 오늘도 공부했니</p>
-      {/*{author?.name && (
-        <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
-        </p>
-      )} */}
     </div>
   )
 }
 
-export default Bio
+export default memo(Bio)

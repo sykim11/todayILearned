@@ -2,7 +2,7 @@
 title: 그라파나 iframe deny 에러
 date: 2022-05-04
 tags: [버그리포트]
-publish: true
+publish: false
 image: "./bugreport.jpg"
 ---
 

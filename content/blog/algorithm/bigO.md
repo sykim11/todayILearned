@@ -2,7 +2,7 @@
 title: 빅오 표기법
 date: 2022-02-20
 tags: [base]
-publish: true
+publish: false
 image: "./base.jpg"
 ---
 

@@ -26,6 +26,7 @@
   min-width: 30%;
 }
 
+/* 메인 > 태그 */
 .tagsWrap {
   display: flex;
   flex-wrap: wrap;
@@ -33,21 +34,31 @@
 }
 
 .post_tag {
-  display: inline-block;
-  margin-right: 0.25rem;
-  margin-bottom: 0.25rem;
+  display: block;
+  margin-right: 0.5rem;
+  border: 1px solid #ddd;
   padding: 0.25rem 0.5rem;
-  border-radius: 5px;
-  background-color: var(--color-primary);
+  border-radius: 3px;
+  font-weight: normal;
   font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.post_tag_active {
+  background-color: var(--color-primary);
+  font-weight: normal;
+  color: #fff;
+  border: 1px solid transparent;
+}
+.post_list_tag {
+  margin-right: 0.5rem;
+  font-size: var(--fontSize-small);
 }
 
 .post_tag_txt {
-  color: #fff !important;
 }
 
 .post_tag_count {
-  color: #fff !important;
   margin-left: 0.25rem;
 }
 

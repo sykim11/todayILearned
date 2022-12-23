@@ -1,23 +1,33 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-
 import Bio from "../components/bio"
 import Layout from "../components/layout"
-import Seo from "../components/seo"
 import * as list from "../components/home.module.css"
 import Img from "gatsby-image"
 
 const BlogMain = ({ data, location }) => {
-  const posts = data.posts.nodes.filter(
-    post => post.frontmatter.publish === true
-  )
-  console.log("posts", posts)
+  const posts = data.posts.nodes.filter(post => post.frontmatter.publish)
   const categories = data.categories
+  const default_tag = "전체"
+
+  const [postList, setPostList] = React.useState(posts)
+  const [currentTag, setCurrentTag] = React.useState(default_tag)
+
+  const handleClickTag = tag => {
+    const filteredPost = posts?.filter(post =>
+      post?.frontmatter?.tags.includes(tag)
+    )
+    setPostList(filteredPost)
+    setCurrentTag(tag)
+  }
+  const handleGetAll = () => {
+    setPostList(posts)
+    setCurrentTag(default_tag)
+  }
 
   if (posts.length === 0) {
     return (
       <Layout location={location}>
-        <Seo title="All posts" />
         <Bio />
         <p>블로그 글들을 확인할 수 없습니다.</p>
       </Layout>
@@ -26,41 +36,42 @@ const BlogMain = ({ data, location }) => {
 
   return (
     <Layout location={location}>
-      <Seo title="All posts" />
       <Bio />
       <div className={list.tagsWrap}>
-        <div className={list.post_tag}>
-          <Link to={`/`}>
-            <span className={list.post_tag_txt}>전체</span>
-            <span className={list.post_tag_count}>{categories.totalCount}</span>
-          </Link>
+        <div
+          onClick={handleGetAll}
+          className={`${currentTag === "전체" && list.post_tag_active} ${
+            list.post_tag
+          }`}
+        >
+          <span className={list.post_tag_txt}>전체</span>
+          <span className={list.post_tag_count}>{categories.totalCount}</span>
         </div>
-        {categories.all?.map(ctr => (
-          <div className={list.post_tag}>
-            <Link to={`/${ctr.name}`}>
-              <span className={list.post_tag_txt}># {ctr.name}</span>
-              <span className={list.post_tag_count}>{ctr.totalCount}</span>
-            </Link>
+        {categories.all?.map((ctr, i) => (
+          <div
+            key={i}
+            onClick={() => handleClickTag(ctr.name)}
+            className={`${currentTag === ctr.name && list.post_tag_active} ${
+              list.post_tag
+            }`}
+          >
+            <span className={list.post_tag_txt}># {ctr.name}</span>
+            <span className={list.post_tag_count}>{ctr.totalCount}</span>
           </div>
         ))}
       </div>
       <div className={list.postsWrap}>
-        {posts?.map((post, i) => {
+        {postList?.map((post, i) => {
           return (
             <div key={i} className={list.post}>
               <div className={list.thumbnail}>
                 <Img fluid={post.frontmatter.image?.childImageSharp?.fluid} />
-                {/* <img
-                  src={`${post.frontmatter.image?.childImageSharp?.fluid?.src}`}
-                /> */}
               </div>
 
               <div className={list.post_content}>
-                <span className={list.post_tag}>
-                  <span className={list.post_tag_txt}>
-                    # {`${post.frontmatter.tags?.[0] || ""}`}
-                  </span>
-                </span>
+                {post.frontmatter.tags?.map(tag => (
+                  <span className={list.post_list_tag}>#{tag}</span>
+                ))}
                 <p className={list.post_content_title}>
                   <Link to={`${post.fields.slug}`} itemProp="url">
                     {post.frontmatter.title}
@@ -76,10 +87,10 @@ const BlogMain = ({ data, location }) => {
   )
 }
 
-export default BlogMain
+export default React.memo(BlogMain)
 
 export const pageQuery = graphql`
-  query BlogMain($tag: String) {
+  query BlogMain {
     site {
       siteMetadata {
         title
@@ -97,7 +108,6 @@ export const pageQuery = graphql`
     }
     posts: allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { eq: $tag } } }
     ) {
       categories: group(field: frontmatter___tags) {
         name: fieldValue

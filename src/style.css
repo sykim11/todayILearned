@@ -49,6 +49,7 @@
   --lineHeight-relaxed: 1.625;
   --lineHeight-high: 1.725;
   /* 1.200 Minor Third Type Scale */
+  --fontSize-small: 0.75rem;
   --fontSize-0: 0.833rem;
   --fontSize-1: 1rem;
   --fontSize-2: 1.2rem;
@@ -406,14 +407,14 @@ a:focus {
 
 .blog-post-container .blog-post {
   flex-grow: 0;
-  max-width: 80%;
-  flex-basis: 80%;
+  max-width: 74%;
+  flex-basis: 74%;
 }
 
 .blog-post-container .blog-table {
   flex-grow: 0;
-  max-width: 20%;
-  flex-basis: 20%;
+  max-width: 26%;
+  flex-basis: 26%;
   font-size: 0.95rem;
 }
 
@@ -455,6 +456,7 @@ a:focus {
 .table-of-contents ul ul li {
   margin-bottom: 0;
   margin-left: 10px;
+  font-size: 0.85rem;
 }
 
 /* utterances */
