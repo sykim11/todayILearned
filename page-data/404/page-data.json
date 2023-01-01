@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-404-js",
-    "path": "/404/",
-    "result": {"data":{"site":{"siteMetadata":{"title":"ksy8230.github.io"}}},"pageContext":{}},
-    "staticQueryHashes": ["1414085880","2841359383"]}
+{"componentChunkName":"component---src-pages-404-js","path":"/404/","result":{"data":{"site":{"siteMetadata":{"title":"ksy8230.github.io"}}},"pageContext":{}},"staticQueryHashes":["1414085880","2841359383"]}
