@@ -6,8 +6,10 @@ publish: false
 image: "./javascript.jpg"
 ---
 
-1. prototype이란?
--Function.bind 되는 이유?
+## 1. prototype이란?
+### 1.1 Function.bind 되는 이유?
+- 자바스크립트에서 객체는 모두 숨김 프로퍼티 [[Prototype]] 를 갖고 있다. 함수도 객체이므로 마찬가지이다. 다만 함수 객체 내에는 기본적으로 prototype이라는 프로퍼티가 존재하고 이 프로퍼티 내부에 bind라는 메서드가 존재한다. 따라서 Function.bind가 실행 가능하다.
+
 -상속 구현?
 
 2. this?
